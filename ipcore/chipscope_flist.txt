@@ -1,0 +1,19 @@
+# Output products list for <chipscope>
+_xmsgs/pn_parser.xmsgs
+chipscope.asy
+chipscope.cdc
+chipscope.constraints/chipscope.ucf
+chipscope.constraints/chipscope.xdc
+chipscope.gise
+chipscope.ncf
+chipscope.ngc
+chipscope.sym
+chipscope.ucf
+chipscope.v
+chipscope.veo
+chipscope.xco
+chipscope.xdc
+chipscope.xise
+chipscope_flist.txt
+chipscope_readme.txt
+chipscope_xmdf.tcl

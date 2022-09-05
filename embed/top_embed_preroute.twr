@@ -1,0 +1,670 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml top_embed_preroute.twx top_embed_map.ncd -o
+top_embed_preroute.twr top_embed.pcf -ucf
+/home/ise/Machine_VB/embed/ucf/embed.ucf
+
+Design file:              top_embed_map.ncd
+Physical constraint file: top_embed.pcf
+Device,package,speed:     xc3s50a,vq100,-4 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_sys_clk = PERIOD TIMEGRP "sys_clk" 83.333 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is  20.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk = PERIOD TIMEGRP "sys_clk" 83.333 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 38.638ns (period - min period limit)
+  Period: 41.666ns
+  Min period limit: 3.029ns (330.142MHz) (Tdcmpco)
+  Physical resource: clk_wizard_instance/DCM_SP_INST/CLK2X
+  Logical resource: clk_wizard_instance/DCM_SP_INST/CLK2X
+  Location pin: DCM.CLK2X
+  Clock network: clk_wizard_instance/CLK2X_BUF
+--------------------------------------------------------------------------------
+Slack: 58.334ns (max period limit - period)
+  Period: 41.666ns
+  Max period limit: 100.000ns (10.000MHz) (Tdcmpco)
+  Physical resource: clk_wizard_instance/DCM_SP_INST/CLK2X
+  Logical resource: clk_wizard_instance/DCM_SP_INST/CLK2X
+  Location pin: DCM.CLK2X
+  Clock network: clk_wizard_instance/CLK2X_BUF
+--------------------------------------------------------------------------------
+Slack: 63.333ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 83.333ns
+  Low pulse: 41.666ns
+  Low pulse limit: 10.000ns (Tdcmpw_CLKIN_10_25)
+  Physical resource: clk_wizard_instance/DCM_SP_INST/CLKIN
+  Logical resource: clk_wizard_instance/DCM_SP_INST/CLKIN
+  Location pin: DCM.CLKIN
+  Clock network: clk_wizard_instance/CLKIN_IBUFG
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_wizard_instance_CLK2X_BUF = PERIOD TIMEGRP         
+"clk_wizard_instance_CLK2X_BUF" TS_sys_clk / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 21739 paths analyzed, 4226 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.647ns.
+--------------------------------------------------------------------------------
+
+Paths for end point fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i (SLICEL.BY), 61 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     37.019ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0 (FF)
+  Destination:          fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i (FF)
+  Requirement:          41.666ns
+  Data Path Delay:      4.647ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         sys_2xclk rising at 0.000ns
+  Destination Clock:    sys_2xclk rising at 41.666ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0 to fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.591   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count<0>
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0
+    SLICEL.F1            net (fanout=3)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count<0>
+    SLICEL.COUT          Topcyf                1.195   ad7621_instance/divide_instance/blk00000003/sig000005a1
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/v1_0_and00001
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[0].gm1.m1
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[1].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/carrynet<1>
+    SLICEL.COUT          Tbyp                  0.130   ad7621_instance/divide_instance/blk00000003/sig00000249
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[2].gms.ms
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[3].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/carrynet<3>
+    SLICEL.COUT          Tbyp                  0.130   ad7621_instance/divide_instance/blk00000003/sig00000cb5
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[4].gms.ms
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[5].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/carrynet<5>
+    SLICEL.XB            Tcinxb                0.296   fifo_full
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[6].gms.ms
+    SLICEL.G4            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/comp1
+    SLICEL.Y             Tilo                  0.648   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb_SW0
+    SLICEL.F4            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb_SW0/O
+    SLICEL.X             Tilo                  0.643   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb
+    SLICEL.BY            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb
+    SLICEL.CLK           Tdick                 0.314   fifo_full
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i
+    -------------------------------------------------  ---------------------------
+    Total                                      4.647ns (3.947ns logic, 0.700ns route)
+                                                       (84.9% logic, 15.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     37.019ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1 (FF)
+  Destination:          fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i (FF)
+  Requirement:          41.666ns
+  Data Path Delay:      4.647ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         sys_2xclk rising at 0.000ns
+  Destination Clock:    sys_2xclk rising at 41.666ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1 to fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.591   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<1>
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1
+    SLICEL.F4            net (fanout=11)    e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<1>
+    SLICEL.COUT          Topcyf                1.195   ad7621_instance/divide_instance/blk00000003/sig000005a1
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/v1_0_and00001
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[0].gm1.m1
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[1].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/carrynet<1>
+    SLICEL.COUT          Tbyp                  0.130   ad7621_instance/divide_instance/blk00000003/sig00000249
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[2].gms.ms
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[3].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/carrynet<3>
+    SLICEL.COUT          Tbyp                  0.130   ad7621_instance/divide_instance/blk00000003/sig00000cb5
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[4].gms.ms
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[5].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/carrynet<5>
+    SLICEL.XB            Tcinxb                0.296   fifo_full
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[6].gms.ms
+    SLICEL.G4            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/comp1
+    SLICEL.Y             Tilo                  0.648   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb_SW0
+    SLICEL.F4            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb_SW0/O
+    SLICEL.X             Tilo                  0.643   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb
+    SLICEL.BY            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb
+    SLICEL.CLK           Tdick                 0.314   fifo_full
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i
+    -------------------------------------------------  ---------------------------
+    Total                                      4.647ns (3.947ns logic, 0.700ns route)
+                                                       (84.9% logic, 15.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     37.030ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_1 (FF)
+  Destination:          fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i (FF)
+  Requirement:          41.666ns
+  Data Path Delay:      4.636ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         sys_2xclk rising at 0.000ns
+  Destination Clock:    sys_2xclk rising at 41.666ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_1 to fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.YQ            Tcko                  0.580   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count<0>
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_1
+    SLICEL.F2            net (fanout=3)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count<1>
+    SLICEL.COUT          Topcyf                1.195   ad7621_instance/divide_instance/blk00000003/sig000005a1
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/v1_0_and00001
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[0].gm1.m1
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[1].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/carrynet<1>
+    SLICEL.COUT          Tbyp                  0.130   ad7621_instance/divide_instance/blk00000003/sig00000249
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[2].gms.ms
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[3].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/carrynet<3>
+    SLICEL.COUT          Tbyp                  0.130   ad7621_instance/divide_instance/blk00000003/sig00000cb5
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[4].gms.ms
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[5].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/carrynet<5>
+    SLICEL.XB            Tcinxb                0.296   fifo_full
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[6].gms.ms
+    SLICEL.G4            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/comp1
+    SLICEL.Y             Tilo                  0.648   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb_SW0
+    SLICEL.F4            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb_SW0/O
+    SLICEL.X             Tilo                  0.643   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb
+    SLICEL.BY            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb
+    SLICEL.CLK           Tdick                 0.314   fifo_full
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i
+    -------------------------------------------------  ---------------------------
+    Total                                      4.636ns (3.936ns logic, 0.700ns route)
+                                                       (84.9% logic, 15.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i (SLICEL.BY), 58 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     37.019ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_0 (FF)
+  Destination:          fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i (FF)
+  Requirement:          41.666ns
+  Data Path Delay:      4.647ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         sys_2xclk rising at 0.000ns
+  Destination Clock:    sys_2xclk rising at 41.666ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_0 to fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.591   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count<0>
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_0
+    SLICEL.F1            net (fanout=3)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count<0>
+    SLICEL.COUT          Topcyf                1.195   ad7621_instance/divide_instance/blk00000003/sig00000cba
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/v1_0_and00001
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[0].gm1.m1
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[1].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/carrynet<1>
+    SLICEL.COUT          Tbyp                  0.130   ad7621_instance/divide_instance/blk00000003/sig00000d52
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[2].gms.ms
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[3].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/carrynet<3>
+    SLICEL.COUT          Tbyp                  0.130   ad7621_instance/divide_instance/blk00000003/sig00000144
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[4].gms.ms
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[5].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/carrynet<5>
+    SLICEL.XB            Tcinxb                0.296   fpga_spi_instance/transmit_data<3>
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[6].gms.ms
+    SLICEL.G1            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/comp1
+    SLICEL.Y             Tilo                  0.648   fifo_empty
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_or0000_SW0
+    SLICEL.F4            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_or0000_SW0/O
+    SLICEL.X             Tilo                  0.643   fifo_empty
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_or0000
+    SLICEL.BY            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_or0000
+    SLICEL.CLK           Tdick                 0.314   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i
+    -------------------------------------------------  ---------------------------
+    Total                                      4.647ns (3.947ns logic, 0.700ns route)
+                                                       (84.9% logic, 15.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     37.019ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1 (FF)
+  Destination:          fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i (FF)
+  Requirement:          41.666ns
+  Data Path Delay:      4.647ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         sys_2xclk rising at 0.000ns
+  Destination Clock:    sys_2xclk rising at 41.666ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1 to fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.591   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1<1>
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1
+    SLICEL.F4            net (fanout=11)    e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1<1>
+    SLICEL.COUT          Topcyf                1.195   ad7621_instance/divide_instance/blk00000003/sig00000cba
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/v1_0_and00001
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[0].gm1.m1
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[1].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/carrynet<1>
+    SLICEL.COUT          Tbyp                  0.130   ad7621_instance/divide_instance/blk00000003/sig00000d52
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[2].gms.ms
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[3].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/carrynet<3>
+    SLICEL.COUT          Tbyp                  0.130   ad7621_instance/divide_instance/blk00000003/sig00000144
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[4].gms.ms
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[5].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/carrynet<5>
+    SLICEL.XB            Tcinxb                0.296   fpga_spi_instance/transmit_data<3>
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[6].gms.ms
+    SLICEL.G1            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/comp1
+    SLICEL.Y             Tilo                  0.648   fifo_empty
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_or0000_SW0
+    SLICEL.F4            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_or0000_SW0/O
+    SLICEL.X             Tilo                  0.643   fifo_empty
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_or0000
+    SLICEL.BY            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_or0000
+    SLICEL.CLK           Tdick                 0.314   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i
+    -------------------------------------------------  ---------------------------
+    Total                                      4.647ns (3.947ns logic, 0.700ns route)
+                                                       (84.9% logic, 15.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     37.030ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_1 (FF)
+  Destination:          fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i (FF)
+  Requirement:          41.666ns
+  Data Path Delay:      4.636ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         sys_2xclk rising at 0.000ns
+  Destination Clock:    sys_2xclk rising at 41.666ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_1 to fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.YQ            Tcko                  0.580   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count<0>
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_1
+    SLICEL.F2            net (fanout=3)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count<1>
+    SLICEL.COUT          Topcyf                1.195   ad7621_instance/divide_instance/blk00000003/sig00000cba
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/v1_0_and00001
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[0].gm1.m1
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[1].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/carrynet<1>
+    SLICEL.COUT          Tbyp                  0.130   ad7621_instance/divide_instance/blk00000003/sig00000d52
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[2].gms.ms
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[3].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/carrynet<3>
+    SLICEL.COUT          Tbyp                  0.130   ad7621_instance/divide_instance/blk00000003/sig00000144
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[4].gms.ms
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[5].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/carrynet<5>
+    SLICEL.XB            Tcinxb                0.296   fpga_spi_instance/transmit_data<3>
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2/gmux.gm[6].gms.ms
+    SLICEL.G1            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/comp1
+    SLICEL.Y             Tilo                  0.648   fifo_empty
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_or0000_SW0
+    SLICEL.F4            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_or0000_SW0/O
+    SLICEL.X             Tilo                  0.643   fifo_empty
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_or0000
+    SLICEL.BY            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_or0000
+    SLICEL.CLK           Tdick                 0.314   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i
+    -------------------------------------------------  ---------------------------
+    Total                                      4.636ns (3.936ns logic, 0.700ns route)
+                                                       (84.9% logic, 15.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i (SLICEL.F4), 30 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     37.354ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0 (FF)
+  Destination:          fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i (FF)
+  Requirement:          41.666ns
+  Data Path Delay:      4.312ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         sys_2xclk rising at 0.000ns
+  Destination Clock:    sys_2xclk rising at 41.666ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0 to fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.591   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count<0>
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0
+    SLICEL.F1            net (fanout=3)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count<0>
+    SLICEL.COUT          Topcyf                1.195   ad7621_instance/divide_instance/blk00000003/sig000005a1
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/v1_0_and00001
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[0].gm1.m1
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[1].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/carrynet<1>
+    SLICEL.COUT          Tbyp                  0.130   ad7621_instance/divide_instance/blk00000003/sig00000249
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[2].gms.ms
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[3].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/carrynet<3>
+    SLICEL.COUT          Tbyp                  0.130   ad7621_instance/divide_instance/blk00000003/sig00000cb5
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[4].gms.ms
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[5].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/carrynet<5>
+    SLICEL.XB            Tcinxb                0.296   fifo_full
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[6].gms.ms
+    SLICEL.G4            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/comp1
+    SLICEL.Y             Tilo                  0.648   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb_SW0
+    SLICEL.F4            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb_SW0/O
+    SLICEL.CLK           Tfck                  0.722   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+    -------------------------------------------------  ---------------------------
+    Total                                      4.312ns (3.712ns logic, 0.600ns route)
+                                                       (86.1% logic, 13.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     37.354ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1 (FF)
+  Destination:          fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i (FF)
+  Requirement:          41.666ns
+  Data Path Delay:      4.312ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         sys_2xclk rising at 0.000ns
+  Destination Clock:    sys_2xclk rising at 41.666ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1 to fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.591   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<1>
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1
+    SLICEL.F4            net (fanout=11)    e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<1>
+    SLICEL.COUT          Topcyf                1.195   ad7621_instance/divide_instance/blk00000003/sig000005a1
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/v1_0_and00001
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[0].gm1.m1
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[1].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/carrynet<1>
+    SLICEL.COUT          Tbyp                  0.130   ad7621_instance/divide_instance/blk00000003/sig00000249
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[2].gms.ms
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[3].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/carrynet<3>
+    SLICEL.COUT          Tbyp                  0.130   ad7621_instance/divide_instance/blk00000003/sig00000cb5
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[4].gms.ms
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[5].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/carrynet<5>
+    SLICEL.XB            Tcinxb                0.296   fifo_full
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[6].gms.ms
+    SLICEL.G4            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/comp1
+    SLICEL.Y             Tilo                  0.648   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb_SW0
+    SLICEL.F4            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb_SW0/O
+    SLICEL.CLK           Tfck                  0.722   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+    -------------------------------------------------  ---------------------------
+    Total                                      4.312ns (3.712ns logic, 0.600ns route)
+                                                       (86.1% logic, 13.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     37.365ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_1 (FF)
+  Destination:          fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i (FF)
+  Requirement:          41.666ns
+  Data Path Delay:      4.301ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         sys_2xclk rising at 0.000ns
+  Destination Clock:    sys_2xclk rising at 41.666ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_1 to fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.YQ            Tcko                  0.580   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count<0>
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_1
+    SLICEL.F2            net (fanout=3)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count<1>
+    SLICEL.COUT          Topcyf                1.195   ad7621_instance/divide_instance/blk00000003/sig000005a1
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/v1_0_and00001
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[0].gm1.m1
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[1].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/carrynet<1>
+    SLICEL.COUT          Tbyp                  0.130   ad7621_instance/divide_instance/blk00000003/sig00000249
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[2].gms.ms
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[3].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/carrynet<3>
+    SLICEL.COUT          Tbyp                  0.130   ad7621_instance/divide_instance/blk00000003/sig00000cb5
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[4].gms.ms
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[5].gms.ms
+    SLICEL.CIN           net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/carrynet<5>
+    SLICEL.XB            Tcinxb                0.296   fifo_full
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1/gmux.gm[6].gms.ms
+    SLICEL.G4            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/comp1
+    SLICEL.Y             Tilo                  0.648   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb_SW0
+    SLICEL.F4            net (fanout=1)     e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb_SW0/O
+    SLICEL.CLK           Tfck                  0.722   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+    -------------------------------------------------  ---------------------------
+    Total                                      4.301ns (3.701ns logic, 0.600ns route)
+                                                       (86.0% logic, 14.0% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clk_wizard_instance_CLK2X_BUF = PERIOD TIMEGRP
+        "clk_wizard_instance_CLK2X_BUF" TS_sys_clk / 2 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram (RAMB16BWE.ADDRA1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.564ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0 (FF)
+  Destination:          fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.564ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         sys_2xclk rising at 0.000ns
+  Destination Clock:    sys_2xclk rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0 to fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.YQ            Tcko                  0.464   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1<1>
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0
+    RAMB16BWE.ADDRA1     net (fanout=11)    e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1<0>
+    RAMB16BWE.CLKA       Trckc_ADDRA (-Th)     0.000   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram
+    -------------------------------------------------  ---------------------------
+    Total                                      0.564ns (0.464ns logic, 0.100ns route)
+                                                       (82.3% logic, 17.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram (RAMB16BWE.ADDRA11), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.564ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_10 (FF)
+  Destination:          fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.564ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         sys_2xclk rising at 0.000ns
+  Destination Clock:    sys_2xclk rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_10 to fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.YQ            Tcko                  0.464   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1<11>
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_10
+    RAMB16BWE.ADDRA11    net (fanout=11)    e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1<10>
+    RAMB16BWE.CLKA       Trckc_ADDRA (-Th)     0.000   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram
+    -------------------------------------------------  ---------------------------
+    Total                                      0.564ns (0.464ns logic, 0.100ns route)
+                                                       (82.3% logic, 17.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram (RAMB16BWE.ADDRA13), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.564ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_12 (FF)
+  Destination:          fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.564ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         sys_2xclk rising at 0.000ns
+  Destination Clock:    sys_2xclk rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_12 to fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.YQ            Tcko                  0.464   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count<12>
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_12
+    RAMB16BWE.ADDRA13    net (fanout=11)    e  0.100   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1<12>
+    RAMB16BWE.CLKA       Trckc_ADDRA (-Th)     0.000   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram
+    -------------------------------------------------  ---------------------------
+    Total                                      0.564ns (0.464ns logic, 0.100ns route)
+                                                       (82.3% logic, 17.7% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk_wizard_instance_CLK2X_BUF = PERIOD TIMEGRP
+        "clk_wizard_instance_CLK2X_BUF" TS_sys_clk / 2 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 38.490ns (period - min period limit)
+  Period: 41.666ns
+  Min period limit: 3.176ns (314.861MHz) ()
+  Physical resource: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram/CLKA
+  Logical resource: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram/CLKA
+  Location pin: RAMB16BWE.CLKA
+  Clock network: sys_2xclk
+--------------------------------------------------------------------------------
+Slack: 38.490ns (period - min period limit)
+  Period: 41.666ns
+  Min period limit: 3.176ns (314.861MHz) ()
+  Physical resource: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram/CLKB
+  Logical resource: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp2x2.ram/CLKB
+  Location pin: RAMB16BWE.CLKB
+  Clock network: sys_2xclk
+--------------------------------------------------------------------------------
+Slack: 38.490ns (period - min period limit)
+  Period: 41.666ns
+  Min period limit: 3.176ns (314.861MHz) ()
+  Physical resource: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp2x2.ram/CLKA
+  Logical resource: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp2x2.ram/CLKA
+  Location pin: RAMB16BWE.CLKA
+  Clock network: sys_2xclk
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_sys_clk
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk                     |     83.333ns|     20.000ns|      9.294ns|            0|            0|            0|        21739|
+| TS_clk_wizard_instance_CLK2X_B|     41.666ns|      4.647ns|          N/A|            0|            0|        21739|            0|
+| UF                            |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock sys_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sys_clk        |    4.647|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 21739 paths, 0 nets, and 4251 connections
+
+Design statistics:
+   Minimum period:  20.000ns{1}   (Maximum frequency:  50.000MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Aug 22 07:24:47 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 391 MB
+
+
+

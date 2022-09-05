@@ -1,0 +1,10 @@
+
+
+
+// Instantiate the module
+fourx_clk instance_name (
+    .CLKIN_IN(CLKIN_IN), 
+    .CLK0_OUT(CLK0_OUT)
+    );
+
+

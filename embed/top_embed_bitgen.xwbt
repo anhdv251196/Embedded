@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/Machine_VB/embed/embed/top_embed.ncd
+OUTFILE=/home/ise/Machine_VB/embed/embed/top_embed.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-4vq100
+WORKINGDIR=/home/ise/Machine_VB/embed/embed
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

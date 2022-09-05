@@ -1,0 +1,66 @@
+Autosize
+FALSE
+s
+Compressed
+FALSE
+s
+Direction
+UP
+s
+File Format
+mcs
+s
+Fill Value
+FF
+s
+Flash Data Width
+8
+s
+Flash Topology
+
+s
+Multiboot
+FALSE
+s
+Multiboot Bpi Chain
+
+s
+Multiboot Bpi Device
+
+s
+Multiboot Bpi Type
+
+s
+Number of Designs
+1
+i32
+Number of Prom Devices
+1
+i32
+PFFName
+filenap
+s
+PFFPath
+/home/ise/Machine_VB/embed/embed/
+s
+PFFSize
+0
+s
+Prom 0 name
+xcf01s
+s
+Prom 0 size
+131072
+i32
+RSPin Msb
+
+s
+SPI Selected
+FALSE
+s
+Submode
+LEGACY
+s
+Swap Bit
+FALSE
+s

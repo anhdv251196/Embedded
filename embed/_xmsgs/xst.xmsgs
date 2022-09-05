@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">../ipcore/fifo_ccd.v</arg>&quot; line <arg fmt="%d" index="2">174</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fifo_ccd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="old" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">X_INTERFACE_INFO</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="old" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">X_INTERFACE_PARAMETER</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">FPGA_VERION</arg>&gt; in unit &lt;<arg fmt="%s" index="2">fpga_spi</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000000000000001</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">FPGA_OFFSETVALUE</arg>&gt; in unit &lt;<arg fmt="%s" index="2">fpga_spi</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000000000000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">sys_rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">FPGA_MAXSATVALUE</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">ad7621_do_ff2</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ad7621_do_ff1&lt;31:16&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">m0_scl_i</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">falling_edge_fifo_rest</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">sys_rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">flag_fifo_data</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">fifo_mosi</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">rise_edge_acqui_src</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">cnt_ff</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="524" delta="old" >All outputs of the instance &lt;<arg fmt="%s" index="1">falling_edge_fifo_instant</arg>&gt; of the block &lt;<arg fmt="%s" index="2">detect_falling_edge</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">ilx511b</arg>&gt;.
+This instance will be removed from the design along with all underlying logic
+</msg>
+
+<msg type="warning" file="Xst" num="524" delta="old" >All outputs of the instance &lt;<arg fmt="%s" index="1">rise_edge_acqui_src_instant</arg>&gt; of the block &lt;<arg fmt="%s" index="2">detect_rising_edge</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">top_embed</arg>&gt;.
+This instance will be removed from the design along with all underlying logic
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fpga_addr_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_spi_instance</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fpga_addr_1&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">sel_ccd_clk</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">make_pulse_instance</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">pixel_ready</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">top_embed</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">transmit_data_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fpga_spi_instance</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">fpga_addr_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fpga_spi_instance</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621_instance</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621_instance</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621_instance</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621_instance</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621_instance</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621_instance</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621_instance</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621_instance</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621_instance</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621_instance</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621_instance</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621_instance</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621_instance</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621_instance</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621_instance</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621_instance</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ad7621_do_ff1_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad7621</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">sel_ccd_clk</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">make_22500pulse</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">FPGA_MAXSATVALUE_14</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">fpga_spi</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">FPGA_MAXSATVALUE_12</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">fpga_spi</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">FPGA_MAXSATVALUE_10</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">fpga_spi</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">FPGA_MAXSATVALUE_8</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">fpga_spi</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">FPGA_MAXSATVALUE_7</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">fpga_spi</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">FPGA_MAXSATVALUE_6</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">fpga_spi</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">FPGA_MAXSATVALUE_5</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">fpga_spi</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">FPGA_MAXSATVALUE_4</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">fpga_spi</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">FPGA_MAXSATVALUE_0</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">fpga_spi</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">transmit_data_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fpga_spi</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">FPGA_MAXSATVALUE_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fpga_spi</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">FPGA_MAXSATVALUE_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fpga_spi</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">FPGA_MAXSATVALUE_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fpga_spi</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">FPGA_MAXSATVALUE_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fpga_spi</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">FPGA_MAXSATVALUE_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fpga_spi</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">FPGA_MAXSATVALUE_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fpga_spi</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">FPGA_MAXSATVALUE_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fpga_spi</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">fpga_addr_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fpga_spi</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">fpga_addr_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fpga_spi</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">pixel_ready</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">top_embed</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">FPGA_MAXSATVALUE_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_spi</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;FPGA_MAXSATVALUE_5&gt; &lt;FPGA_MAXSATVALUE_6&gt; &lt;FPGA_MAXSATVALUE_7&gt; &lt;FPGA_MAXSATVALUE_8&gt; &lt;FPGA_MAXSATVALUE_10&gt; &lt;FPGA_MAXSATVALUE_12&gt; &lt;FPGA_MAXSATVALUE_14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fpga_clk_rise_edge_instance/d_i_ff1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_spi</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fpga_clk_fall_edge_instance/d_i_ff1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fpga_clk_rise_edge_instance/d_i_ff2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_spi</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fpga_clk_fall_edge_instance/d_i_ff2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fpga_clk_rise_edge_instance/d_i_ff3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_spi</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fpga_clk_fall_edge_instance/d_i_ff3&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fpga_spi_instance/FPGA_MAXSATVALUE_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_embed</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fpga_spi_instance/FPGA_MAXSATVALUE_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_embed</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top_embed</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fifo_spi_instance/rise_edge_fifo_clk_instant/d_i_ff1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top_embed</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fifo_spi_instance/rise_edge_fifo_clk_instant/d_i_ff2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top_embed</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fifo_spi_instance/rise_edge_fifo_clk_instant/d_i_ff3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fifo_ccd_instance</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fifo_ccd_instance</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fifo_ccd_instance</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fifo_ccd_instance</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fifo_ccd_instance</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fifo_ccd_instance</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i&gt; </arg>
+</msg>
+
+</messages>
+

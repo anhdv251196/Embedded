@@ -1,0 +1,860 @@
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed_preroute.twx top_embed_map.ncd -o top_embed_preroute.twr top_embed.pcf -ucf /home/ise/Machine_VB/embed/ucf/embed.ucf 
+netgen -intstyle ise -s 4  -pcf top_embed.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim top_embed_map.ncd top_embed_map.v 
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 
+xst -intstyle ise -ifn "/home/ise/Machine_VB/embed/embed/top_embed.xst" -ofn "/home/ise/Machine_VB/embed/embed/top_embed.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore -nt timestamp -uc /home/ise/Machine_VB/embed/ucf/embed.ucf -p xc3s50a-vq100-4 top_embed_cs.ngc top_embed.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -detail -ir off -pr off -c 100 -o top_embed_map.ncd top_embed.ngd top_embed.pcf 
+par -w -intstyle ise -ol high -t 1 top_embed_map.ncd top_embed.ncd top_embed.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_embed.twx top_embed.ncd -o top_embed.twr top_embed.pcf 
+bitgen -intstyle ise -f top_embed.ut top_embed.ncd 

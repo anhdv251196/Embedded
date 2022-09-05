@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;10&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;11&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;15&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;21&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;16&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;22&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;17&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;23&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;18&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;24&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;30&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;25&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;31&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;26&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;32&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;7&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;27&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;33&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;28&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;34&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;29&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">icon_control0&lt;35&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">mux_spi_instance/scl_iobuf_0/O</arg> has no load.
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="warning" file="LIT" num="176" delta="old" >Clock buffer is designated to drive clock loads. <arg fmt="%s" index="1">BUFGMUX symbol &quot;physical_group_spi_clk_IBUF/spi_clk_IBUF_BUFG&quot; (output signal=spi_clk_IBUF)</arg> has a mix of clock and non-clock loads. The non-clock loads are:
+<arg fmt="%s" index="2">Pin D of U_ila_pro_0/U0/I_TQ0.G_TW[0].U_TQ</arg>
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">icon_control0&lt;13&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="772" delta="old" >To achieve optimal frequency synthesis performance with the CLKFX and CLKFX180 outputs of the DCM comp <arg fmt="%s" index="1">clk_wizard_instance/DCM_SP_INST</arg>, consult the device Interactive Data Sheet.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1155" delta="old" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x9.ram</arg>&gt;:&lt;<arg fmt="%s" index="2">RAMB16BWE_RAMB16BWE</arg>&gt;.  The block is configured to use input parity pin DIAP0. There is dangling output for parity pin DOPA0.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB0</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB1</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB2</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB3</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB4</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB5</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB6</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB7</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB8</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB9</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB10</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB11</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB12</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB13</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB14</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB15</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB16</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB17</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB18</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB19</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB20</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB21</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB22</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB23</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB24</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB25</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB26</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB27</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB28</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB29</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB30</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB31</arg>&gt; on block:&lt;<arg fmt="%s" index="2">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+</messages>
+

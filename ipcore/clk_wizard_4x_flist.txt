@@ -1,0 +1,2 @@
+# Output products list for <clk_wizard_4x>
+clk_wizard_4x_flist.txt

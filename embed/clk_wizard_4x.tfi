@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+clk_wizard_4x instance_name (
+    .CLKIN_IN(CLKIN_IN), 
+    .CLK0_OUT(CLK0_OUT), 
+    .CLK0_OUT1(CLK0_OUT1), 
+    .CLK2X_OUT(CLK2X_OUT)
+    );
+
+

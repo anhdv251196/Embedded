@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/Machine_VB/embed/embed/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/Machine_VB/embed/embed/xst"
+elaborate
+-ifn fpga_spi.prj
+-ifmt mixed

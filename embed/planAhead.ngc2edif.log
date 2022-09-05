@@ -1,0 +1,86 @@
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design top_embed.ngc ...
+WARNING:NetListWriters:298 - No output is written to top_embed.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   ad7621_instance/Mcompar_ad7621_fifo_do_cmp_gt0000_lut<5 : 0> on block
+   top_embed is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ad7621_instance/Mcompar_ad7621_fifo_do_cmp_lt0000_lut<5 : 1> on block
+   top_embed is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus fpga_spi_instance/FPGA_MAXSATVALUE<4 :
+   0> on block top_embed is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus fpga_spi_instance/receive_data<7 : 0> on
+   block top_embed is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus fpga_spi_instance/transmit_data<10 : 1>
+   on block top_embed is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   fpga_spi_instance/transmit_data_mux0000<15 : 0> on block top_embed is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file top_embed.edif ...
+ngc2edif: Total memory usage is 105312 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design fifo_ccd.ngc ...
+WARNING:NetListWriters:298 - No output is written to fifo_ccd.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2 : 0> on block
+   fifo_ccd is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file fifo_ccd.edif ...
+ngc2edif: Total memory usage is 104588 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design top_embed.ngc ...
+WARNING:NetListWriters:298 - No output is written to top_embed.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   ad7621_instance/Mcompar_ad7621_fifo_do_cmp_gt0000_lut<5 : 0> on block
+   top_embed is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ad7621_instance/Mcompar_ad7621_fifo_do_cmp_lt0000_lut<5 : 1> on block
+   top_embed is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus fpga_spi_instance/FPGA_MAXSATVALUE<4 :
+   0> on block top_embed is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus fpga_spi_instance/receive_data<7 : 0> on
+   block top_embed is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus fpga_spi_instance/transmit_data<10 : 1>
+   on block top_embed is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   fpga_spi_instance/transmit_data_mux0000<15 : 0> on block top_embed is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file top_embed.edif ...
+ngc2edif: Total memory usage is 105308 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design fifo_ccd.ngc ...
+WARNING:NetListWriters:298 - No output is written to fifo_ccd.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2 : 0> on block
+   fifo_ccd is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file fifo_ccd.edif ...
+ngc2edif: Total memory usage is 104588 kilobytes
+

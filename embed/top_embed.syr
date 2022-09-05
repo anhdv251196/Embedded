@@ -1,0 +1,923 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: top_embed.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_embed.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_embed"
+Output Format                      : NGC
+Target Device                      : xc3s50a-4-vq100
+
+---- Source Options
+Top Module Name                    : top_embed
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../ipcore"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../rtl/detect_rising_edge.v" in library work
+Compiling verilog file "../rtl/detect_falling_edge.v" in library work
+Module <detect_rising_edge> compiled
+Compiling verilog file "../rtl/mux_data_spi.v" in library work
+Module <detect_falling_edge> compiled
+Compiling verilog file "../rtl/make_22500pulse.v" in library work
+Compiling verilog include file "/home/ise/Machine_VB/embed/include/define.h"
+Module <mux_data_spi> compiled
+Compiling verilog file "../rtl/ilx511b.v" in library work
+Compiling verilog include file "/home/ise/Machine_VB/embed/include/define.h"
+Module <make_22500pulse> compiled
+Compiling verilog file "../rtl/fpga_spi.v" in library work
+Module <ilx511b> compiled
+Compiling verilog file "../rtl/fifo_spi.v" in library work
+Module <fpga_spi> compiled
+Compiling verilog file "../rtl/ad7621.v" in library work
+Module <fifo_spi> compiled
+Compiling verilog file "../ipcore/fifo_ccd.v" in library work
+Module <ad7621> compiled
+Compiling verilog file "clock_wizard.v" in library work
+Module <fifo_ccd> compiled
+Compiling verilog file "../rtl/top_embed.v" in library work
+Module <clock_wizard> compiled
+Compiling verilog file "clk_wizard_4x.v" in library work
+Module <top_embed> compiled
+Compiling verilog file "make_clk.v" in library work
+Module <clk_wizard_4x> compiled
+Module <make_clk> compiled
+No errors in compilation
+Analysis of file <"top_embed.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <top_embed> in library <work>.
+
+Analyzing hierarchy for module <clock_wizard> in library <work>.
+
+Analyzing hierarchy for module <mux_data_spi> in library <work>.
+
+Analyzing hierarchy for module <fpga_spi> in library <work> with parameters.
+	version = "00000000000000000000000000000001"
+
+Analyzing hierarchy for module <ilx511b> in library <work>.
+
+Analyzing hierarchy for module <make_22500pulse> in library <work>.
+
+Analyzing hierarchy for module <ad7621> in library <work>.
+
+Analyzing hierarchy for module <detect_rising_edge> in library <work>.
+
+Analyzing hierarchy for module <fifo_spi> in library <work>.
+
+Analyzing hierarchy for module <detect_falling_edge> in library <work>.
+
+Analyzing hierarchy for module <detect_rising_edge> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <top_embed>.
+WARNING:Xst:2211 - "../ipcore/fifo_ccd.v" line 174: Instantiating black box module <fifo_ccd>.
+Module <top_embed> is correct for synthesis.
+ 
+Analyzing module <clock_wizard> in library <work>.
+Module <clock_wizard> is correct for synthesis.
+ 
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <CLKIN_IBUFG_INST> in unit <clock_wizard>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <CLKIN_IBUFG_INST> in unit <clock_wizard>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <CLKIN_IBUFG_INST> in unit <clock_wizard>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CLKIN_IBUFG_INST> in unit <clock_wizard>.
+    Set user-defined property "CLKDV_DIVIDE =  2.000000" for instance <DCM_SP_INST> in unit <clock_wizard>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <DCM_SP_INST> in unit <clock_wizard>.
+    Set user-defined property "CLKFX_MULTIPLY =  4" for instance <DCM_SP_INST> in unit <clock_wizard>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_SP_INST> in unit <clock_wizard>.
+    Set user-defined property "CLKIN_PERIOD =  83.333000" for instance <DCM_SP_INST> in unit <clock_wizard>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_SP_INST> in unit <clock_wizard>.
+    Set user-defined property "CLK_FEEDBACK =  2X" for instance <DCM_SP_INST> in unit <clock_wizard>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_SP_INST> in unit <clock_wizard>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_SP_INST> in unit <clock_wizard>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_SP_INST> in unit <clock_wizard>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_SP_INST> in unit <clock_wizard>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_SP_INST> in unit <clock_wizard>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_SP_INST> in unit <clock_wizard>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_SP_INST> in unit <clock_wizard>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_SP_INST> in unit <clock_wizard>.
+Analyzing module <mux_data_spi> in library <work>.
+Module <mux_data_spi> is correct for synthesis.
+ 
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <scl_iobuf_0> in unit <mux_data_spi>.
+    Set user-defined property "DRIVE =  12" for instance <scl_iobuf_0> in unit <mux_data_spi>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <scl_iobuf_0> in unit <mux_data_spi>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <scl_iobuf_0> in unit <mux_data_spi>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <scl_iobuf_0> in unit <mux_data_spi>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <scl_iobuf_0> in unit <mux_data_spi>.
+    Set user-defined property "SLEW =  SLOW" for instance <scl_iobuf_0> in unit <mux_data_spi>.
+Analyzing module <fpga_spi> in library <work>.
+	version = 32'sb00000000000000000000000000000001
+Module <fpga_spi> is correct for synthesis.
+ 
+Analyzing module <detect_falling_edge> in library <work>.
+Module <detect_falling_edge> is correct for synthesis.
+ 
+Analyzing module <ilx511b> in library <work>.
+Module <ilx511b> is correct for synthesis.
+ 
+Analyzing module <make_22500pulse> in library <work>.
+Module <make_22500pulse> is correct for synthesis.
+ 
+Analyzing module <ad7621> in library <work>.
+Module <ad7621> is correct for synthesis.
+ 
+WARNING:Xst:37 - Detected unknown constraint/property "X_INTERFACE_INFO". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "X_INTERFACE_PARAMETER". This constraint/property is not supported by the current software release and will be ignored.
+Analyzing module <detect_rising_edge> in library <work>.
+Module <detect_rising_edge> is correct for synthesis.
+ 
+Analyzing module <fifo_spi> in library <work>.
+Module <fifo_spi> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <FPGA_VERION> in unit <fpga_spi> has a constant value of 0000000000000001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <FPGA_OFFSETVALUE> in unit <fpga_spi> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <make_22500pulse>.
+    Related source file is "../rtl/make_22500pulse.v".
+WARNING:Xst:647 - Input <sys_rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <clk_2_5Mhz>.
+    Found 1-bit register for signal <sel_ccd_clk>.
+    Found 6-bit up counter for signal <cnt_make_2_5Mhz>.
+    Found 18-bit up counter for signal <cnt_pulse>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <make_22500pulse> synthesized.
+
+
+Synthesizing Unit <ad7621>.
+    Related source file is "../rtl/ad7621.v".
+WARNING:Xst:647 - Input <FPGA_MAXSATVALUE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <ad7621_do_ff2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ad7621_do_ff1<31:16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16-bit register for signal <ad7621_fifo_do>.
+    Found 1-bit register for signal <ad7621_convst>.
+    Found 1-bit register for signal <ad7621_flag_fifo_do>.
+    Found 1-bit register for signal <ad7621_busy_ff>.
+    Found 32-bit register for signal <ad7621_do_ff1>.
+    Found 18-bit subtractor for signal <ad7621_do_ff1$sub0000> created at line 87.
+    Found 16-bit comparator greater for signal <ad7621_fifo_do$cmp_gt0000> created at line 84.
+    Found 16-bit comparator less for signal <ad7621_fifo_do$cmp_lt0000> created at line 84.
+    Found 16-bit comparator greatequal for signal <ad7621_flag_fifo_do$cmp_ge0000> created at line 84.
+    Found 16-bit comparator lessequal for signal <ad7621_flag_fifo_do$cmp_le0000> created at line 84.
+    Found 1-bit register for signal <ad7621_start_ff>.
+    Found 16-bit up counter for signal <cnt_rd_pixel>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  52 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <ad7621> synthesized.
+
+
+Synthesizing Unit <detect_rising_edge>.
+    Related source file is "../rtl/detect_rising_edge.v".
+    Found 1-bit register for signal <d_i_ff1>.
+    Found 1-bit register for signal <d_i_ff2>.
+    Found 1-bit register for signal <d_i_ff3>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <detect_rising_edge> synthesized.
+
+
+Synthesizing Unit <detect_falling_edge>.
+    Related source file is "../rtl/detect_falling_edge.v".
+    Found 1-bit register for signal <d_i_ff1>.
+    Found 1-bit register for signal <d_i_ff2>.
+    Found 1-bit register for signal <d_i_ff3>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <detect_falling_edge> synthesized.
+
+
+Synthesizing Unit <clock_wizard>.
+    Related source file is "clock_wizard.v".
+Unit <clock_wizard> synthesized.
+
+
+Synthesizing Unit <mux_data_spi>.
+    Related source file is "../rtl/mux_data_spi.v".
+WARNING:Xst:646 - Signal <m0_scl_i> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <mux_data_spi> synthesized.
+
+
+Synthesizing Unit <fpga_spi>.
+    Related source file is "../rtl/fpga_spi.v".
+    Found 16-bit register for signal <FPGA_SSLOWDELAY>.
+    Found 16-bit register for signal <FPGA_SSHIGHDELAY>.
+    Found 16-bit register for signal <FPGA_INTCLOCK>.
+    Found 16-bit register for signal <FPGA_MAXSATVALUE>.
+    Found 16-bit register for signal <FPGA_COUNTBASE>.
+    Found 1-bit register for signal <fpga_miso>.
+    Found 16-bit register for signal <FPGA_LAMPENABLE>.
+    Found 16-bit register for signal <FPGA_STRBCOUNT>.
+    Found 1-bit 17-to-1 multiplexer for signal <$varindex0000> created at line 145.
+    Found 5-bit down counter for signal <cnt_shift_data>.
+    Found 5-bit comparator greatequal for signal <cnt_shift_data$cmp_ge0000> created at line 142.
+    Found 5-bit comparator lessequal for signal <cnt_shift_data$cmp_le0000> created at line 142.
+    Found 5-bit up counter for signal <cnt_spi>.
+    Found 8-bit register for signal <fpga_addr>.
+    Found 24-bit register for signal <receive_data>.
+    Found 1-bit register for signal <Rx_Done>.
+    Found 17-bit register for signal <transmit_data>.
+    Found 1-bit register for signal <wr_or_rd>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred 164 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <fpga_spi> synthesized.
+
+
+Synthesizing Unit <ilx511b>.
+    Related source file is "../rtl/ilx511b.v".
+WARNING:Xst:646 - Signal <falling_edge_fifo_rest> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <ilx511b_clk>.
+    Found 1-bit register for signal <ilx511b_rog>.
+    Found 16-bit up counter for signal <cnt_1khz>.
+    Found 16-bit up counter for signal <cnt_clk_delay_after_rise_rog>.
+    Found 16-bit up counter for signal <cnt_intclk>.
+    Found 16-bit up counter for signal <cnt_make_smp_clk>.
+    Found 16-bit up counter for signal <cnt_smp>.
+    Found 1-bit register for signal <en_delay_clk>.
+    Found 1-bit register for signal <en_intclk>.
+    Found 1-bit register for signal <flag_en_smp_data>.
+    Found 1-bit register for signal <flag_smp_data>.
+    Found 1-bit register for signal <integ_done>.
+    Found 16-bit comparator not equal for signal <integ_done$cmp_ne0000> created at line 93.
+    Summary:
+	inferred   5 Counter(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <ilx511b> synthesized.
+
+
+Synthesizing Unit <fifo_spi>.
+    Related source file is "../rtl/fifo_spi.v".
+WARNING:Xst:647 - Input <sys_rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <flag_fifo_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <fifo_mosi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <fifo_miso>.
+    Found 16-bit register for signal <data_tranfer>.
+    Found 1-bit register for signal <flag_fifo_data_ff>.
+    Summary:
+	inferred  18 D-type flip-flop(s).
+Unit <fifo_spi> synthesized.
+
+
+Synthesizing Unit <top_embed>.
+    Related source file is "../rtl/top_embed.v".
+WARNING:Xst:646 - Signal <rise_edge_acqui_src> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cnt_ff> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <pixel_ready>.
+    Found 16-bit comparator greater for signal <single_strobe>.
+    Found 16-bit up counter for signal <cnt_fifo>.
+    Found 11-bit comparator greatequal for signal <pixel_ready$cmp_ge0000> created at line 189.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <top_embed> synthesized.
+
+WARNING:Xst:524 - All outputs of the instance <falling_edge_fifo_instant> of the block <detect_falling_edge> are unconnected in block <ilx511b>.
+   This instance will be removed from the design along with all underlying logic
+WARNING:Xst:524 - All outputs of the instance <rise_edge_acqui_src_instant> of the block <detect_rising_edge> are unconnected in block <top_embed>.
+   This instance will be removed from the design along with all underlying logic
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 18-bit subtractor                                     : 1
+# Counters                                             : 11
+ 16-bit up counter                                     : 7
+ 18-bit up counter                                     : 1
+ 5-bit down counter                                    : 1
+ 5-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 53
+ 1-bit register                                        : 40
+ 16-bit register                                       : 9
+ 17-bit register                                       : 1
+ 24-bit register                                       : 1
+ 32-bit register                                       : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 9
+ 11-bit comparator greatequal                          : 1
+ 16-bit comparator greatequal                          : 1
+ 16-bit comparator greater                             : 2
+ 16-bit comparator less                                : 1
+ 16-bit comparator lessequal                           : 1
+ 16-bit comparator not equal                           : 1
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 1
+ 1-bit 17-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../ipcore/fifo_ccd.ngc>.
+Loading core <fifo_ccd> for timing and area information for instance <fifo_ccd_instance>.
+INFO:Xst:2261 - The FF/Latch <fpga_addr_0> in Unit <fpga_spi_instance> is equivalent to the following FF/Latch, which will be removed : <fpga_addr_1> 
+WARNING:Xst:1426 - The value init of the FF/Latch sel_ccd_clk hinder the constant cleaning in the block make_pulse_instance.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch pixel_ready hinder the constant cleaning in the block top_embed.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <transmit_data_0> has a constant value of 0 in block <fpga_spi_instance>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fpga_addr_0> has a constant value of 0 in block <fpga_spi_instance>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_16> of sequential type is unconnected in block <ad7621_instance>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_17> of sequential type is unconnected in block <ad7621_instance>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_18> of sequential type is unconnected in block <ad7621_instance>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_19> of sequential type is unconnected in block <ad7621_instance>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_20> of sequential type is unconnected in block <ad7621_instance>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_21> of sequential type is unconnected in block <ad7621_instance>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_22> of sequential type is unconnected in block <ad7621_instance>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_23> of sequential type is unconnected in block <ad7621_instance>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_24> of sequential type is unconnected in block <ad7621_instance>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_25> of sequential type is unconnected in block <ad7621_instance>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_26> of sequential type is unconnected in block <ad7621_instance>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_27> of sequential type is unconnected in block <ad7621_instance>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_28> of sequential type is unconnected in block <ad7621_instance>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_29> of sequential type is unconnected in block <ad7621_instance>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_30> of sequential type is unconnected in block <ad7621_instance>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_31> of sequential type is unconnected in block <ad7621_instance>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_16> of sequential type is unconnected in block <ad7621>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_17> of sequential type is unconnected in block <ad7621>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_18> of sequential type is unconnected in block <ad7621>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_19> of sequential type is unconnected in block <ad7621>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_20> of sequential type is unconnected in block <ad7621>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_21> of sequential type is unconnected in block <ad7621>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_22> of sequential type is unconnected in block <ad7621>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_23> of sequential type is unconnected in block <ad7621>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_24> of sequential type is unconnected in block <ad7621>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_25> of sequential type is unconnected in block <ad7621>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_26> of sequential type is unconnected in block <ad7621>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_27> of sequential type is unconnected in block <ad7621>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_28> of sequential type is unconnected in block <ad7621>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_29> of sequential type is unconnected in block <ad7621>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_30> of sequential type is unconnected in block <ad7621>.
+WARNING:Xst:2677 - Node <ad7621_do_ff1_31> of sequential type is unconnected in block <ad7621>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 18-bit subtractor                                     : 1
+# Counters                                             : 11
+ 16-bit up counter                                     : 7
+ 18-bit up counter                                     : 1
+ 5-bit down counter                                    : 1
+ 5-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 249
+ Flip-Flops                                            : 249
+# Comparators                                          : 9
+ 11-bit comparator greatequal                          : 1
+ 16-bit comparator greatequal                          : 1
+ 16-bit comparator greater                             : 2
+ 16-bit comparator less                                : 1
+ 16-bit comparator lessequal                           : 1
+ 16-bit comparator not equal                           : 1
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 1
+ 1-bit 17-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch sel_ccd_clk hinder the constant cleaning in the block make_22500pulse.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch FPGA_MAXSATVALUE_14 hinder the constant cleaning in the block fpga_spi.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch FPGA_MAXSATVALUE_12 hinder the constant cleaning in the block fpga_spi.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch FPGA_MAXSATVALUE_10 hinder the constant cleaning in the block fpga_spi.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch FPGA_MAXSATVALUE_8 hinder the constant cleaning in the block fpga_spi.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch FPGA_MAXSATVALUE_7 hinder the constant cleaning in the block fpga_spi.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch FPGA_MAXSATVALUE_6 hinder the constant cleaning in the block fpga_spi.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch FPGA_MAXSATVALUE_5 hinder the constant cleaning in the block fpga_spi.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch FPGA_MAXSATVALUE_4 hinder the constant cleaning in the block fpga_spi.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch FPGA_MAXSATVALUE_0 hinder the constant cleaning in the block fpga_spi.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch <transmit_data_0> has a constant value of 0 in block <fpga_spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FPGA_MAXSATVALUE_1> has a constant value of 0 in block <fpga_spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FPGA_MAXSATVALUE_2> has a constant value of 0 in block <fpga_spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FPGA_MAXSATVALUE_3> has a constant value of 0 in block <fpga_spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FPGA_MAXSATVALUE_9> has a constant value of 0 in block <fpga_spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FPGA_MAXSATVALUE_11> has a constant value of 0 in block <fpga_spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FPGA_MAXSATVALUE_13> has a constant value of 0 in block <fpga_spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FPGA_MAXSATVALUE_15> has a constant value of 0 in block <fpga_spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fpga_addr_0> has a constant value of 0 in block <fpga_spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fpga_addr_1> has a constant value of 0 in block <fpga_spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch pixel_ready hinder the constant cleaning in the block top_embed.
+   You should achieve better results by setting this init to 1.
+INFO:Xst:2261 - The FF/Latch <FPGA_MAXSATVALUE_4> in Unit <fpga_spi> is equivalent to the following 7 FFs/Latches, which will be removed : <FPGA_MAXSATVALUE_5> <FPGA_MAXSATVALUE_6> <FPGA_MAXSATVALUE_7> <FPGA_MAXSATVALUE_8> <FPGA_MAXSATVALUE_10> <FPGA_MAXSATVALUE_12> <FPGA_MAXSATVALUE_14> 
+INFO:Xst:2261 - The FF/Latch <fpga_clk_rise_edge_instance/d_i_ff1> in Unit <fpga_spi> is equivalent to the following FF/Latch, which will be removed : <fpga_clk_fall_edge_instance/d_i_ff1> 
+INFO:Xst:2261 - The FF/Latch <fpga_clk_rise_edge_instance/d_i_ff2> in Unit <fpga_spi> is equivalent to the following FF/Latch, which will be removed : <fpga_clk_fall_edge_instance/d_i_ff2> 
+INFO:Xst:2261 - The FF/Latch <fpga_clk_rise_edge_instance/d_i_ff3> in Unit <fpga_spi> is equivalent to the following FF/Latch, which will be removed : <fpga_clk_fall_edge_instance/d_i_ff3> 
+
+Optimizing unit <top_embed> ...
+
+Optimizing unit <make_22500pulse> ...
+
+Optimizing unit <ad7621> ...
+
+Optimizing unit <fpga_spi> ...
+
+Optimizing unit <ilx511b> ...
+
+Optimizing unit <fifo_spi> ...
+WARNING:Xst:2677 - Node <fpga_spi_instance/FPGA_MAXSATVALUE_4> of sequential type is unconnected in block <top_embed>.
+WARNING:Xst:2677 - Node <fpga_spi_instance/FPGA_MAXSATVALUE_0> of sequential type is unconnected in block <top_embed>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff1> in Unit <top_embed> is equivalent to the following FF/Latch, which will be removed : <fifo_spi_instance/rise_edge_fifo_clk_instant/d_i_ff1> 
+INFO:Xst:2261 - The FF/Latch <fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff2> in Unit <top_embed> is equivalent to the following FF/Latch, which will be removed : <fifo_spi_instance/rise_edge_fifo_clk_instant/d_i_ff2> 
+INFO:Xst:2261 - The FF/Latch <fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff3> in Unit <top_embed> is equivalent to the following FF/Latch, which will be removed : <fifo_spi_instance/rise_edge_fifo_clk_instant/d_i_ff3> 
+Found area constraint ratio of 100 (+ 5) on block top_embed, actual ratio is 48.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <fifo_ccd_instance> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <fifo_ccd_instance> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <fifo_ccd_instance> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <fifo_ccd_instance> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <fifo_ccd_instance> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <fifo_ccd_instance> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+FlipFlop fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff2 has been replicated 1 time(s)
+FlipFlop fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <top_embed> :
+	Found 2-bit shift register for signal <fpga_spi_instance/fpga_cs_rise_edge_instance/d_i_ff2>.
+	Found 3-bit shift register for signal <fpga_spi_instance/receive_data_18>.
+	Found 2-bit shift register for signal <fifo_spi_instance/fall_edge_fifo_instant/d_i_ff2>.
+Unit <top_embed> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 365
+ Flip-Flops                                            : 365
+# Shift Registers                                      : 3
+ 2-bit shift register                                  : 2
+ 3-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top_embed.ngr
+Top Level Output File Name         : top_embed
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 39
+
+Cell Usage :
+# BELS                             : 897
+#      GND                         : 2
+#      INV                         : 36
+#      LUT1                        : 146
+#      LUT2                        : 25
+#      LUT2_D                      : 3
+#      LUT2_L                      : 1
+#      LUT3                        : 59
+#      LUT3_D                      : 1
+#      LUT3_L                      : 3
+#      LUT4                        : 173
+#      LUT4_L                      : 4
+#      MUXCY                       : 220
+#      MUXF5                       : 40
+#      MUXF6                       : 2
+#      MUXF7                       : 1
+#      VCC                         : 2
+#      XORCY                       : 179
+# FlipFlops/Latches                : 440
+#      FD                          : 20
+#      FDC                         : 1
+#      FDCE                        : 53
+#      FDE                         : 105
+#      FDP                         : 10
+#      FDPE                        : 4
+#      FDR                         : 33
+#      FDRE                        : 192
+#      FDS                         : 1
+#      FDSE                        : 21
+# RAMS                             : 2
+#      RAMB16BWE                   : 2
+# Shift Registers                  : 3
+#      SRL16                       : 2
+#      SRL16E                      : 1
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 39
+#      IBUF                        : 27
+#      IBUFG                       : 1
+#      IOBUF                       : 1
+#      OBUF                        : 10
+# DCMs                             : 1
+#      DCM_SP                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50avq100-4 
+
+ Number of Slices:                      336  out of    704    47%  
+ Number of Slice Flip Flops:            440  out of   1408    31%  
+ Number of 4 input LUTs:                454  out of   1408    32%  
+    Number used as logic:               451
+    Number used as Shift registers:       3
+ Number of IOs:                          39
+ Number of bonded IOBs:                  39  out of     68    57%  
+ Number of BRAMs:                         2  out of      3    66%  
+ Number of GCLKs:                         3  out of     24    12%  
+ Number of DCMs:                          1  out of      2    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                | Load  |
+-----------------------------------+--------------------------------------+-------+
+sys_clk                            | clk_wizard_instance/DCM_SP_INST:CLK2X| 246   |
+spi_clk                            | IBUF+BUFG                            | 16    |
+sys_clk                            | clk_wizard_instance/DCM_SP_INST:CLKFX| 183   |
+-----------------------------------+--------------------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                     | Buffer(FF name)                                                                                                   | Load  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-------+
+fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/count_0) | 35    |
+fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0)          | 22    |
+xreset                                                                                                                                                             | IBUF                                                                                                              | 6     |
+fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)  | NONE(fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0)                             | 2     |
+fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)             | NONE(fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i)| 2     |
+fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)  | NONE(fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1)                             | 1     |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 23.636ns (Maximum Frequency: 42.308MHz)
+   Minimum input arrival time before clock: 5.485ns
+   Maximum output required time after clock: 8.868ns
+   Maximum combinational path delay: 7.443ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sys_clk'
+  Clock period: 23.636ns (frequency: 42.308MHz)
+  Total number of paths / destination ports: 7303 / 950
+-------------------------------------------------------------------------
+Delay:               5.909ns (Levels of Logic = 13)
+  Source:            fifo_spi_instance/fall_edge_fifo_instant/d_i_ff2 (FF)
+  Destination:       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/count_10 (FF)
+  Source Clock:      sys_clk rising 4.0X
+  Destination Clock: sys_clk rising 2.0X
+
+  Data Path: fifo_spi_instance/fall_edge_fifo_instant/d_i_ff2 to fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/count_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.591   0.563  fifo_spi_instance/fall_edge_fifo_instant/d_i_ff2 (fifo_spi_instance/fall_edge_fifo_instant/d_i_ff2)
+     LUT3:I2->O           18   0.648   1.211  _and00011 (_and0001)
+     begin scope: 'fifo_ccd_instance'
+     LUT3:I0->O            1   0.648   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_lut<1> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<1> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<2> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<3> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<4> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<5> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<6> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<7> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<8> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<8>)
+     MUXCY:CI->O           0   0.065   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<9> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<9>)
+     XORCY:CI->O           1   0.844   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_xor<10> (Result<10>)
+     FDCE:D                    0.252          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/count_10
+    ----------------------------------------
+    Total                      5.909ns (4.135ns logic, 1.774ns route)
+                                       (70.0% logic, 30.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'spi_clk'
+  Clock period: 4.402ns (frequency: 227.169MHz)
+  Total number of paths / destination ports: 136 / 16
+-------------------------------------------------------------------------
+Delay:               4.402ns (Levels of Logic = 16)
+  Source:            cnt_fifo_1 (FF)
+  Destination:       cnt_fifo_15 (FF)
+  Source Clock:      spi_clk rising
+  Destination Clock: spi_clk rising
+
+  Data Path: cnt_fifo_1 to cnt_fifo_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.590  cnt_fifo_1 (cnt_fifo_1)
+     LUT1:I0->O            1   0.648   0.000  Mcount_cnt_fifo_cy<1>_rt (Mcount_cnt_fifo_cy<1>_rt)
+     MUXCY:S->O            1   0.632   0.000  Mcount_cnt_fifo_cy<1> (Mcount_cnt_fifo_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_cnt_fifo_cy<2> (Mcount_cnt_fifo_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_cnt_fifo_cy<3> (Mcount_cnt_fifo_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_cnt_fifo_cy<4> (Mcount_cnt_fifo_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_cnt_fifo_cy<5> (Mcount_cnt_fifo_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_cnt_fifo_cy<6> (Mcount_cnt_fifo_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_cnt_fifo_cy<7> (Mcount_cnt_fifo_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_cnt_fifo_cy<8> (Mcount_cnt_fifo_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_cnt_fifo_cy<9> (Mcount_cnt_fifo_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_cnt_fifo_cy<10> (Mcount_cnt_fifo_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_cnt_fifo_cy<11> (Mcount_cnt_fifo_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_cnt_fifo_cy<12> (Mcount_cnt_fifo_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_cnt_fifo_cy<13> (Mcount_cnt_fifo_cy<13>)
+     MUXCY:CI->O           0   0.065   0.000  Mcount_cnt_fifo_cy<14> (Mcount_cnt_fifo_cy<14>)
+     XORCY:CI->O           1   0.844   0.000  Mcount_cnt_fifo_xor<15> (Result<15>)
+     FDE:D                     0.252          cnt_fifo_15
+    ----------------------------------------
+    Total                      4.402ns (3.812ns logic, 0.590ns route)
+                                       (86.6% logic, 13.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'spi_clk'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              3.430ns (Levels of Logic = 2)
+  Source:            fifo_cs (PAD)
+  Destination:       cnt_fifo_0 (FF)
+  Destination Clock: spi_clk rising
+
+  Data Path: fifo_cs to cnt_fifo_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.849   0.587  fifo_cs_IBUF (fifo_cs_IBUF)
+     INV:I->O             16   0.648   1.034  fifo_cs_inv1_INV_0 (fifo_cs_inv)
+     FDE:CE                    0.312          cnt_fifo_0
+    ----------------------------------------
+    Total                      3.430ns (1.809ns logic, 1.621ns route)
+                                       (52.7% logic, 47.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sys_clk'
+  Total number of paths / destination ports: 618 / 347
+-------------------------------------------------------------------------
+Offset:              5.485ns (Levels of Logic = 4)
+  Source:            fpga_cs (PAD)
+  Destination:       fpga_spi_instance/fpga_addr_7 (FF)
+  Destination Clock: sys_clk rising 4.0X
+
+  Data Path: fpga_cs to fpga_spi_instance/fpga_addr_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.849   0.776  fpga_cs_IBUF (fpga_cs_IBUF)
+     LUT3:I0->O            8   0.648   0.760  fpga_spi_instance/Rx_Done_not000111 (fpga_spi_instance/cnt_spi_and0000)
+     LUT4_L:I3->LO         1   0.648   0.180  fpga_spi_instance/fpga_addr_not000131 (fpga_spi_instance/receive_data_not0001)
+     LUT2:I1->O            6   0.643   0.669  fpga_spi_instance/fpga_addr_not00011 (fpga_spi_instance/fpga_addr_not0001)
+     FDE:CE                    0.312          fpga_spi_instance/fpga_addr_2
+    ----------------------------------------
+    Total                      5.485ns (3.100ns logic, 2.385ns route)
+                                       (56.5% logic, 43.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sys_clk'
+  Total number of paths / destination ports: 9 / 5
+-------------------------------------------------------------------------
+Offset:              6.977ns (Levels of Logic = 3)
+  Source:            fifo_spi_instance/fifo_miso (FF)
+  Destination:       spi_miso (PAD)
+  Source Clock:      sys_clk rising 4.0X
+
+  Data Path: fifo_spi_instance/fifo_miso to spi_miso
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.527  fifo_spi_instance/fifo_miso (fifo_spi_instance/fifo_miso)
+     LUT3:I1->O            1   0.643   0.000  mux_spi_instance/m0_scl_o2 (mux_spi_instance/m0_scl_o2)
+     MUXF5:I0->O           1   0.276   0.420  mux_spi_instance/m0_scl_o_f5 (mux_spi_instance/m0_scl_o)
+     IOBUF:I->IO               4.520          mux_spi_instance/scl_iobuf_0 (spi_miso)
+    ----------------------------------------
+    Total                      6.977ns (6.030ns logic, 0.947ns route)
+                                       (86.4% logic, 13.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'spi_clk'
+  Total number of paths / destination ports: 15 / 1
+-------------------------------------------------------------------------
+Offset:              8.868ns (Levels of Logic = 7)
+  Source:            cnt_fifo_1 (FF)
+  Destination:       single_strobe (PAD)
+  Source Clock:      spi_clk rising
+
+  Data Path: cnt_fifo_1 to single_strobe
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.590  cnt_fifo_1 (cnt_fifo_1)
+     LUT4:I0->O            1   0.648   0.000  Mcompar_single_strobe_lut<0> (Mcompar_single_strobe_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  Mcompar_single_strobe_cy<0> (Mcompar_single_strobe_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_single_strobe_cy<1> (Mcompar_single_strobe_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_single_strobe_cy<2> (Mcompar_single_strobe_cy<2>)
+     MUXCY:CI->O           1   0.269   0.420  Mcompar_single_strobe_cy<3> (Mcompar_single_strobe_cy<3>)
+     INV:I->O              1   0.648   0.420  Mcompar_single_strobe_cy<3>_inv_INV_0 (single_strobe_OBUF)
+     OBUF:I->O                 4.520          single_strobe_OBUF (single_strobe)
+    ----------------------------------------
+    Total                      8.868ns (7.438ns logic, 1.430ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 10 / 5
+-------------------------------------------------------------------------
+Delay:               7.443ns (Levels of Logic = 4)
+  Source:            fifo_cs (PAD)
+  Destination:       spi_miso (PAD)
+
+  Data Path: fifo_cs to spi_miso
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.849   0.730  fifo_cs_IBUF (fifo_cs_IBUF)
+     LUT4:I0->O            1   0.648   0.000  mux_spi_instance/m0_scl_o1 (mux_spi_instance/m0_scl_o1)
+     MUXF5:I1->O           1   0.276   0.420  mux_spi_instance/m0_scl_o_f5 (mux_spi_instance/m0_scl_o)
+     IOBUF:I->IO               4.520          mux_spi_instance/scl_iobuf_0 (spi_miso)
+    ----------------------------------------
+    Total                      7.443ns (6.293ns logic, 1.150ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.06 secs
+ 
+--> 
+
+
+Total memory usage is 629168 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   75 (   0 filtered)
+Number of infos    :   16 (   0 filtered)
+
