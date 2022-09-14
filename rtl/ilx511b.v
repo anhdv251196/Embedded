@@ -38,7 +38,10 @@ module ilx511b(
     
     /* ADC interface */
     output flag_adc_start,
-    output flag_adc_restart
+    output flag_adc_restart,
+	 
+	 /**/
+	 output reg flag_sel_clok = 1'b0
     
     /*ILA interface*/
 //    output ilx511b_rog_ila,
@@ -74,6 +77,11 @@ module ilx511b(
     reg [15:0] cnt_intclk = 15'd0;
     reg en_intclk = 1'b0;
     reg integ_done = 1'b0;
+    reg flag_start_rog_low1 = 1'b0;          // Flag indicate that change ROG to low
+    reg flag_end_rog_low1 = 1'b0;            // Flag indicate that change ROG to high
+    reg flag_start_rog_low2 = 1'b0;          // Flag indicate that change ROG to low
+    reg flag_end_rog_low2 = 1'b0;            // Flag indicate that change ROG to high
+    reg [15:0] cnt_rog_low = 16'd0;
     always @ (posedge sys_clk)
     begin
         if (sys_rst || integ_done)
@@ -84,7 +92,7 @@ module ilx511b(
             integ_done <= 1'b0;
         end 
         else begin
-            if (rising_edge_fifo_rest) en_intclk <= 1'b1;
+            if (flag_end_rog_low1) en_intclk <= 1'b1;
             if (en_intclk) begin
                 if (cnt_1khz == `TIME_MAKE_1KHZ)
                 begin
@@ -102,6 +110,90 @@ module ilx511b(
             end
         end
     end
+	
+	/* Make delay ROG to low after rising edge of fifo_rst */
+	reg en_delay_rog_to_low = 1'b0;
+	reg en_rog_from_end_rog_low1 = 1'b0;
+	reg [7:0] cnt_delay_rog_to_low = 8'd0;
+	reg flag_start_ctr_rog = 1'b0;
+	reg flag_start_clok_from_end_rog_low1 = 1'b0;
+	always @ (posedge sys_clk)
+	begin
+		if (sys_rst | flag_start_ctr_rog | flag_start_clok_from_end_rog_low1)
+		begin
+			en_delay_rog_to_low <= 1'b0;
+			cnt_delay_rog_to_low <= 8'd0;
+			flag_start_ctr_rog <= 1'b0;
+			en_rog_from_end_rog_low1 <= 1'b0;
+			flag_start_clok_from_end_rog_low1 <= 1'b0;
+		end else begin
+			if (rising_edge_fifo_rest) en_delay_rog_to_low <= 1'b1;
+			if (flag_end_rog_low1) en_rog_from_end_rog_low1 <= 1'b1;
+			if (en_delay_rog_to_low)
+			begin
+				if (cnt_delay_rog_to_low == 8'd149)
+				begin
+					cnt_delay_rog_to_low <= 8'd0;
+					flag_start_ctr_rog <= 1'b1;
+				end else begin
+					cnt_delay_rog_to_low <= cnt_delay_rog_to_low + 8'd1;
+				end
+			end else if (en_rog_from_end_rog_low1)
+			begin
+				if (cnt_delay_rog_to_low == 8'd149)
+				begin
+					cnt_delay_rog_to_low <= 8'd0;
+					flag_start_clok_from_end_rog_low1 <= 1'b1;
+				end else begin
+					cnt_delay_rog_to_low <= cnt_delay_rog_to_low + 8'd1;
+				end
+			end else begin
+				cnt_delay_rog_to_low <= 8'd0;
+			end
+		end
+	end
+    
+    /* Make ROG pulse to low */
+    always @ (posedge sys_clk)
+    begin
+        if (sys_rst | flag_end_rog_low1 | flag_end_rog_low2)
+        begin
+            flag_start_rog_low1 <= 1'b0;
+            flag_end_rog_low1 <= 1'b0;
+            flag_start_rog_low2 <= 1'b0;
+            flag_end_rog_low2 <= 1'b0;
+            cnt_rog_low <= 16'd0;
+        end 
+        else begin
+            if (flag_start_ctr_rog) flag_start_rog_low1 <= 1'b1;
+            if (integ_done) flag_start_rog_low2 <= 1'b1;
+            if (flag_start_rog_low1)
+            begin
+                if (cnt_rog_low == 16'd149)
+                begin
+                    cnt_rog_low <= 16'd0;
+                    flag_end_rog_low1 <= 1'b1;
+                end
+                else begin
+                    cnt_rog_low <= cnt_rog_low + 16'd1;
+                end
+            end
+            else if (flag_start_rog_low2)
+            begin
+                if (cnt_rog_low == 16'd149)
+                begin
+                    cnt_rog_low <= 16'd0;
+                    flag_end_rog_low2 <= 1'b1;
+                end
+                else begin
+                    cnt_rog_low <= cnt_rog_low + 16'd1;
+                end
+            end
+            else begin
+                cnt_rog_low <= 16'd0;
+            end
+        end
+    end
     
     /* Control ROG signal that indicate integration time */
     always @ (posedge sys_clk)
@@ -111,8 +203,8 @@ module ilx511b(
             ilx511b_rog <= 1'b1;
         end
         else begin
-            if (rising_edge_fifo_rest) ilx511b_rog <= 1'b0;
-            if (integ_done) ilx511b_rog <= 1'b1;
+            if (flag_start_ctr_rog | integ_done) ilx511b_rog <= 1'b0;
+            if (flag_end_rog_low1 | flag_end_rog_low2) ilx511b_rog <= 1'b1;
         end
     end
     
@@ -129,7 +221,7 @@ module ilx511b(
             flag_en_smp_data <= 1'b0;
         end
         else begin
-            if (integ_done) en_delay_clk <= 1'b1;
+            if (flag_end_rog_low2) en_delay_clk <= 1'b1;
             if (en_delay_clk)
             begin
                 if (cnt_clk_delay_after_rise_rog == `TIME_DELAY_CLK)
@@ -193,6 +285,17 @@ module ilx511b(
      .d_i((cnt_make_smp_clk == `START_RD_ADC) & (ilx511b_clk == 1'b0)),
      .d_o(flag_adc_start)
      );
+	  
+	 always @ (posedge sys_clk)
+	 begin
+		if (sys_rst)
+		begin
+			flag_sel_clok <= 1'b0;
+		end else begin
+			if (rising_edge_fifo_rest || ((cnt_intclk == FPGA_INTCLOCK)&&(cnt_1khz == `TIME_MAKE_1KHZ - 149))) flag_sel_clok <= 1'b1;
+			if ((cnt_smp == `SAMPLE_CLOCK) || flag_start_clok_from_end_rog_low1) flag_sel_clok <= 1'b0;
+		end
+	 end
     
 //    assign ilx511b_rog_ila = ilx511b_rog;
 //    assign rising_fifo_rest_ila = rising_edge_fifo_rest;

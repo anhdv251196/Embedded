@@ -29,7 +29,7 @@ module fpga_spi(
     output reg [15:0] FPGA_VERION      = 16'h0001,         /*The current FPGA configuration version. - 0x04*/
     output reg [15:0] FPGA_COUNTBASE   = 16'h0001,         /*A base freq counter for the Continous strobe function. - 0x08*/
     output reg [15:0] FPGA_STRBCOUNT   = 16'h0001,         /*0x0C*/
-    output reg [15:0] FPGA_INTCLOCK    = 16'h0001,         /*The detecter integration time in ms [1:65.535]. 0x18*/
+    output reg [15:0] FPGA_INTCLOCK    = 16'h0006,         /*The detecter integration time in ms [1:65.535]. 0x18*/
     output reg [15:0] FPGA_SSLOWDELAY  = 16'h0001,         /*The time delay that the SingleStrobe signal goes low after the start of an integration time - 0x38*/
     output reg [15:0] FPGA_SSHIGHDELAY = 16'h0001,         /*The time delay that the SingleStrobe signal goes high after the start of an integration time - 0x3C*/
     output reg [15:0] FPGA_LAMPENABLE  = 16'h0000,         /*Global enable for both the ContinousStrobe and SingleStrobe functions - 0x40*/
@@ -128,6 +128,8 @@ module fpga_spi(
                 8'h38: transmit_data = {FPGA_SSLOWDELAY, 1'b0};
                 8'h3C: transmit_data = {FPGA_SSHIGHDELAY, 1'b0};
                 8'h40: transmit_data = {FPGA_LAMPENABLE, 1'b0};
+					 8'h5C: transmit_data = {FPGA_OFFSETVALUE, 1'b0};
+					 8'h68: transmit_data = {FPGA_MAXSATVALUE, 1'b0};
                 default: transmit_data = {FPGA_VERION, 1'b0};
             endcase
         end
@@ -157,7 +159,7 @@ module fpga_spi(
             FPGA_VERION <= version;
             FPGA_COUNTBASE <= 16'd48000;
             FPGA_STRBCOUNT <= 16'd4800;
-            FPGA_INTCLOCK <= 16'd600;
+            FPGA_INTCLOCK <= 16'd6;
             FPGA_SSLOWDELAY <= 16'h0005;
             FPGA_SSHIGHDELAY <= 16'h0001;
             FPGA_LAMPENABLE <= 16'h0000;
@@ -173,6 +175,8 @@ module fpga_spi(
                     8'h38: FPGA_SSLOWDELAY <= receive_data[15:0];
                     8'h3C: FPGA_SSHIGHDELAY <= receive_data[15:0];
                     8'h40: FPGA_LAMPENABLE <= receive_data[15:0];
+						  8'h5C: FPGA_OFFSETVALUE <= receive_data[15:0];
+						  8'h68: FPGA_MAXSATVALUE <= receive_data[15:0];
                     default: FPGA_VERION <= version;
                 endcase
             end 

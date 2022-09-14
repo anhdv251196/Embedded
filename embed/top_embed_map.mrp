@@ -9,42 +9,42 @@ Target Device  : xc3s50a
 Target Package : vq100
 Target Speed   : -4
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Tue Aug 30 01:52:09 2022
+Mapped Date    : Wed Sep 14 06:50:45 2022
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   35
+Number of warnings:   34
 Logic Utilization:
-  Total Number Slice Registers:         661 out of   1,408   46%
-    Number used as Flip Flops:          660
+  Total Number Slice Registers:         841 out of   1,408   59%
+    Number used as Flip Flops:          840
     Number used as Latches:               1
-  Number of 4 input LUTs:               505 out of   1,408   35%
+  Number of 4 input LUTs:               726 out of   1,408   51%
 Logic Distribution:
-  Number of occupied Slices:            589 out of     704   83%
-    Number of Slices containing only related logic:     589 out of     589 100%
-    Number of Slices containing unrelated logic:          0 out of     589   0%
+  Number of occupied Slices:            702 out of     704   99%
+    Number of Slices containing only related logic:     702 out of     702 100%
+    Number of Slices containing unrelated logic:          0 out of     702   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         699 out of   1,408   49%
-    Number used as logic:               425
-    Number used as a route-thru:        194
-    Number used as Shift registers:      80
+  Total Number of 4 input LUTs:         896 out of   1,408   63%
+    Number used as logic:               597
+    Number used as a route-thru:        170
+    Number used as Shift registers:     129
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 39 out of      68   57%
-  Number of BUFGMUXs:                     4 out of      24   16%
+  Number of bonded IOBs:                 38 out of      68   55%
+  Number of BUFGMUXs:                     3 out of      24   12%
   Number of DCMs:                         1 out of       2   50%
   Number of BSCANs:                       1 out of       1  100%
   Number of BSCAN_SPARTAN3As:             1 out of       1  100%
   Number of RAMB16BWEs:                   3 out of       3  100%
 
-  Number of RPM macros:           12
-Average Fanout of Non-Clock Nets:                3.00
+  Number of RPM macros:           16
+Average Fanout of Non-Clock Nets:                2.99
 
-Peak Memory Usage:  716 MB
-Total REAL time to MAP completion:  2 secs 
+Peak Memory Usage:  624 MB
+Total REAL time to MAP completion:  3 secs 
 Total CPU time to MAP completion:   2 secs 
 
 NOTES:
@@ -89,11 +89,6 @@ Section 2 - Warnings
 WARNING:Security:42 - Your software subscription period has lapsed. Your current
 version of Xilinx tools will continue to function, but you no longer qualify for
 Xilinx software updates or new releases.
-WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
-   symbol "physical_group_spi_clk_IBUF/spi_clk_IBUF_BUFG" (output
-   signal=spi_clk_IBUF) has a mix of clock and non-clock loads. The non-clock
-   loads are:
-   Pin D of U_ila_pro_0/U0/I_TQ0.G_TW[0].U_TQ
 WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
@@ -207,13 +202,9 @@ INFO:Security:54 - 'xc3s50a' is a WebPack part.
 INFO:LIT:243 - Logical network icon_control0<10> has no load.
 INFO:LIT:243 - Logical network icon_control0<11> has no load.
 INFO:LIT:243 - Logical network icon_control0<15> has no load.
-INFO:LIT:243 - Logical network icon_control0<21> has no load.
 INFO:LIT:243 - Logical network icon_control0<16> has no load.
-INFO:LIT:243 - Logical network icon_control0<22> has no load.
 INFO:LIT:243 - Logical network icon_control0<17> has no load.
-INFO:LIT:243 - Logical network icon_control0<23> has no load.
 INFO:LIT:243 - Logical network icon_control0<18> has no load.
-INFO:LIT:243 - Logical network icon_control0<24> has no load.
 INFO:LIT:243 - Logical network icon_control0<30> has no load.
 INFO:LIT:243 - Logical network icon_control0<25> has no load.
 INFO:LIT:243 - Logical network icon_control0<31> has no load.
@@ -223,8 +214,8 @@ INFO:LIT:243 - Logical network icon_control0<7> has no load.
 INFO:LIT:243 - Logical network icon_control0<27> has no load.
 INFO:LIT:243 - Logical network icon_control0<33> has no load.
 INFO:LIT:243 - Logical network icon_control0<28> has no load.
-INFO:LIT:243 - Logical network icon_control0<34> has no load.
 INFO:LIT:243 - Logical network icon_control0<29> has no load.
+INFO:LIT:243 - Logical network icon_control0<34> has no load.
 INFO:LIT:243 - Logical network icon_control0<35> has no load.
 INFO:LIT:243 - Logical network mux_spi_instance/scl_iobuf_0/O has no load.
 INFO:MapLib:562 - No environment variables are currently set.
@@ -237,10 +228,10 @@ INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  45 block(s) removed
-  17 block(s) optimized away
-  29 signal(s) removed
- 279 Block(s) redundant
+  40 block(s) removed
+  48 block(s) optimized away
+  24 signal(s) removed
+ 284 Block(s) redundant
 
 Section 5 - Removed Logic
 -------------------------
@@ -289,13 +280,9 @@ Loadless block "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_B"
 The signal "icon_control0<10>" is sourceless and has been removed.
 The signal "icon_control0<11>" is sourceless and has been removed.
 The signal "icon_control0<15>" is sourceless and has been removed.
-The signal "icon_control0<21>" is sourceless and has been removed.
 The signal "icon_control0<16>" is sourceless and has been removed.
-The signal "icon_control0<22>" is sourceless and has been removed.
 The signal "icon_control0<17>" is sourceless and has been removed.
-The signal "icon_control0<23>" is sourceless and has been removed.
 The signal "icon_control0<18>" is sourceless and has been removed.
-The signal "icon_control0<24>" is sourceless and has been removed.
 The signal "icon_control0<30>" is sourceless and has been removed.
 The signal "icon_control0<25>" is sourceless and has been removed.
 The signal "icon_control0<31>" is sourceless and has been removed.
@@ -305,15 +292,9 @@ The signal "icon_control0<7>" is sourceless and has been removed.
 The signal "icon_control0<27>" is sourceless and has been removed.
 The signal "icon_control0<33>" is sourceless and has been removed.
 The signal "icon_control0<28>" is sourceless and has been removed.
-The signal "icon_control0<34>" is sourceless and has been removed.
 The signal "icon_control0<29>" is sourceless and has been removed.
+The signal "icon_control0<34>" is sourceless and has been removed.
 The signal "icon_control0<35>" is sourceless and has been removed.
-The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<3>" is sourceless and has been
-removed.
- Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_HCE" (ROM)
-removed.
- Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_LCE" (ROM)
-removed.
 The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<6>" is sourceless and has been
 removed.
  Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_HCE" (ROM)
@@ -358,8 +339,6 @@ Unused block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[13].U_LUT" (ROM)
 removed.
 Unused block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[14].U_LUT" (ROM)
 removed.
-Unused block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[3].U_LUT" (ROM)
-removed.
 Unused block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[6].U_LUT" (ROM)
 removed.
 Unused block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[7].U_LUT" (ROM)
@@ -368,11 +347,7 @@ Unused block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[10].U_HCE" (ROM)
 removed.
 Unused block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[15].U_HCE" (ROM)
 removed.
-Unused block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[1].U_HCE" (ROM)
-removed.
-Unused block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[2].U_HCE" (ROM)
-removed.
-Unused block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[4].U_HCE" (ROM)
+Unused block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_LCE" (ROM)
 removed.
 Unused block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_HCE" (ROM)
 removed.
@@ -385,7 +360,11 @@ Optimized Block(s):
 TYPE 		BLOCK
 GND 		U_icon_pro/XST_GND
 VCC 		U_icon_pro/XST_VCC
-LUT4 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/F_SSTAT[6].I_STAT.U_STAT
+LUT4 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/F_SSTAT[10].I_STAT.U_STAT
+   optimized to 0
+LUT4 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/F_SSTAT[16].I_STAT.U_STAT
+   optimized to 0
+LUT4 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/F_SSTAT[18].I_STAT.U_STAT
    optimized to 0
 GND 		U_ila_pro_0/XST_GND
 VCC 		U_ila_pro_0/XST_VCC
@@ -537,108 +516,94 @@ LOCALBUF
 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.I_RDADDR/U_HC/G[0]
 .GnH.U_MUXCY/MUXCY_L_BUF
 LOCALBUF
-		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/
 I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[0].I_YES_RPM.U_MUXH/MUXCY_L_BUF
 LOCALBUF
-		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/
 I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[0].I_YES_RPM.U_MUXL/MUXCY_L_BUF
+LOCALBUF
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/
+I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[1].I_YES_RPM.U_MUXH/MUXCY_L_BUF
+LOCALBUF
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/
+I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[1].I_YES_RPM.U_MUXL/MUXCY_L_BUF
+LOCALBUF
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/
+I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[2].I_YES_RPM.U_MUXH/MUXCY_L_BUF
+LOCALBUF
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/
+I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[2].I_YES_RPM.U_MUXL/MUXCY_L_BUF
+LOCALBUF
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/
+I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[0].I_YES_RPM.U_MUXH/MUXCY_L_BUF
+LOCALBUF
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/
+I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[0].I_YES_RPM.U_MUXL/MUXCY_L_BUF
+LOCALBUF
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/
+I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[1].I_YES_RPM.U_MUXH/MUXCY_L_BUF
+LOCALBUF
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/
+I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[1].I_YES_RPM.U_MUXL/MUXCY_L_BUF
+LOCALBUF
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/
+I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[2].I_YES_RPM.U_MUXH/MUXCY_L_BUF
+LOCALBUF
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/
+I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[2].I_YES_RPM.U_MUXL/MUXCY_L_BUF
+LOCALBUF
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/
+I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[3].I_YES_RPM.U_MUXH/MUXCY_L_BUF
+LOCALBUF
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/
+I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[3].I_YES_RPM.U_MUXL/MUXCY_L_BUF
+LOCALBUF
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[4].U_M/U_MU/I_MUT_GANDX.U_match/
+I_SRL16.U_GANDX_SRL16/I_TWMOD4_NE0.I_YES_RPM.U_MUXH/MUXCY_L_BUF
+LOCALBUF
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[4].U_M/U_MU/I_MUT_GANDX.U_match/
+I_SRL16.U_GANDX_SRL16/I_TWMOD4_NE0.I_YES_RPM.U_MUXL/MUXCY_L_BUF
+LOCALBUF
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[3].U_M/U_MU/I_MUT_GANDX.U_match/
+I_SRL16.U_GANDX_SRL16/I_TWMOD4_NE0.I_YES_RPM.U_MUXH/MUXCY_L_BUF
+LOCALBUF
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[3].U_M/U_MU/I_MUT_GANDX.U_match/
+I_SRL16.U_GANDX_SRL16/I_TWMOD4_NE0.I_YES_RPM.U_MUXL/MUXCY_L_BUF
 LOCALBUF
 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
 I_SRL16.U_GANDX_SRL16/I_TWMOD4_NE0.I_YES_RPM.U_MUXH/MUXCY_L_BUF
 LOCALBUF
 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
 I_SRL16.U_GANDX_SRL16/I_TWMOD4_NE0.I_YES_RPM.U_MUXL/MUXCY_L_BUF
-LOCALBUF
-		U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O7/LUT4_L_BUF
-LOCALBUF
-		U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O8/LUT3_L_BUF
+LOCALBUF 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/iSTAT_CNT<2>1/LUT4_L_BUF
+LOCALBUF 		ilx_instance/flag_sel_clok_or0001110/LUT4_D_BUF
+LOCALBUF 		ilx_instance/_and0000111/LUT4_L_BUF
 LOCALBUF 		fpga_spi_instance/Mcount_cnt_shift_data_xor<3>111/LUT2_D_BUF
-LOCALBUF 		fpga_spi_instance/FPGA_LAMPENABLE_not0001_SW0/LUT3_L_BUF
+LOCALBUF 		fpga_spi_instance/FPGA_LAMPENABLE_not000111/LUT3_D_BUF
 LOCALBUF 		fpga_spi_instance/Mcount_cnt_shift_data_xor<2>111/LUT2_D_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<15>29/LUT3_L_BUF
-LOCALBUF 		fpga_spi_instance/FPGA_COUNTBASE_not000111/LUT3_D_BUF
+LOCALBUF 		fpga_spi_instance/FPGA_INTCLOCK_not000111/LUT3_D_BUF
 LOCALBUF 		fpga_spi_instance/fpga_addr_not000131/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<9>49/LUT2_D_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<15>90/LUT4_L_BUF
-LOCALBUF 		ilx_instance/_and0000155_SW0/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/FPGA_COUNTBASE_not000121/LUT4_D_BUF
+LOCALBUF 		fpga_spi_instance/FPGA_COUNTBASE_not000111/LUT4_D_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>141/LUT3_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>151/LUT3_D_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<9>38/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<8>15/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<7>15/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<6>15/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<5>15/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<4>15/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<3>15/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<2>15/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<1>15/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<14>15/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<13>15/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<12>15/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<11>15/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<10>15/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>15/LUT4_L_BUF
 LOCALBUF 		fpga_spi_instance/Rx_Done_not0001_SW0/LUT3_L_BUF
-LOCALBUF 		fpga_spi_instance/Mcount_cnt_shift_data_xor<4>1_SW0/LUT4_L_BUF
-LUT1 		Mcount_cnt_fifo_cy<1>_rt
-LUT1 		Mcount_cnt_fifo_cy<2>_rt
-LUT1 		Mcount_cnt_fifo_cy<3>_rt
-LUT1 		Mcount_cnt_fifo_cy<4>_rt
-LUT1 		Mcount_cnt_fifo_cy<5>_rt
-LUT1 		Mcount_cnt_fifo_cy<6>_rt
-LUT1 		Mcount_cnt_fifo_cy<7>_rt
-LUT1 		Mcount_cnt_fifo_cy<8>_rt
-LUT1 		Mcount_cnt_fifo_cy<9>_rt
-LUT1 		Mcount_cnt_fifo_cy<10>_rt
-LUT1 		Mcount_cnt_fifo_cy<11>_rt
-LUT1 		Mcount_cnt_fifo_cy<12>_rt
-LUT1 		Mcount_cnt_fifo_cy<13>_rt
-LUT1 		Mcount_cnt_fifo_cy<14>_rt
-LUT1 		make_pulse_instance/Mcount_cnt_pulse_cy<16>_rt
-LUT1 		make_pulse_instance/Mcount_cnt_pulse_cy<15>_rt
-LUT1 		make_pulse_instance/Mcount_cnt_pulse_cy<14>_rt
-LUT1 		make_pulse_instance/Mcount_cnt_pulse_cy<13>_rt
-LUT1 		make_pulse_instance/Mcount_cnt_pulse_cy<12>_rt
-LUT1 		make_pulse_instance/Mcount_cnt_pulse_cy<11>_rt
-LUT1 		make_pulse_instance/Mcount_cnt_pulse_cy<10>_rt
-LUT1 		make_pulse_instance/Mcount_cnt_pulse_cy<9>_rt
-LUT1 		make_pulse_instance/Mcount_cnt_pulse_cy<8>_rt
-LUT1 		make_pulse_instance/Mcount_cnt_pulse_cy<7>_rt
-LUT1 		make_pulse_instance/Mcount_cnt_pulse_cy<6>_rt
-LUT1 		make_pulse_instance/Mcount_cnt_pulse_cy<5>_rt
-LUT1 		make_pulse_instance/Mcount_cnt_pulse_cy<4>_rt
-LUT1 		make_pulse_instance/Mcount_cnt_pulse_cy<3>_rt
-LUT1 		make_pulse_instance/Mcount_cnt_pulse_cy<2>_rt
-LUT1 		make_pulse_instance/Mcount_cnt_pulse_cy<1>_rt
-LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<14>_rt
-LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<13>_rt
-LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<12>_rt
-LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<11>_rt
-LUT1 		ad7621_instance/Mcompar_ad7621_fifo_do_cmp_gt0000_cy<4>_rt
-LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<10>_rt
-LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<9>_rt
-LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<8>_rt
-LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<7>_rt
-LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<6>_rt
-LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<5>_rt
-LUT1 		ad7621_instance/Mcompar_ad7621_fifo_do_cmp_gt0000_cy<1>_rt
-LUT1 		ad7621_instance/Mcompar_ad7621_fifo_do_cmp_lt0000_cy<2>_rt
-LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<4>_rt
-LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<3>_rt
-LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<2>_rt
-LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<1>_rt
-LUT1 		ad7621_instance/Mcompar_ad7621_fifo_do_cmp_lt0000_cy<0>_rt
-LUT1 		ilx_instance/Mcount_cnt_smp_cy<14>_rt
-LUT1 		ilx_instance/Mcount_cnt_smp_cy<13>_rt
-LUT1 		ilx_instance/Mcount_cnt_smp_cy<12>_rt
-LUT1 		ilx_instance/Mcount_cnt_smp_cy<11>_rt
-LUT1 		ilx_instance/Mcount_cnt_smp_cy<10>_rt
-LUT1 		ilx_instance/Mcount_cnt_smp_cy<9>_rt
-LUT1 		ilx_instance/Mcount_cnt_smp_cy<8>_rt
-LUT1 		ilx_instance/Mcount_cnt_smp_cy<7>_rt
-LUT1 		ilx_instance/Mcount_cnt_smp_cy<6>_rt
-LUT1 		ilx_instance/Mcount_cnt_smp_cy<5>_rt
-LUT1 		ilx_instance/Mcount_cnt_smp_cy<4>_rt
-LUT1 		ilx_instance/Mcount_cnt_smp_cy<3>_rt
-LUT1 		ilx_instance/Mcount_cnt_smp_cy<2>_rt
-LUT1 		ilx_instance/Mcount_cnt_smp_cy<1>_rt
-LUT1 		ilx_instance/Mcount_cnt_intclk_cy<14>_rt
-LUT1 		ilx_instance/Mcount_cnt_intclk_cy<13>_rt
-LUT1 		ilx_instance/Mcount_cnt_intclk_cy<12>_rt
-LUT1 		ilx_instance/Mcount_cnt_intclk_cy<11>_rt
-LUT1 		ilx_instance/Mcount_cnt_intclk_cy<10>_rt
-LUT1 		ilx_instance/Mcount_cnt_intclk_cy<9>_rt
-LUT1 		ilx_instance/Mcount_cnt_intclk_cy<8>_rt
-LUT1 		ilx_instance/Mcount_cnt_intclk_cy<7>_rt
-LUT1 		ilx_instance/Mcount_cnt_intclk_cy<6>_rt
-LUT1 		ilx_instance/Mcount_cnt_intclk_cy<5>_rt
-LUT1 		ilx_instance/Mcount_cnt_intclk_cy<4>_rt
-LUT1 		ilx_instance/Mcount_cnt_intclk_cy<3>_rt
-LUT1 		ilx_instance/Mcount_cnt_intclk_cy<2>_rt
-LUT1 		ilx_instance/Mcount_cnt_intclk_cy<1>_rt
+LUT1 		Mcompar_pixel_ready_cmp_ge0000_cy<0>_rt
 LUT1 		ilx_instance/Mcount_cnt_make_smp_clk_cy<14>_rt
 LUT1 		ilx_instance/Mcount_cnt_make_smp_clk_cy<13>_rt
 LUT1 		ilx_instance/Mcount_cnt_make_smp_clk_cy<12>_rt
@@ -653,6 +618,20 @@ LUT1 		ilx_instance/Mcount_cnt_make_smp_clk_cy<4>_rt
 LUT1 		ilx_instance/Mcount_cnt_make_smp_clk_cy<3>_rt
 LUT1 		ilx_instance/Mcount_cnt_make_smp_clk_cy<2>_rt
 LUT1 		ilx_instance/Mcount_cnt_make_smp_clk_cy<1>_rt
+LUT1 		ilx_instance/Mcount_cnt_smp_cy<14>_rt
+LUT1 		ilx_instance/Mcount_cnt_smp_cy<13>_rt
+LUT1 		ilx_instance/Mcount_cnt_smp_cy<12>_rt
+LUT1 		ilx_instance/Mcount_cnt_smp_cy<11>_rt
+LUT1 		ilx_instance/Mcount_cnt_smp_cy<10>_rt
+LUT1 		ilx_instance/Mcount_cnt_smp_cy<9>_rt
+LUT1 		ilx_instance/Mcount_cnt_smp_cy<8>_rt
+LUT1 		ilx_instance/Mcount_cnt_smp_cy<7>_rt
+LUT1 		ilx_instance/Mcount_cnt_smp_cy<6>_rt
+LUT1 		ilx_instance/Mcount_cnt_smp_cy<5>_rt
+LUT1 		ilx_instance/Mcount_cnt_smp_cy<4>_rt
+LUT1 		ilx_instance/Mcount_cnt_smp_cy<3>_rt
+LUT1 		ilx_instance/Mcount_cnt_smp_cy<2>_rt
+LUT1 		ilx_instance/Mcount_cnt_smp_cy<1>_rt
 LUT1 		ilx_instance/Mcount_cnt_clk_delay_after_rise_rog_cy<14>_rt
 LUT1 		ilx_instance/Mcount_cnt_clk_delay_after_rise_rog_cy<13>_rt
 LUT1 		ilx_instance/Mcount_cnt_clk_delay_after_rise_rog_cy<12>_rt
@@ -667,6 +646,40 @@ LUT1 		ilx_instance/Mcount_cnt_clk_delay_after_rise_rog_cy<4>_rt
 LUT1 		ilx_instance/Mcount_cnt_clk_delay_after_rise_rog_cy<3>_rt
 LUT1 		ilx_instance/Mcount_cnt_clk_delay_after_rise_rog_cy<2>_rt
 LUT1 		ilx_instance/Mcount_cnt_clk_delay_after_rise_rog_cy<1>_rt
+LUT1 		ilx_instance/Mcount_cnt_rog_low_cy<14>_rt
+LUT1 		ilx_instance/Mcount_cnt_rog_low_cy<13>_rt
+LUT1 		ilx_instance/Mcount_cnt_rog_low_cy<12>_rt
+LUT1 		ilx_instance/Mcount_cnt_rog_low_cy<11>_rt
+LUT1 		ilx_instance/Mcount_cnt_rog_low_cy<10>_rt
+LUT1 		ilx_instance/Mcount_cnt_rog_low_cy<9>_rt
+LUT1 		ilx_instance/Mcount_cnt_rog_low_cy<8>_rt
+LUT1 		ilx_instance/Mcount_cnt_rog_low_cy<7>_rt
+LUT1 		ilx_instance/Mcount_cnt_rog_low_cy<6>_rt
+LUT1 		ilx_instance/Mcount_cnt_rog_low_cy<5>_rt
+LUT1 		ilx_instance/Mcount_cnt_rog_low_cy<4>_rt
+LUT1 		ilx_instance/Mcount_cnt_rog_low_cy<3>_rt
+LUT1 		ilx_instance/Mcount_cnt_rog_low_cy<2>_rt
+LUT1 		ilx_instance/Mcount_cnt_rog_low_cy<1>_rt
+LUT1 		ilx_instance/Mcount_cnt_delay_rog_to_low_cy<6>_rt
+LUT1 		ilx_instance/Mcount_cnt_delay_rog_to_low_cy<5>_rt
+LUT1 		ilx_instance/Mcount_cnt_delay_rog_to_low_cy<4>_rt
+LUT1 		ilx_instance/Mcount_cnt_delay_rog_to_low_cy<3>_rt
+LUT1 		ilx_instance/Mcount_cnt_delay_rog_to_low_cy<2>_rt
+LUT1 		ilx_instance/Mcount_cnt_delay_rog_to_low_cy<1>_rt
+LUT1 		ilx_instance/Mcount_cnt_intclk_cy<14>_rt
+LUT1 		ilx_instance/Mcount_cnt_intclk_cy<13>_rt
+LUT1 		ilx_instance/Mcount_cnt_intclk_cy<12>_rt
+LUT1 		ilx_instance/Mcount_cnt_intclk_cy<11>_rt
+LUT1 		ilx_instance/Mcount_cnt_intclk_cy<10>_rt
+LUT1 		ilx_instance/Mcount_cnt_intclk_cy<9>_rt
+LUT1 		ilx_instance/Mcount_cnt_intclk_cy<8>_rt
+LUT1 		ilx_instance/Mcount_cnt_intclk_cy<7>_rt
+LUT1 		ilx_instance/Mcount_cnt_intclk_cy<6>_rt
+LUT1 		ilx_instance/Mcount_cnt_intclk_cy<5>_rt
+LUT1 		ilx_instance/Mcount_cnt_intclk_cy<4>_rt
+LUT1 		ilx_instance/Mcount_cnt_intclk_cy<3>_rt
+LUT1 		ilx_instance/Mcount_cnt_intclk_cy<2>_rt
+LUT1 		ilx_instance/Mcount_cnt_intclk_cy<1>_rt
 LUT1 		ilx_instance/Mcount_cnt_1khz_cy<14>_rt
 LUT1 		ilx_instance/Mcount_cnt_1khz_cy<13>_rt
 LUT1 		ilx_instance/Mcount_cnt_1khz_cy<12>_rt
@@ -681,23 +694,24 @@ LUT1 		ilx_instance/Mcount_cnt_1khz_cy<4>_rt
 LUT1 		ilx_instance/Mcount_cnt_1khz_cy<3>_rt
 LUT1 		ilx_instance/Mcount_cnt_1khz_cy<2>_rt
 LUT1 		ilx_instance/Mcount_cnt_1khz_cy<1>_rt
-LUT1 		Mcount_cnt_fifo_xor<15>_rt
-LUT1 		make_pulse_instance/Mcount_cnt_pulse_xor<17>_rt
-LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_xor<15>_rt
-LUT1 		ilx_instance/Mcount_cnt_smp_xor<15>_rt
-LUT1 		ilx_instance/Mcount_cnt_intclk_xor<15>_rt
+LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<14>_rt
+LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<13>_rt
+LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<12>_rt
 LUT1 		ilx_instance/Mcount_cnt_make_smp_clk_xor<15>_rt
+LUT1 		ilx_instance/Mcount_cnt_smp_xor<15>_rt
 LUT1 		ilx_instance/Mcount_cnt_clk_delay_after_rise_rog_xor<15>_rt
+LUT1 		ilx_instance/Mcount_cnt_rog_low_xor<15>_rt
+LUT1 		ilx_instance/Mcount_cnt_delay_rog_to_low_xor<7>_rt
+LUT1 		ilx_instance/Mcount_cnt_intclk_xor<15>_rt
 LUT1 		ilx_instance/Mcount_cnt_1khz_xor<15>_rt
-INV 		Mcompar_single_strobe_cy<3>_inv_INV_0
+LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_xor<15>_rt
 INV 		ilx_instance/sys_rst_inv1_INV_0
-INV 		fifo_cs_inv1_INV_0
 INV 		ilx511b_rog1_INV_0
 INV 		make_pulse_instance/clk_2_5Mhz_not00011_INV_0
 INV 		make_pulse_instance/Mcount_cnt_make_2_5Mhz_xor<0>11_INV_0
 INV 		ilx_instance/ilx511b_clk_not00031_INV_0
-INV 		mux_spi_instance/scl_iobuf_0_not00001_INV_0
 INV 		fpga_spi_instance/Mcount_cnt_spi_xor<0>11_INV_0
+INV 		pixel_ready_not00011_INV_0
 LUT1
 		fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
 gl0.rd/rpntr/Mcount_count_cy<9>_rt
@@ -904,7 +918,6 @@ Section 6 - IOB Properties
 | ad7621_di<15>                      | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
 | adt7301_clk                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | adt7301_cs                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
-| adt7301_miso                       | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
 | adt_cs                             | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
 | e2_cs                              | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
 | eeprom_clk                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
@@ -942,6 +955,14 @@ U_GAND_SRL16_MSET
 U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_WCNT_LCMP_I_SRL16.
 U_GAND_SRL16_MSET
 U_ila_pro_0/U0_I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_
+SRL16.U_GANDX_SRL16_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/I_
+SRL16.U_GANDX_SRL16_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/I_
+SRL16.U_GANDX_SRL16_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[3].U_M/U_MU/I_MUT_GANDX.U_match/I_
+SRL16.U_GANDX_SRL16_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[4].U_M/U_MU/I_MUT_GANDX.U_match/I_
 SRL16.U_GANDX_SRL16_MSET
 
 Section 8 - Guide Report
@@ -1261,11 +1282,6 @@ SRVAL_A = 000000000
 SRVAL_B = 000000000
 
 
-BUFGMUX "spi_clk_IBUF_BUFG":
-DISABLE_ATTR:LOW
-
-
-
 
 Section 12 - Control Set Information
 ------------------------------------
@@ -1276,32 +1292,32 @@ Section 13 - Utilization by Hierarchy
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Module                                                                  | Partition | Slices        | Slice Reg     | LUTs          | LUTRAM        | BRAM      | MULT18X18 | BUFG  | DCM   | Full Hierarchical Name                                                                                                                                                                        |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| top_embed/                                                              |           | 14/632        | 17/661        | 23/692        | 0/80          | 0/3       | 0/0       | 1/4   | 0/1   | top_embed                                                                                                                                                                                     |
-| +U_icon_pro                                                             |           | 0/41          | 0/28          | 0/43          | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | top_embed/U_icon_pro                                                                                                                                                                          |
-| ++U0                                                                    |           | 0/41          | 0/28          | 0/43          | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | top_embed/U_icon_pro/U0                                                                                                                                                                       |
-| +++U_ICON                                                               |           | 3/41          | 3/28          | 0/43          | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | top_embed/U_icon_pro/U0/U_ICON                                                                                                                                                                |
+| top_embed/                                                              |           | 7/801         | 1/841         | 8/886         | 0/129         | 0/3       | 0/0       | 0/3   | 0/1   | top_embed                                                                                                                                                                                     |
+| +U_icon_pro                                                             |           | 0/42          | 0/28          | 0/48          | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | top_embed/U_icon_pro                                                                                                                                                                          |
+| ++U0                                                                    |           | 0/42          | 0/28          | 0/48          | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | top_embed/U_icon_pro/U0                                                                                                                                                                       |
+| +++U_ICON                                                               |           | 3/42          | 3/28          | 0/48          | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | top_embed/U_icon_pro/U0/U_ICON                                                                                                                                                                |
 | ++++I_YES_BSCAN.U_BS                                                    |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/I_YES_BSCAN.U_BS                                                                                                                                               |
 | +++++I_USE_SOFTBSCAN_EQ0.I_USE_XST_TCK_WORKAROUND_EQ1.U_ICON_BSCAN_BUFG |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 1/1   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/I_YES_BSCAN.U_BS/I_USE_SOFTBSCAN_EQ0.I_USE_XST_TCK_WORKAROUND_EQ1.U_ICON_BSCAN_BUFG                                                                            |
-| ++++U_CMD                                                               |           | 6/12          | 10/10         | 1/12          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/U_CMD                                                                                                                                                          |
-| +++++U_COMMAND_SEL                                                      |           | 5/5           | 0/0           | 9/9           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL                                                                                                                                            |
+| ++++U_CMD                                                               |           | 6/12          | 10/10         | 1/13          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/U_CMD                                                                                                                                                          |
+| +++++U_COMMAND_SEL                                                      |           | 5/5           | 0/0           | 10/10         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL                                                                                                                                            |
 | +++++U_CORE_ID_SEL                                                      |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL                                                                                                                                            |
-| ++++U_CTRL_OUT                                                          |           | 11/11         | 0/0           | 13/13         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/U_CTRL_OUT                                                                                                                                                     |
+| ++++U_CTRL_OUT                                                          |           | 13/13         | 0/0           | 17/17         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/U_CTRL_OUT                                                                                                                                                     |
 | ++++U_STAT                                                              |           | 4/7           | 1/7           | 7/13          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/U_STAT                                                                                                                                                         |
 | +++++U_STAT_CNT                                                         |           | 3/3           | 6/6           | 6/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/U_STAT/U_STAT_CNT                                                                                                                                              |
-| ++++U_SYNC                                                              |           | 7/7           | 8/8           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/U_SYNC                                                                                                                                                         |
+| ++++U_SYNC                                                              |           | 6/6           | 8/8           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/U_SYNC                                                                                                                                                         |
 | ++++U_TDO_MUX                                                           |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/U_TDO_MUX                                                                                                                                                      |
 | +++++U_CS_MUX                                                           |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/U_TDO_MUX/U_CS_MUX                                                                                                                                             |
 | ++++++I4.U_MUX16                                                        |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/U_TDO_MUX/U_CS_MUX/I4.U_MUX16                                                                                                                                  |
-| +U_ila_pro_0                                                            |           | 0/225         | 0/193         | 0/204         | 0/77          | 0/1       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0                                                                                                                                                                         |
-| ++U0                                                                    |           | 3/225         | 6/193         | 0/204         | 0/77          | 0/1       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0                                                                                                                                                                      |
-| +++I_NO_D.U_ILA                                                         |           | 1/222         | 0/187         | 1/204         | 0/77          | 0/1       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA                                                                                                                                                         |
-| ++++I_DQ.U_DQQ                                                          |           | 3/3           | 6/6           | 6/6           | 6/6           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ                                                                                                                                              |
+| +U_ila_pro_0                                                            |           | 0/364         | 0/355         | 0/327         | 0/122         | 0/1       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0                                                                                                                                                                         |
+| ++U0                                                                    |           | 16/364        | 31/355        | 0/327         | 0/122         | 0/1       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0                                                                                                                                                                      |
+| +++I_NO_D.U_ILA                                                         |           | 1/348         | 0/324         | 1/327         | 0/122         | 0/1       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA                                                                                                                                                         |
+| ++++I_DQ.U_DQQ                                                          |           | 16/16         | 31/31         | 31/31         | 31/31         | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ                                                                                                                                              |
 | ++++U_CAPSTOR                                                           |           | 0/7           | 0/14          | 0/14          | 0/0           | 0/1       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR                                                                                                                                               |
 | +++++I_CASE1.I_NO_TB.I_RT1.I_RDADDR                                     |           | 0/7           | 0/14          | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.I_RDADDR                                                                                                                |
 | ++++++U_HC                                                              |           | 7/7           | 14/14         | 14/14         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.I_RDADDR/U_HC                                                                                                           |
 | +++++I_CASE1.I_NO_TB.I_RT1.U_RAM                                        |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/1       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM                                                                                                                   |
 | ++++++G_BRAM[0].U_BRAM                                                  |           | 0/0           | 0/0           | 0/0           | 0/0           | 1/1       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM                                                                                                  |
-| ++++U_G2_SQ.U_CAPCTRL                                                   |           | 7/76          | 7/62          | 1/92          | 0/49          | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL                                                                                                                                       |
+| ++++U_G2_SQ.U_CAPCTRL                                                   |           | 7/75          | 7/62          | 1/92          | 0/49          | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL                                                                                                                                       |
 | +++++I_SRLT_NE_1.U_CDONE                                                |           | 4/4           | 1/1           | 6/6           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CDONE                                                                                                                   |
 | +++++I_SRLT_NE_1.U_CMPRESET                                             |           | 3/3           | 0/0           | 5/5           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CMPRESET                                                                                                                |
 | +++++I_SRLT_NE_1.U_NS0                                                  |           | 6/6           | 1/1           | 10/10         | 8/8           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS0                                                                                                                     |
@@ -1312,7 +1328,7 @@ Section 13 - Utilization by Hierarchy
 | +++++I_SRLT_NE_1.U_WCE                                                  |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WCE                                                                                                                     |
 | +++++I_SRLT_NE_1.U_WHCMPCE                                              |           | 2/2           | 0/0           | 3/3           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WHCMPCE                                                                                                                 |
 | +++++I_SRLT_NE_1.U_WLCMPCE                                              |           | 2/2           | 0/0           | 3/3           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WLCMPCE                                                                                                                 |
-| +++++U_CAP_ADDRGEN                                                      |           | 21/37         | 34/52         | 12/42         | 1/13          | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN                                                                                                                         |
+| +++++U_CAP_ADDRGEN                                                      |           | 20/36         | 34/52         | 12/42         | 1/13          | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN                                                                                                                         |
 | ++++++I_NO_TSEQ.I_SRLT_NE_1.U_SCNT                                      |           | 5/5           | 9/9           | 9/9           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT                                                                                            |
 | ++++++I_SRLT_NE_1.U_WCNT                                                |           | 5/5           | 9/9           | 9/9           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT                                                                                                      |
 | ++++++U_SCNT_CMP                                                        |           | 0/2           | 0/0           | 0/4           | 0/4           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP                                                                                                              |
@@ -1321,71 +1337,144 @@ Section 13 - Utilization by Hierarchy
 | +++++++I_SRL16.U_GAND_SRL16                                             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_SRL16.U_GAND_SRL16                                                                                        |
 | ++++++U_WCNT_LCMP                                                       |           | 0/2           | 0/0           | 0/4           | 0/4           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP                                                                                                             |
 | +++++++I_SRL16.U_GAND_SRL16                                             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_SRL16.U_GAND_SRL16                                                                                        |
-| ++++U_RST                                                               |           | 6/19          | 9/25          | 2/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST                                                                                                                                                   |
+| ++++U_RST                                                               |           | 6/18          | 9/25          | 2/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST                                                                                                                                                   |
 | +++++U_ARM_XFER                                                         |           | 7/7           | 9/9           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER                                                                                                                                        |
-| +++++U_HALT_XFER                                                        |           | 6/6           | 7/7           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER                                                                                                                                       |
-| ++++U_STAT                                                              |           | 27/51         | 23/42         | 13/44         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT                                                                                                                                                  |
-| +++++U_DMUX                                                             |           | 0/6           | 0/0           | 0/11          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX                                                                                                                                           |
-| ++++++U_CS_MUX                                                          |           | 0/6           | 0/0           | 0/11          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX                                                                                                                                  |
-| +++++++I3.U_MUX8                                                        |           | 6/6           | 0/0           | 11/11         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8                                                                                                                        |
-| +++++U_DSL1                                                             |           | 6/6           | 6/6           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1                                                                                                                                           |
+| +++++U_HALT_XFER                                                        |           | 5/5           | 7/7           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER                                                                                                                                       |
+| ++++U_STAT                                                              |           | 29/55         | 23/42         | 19/54         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT                                                                                                                                                  |
+| +++++U_DMUX                                                             |           | 0/7           | 0/0           | 0/11          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX                                                                                                                                           |
+| ++++++U_CS_MUX                                                          |           | 0/7           | 0/0           | 0/11          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX                                                                                                                                  |
+| +++++++I3.U_MUX8                                                        |           | 7/7           | 0/0           | 11/11         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8                                                                                                                        |
+| +++++U_DSL1                                                             |           | 5/5           | 6/6           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1                                                                                                                                           |
 | +++++U_MUX                                                              |           | 0/3           | 0/0           | 0/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_MUX                                                                                                                                            |
 | ++++++U_CS_MUX                                                          |           | 0/3           | 0/0           | 0/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_MUX/U_CS_MUX                                                                                                                                   |
 | +++++++I1.U_MUX2                                                        |           | 3/3           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2                                                                                                                         |
 | +++++U_RESET_EDGE                                                       |           | 2/2           | 3/3           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_RESET_EDGE                                                                                                                                     |
-| +++++U_SMUX                                                             |           | 0/2           | 0/0           | 0/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_SMUX                                                                                                                                           |
-| ++++++U_CS_MUX                                                          |           | 0/2           | 0/0           | 0/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_SMUX/U_CS_MUX                                                                                                                                  |
-| +++++++I6.U_MUX64                                                       |           | 2/2           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_SMUX/U_CS_MUX/I6.U_MUX64                                                                                                                       |
+| +++++U_SMUX                                                             |           | 0/4           | 0/0           | 0/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_SMUX                                                                                                                                           |
+| ++++++U_CS_MUX                                                          |           | 0/4           | 0/0           | 0/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_SMUX/U_CS_MUX                                                                                                                                  |
+| +++++++I6.U_MUX64                                                       |           | 4/4           | 0/0           | 8/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_SMUX/U_CS_MUX/I6.U_MUX64                                                                                                                       |
 | +++++U_STAT_CNT                                                         |           | 5/5           | 10/10         | 10/10         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_STAT_CNT                                                                                                                                       |
-| ++++U_TRIG                                                              |           | 1/65          | 1/38          | 0/43          | 0/22          | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG                                                                                                                                                  |
-| +++++U_TC                                                               |           | 2/53          | 1/22          | 1/39          | 0/18          | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC                                                                                                                                             |
-| ++++++I_STORAGE_QUAL.U_STORAGE_QUAL                                     |           | 1/4           | 1/2           | 0/2           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_STORAGE_QUAL                                                                                                               |
-| +++++++I_SRLT_NE_1.I_NMU_1_TO_4.U_TCL                                   |           | 1/3           | 1/1           | 0/2           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_STORAGE_QUAL/I_SRLT_NE_1.I_NMU_1_TO_4.U_TCL                                                                                |
-| ++++++++I_NMU_EQ1.U_iDOUT                                               |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_STORAGE_QUAL/I_SRLT_NE_1.I_NMU_1_TO_4.U_TCL/I_NMU_EQ1.U_iDOUT                                                              |
-| ++++++I_TSEQ_EQ1.I_TSEQ_SIMPLE                                          |           | 11/43         | 17/17         | 2/34          | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE                                                                                                                    |
+| ++++U_TRIG                                                              |           | 1/176         | 1/150         | 0/131         | 0/42          | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG                                                                                                                                                  |
+| +++++U_TC                                                               |           | 2/119         | 1/72          | 1/111         | 0/22          | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC                                                                                                                                             |
+| ++++++I_STORAGE_QUAL.U_STORAGE_QUAL                                     |           | 0/9           | 0/3           | 0/6           | 0/3           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_STORAGE_QUAL                                                                                                               |
+| +++++++I_SRLT_NE_1.I_NMU_5_TO_8.F_TPL[0].U_TPL                          |           | 1/3           | 1/1           | 0/2           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_STORAGE_QUAL/I_SRLT_NE_1.I_NMU_5_TO_8.F_TPL[0].U_TPL                                                                       |
+| ++++++++I_NMU_EQ4.U_iDOUT                                               |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_STORAGE_QUAL/I_SRLT_NE_1.I_NMU_5_TO_8.F_TPL[0].U_TPL/I_NMU_EQ4.U_iDOUT                                                     |
+| +++++++I_SRLT_NE_1.I_NMU_5_TO_8.U_TCL                                   |           | 1/3           | 1/1           | 0/2           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_STORAGE_QUAL/I_SRLT_NE_1.I_NMU_5_TO_8.U_TCL                                                                                |
+| ++++++++I_NMU_EQ2.U_iDOUT                                               |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_STORAGE_QUAL/I_SRLT_NE_1.I_NMU_5_TO_8.U_TCL/I_NMU_EQ2.U_iDOUT                                                              |
+| +++++++I_SRLT_NE_1.I_NMU_5_TO_8.U_TPL                                   |           | 1/3           | 1/1           | 0/2           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_STORAGE_QUAL/I_SRLT_NE_1.I_NMU_5_TO_8.U_TPL                                                                                |
+| ++++++++I_NMU_EQ1.U_iDOUT                                               |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_STORAGE_QUAL/I_SRLT_NE_1.I_NMU_5_TO_8.U_TPL/I_NMU_EQ1.U_iDOUT                                                              |
+| ++++++I_TSEQ_EQ1.I_TSEQ_SIMPLE                                          |           | 51/99         | 65/65         | 34/98         | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE                                                                                                                    |
 | +++++++S0_CFG                                                           |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/S0_CFG                                                                                                             |
+| +++++++U_MUS.U_MUX0                                                     |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_MUS.U_MUX0                                                                                                       |
+| ++++++++U_CS_MUX                                                        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_MUS.U_MUX0/U_CS_MUX                                                                                              |
+| +++++++++I3.U_MUX8                                                      |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_MUS.U_MUX0/U_CS_MUX/I3.U_MUX8                                                                                    |
 | +++++++U_STATES[10].SI_CFG                                              |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[10].SI_CFG                                                                                                |
+| +++++++U_STATES[10].U_MUS.U_MUX                                         |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[10].U_MUS.U_MUX                                                                                           |
+| ++++++++U_CS_MUX                                                        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[10].U_MUS.U_MUX/U_CS_MUX                                                                                  |
+| +++++++++I3.U_MUX8                                                      |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[10].U_MUS.U_MUX/U_CS_MUX/I3.U_MUX8                                                                        |
 | +++++++U_STATES[11].SI_CFG                                              |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[11].SI_CFG                                                                                                |
+| +++++++U_STATES[11].U_MUS.U_MUX                                         |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[11].U_MUS.U_MUX                                                                                           |
+| ++++++++U_CS_MUX                                                        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[11].U_MUS.U_MUX/U_CS_MUX                                                                                  |
+| +++++++++I3.U_MUX8                                                      |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[11].U_MUS.U_MUX/U_CS_MUX/I3.U_MUX8                                                                        |
 | +++++++U_STATES[12].SI_CFG                                              |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[12].SI_CFG                                                                                                |
+| +++++++U_STATES[12].U_MUS.U_MUX                                         |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[12].U_MUS.U_MUX                                                                                           |
+| ++++++++U_CS_MUX                                                        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[12].U_MUS.U_MUX/U_CS_MUX                                                                                  |
+| +++++++++I3.U_MUX8                                                      |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[12].U_MUS.U_MUX/U_CS_MUX/I3.U_MUX8                                                                        |
 | +++++++U_STATES[13].SI_CFG                                              |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[13].SI_CFG                                                                                                |
+| +++++++U_STATES[13].U_MUS.U_MUX                                         |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[13].U_MUS.U_MUX                                                                                           |
+| ++++++++U_CS_MUX                                                        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[13].U_MUS.U_MUX/U_CS_MUX                                                                                  |
+| +++++++++I3.U_MUX8                                                      |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[13].U_MUS.U_MUX/U_CS_MUX/I3.U_MUX8                                                                        |
 | +++++++U_STATES[14].SI_CFG                                              |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[14].SI_CFG                                                                                                |
+| +++++++U_STATES[14].U_MUS.U_MUX                                         |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[14].U_MUS.U_MUX                                                                                           |
+| ++++++++U_CS_MUX                                                        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[14].U_MUS.U_MUX/U_CS_MUX                                                                                  |
+| +++++++++I3.U_MUX8                                                      |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[14].U_MUS.U_MUX/U_CS_MUX/I3.U_MUX8                                                                        |
 | +++++++U_STATES[15].SI_CFG                                              |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[15].SI_CFG                                                                                                |
+| +++++++U_STATES[15].U_MUS.U_MUX                                         |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[15].U_MUS.U_MUX                                                                                           |
+| ++++++++U_CS_MUX                                                        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[15].U_MUS.U_MUX/U_CS_MUX                                                                                  |
+| +++++++++I3.U_MUX8                                                      |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[15].U_MUS.U_MUX/U_CS_MUX/I3.U_MUX8                                                                        |
 | +++++++U_STATES[1].SI_CFG                                               |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[1].SI_CFG                                                                                                 |
+| +++++++U_STATES[1].U_MUS.U_MUX                                          |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[1].U_MUS.U_MUX                                                                                            |
+| ++++++++U_CS_MUX                                                        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[1].U_MUS.U_MUX/U_CS_MUX                                                                                   |
+| +++++++++I3.U_MUX8                                                      |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[1].U_MUS.U_MUX/U_CS_MUX/I3.U_MUX8                                                                         |
 | +++++++U_STATES[2].SI_CFG                                               |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[2].SI_CFG                                                                                                 |
+| +++++++U_STATES[2].U_MUS.U_MUX                                          |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[2].U_MUS.U_MUX                                                                                            |
+| ++++++++U_CS_MUX                                                        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[2].U_MUS.U_MUX/U_CS_MUX                                                                                   |
+| +++++++++I3.U_MUX8                                                      |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[2].U_MUS.U_MUX/U_CS_MUX/I3.U_MUX8                                                                         |
 | +++++++U_STATES[3].SI_CFG                                               |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[3].SI_CFG                                                                                                 |
+| +++++++U_STATES[3].U_MUS.U_MUX                                          |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[3].U_MUS.U_MUX                                                                                            |
+| ++++++++U_CS_MUX                                                        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[3].U_MUS.U_MUX/U_CS_MUX                                                                                   |
+| +++++++++I3.U_MUX8                                                      |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[3].U_MUS.U_MUX/U_CS_MUX/I3.U_MUX8                                                                         |
 | +++++++U_STATES[4].SI_CFG                                               |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[4].SI_CFG                                                                                                 |
+| +++++++U_STATES[4].U_MUS.U_MUX                                          |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[4].U_MUS.U_MUX                                                                                            |
+| ++++++++U_CS_MUX                                                        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[4].U_MUS.U_MUX/U_CS_MUX                                                                                   |
+| +++++++++I3.U_MUX8                                                      |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[4].U_MUS.U_MUX/U_CS_MUX/I3.U_MUX8                                                                         |
 | +++++++U_STATES[5].SI_CFG                                               |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[5].SI_CFG                                                                                                 |
+| +++++++U_STATES[5].U_MUS.U_MUX                                          |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[5].U_MUS.U_MUX                                                                                            |
+| ++++++++U_CS_MUX                                                        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[5].U_MUS.U_MUX/U_CS_MUX                                                                                   |
+| +++++++++I3.U_MUX8                                                      |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[5].U_MUS.U_MUX/U_CS_MUX/I3.U_MUX8                                                                         |
 | +++++++U_STATES[6].SI_CFG                                               |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[6].SI_CFG                                                                                                 |
+| +++++++U_STATES[6].U_MUS.U_MUX                                          |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[6].U_MUS.U_MUX                                                                                            |
+| ++++++++U_CS_MUX                                                        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[6].U_MUS.U_MUX/U_CS_MUX                                                                                   |
+| +++++++++I3.U_MUX8                                                      |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[6].U_MUS.U_MUX/U_CS_MUX/I3.U_MUX8                                                                         |
 | +++++++U_STATES[7].SI_CFG                                               |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[7].SI_CFG                                                                                                 |
+| +++++++U_STATES[7].U_MUS.U_MUX                                          |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[7].U_MUS.U_MUX                                                                                            |
+| ++++++++U_CS_MUX                                                        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[7].U_MUS.U_MUX/U_CS_MUX                                                                                   |
+| +++++++++I3.U_MUX8                                                      |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[7].U_MUS.U_MUX/U_CS_MUX/I3.U_MUX8                                                                         |
 | +++++++U_STATES[8].SI_CFG                                               |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[8].SI_CFG                                                                                                 |
+| +++++++U_STATES[8].U_MUS.U_MUX                                          |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[8].U_MUS.U_MUX                                                                                            |
+| ++++++++U_CS_MUX                                                        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[8].U_MUS.U_MUX/U_CS_MUX                                                                                   |
+| +++++++++I3.U_MUX8                                                      |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[8].U_MUS.U_MUX/U_CS_MUX/I3.U_MUX8                                                                         |
 | +++++++U_STATES[9].SI_CFG                                               |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[9].SI_CFG                                                                                                 |
-| ++++++I_TSEQ_NEQ2.U_TC_EQUATION                                         |           | 1/4           | 1/2           | 0/2           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION                                                                                                                   |
-| +++++++I_SRLT_NE_1.I_NMU_1_TO_4.U_TCL                                   |           | 1/3           | 1/1           | 0/2           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_1_TO_4.U_TCL                                                                                    |
-| ++++++++I_NMU_EQ1.U_iDOUT                                               |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_1_TO_4.U_TCL/I_NMU_EQ1.U_iDOUT                                                                  |
-| +++++U_TM                                                               |           | 0/11          | 0/15          | 0/4           | 0/4           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM                                                                                                                                             |
-| ++++++G_NMU[0].U_M                                                      |           | 1/11          | 1/15          | 0/4           | 0/4           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M                                                                                                                                |
-| +++++++U_MU                                                             |           | 1/10          | 1/14          | 0/4           | 0/4           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU                                                                                                                           |
-| ++++++++I_MUT_GANDX.U_match                                             |           | 0/9           | 0/13          | 0/4           | 0/4           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match                                                                                                       |
-| +++++++++I_SRL16.U_GANDX_SRL16                                          |           | 9/9           | 13/13         | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16                                                                                 |
-| +ad7621_instance                                                        |           | 37/37         | 52/52         | 49/49         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/ad7621_instance                                                                                                                                                                     |
+| +++++++U_STATES[9].U_MUS.U_MUX                                          |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[9].U_MUS.U_MUX                                                                                            |
+| ++++++++U_CS_MUX                                                        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[9].U_MUS.U_MUX/U_CS_MUX                                                                                   |
+| +++++++++I3.U_MUX8                                                      |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[9].U_MUS.U_MUX/U_CS_MUX/I3.U_MUX8                                                                         |
+| ++++++I_TSEQ_NEQ2.U_TC_EQUATION                                         |           | 0/9           | 0/3           | 0/6           | 0/3           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION                                                                                                                   |
+| +++++++I_SRLT_NE_1.I_NMU_5_TO_8.F_TPL[0].U_TPL                          |           | 1/3           | 1/1           | 0/2           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_5_TO_8.F_TPL[0].U_TPL                                                                           |
+| ++++++++I_NMU_EQ4.U_iDOUT                                               |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_5_TO_8.F_TPL[0].U_TPL/I_NMU_EQ4.U_iDOUT                                                         |
+| +++++++I_SRLT_NE_1.I_NMU_5_TO_8.U_TCL                                   |           | 1/3           | 1/1           | 0/2           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_5_TO_8.U_TCL                                                                                    |
+| ++++++++I_NMU_EQ2.U_iDOUT                                               |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_5_TO_8.U_TCL/I_NMU_EQ2.U_iDOUT                                                                  |
+| +++++++I_SRLT_NE_1.I_NMU_5_TO_8.U_TPL                                   |           | 1/3           | 1/1           | 0/2           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_5_TO_8.U_TPL                                                                                    |
+| ++++++++I_NMU_EQ1.U_iDOUT                                               |           | 2/2           | 0/0           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_5_TO_8.U_TPL/I_NMU_EQ1.U_iDOUT                                                                  |
+| +++++U_TM                                                               |           | 0/56          | 0/77          | 0/20          | 0/20          | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM                                                                                                                                             |
+| ++++++G_NMU[0].U_M                                                      |           | 1/5           | 1/5           | 0/2           | 0/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M                                                                                                                                |
+| +++++++U_MU                                                             |           | 1/4           | 1/4           | 0/2           | 0/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU                                                                                                                           |
+| ++++++++I_MUT_GANDX.U_match                                             |           | 0/3           | 0/3           | 0/2           | 0/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match                                                                                                       |
+| +++++++++I_SRL16.U_GANDX_SRL16                                          |           | 3/3           | 3/3           | 2/2           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16                                                                                 |
+| ++++++G_NMU[1].U_M                                                      |           | 1/23          | 1/35          | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M                                                                                                                                |
+| +++++++U_MU                                                             |           | 1/22          | 1/34          | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU                                                                                                                           |
+| ++++++++I_MUT_GANDX.U_match                                             |           | 0/21          | 0/33          | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match                                                                                                       |
+| +++++++++I_SRL16.U_GANDX_SRL16                                          |           | 21/21         | 33/33         | 8/8           | 8/8           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16                                                                                 |
+| ++++++G_NMU[2].U_M                                                      |           | 1/18          | 1/27          | 0/6           | 0/6           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M                                                                                                                                |
+| +++++++U_MU                                                             |           | 1/17          | 1/26          | 0/6           | 0/6           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU                                                                                                                           |
+| ++++++++I_MUT_GANDX.U_match                                             |           | 0/16          | 0/25          | 0/6           | 0/6           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match                                                                                                       |
+| +++++++++I_SRL16.U_GANDX_SRL16                                          |           | 16/16         | 25/25         | 6/6           | 6/6           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16                                                                                 |
+| ++++++G_NMU[3].U_M                                                      |           | 1/5           | 1/5           | 0/2           | 0/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[3].U_M                                                                                                                                |
+| +++++++U_MU                                                             |           | 1/4           | 1/4           | 0/2           | 0/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[3].U_M/U_MU                                                                                                                           |
+| ++++++++I_MUT_GANDX.U_match                                             |           | 0/3           | 0/3           | 0/2           | 0/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[3].U_M/U_MU/I_MUT_GANDX.U_match                                                                                                       |
+| +++++++++I_SRL16.U_GANDX_SRL16                                          |           | 3/3           | 3/3           | 2/2           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[3].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16                                                                                 |
+| ++++++G_NMU[4].U_M                                                      |           | 1/5           | 1/5           | 0/2           | 0/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[4].U_M                                                                                                                                |
+| +++++++U_MU                                                             |           | 1/4           | 1/4           | 0/2           | 0/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[4].U_M/U_MU                                                                                                                           |
+| ++++++++I_MUT_GANDX.U_match                                             |           | 0/3           | 0/3           | 0/2           | 0/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[4].U_M/U_MU/I_MUT_GANDX.U_match                                                                                                       |
+| +++++++++I_SRL16.U_GANDX_SRL16                                          |           | 3/3           | 3/3           | 2/2           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[4].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16                                                                                 |
+| +ad7621_instance                                                        |           | 28/29         | 35/37         | 49/50         | 1/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/ad7621_instance                                                                                                                                                                     |
+| ++falling_edge_fifo_instant                                             |           | 1/1           | 2/2           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/ad7621_instance/falling_edge_fifo_instant                                                                                                                                           |
 | +clk_wizard_instance                                                    |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 2/2   | 1/1   | top_embed/clk_wizard_instance                                                                                                                                                                 |
-| +fifo_ccd_instance                                                      |           | 0/61          | 0/72          | 0/68          | 0/0           | 0/2       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance                                                                                                                                                                   |
-| ++U0                                                                    |           | 0/61          | 0/72          | 0/68          | 0/0           | 0/2       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0                                                                                                                                                                |
-| +++xst_fifo_generator                                                   |           | 0/61          | 0/72          | 0/68          | 0/0           | 0/2       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator                                                                                                                                             |
-| ++++gconvfifo.rf                                                        |           | 0/61          | 0/72          | 0/68          | 0/0           | 0/2       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf                                                                                                                                |
-| +++++grf.rf                                                             |           | 0/61          | 0/72          | 0/68          | 0/0           | 0/2       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf                                                                                                                         |
-| ++++++gntv_or_sync_fifo.gl0.rd                                          |           | 1/28          | 0/35          | 2/39          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd                                                                                                |
+| +fifo_ccd_instance                                                      |           | 0/57          | 0/72          | 0/68          | 0/0           | 0/2       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance                                                                                                                                                                   |
+| ++U0                                                                    |           | 0/57          | 0/72          | 0/68          | 0/0           | 0/2       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0                                                                                                                                                                |
+| +++xst_fifo_generator                                                   |           | 0/57          | 0/72          | 0/68          | 0/0           | 0/2       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator                                                                                                                                             |
+| ++++gconvfifo.rf                                                        |           | 0/57          | 0/72          | 0/68          | 0/0           | 0/2       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf                                                                                                                                |
+| +++++grf.rf                                                             |           | 0/57          | 0/72          | 0/68          | 0/0           | 0/2       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf                                                                                                                         |
+| ++++++gntv_or_sync_fifo.gl0.rd                                          |           | 2/28          | 0/35          | 2/39          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd                                                                                                |
 | +++++++grss.gdc.dc                                                      |           | 1/7           | 0/11          | 1/12          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc                                                                                    |
 | ++++++++dc                                                              |           | 6/6           | 11/11         | 11/11         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc                                                                                 |
 | +++++++grss.rsts                                                        |           | 2/8           | 2/2           | 2/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts                                                                                      |
 | ++++++++c1                                                              |           | 3/3           | 0/0           | 6/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c1                                                                                   |
 | ++++++++c2                                                              |           | 3/3           | 0/0           | 6/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/c2                                                                                   |
-| +++++++rpntr                                                            |           | 12/12         | 22/22         | 11/11         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr                                                                                          |
-| ++++++gntv_or_sync_fifo.gl0.wr                                          |           | 1/21          | 0/24          | 1/26          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr                                                                                                |
+| +++++++rpntr                                                            |           | 11/11         | 22/22         | 11/11         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr                                                                                          |
+| ++++++gntv_or_sync_fifo.gl0.wr                                          |           | 1/20          | 0/24          | 1/26          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr                                                                                                |
 | +++++++gwss.wsts                                                        |           | 2/8           | 2/2           | 2/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts                                                                                      |
 | ++++++++c0                                                              |           | 3/3           | 0/0           | 6/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c0                                                                                   |
 | ++++++++c1                                                              |           | 3/3           | 0/0           | 6/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/c1                                                                                   |
-| +++++++wpntr                                                            |           | 12/12         | 22/22         | 11/11         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr                                                                                          |
+| +++++++wpntr                                                            |           | 11/11         | 22/22         | 11/11         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr                                                                                          |
 | ++++++gntv_or_sync_fifo.mem                                             |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/2       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem                                                                                                   |
 | +++++++gbm.gbmg.gbmga.ngecc.bmg                                         |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/2       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg                                                                          |
 | ++++++++gnativebmg.native_blk_mem_gen                                   |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/2       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen                                            |
@@ -1394,19 +1483,20 @@ Section 13 - Utilization by Hierarchy
 | +++++++++++s3_noinit.ram                                                |           | 0/0           | 0/0           | 0/0           | 0/0           | 1/1       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram  |
 | ++++++++++ramloop[1].ram.r                                              |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/1       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r                |
 | +++++++++++s3_noinit.ram                                                |           | 0/0           | 0/0           | 0/0           | 0/0           | 1/1       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram  |
-| ++++++rstblk                                                            |           | 11/11         | 13/13         | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk                                                                                                                  |
-| +fifo_spi_instance                                                      |           | 11/14         | 18/20         | 17/20         | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_spi_instance                                                                                                                                                                   |
+| ++++++rstblk                                                            |           | 8/8           | 13/13         | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk                                                                                                                  |
+| +fifo_spi_instance                                                      |           | 10/13         | 17/21         | 17/20         | 0/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_spi_instance                                                                                                                                                                   |
 | ++fall_edge_fifo_instant                                                |           | 2/2           | 2/2           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_spi_instance/fall_edge_fifo_instant                                                                                                                                            |
-| ++rise_edge_fifo_clk_instant                                            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_spi_instance/rise_edge_fifo_clk_instant                                                                                                                                        |
-| +fpga_spi_instance                                                      |           | 130/136       | 153/160       | 126/128       | 1/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fpga_spi_instance                                                                                                                                                                   |
+| ++rise_edge_fifo_clk_instant                                            |           | 1/1           | 2/2           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_spi_instance/rise_edge_fifo_clk_instant                                                                                                                                        |
+| +fpga_spi_instance                                                      |           | 173/176       | 190/194       | 182/185       | 1/3           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fpga_spi_instance                                                                                                                                                                   |
 | ++fpga_clk_fall_edge_instance                                           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fpga_spi_instance/fpga_clk_fall_edge_instance                                                                                                                                       |
-| ++fpga_clk_rise_edge_instance                                           |           | 4/4           | 5/5           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fpga_spi_instance/fpga_clk_rise_edge_instance                                                                                                                                       |
+| ++fpga_clk_rise_edge_instance                                           |           | 1/1           | 2/2           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fpga_spi_instance/fpga_clk_rise_edge_instance                                                                                                                                       |
 | ++fpga_cs_rise_edge_instance                                            |           | 1/1           | 2/2           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fpga_spi_instance/fpga_cs_rise_edge_instance                                                                                                                                        |
-| +ilx_instance                                                           |           | 75/83         | 87/93         | 121/123       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/ilx_instance                                                                                                                                                                        |
-| ++adc_start_instant                                                     |           | 4/4           | 3/3           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/ilx_instance/adc_start_instant                                                                                                                                                      |
-| ++rising_edge_fifo_instant                                              |           | 4/4           | 3/3           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/ilx_instance/rising_edge_fifo_instant                                                                                                                                               |
-| +make_pulse_instance                                                    |           | 19/19         | 26/26         | 31/31         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/make_pulse_instance                                                                                                                                                                 |
-| +mux_spi_instance                                                       |           | 2/2           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/mux_spi_instance                                                                                                                                                                    |
+| +ilx_instance                                                           |           | 98/102        | 120/123       | 167/169       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/ilx_instance                                                                                                                                                                        |
+| ++adc_start_instant                                                     |           | 3/3           | 3/3           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/ilx_instance/adc_start_instant                                                                                                                                                      |
+| ++rising_edge_fifo_instant                                              |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/ilx_instance/rising_edge_fifo_instant                                                                                                                                               |
+| +make_pulse_instance                                                    |           | 6/6           | 7/7           | 8/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/make_pulse_instance                                                                                                                                                                 |
+| +mux_spi_instance                                                       |           | 3/3           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/mux_spi_instance                                                                                                                                                                    |
+| +rise_edge_acqui_src_instant                                            |           | 2/2           | 3/3           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/rise_edge_acqui_src_instant                                                                                                                                                         |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 * Slices can be packed with basic elements from multiple hierarchies.

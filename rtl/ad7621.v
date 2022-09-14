@@ -22,8 +22,6 @@
 
 module ad7621(
     /* System Interface */
-    (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 sys_clk CLK" *)
-    (* X_INTERFACE_PARAMETER = "FREQ_HZ 100000000" *)
     input sys_clk,
     input sys_rst,
     
@@ -44,15 +42,13 @@ module ad7621(
     //output [15:0] cnt_rd_pixel_ila
     );
     
-    reg ad7621_busy_ff;
-    always @ (posedge sys_clk)
-    begin
-        ad7621_busy_ff <= ad7621_busy;
-    end
-    
-    /* Falling edge of ad7621 busy */
+	 /* Detect falling edge of ad7621 busy */ 
     wire flag_falling_edge_busy;
-    assign flag_falling_edge_busy = ad7621_busy_ff & (ad7621_busy_ff ^ ad7621_busy);
+    detect_falling_edge falling_edge_fifo_instant 
+    (.sys_clk(sys_clk),
+     .d_i(ad7621_busy),
+     .d_o(flag_falling_edge_busy)
+     );
     
     /**/
     reg [15:0] cnt_rd_pixel = 16'd0;
@@ -69,7 +65,13 @@ module ad7621(
     
     /* Latch data in falling edge of busy signal */
     reg [31:0] ad7621_do_ff1;
-	 wire [31:0] ad7621_do_ff2;
+	 wire [15:0] ad7621_do_ff2;
+	 divider div_instance (
+			.Q(16'd65535),
+			.M(FPGA_MAXSATVALUE),
+			.Quo(ad7621_do_ff2),
+			.start(ad7621_flag_fifo_do)
+	 );
     always @ (posedge sys_clk)
     begin
         if (sys_rst || ad7621_restart)
@@ -83,9 +85,8 @@ module ad7621(
             begin
                 if ( (cnt_rd_pixel >= 16'd34) && (cnt_rd_pixel <= 16'd2081) )
                 begin
-//                    ad7621_do_ff1 <= (ad7621_di - FPGA_OFFSETVALUE) * 65535;
-						  ad7621_do_ff1 <= ad7621_di - FPGA_OFFSETVALUE;
-                    ad7621_fifo_do <= ad7621_do_ff1[15:0];
+                    ad7621_fifo_do <= ad7621_di - FPGA_OFFSETVALUE;
+                    //ad7621_fifo_do <= ad7621_do_ff1;
                     ad7621_flag_fifo_do <= 1'b1;
                 end
             end 
@@ -96,10 +97,12 @@ module ad7621(
     end
 	 
 
-		reg ad7621_start_ff;
+		reg ad7621_start_ff1 = 1'b0;
+		reg ad7621_start_ff2 = 1'b0; 
 		always @ (posedge sys_clk)
 		begin
-			ad7621_start_ff <= ad7621_start;
+			ad7621_start_ff1 <= ad7621_start;
+			ad7621_start_ff2 <= ad7621_start_ff1;
 		end
     
     /* Strobe a convst signal */
@@ -111,7 +114,7 @@ module ad7621(
         end
         else begin
             if (ad7621_start) ad7621_convst <= 1'b0;
-            if (ad7621_start_ff) ad7621_convst <= 1'b1;
+            if (ad7621_start_ff2) ad7621_convst <= 1'b1;
         end
     end
     

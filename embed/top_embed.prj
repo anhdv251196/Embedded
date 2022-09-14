@@ -1,3 +1,4 @@
+verilog work "../rtl/divider.v"
 verilog work "../rtl/detect_rising_edge.v"
 verilog work "../rtl/detect_falling_edge.v"
 verilog work "../rtl/mux_data_spi.v"

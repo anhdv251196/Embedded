@@ -44,8 +44,8 @@ module mux_data_spi(
 	 /*ADT*/
 	 input adt_cs,
 	 output adt7301_clk,
-	 output adt7301_cs,
-	 input adt7301_miso
+	 output adt7301_cs
+	 //input adt7301_miso
     );
 	 
 	 wire m0_scl_o;
@@ -54,10 +54,11 @@ module mux_data_spi(
 	 (.O(m0_scl_i),
 	  .IO(spi_miso),
 	  .I(m0_scl_o),
-	  .T(~e2_cs)
+	  .T(~e2_cs | ~adt_cs)
 	  );
     
-    assign m0_scl_o = (fifo_cs == 1'b0) ? fifo_miso : (fpga_cs == 1'b0) ? fpga_miso : (adt_cs == 1'b0) ? adt7301_miso :1'b0;
+    //assign m0_scl_o = (fifo_cs == 1'b0) ? fifo_miso : (fpga_cs == 1'b0) ? fpga_miso : (adt_cs == 1'b0) ? m0_scl_i :1'b0;
+	 assign m0_scl_o = ((fifo_cs == 1'b0) && (fpga_cs == 1'b0)) ? fifo_miso : (fpga_cs == 1'b0) ? fpga_miso : 1'b0;
 //	 wire [2:0] spi_mux;
 //	 assign spi_mux = {fifo_cs, fpga_cs, adt_cs};
 //	 always @ (*)

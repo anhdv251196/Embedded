@@ -40,7 +40,7 @@ module top_embed(
 	/* ADT interface */
 	output adt7301_clk,
 	output adt7301_cs,
-	input adt7301_miso,
+	//input adt7301_miso,
 	
 	/* EEPROM interface */
 	output eeprom_clk,
@@ -92,8 +92,8 @@ module top_embed(
 	 
 	 .adt_cs(adt_cs),
 	 .adt7301_clk(adt7301_clk),
-	 .adt7301_cs(adt7301_cs),
-	 .adt7301_miso(adt7301_miso)
+	 .adt7301_cs(adt7301_cs)
+	 //.adt7301_miso(adt7301_miso)
 	 );
 	 
 	 wire [15:0] FPGA_INTCLOCK;
@@ -115,6 +115,7 @@ module top_embed(
 	 wire flag_adc_restart;
 	 wire ilx511b_clk_ff;
 	 wire ilx511b_rog_ff;
+	 wire flag_sel_clok;
 	 ilx511b ilx_instance (
 	 .sys_clk(sys_2xclk),
 	 .sys_rst(xreset),
@@ -123,7 +124,8 @@ module top_embed(
 	 .ilx511b_clk(ilx511b_clk_ff),
 	 .ilx511b_rog(ilx511b_rog_ff),
 	 .flag_adc_start(flag_adc_start),
-	 .flag_adc_restart(flag_adc_restart)
+	 .flag_adc_restart(flag_adc_restart),
+	 .flag_sel_clok(flag_sel_clok)
 	 );
 	 
 	 
@@ -137,7 +139,7 @@ module top_embed(
 	 .clk_2_5Mhz(clk_2_5Mhz)
 	 );
 	 
-	 assign ilx511b_clk = (sel_ccd_clk == 1'b1) ? ~ilx511b_clk_ff : ~clk_2_5Mhz;
+	 assign ilx511b_clk = (flag_sel_clok == 1'b1) ? ~ilx511b_clk_ff : ~clk_2_5Mhz;
 	 assign ilx511b_rog = ~ilx511b_rog_ff;
 	 assign ilx511b_shsw = 1'b0;
 	 
@@ -173,8 +175,7 @@ module top_embed(
 	 wire [10:0] cnt_ff;
 	 fifo_ccd fifo_ccd_instance (
 	 .clk(sys_2xclk), // input clk
-//	 .rst(xreset | rise_edge_acqui_src), // input rst
-	 .rst(xreset), // input rst
+	 .rst(xreset | rise_edge_acqui_src), // input rst
 	 .din(ad7621_fifo_do), // input [15 : 0] din
 	 .wr_en(ad7621_flag_fifo_do & ~fifo_full), // input wr_en
 	 .rd_en(flag_rd_fifo & ~fifo_empty), // input rd_en
@@ -186,15 +187,17 @@ module top_embed(
 	 
 	 always @ (posedge sys_2xclk)
 	 begin
-		if (data_count >= 1024)
+		if (data_count >= 1)
 		begin
 			pixel_ready <= 1'b1;
+		end else begin
+			pixel_ready <= 1'b0;
 		end
 	 end
 //	 assign pixel_ready = (data_count >= 1);
 	 
 	 fifo_spi fifo_spi_instance (
-	 .sys_clk(sys_4xclk),
+	 .sys_clk(sys_2xclk),
 	 .sys_rst(xreset),
 	 .fifo_data(fifo_dout),
 	 .flag_fifo_data(flag_rd_fifo | ~fifo_empty),

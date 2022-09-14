@@ -36,7 +36,7 @@ module fifo_spi(
     input fifo_clk,
     input fifo_cs,
     input fifo_mosi,
-    output reg fifo_miso = 1'b0
+    output fifo_miso
     );
     
     /* Detect falling edge of fifo cs */ 
@@ -70,10 +70,9 @@ module fifo_spi(
         if (rise_edge_fifo_clk)
 		  begin
 			data_tranfer <= (data_tranfer << 1'b1);
-			fifo_miso <= data_tranfer[15];
 		  end
     end
 	 
-//    assign fifo_miso = data_tranfer[15];
+    assign fifo_miso = data_tranfer[15];
       
 endmodule

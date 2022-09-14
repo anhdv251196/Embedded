@@ -7,15 +7,19 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/top_embed |home|ise|Machine_VB|embed|rtl|top_embed.v/ad7621_instance - ad7621</ClosedNode>
+         <ClosedNode>/top_embed |home|ise|Machine_VB|embed|rtl|top_embed.v/fifo_spi_instance - fifo_spi</ClosedNode>
+         <ClosedNode>/top_embed |home|ise|Machine_VB|embed|rtl|top_embed.v/fpga_spi_instance - fpga_spi</ClosedNode>
+         <ClosedNode>/top_embed |home|ise|Machine_VB|embed|rtl|top_embed.v/ilx_instance - ilx511b</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>fpga_spi_instance - fpga_spi (/home/ise/Machine_VB/embed/rtl/fpga_spi.v)</SelectedItem>
+         <SelectedItem>top_embed (/home/ise/Machine_VB/embed/rtl/top_embed.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000024b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000024b0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000022c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000022c0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>fpga_spi_instance - fpga_spi (/home/ise/Machine_VB/embed/rtl/fpga_spi.v)</CurrentItem>
+      <CurrentItem>top_embed (/home/ise/Machine_VB/embed/rtl/top_embed.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -23,13 +27,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Design Utilities</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Design Utilities</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -63,13 +67,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Manage Configuration Project (iMPACT)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >11</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016f0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000160000000010000000100000000000000000000000064ffffffff000000810000000000000001000001600000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Manage Configuration Project (iMPACT)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XAW" guiview="Process" >
       <ClosedNodes>
@@ -104,13 +108,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_CDC" guiview="Process" >
       <ClosedNodes>

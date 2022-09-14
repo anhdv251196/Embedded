@@ -16,7 +16,7 @@ NET "single_strobe" LOC = P4 | IOSTANDARD = "LVCMOS33";
 
 NET "spi_clk" LOC = P10 | IOSTANDARD = "LVCMOS33";
 NET "spi_mosi" LOC = P12 | IOSTANDARD = "LVCMOS33";
-NET "spi_miso" LOC = P27 | IOSTANDARD = "LVCMOS33";
+NET "spi_miso" LOC = P13 | IOSTANDARD = "LVCMOS33";
 
 NET "fpga_cs" LOC = P9 | IOSTANDARD = "LVCMOS33";
 NET "fifo_cs" LOC = P20 | IOSTANDARD = "LVCMOS33";
@@ -25,7 +25,7 @@ NET "adt_cs" LOC = P35 | IOSTANDARD = "LVCMOS33";
 
 NET "adt7301_clk" LOC = P33 | IOSTANDARD = "LVCMOS33";
 NET "adt7301_cs" LOC = P34 | IOSTANDARD = "LVCMOS33";
-NET "adt7301_miso" LOC = P13 | IOSTANDARD = "LVCMOS33";
+//NET "adt7301_miso" LOC = P13 | IOSTANDARD = "LVCMOS33";
 
 #Define constraints for EEPROM interfaces
 NET "eeprom_clk" LOC = P36 | IOSTANDARD = "LVCMOS33";
