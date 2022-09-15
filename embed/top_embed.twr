@@ -39,12 +39,12 @@ Timing constraint: PATH "TS_D2_TO_T2_ila_pro_0_path" TIG;
  0 timing errors detected. (0 setup errors, 0 hold errors)
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TDO (SLICE_X19Y26.G1), 1 path
+Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TDO (SLICE_X8Y15.G2), 1 path
 --------------------------------------------------------------------------------
-Delay (setup path):     5.669ns (data path - clock path skew + uncertainty)
+Delay (setup path):     7.672ns (data path - clock path skew + uncertainty)
   Source:               U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
   Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TDO (FF)
-  Data Path Delay:      5.669ns (Levels of Logic = 4)
+  Data Path Delay:      7.672ns (Levels of Logic = 4)
   Clock Path Skew:      0.000ns
   Source Clock:         icon_control0<13> falling
   Destination Clock:    icon_control0<0> rising
@@ -54,35 +54,35 @@ Delay (setup path):     5.669ns (data path - clock path skew + uncertainty)
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X22Y30.YQ      Tcklo                 0.730   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X17Y25.YQ      Tcklo                 0.705   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
-    SLICE_X23Y31.F2      net (fanout=1)        0.443   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
-    SLICE_X23Y31.X       Tilo                  0.643   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
+    SLICE_X8Y7.F3        net (fanout=1)        1.743   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X8Y7.X         Tilo                  0.692   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat1
-    SLICE_X20Y26.G4      net (fanout=2)        0.692   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat
-    SLICE_X20Y26.X       Tif5x                 0.987   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/ACT_dstat
+    SLICE_X9Y17.G1       net (fanout=2)        0.826   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat
+    SLICE_X9Y17.X        Tif5x                 0.924   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/ACT_dstat
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_91_F
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_91
-    SLICE_X21Y27.F4      net (fanout=1)        0.044   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_91
-    SLICE_X21Y27.X       Tilo                  0.643   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_4
+    SLICE_X10Y15.F1      net (fanout=1)        0.565   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_91
+    SLICE_X10Y15.X       Tilo                  0.692   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/dout_tmp
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_4
-    SLICE_X19Y26.G1      net (fanout=1)        0.484   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_4
-    SLICE_X19Y26.CLK     Tgck                  1.003   U_ila_pro_0/U0/I_NO_D.U_ILA/iSTAT_DOUT
+    SLICE_X8Y15.G2       net (fanout=1)        0.428   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_4
+    SLICE_X8Y15.CLK      Tgck                  1.097   U_ila_pro_0/U0/I_NO_D.U_ILA/iSTAT_DOUT
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O58_F
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O58
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TDO
     -------------------------------------------------  ---------------------------
-    Total                                      5.669ns (4.006ns logic, 1.663ns route)
-                                                       (70.7% logic, 29.3% route)
+    Total                                      7.672ns (4.110ns logic, 3.562ns route)
+                                                       (53.6% logic, 46.4% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDPE (SLICE_X22Y31.BY), 1 path
+Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDPE (SLICE_X9Y0.BY), 1 path
 --------------------------------------------------------------------------------
-Delay (setup path):     2.657ns (data path - clock path skew + uncertainty)
+Delay (setup path):     4.104ns (data path - clock path skew + uncertainty)
   Source:               U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
   Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDPE (FF)
-  Data Path Delay:      2.657ns (Levels of Logic = 1)
+  Data Path Delay:      4.104ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         icon_control0<13> falling
   Destination Clock:    icon_control0<0> rising
@@ -92,26 +92,26 @@ Delay (setup path):     2.657ns (data path - clock path skew + uncertainty)
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X22Y30.YQ      Tcklo                 0.730   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X17Y25.YQ      Tcklo                 0.705   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
-    SLICE_X23Y31.F2      net (fanout=1)        0.443   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
-    SLICE_X23Y31.X       Tilo                  0.643   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
+    SLICE_X8Y7.F3        net (fanout=1)        1.743   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X8Y7.X         Tilo                  0.692   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat1
-    SLICE_X22Y31.BY      net (fanout=2)        0.455   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat
-    SLICE_X22Y31.CLK     Tdick                 0.386   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D1
+    SLICE_X9Y0.BY        net (fanout=2)        0.650   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat
+    SLICE_X9Y0.CLK       Tdick                 0.314   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D1
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDPE
     -------------------------------------------------  ---------------------------
-    Total                                      2.657ns (1.759ns logic, 0.898ns route)
-                                                       (66.2% logic, 33.8% route)
+    Total                                      4.104ns (1.711ns logic, 2.393ns route)
+                                                       (41.7% logic, 58.3% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDCE (SLICE_X23Y31.F2), 1 path
+Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDCE (SLICE_X8Y7.F3), 1 path
 --------------------------------------------------------------------------------
-Delay (setup path):     1.895ns (data path - clock path skew + uncertainty)
+Delay (setup path):     3.250ns (data path - clock path skew + uncertainty)
   Source:               U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
   Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDCE (FF)
-  Data Path Delay:      1.895ns (Levels of Logic = 1)
+  Data Path Delay:      3.250ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         icon_control0<13> falling
   Destination Clock:    icon_control0<0> rising
@@ -121,27 +121,27 @@ Delay (setup path):     1.895ns (data path - clock path skew + uncertainty)
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X22Y30.YQ      Tcklo                 0.730   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X17Y25.YQ      Tcklo                 0.705   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
-    SLICE_X23Y31.F2      net (fanout=1)        0.443   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
-    SLICE_X23Y31.CLK     Tfck                  0.722   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
+    SLICE_X8Y7.F3        net (fanout=1)        1.743   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X8Y7.CLK       Tfck                  0.802   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat1
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDCE
     -------------------------------------------------  ---------------------------
-    Total                                      1.895ns (1.452ns logic, 0.443ns route)
-                                                       (76.6% logic, 23.4% route)
+    Total                                      3.250ns (1.507ns logic, 1.743ns route)
+                                                       (46.4% logic, 53.6% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: PATH "TS_D2_TO_T2_ila_pro_0_path" TIG;
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDCE (SLICE_X23Y31.F2), 1 path
+Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDCE (SLICE_X8Y7.F3), 1 path
 --------------------------------------------------------------------------------
-Delay (hold path):      1.405ns (datapath - clock path skew - uncertainty)
+Delay (hold path):      2.463ns (datapath - clock path skew - uncertainty)
   Source:               U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
   Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDCE (FF)
-  Data Path Delay:      1.405ns (Levels of Logic = 1)
+  Data Path Delay:      2.463ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         icon_control0<13> falling
   Destination Clock:    icon_control0<0> rising
@@ -151,24 +151,24 @@ Delay (hold path):      1.405ns (datapath - clock path skew - uncertainty)
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X22Y30.YQ      Tcklo                 0.584   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X17Y25.YQ      Tcklo                 0.564   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
-    SLICE_X23Y31.F2      net (fanout=1)        0.355   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
-    SLICE_X23Y31.CLK     Tckf        (-Th)    -0.466   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
+    SLICE_X8Y7.F3        net (fanout=1)        1.394   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X8Y7.CLK       Tckf        (-Th)    -0.505   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat1
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDCE
     -------------------------------------------------  ---------------------------
-    Total                                      1.405ns (1.050ns logic, 0.355ns route)
-                                                       (74.7% logic, 25.3% route)
+    Total                                      2.463ns (1.069ns logic, 1.394ns route)
+                                                       (43.4% logic, 56.6% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDPE (SLICE_X22Y31.BY), 1 path
+Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDPE (SLICE_X9Y0.BY), 1 path
 --------------------------------------------------------------------------------
-Delay (hold path):      1.990ns (datapath - clock path skew - uncertainty)
+Delay (hold path):      3.172ns (datapath - clock path skew - uncertainty)
   Source:               U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
   Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDPE (FF)
-  Data Path Delay:      1.990ns (Levels of Logic = 1)
+  Data Path Delay:      3.172ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         icon_control0<13> falling
   Destination Clock:    icon_control0<0> rising
@@ -178,26 +178,26 @@ Delay (hold path):      1.990ns (datapath - clock path skew - uncertainty)
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X22Y30.YQ      Tcklo                 0.584   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X17Y25.YQ      Tcklo                 0.564   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
-    SLICE_X23Y31.F2      net (fanout=1)        0.355   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
-    SLICE_X23Y31.X       Tilo                  0.514   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
+    SLICE_X8Y7.F3        net (fanout=1)        1.394   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X8Y7.X         Tilo                  0.554   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat1
-    SLICE_X22Y31.BY      net (fanout=2)        0.364   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat
-    SLICE_X22Y31.CLK     Tckdi       (-Th)    -0.173   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D1
+    SLICE_X9Y0.BY        net (fanout=2)        0.520   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat
+    SLICE_X9Y0.CLK       Tckdi       (-Th)    -0.140   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D1
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDPE
     -------------------------------------------------  ---------------------------
-    Total                                      1.990ns (1.271ns logic, 0.719ns route)
-                                                       (63.9% logic, 36.1% route)
+    Total                                      3.172ns (1.258ns logic, 1.914ns route)
+                                                       (39.7% logic, 60.3% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TDO (SLICE_X19Y26.G1), 1 path
+Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TDO (SLICE_X8Y15.G2), 1 path
 --------------------------------------------------------------------------------
-Delay (hold path):      4.423ns (datapath - clock path skew - uncertainty)
+Delay (hold path):      6.001ns (datapath - clock path skew - uncertainty)
   Source:               U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
   Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TDO (FF)
-  Data Path Delay:      4.423ns (Levels of Logic = 4)
+  Data Path Delay:      6.001ns (Levels of Logic = 4)
   Clock Path Skew:      0.000ns
   Source Clock:         icon_control0<13> falling
   Destination Clock:    icon_control0<0> rising
@@ -207,26 +207,26 @@ Delay (hold path):      4.423ns (datapath - clock path skew - uncertainty)
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X22Y30.YQ      Tcklo                 0.584   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X17Y25.YQ      Tcklo                 0.564   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
-    SLICE_X23Y31.F2      net (fanout=1)        0.355   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
-    SLICE_X23Y31.X       Tilo                  0.514   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
+    SLICE_X8Y7.F3        net (fanout=1)        1.394   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X8Y7.X         Tilo                  0.554   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat1
-    SLICE_X20Y26.G4      net (fanout=2)        0.553   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat
-    SLICE_X20Y26.X       Tif5x                 0.790   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/ACT_dstat
+    SLICE_X9Y17.G1       net (fanout=2)        0.661   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat
+    SLICE_X9Y17.X        Tif5x                 0.739   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/ACT_dstat
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_91_F
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_91
-    SLICE_X21Y27.F4      net (fanout=1)        0.035   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_91
-    SLICE_X21Y27.X       Tilo                  0.514   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_4
+    SLICE_X10Y15.F1      net (fanout=1)        0.452   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_91
+    SLICE_X10Y15.X       Tilo                  0.554   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/dout_tmp
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_4
-    SLICE_X19Y26.G1      net (fanout=1)        0.387   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_4
-    SLICE_X19Y26.CLK     Tckg        (-Th)    -0.691   U_ila_pro_0/U0/I_NO_D.U_ILA/iSTAT_DOUT
+    SLICE_X8Y15.G2       net (fanout=1)        0.342   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_4
+    SLICE_X8Y15.CLK      Tckg        (-Th)    -0.741   U_ila_pro_0/U0/I_NO_D.U_ILA/iSTAT_DOUT
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O58_F
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O58
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TDO
     -------------------------------------------------  ---------------------------
-    Total                                      4.423ns (3.093ns logic, 1.330ns route)
-                                                       (69.9% logic, 30.1% route)
+    Total                                      6.001ns (3.152ns logic, 2.849ns route)
+                                                       (52.5% logic, 47.5% route)
 
 --------------------------------------------------------------------------------
 
@@ -251,78 +251,78 @@ Timing constraint: PATH "TS_J4_TO_D2_ila_pro_0_path" TIG;
  0 timing errors detected. (0 setup errors, 0 hold errors)
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (SLICE_X22Y30.CLK), 11 paths
+Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (SLICE_X17Y25.CLK), 11 paths
 --------------------------------------------------------------------------------
-Delay (setup path):     5.442ns (data path)
-  Source:               U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[10].I_NE0.U_TARGET (FF)
+Delay (setup path):     6.304ns (data path)
+  Source:               U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[15].I_EQ0.U_TARGET (FF)
   Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
-  Data Path Delay:      5.442ns (Levels of Logic = 2)
+  Data Path Delay:      6.304ns (Levels of Logic = 2)
   Source Clock:         icon_control0<0> rising
 
-  Maximum Data Path: U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[10].I_NE0.U_TARGET to U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
+  Maximum Data Path: U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[15].I_EQ0.U_TARGET to U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X21Y24.YQ      Tcko                  0.580   U_icon_pro/U0/U_ICON/U_CMD/iTARGET<11>
-                                                       U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[10].I_NE0.U_TARGET
-    SLICE_X16Y18.F4      net (fanout=11)       2.029   U_icon_pro/U0/U_ICON/U_CMD/iTARGET<10>
-    SLICE_X16Y18.X       Tilo                  0.692   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/iTRIGGER_OUT
-                                                       U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[9].U_LUT
-    SLICE_X23Y26.G1      net (fanout=1)        1.017   U_icon_pro/U0/U_ICON/iCOMMAND_SEL<9>
-    SLICE_X23Y26.Y       Tilo                  0.648   U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/din_latched
+    SLICE_X22Y30.XQ      Tcko                  0.631   U_icon_pro/U0/U_ICON/iCORE_ID<3>
+                                                       U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[15].I_EQ0.U_TARGET
+    SLICE_X23Y22.G1      net (fanout=4)        1.067   U_icon_pro/U0/U_ICON/iCORE_ID<3>
+    SLICE_X23Y22.Y       Tilo                  0.648   U_icon_pro/U0/U_ICON/iCORE_ID_SEL<15>
+                                                       U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[0].U_LUT
+    SLICE_X16Y14.G4      net (fanout=14)       1.551   U_icon_pro/U0/U_ICON/iCORE_ID_SEL<0>
+    SLICE_X16Y14.Y       Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/din_latched
                                                        U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE
-    SLICE_X22Y30.CLK     net (fanout=4)        0.476   icon_control0<13>
+    SLICE_X17Y25.CLK     net (fanout=4)        1.700   icon_control0<13>
     -------------------------------------------------  ---------------------------
-    Total                                      5.442ns (1.920ns logic, 3.522ns route)
-                                                       (35.3% logic, 64.7% route)
+    Total                                      6.304ns (1.986ns logic, 4.318ns route)
+                                                       (31.5% logic, 68.5% route)
 
 --------------------------------------------------------------------------------
-Delay (setup path):     4.992ns (data path)
-  Source:               U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[8].I_NE0.U_TARGET (FF)
+Delay (setup path):     6.297ns (data path)
+  Source:               U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[14].I_NE0.U_TARGET (FF)
   Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
-  Data Path Delay:      4.992ns (Levels of Logic = 2)
+  Data Path Delay:      6.297ns (Levels of Logic = 2)
   Source Clock:         icon_control0<0> rising
 
-  Maximum Data Path: U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[8].I_NE0.U_TARGET to U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
+  Maximum Data Path: U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[14].I_NE0.U_TARGET to U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X19Y22.YQ      Tcko                  0.580   U_icon_pro/U0/U_ICON/U_CMD/iTARGET<9>
-                                                       U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[8].I_NE0.U_TARGET
-    SLICE_X16Y18.F3      net (fanout=11)       1.579   U_icon_pro/U0/U_ICON/U_CMD/iTARGET<8>
-    SLICE_X16Y18.X       Tilo                  0.692   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/iTRIGGER_OUT
-                                                       U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[9].U_LUT
-    SLICE_X23Y26.G1      net (fanout=1)        1.017   U_icon_pro/U0/U_ICON/iCOMMAND_SEL<9>
-    SLICE_X23Y26.Y       Tilo                  0.648   U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/din_latched
+    SLICE_X22Y30.YQ      Tcko                  0.676   U_icon_pro/U0/U_ICON/iCORE_ID<3>
+                                                       U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[14].I_NE0.U_TARGET
+    SLICE_X23Y22.G4      net (fanout=5)        1.015   U_icon_pro/U0/U_ICON/iCORE_ID<2>
+    SLICE_X23Y22.Y       Tilo                  0.648   U_icon_pro/U0/U_ICON/iCORE_ID_SEL<15>
+                                                       U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[0].U_LUT
+    SLICE_X16Y14.G4      net (fanout=14)       1.551   U_icon_pro/U0/U_ICON/iCORE_ID_SEL<0>
+    SLICE_X16Y14.Y       Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/din_latched
                                                        U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE
-    SLICE_X22Y30.CLK     net (fanout=4)        0.476   icon_control0<13>
+    SLICE_X17Y25.CLK     net (fanout=4)        1.700   icon_control0<13>
     -------------------------------------------------  ---------------------------
-    Total                                      4.992ns (1.920ns logic, 3.072ns route)
-                                                       (38.5% logic, 61.5% route)
+    Total                                      6.297ns (2.031ns logic, 4.266ns route)
+                                                       (32.3% logic, 67.7% route)
 
 --------------------------------------------------------------------------------
-Delay (setup path):     4.527ns (data path)
-  Source:               U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[11].I_NE0.U_TARGET (FF)
+Delay (setup path):     5.895ns (data path)
+  Source:               U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET (FF)
   Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
-  Data Path Delay:      4.527ns (Levels of Logic = 2)
+  Data Path Delay:      5.895ns (Levels of Logic = 2)
   Source Clock:         icon_control0<0> rising
 
-  Maximum Data Path: U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[11].I_NE0.U_TARGET to U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
+  Maximum Data Path: U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET to U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X21Y24.XQ      Tcko                  0.591   U_icon_pro/U0/U_ICON/U_CMD/iTARGET<11>
-                                                       U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[11].I_NE0.U_TARGET
-    SLICE_X16Y18.F2      net (fanout=11)       1.103   U_icon_pro/U0/U_ICON/U_CMD/iTARGET<11>
-    SLICE_X16Y18.X       Tilo                  0.692   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/iTRIGGER_OUT
-                                                       U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[9].U_LUT
-    SLICE_X23Y26.G1      net (fanout=1)        1.017   U_icon_pro/U0/U_ICON/iCOMMAND_SEL<9>
-    SLICE_X23Y26.Y       Tilo                  0.648   U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/din_latched
+    SLICE_X22Y22.YQ      Tcko                  0.676   U_icon_pro/U0/U_ICON/iCORE_ID<1>
+                                                       U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET
+    SLICE_X23Y22.G2      net (fanout=5)        0.613   U_icon_pro/U0/U_ICON/iCORE_ID<0>
+    SLICE_X23Y22.Y       Tilo                  0.648   U_icon_pro/U0/U_ICON/iCORE_ID_SEL<15>
+                                                       U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[0].U_LUT
+    SLICE_X16Y14.G4      net (fanout=14)       1.551   U_icon_pro/U0/U_ICON/iCORE_ID_SEL<0>
+    SLICE_X16Y14.Y       Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/din_latched
                                                        U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE
-    SLICE_X22Y30.CLK     net (fanout=4)        0.476   icon_control0<13>
+    SLICE_X17Y25.CLK     net (fanout=4)        1.700   icon_control0<13>
     -------------------------------------------------  ---------------------------
-    Total                                      4.527ns (1.931ns logic, 2.596ns route)
-                                                       (42.7% logic, 57.3% route)
+    Total                                      5.895ns (2.031ns logic, 3.864ns route)
+                                                       (34.5% logic, 65.5% route)
 
 --------------------------------------------------------------------------------
 
@@ -333,16 +333,16 @@ For more information, see From:To (Multicycle) Analysis in the Timing Closure Us
 
  1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   1.839ns.
+ Maximum delay is   1.550ns.
 --------------------------------------------------------------------------------
 
-Paths for end point U_icon_pro/U0/U_ICON/U_iDATA_CMD (SLICE_X22Y22.BY), 1 path
+Paths for end point U_icon_pro/U0/U_ICON/U_iDATA_CMD (SLICE_X20Y30.BY), 1 path
 --------------------------------------------------------------------------------
-Slack (setup paths):    13.161ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup paths):    13.450ns (requirement - (data path - clock path skew + uncertainty))
   Source:               U_icon_pro/U0/U_ICON/U_iDATA_CMD (FF)
   Destination:          U_icon_pro/U0/U_ICON/U_iDATA_CMD (FF)
   Requirement:          15.000ns
-  Data Path Delay:      1.839ns (Levels of Logic = 0)
+  Data Path Delay:      1.550ns (Levels of Logic = 0)
   Clock Path Skew:      0.000ns
   Source Clock:         U_icon_pro/U0/iUPDATE_OUT rising
   Destination Clock:    U_icon_pro/U0/iUPDATE_OUT rising
@@ -352,26 +352,26 @@ Slack (setup paths):    13.161ns (requirement - (data path - clock path skew + u
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X22Y22.YQ      Tcko                  0.676   U_icon_pro/U0/U_ICON/iDATA_CMD
+    SLICE_X20Y30.YQ      Tcko                  0.676   U_icon_pro/U0/U_ICON/iDATA_CMD
                                                        U_icon_pro/U0/U_ICON/U_iDATA_CMD
-    SLICE_X22Y22.BY      net (fanout=7)        0.777   U_icon_pro/U0/U_ICON/iDATA_CMD
-    SLICE_X22Y22.CLK     Tdick                 0.386   U_icon_pro/U0/U_ICON/iDATA_CMD
+    SLICE_X20Y30.BY      net (fanout=7)        0.488   U_icon_pro/U0/U_ICON/iDATA_CMD
+    SLICE_X20Y30.CLK     Tdick                 0.386   U_icon_pro/U0/U_ICON/iDATA_CMD
                                                        U_icon_pro/U0/U_ICON/U_iDATA_CMD
     -------------------------------------------------  ---------------------------
-    Total                                      1.839ns (1.062ns logic, 0.777ns route)
-                                                       (57.7% logic, 42.3% route)
+    Total                                      1.550ns (1.062ns logic, 0.488ns route)
+                                                       (68.5% logic, 31.5% route)
 
 --------------------------------------------------------------------------------
 Hold Paths: TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" TO TIMEGRP "U_CLK" 15 ns;
 --------------------------------------------------------------------------------
 
-Paths for end point U_icon_pro/U0/U_ICON/U_iDATA_CMD (SLICE_X22Y22.BY), 1 path
+Paths for end point U_icon_pro/U0/U_ICON/U_iDATA_CMD (SLICE_X20Y30.BY), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      1.336ns (requirement - (clock path skew + uncertainty - data path))
+Slack (hold path):      1.105ns (requirement - (clock path skew + uncertainty - data path))
   Source:               U_icon_pro/U0/U_ICON/U_iDATA_CMD (FF)
   Destination:          U_icon_pro/U0/U_ICON/U_iDATA_CMD (FF)
   Requirement:          0.000ns
-  Data Path Delay:      1.336ns (Levels of Logic = 0)
+  Data Path Delay:      1.105ns (Levels of Logic = 0)
   Positive Clock Path Skew: 0.000ns
   Source Clock:         U_icon_pro/U0/iUPDATE_OUT rising
   Destination Clock:    U_icon_pro/U0/iUPDATE_OUT rising
@@ -381,14 +381,14 @@ Slack (hold path):      1.336ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X22Y22.YQ      Tcko                  0.541   U_icon_pro/U0/U_ICON/iDATA_CMD
+    SLICE_X20Y30.YQ      Tcko                  0.541   U_icon_pro/U0/U_ICON/iDATA_CMD
                                                        U_icon_pro/U0/U_ICON/U_iDATA_CMD
-    SLICE_X22Y22.BY      net (fanout=7)        0.622   U_icon_pro/U0/U_ICON/iDATA_CMD
-    SLICE_X22Y22.CLK     Tckdi       (-Th)    -0.173   U_icon_pro/U0/U_ICON/iDATA_CMD
+    SLICE_X20Y30.BY      net (fanout=7)        0.391   U_icon_pro/U0/U_ICON/iDATA_CMD
+    SLICE_X20Y30.CLK     Tckdi       (-Th)    -0.173   U_icon_pro/U0/U_ICON/iDATA_CMD
                                                        U_icon_pro/U0/U_ICON/U_iDATA_CMD
     -------------------------------------------------  ---------------------------
-    Total                                      1.336ns (0.714ns logic, 0.622ns route)
-                                                       (53.4% logic, 46.6% route)
+    Total                                      1.105ns (0.714ns logic, 0.391ns route)
+                                                       (64.6% logic, 35.4% route)
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -407,7 +407,7 @@ Slack: 17.831ns (period - min period limit)
   Min period limit: 3.002ns (333.111MHz) ()
   Physical resource: clk_wizard_instance/DCM_SP_INST/CLKFX
   Logical resource: clk_wizard_instance/DCM_SP_INST/CLKFX
-  Location pin: DCM_X0Y0.CLKFX
+  Location pin: DCM_X1Y0.CLKFX
   Clock network: clk_wizard_instance/CLKFX_BUF
 --------------------------------------------------------------------------------
 Slack: 38.638ns (period - min period limit)
@@ -415,7 +415,7 @@ Slack: 38.638ns (period - min period limit)
   Min period limit: 3.029ns (330.142MHz) (Tdcmpco)
   Physical resource: clk_wizard_instance/DCM_SP_INST/CLK2X
   Logical resource: clk_wizard_instance/DCM_SP_INST/CLK2X
-  Location pin: DCM_X0Y0.CLK2X
+  Location pin: DCM_X1Y0.CLK2X
   Clock network: clk_wizard_instance/CLK2X_BUF
 --------------------------------------------------------------------------------
 Slack: 58.334ns (max period limit - period)
@@ -423,7 +423,7 @@ Slack: 58.334ns (max period limit - period)
   Max period limit: 100.000ns (10.000MHz) (Tdcmpco)
   Physical resource: clk_wizard_instance/DCM_SP_INST/CLK2X
   Logical resource: clk_wizard_instance/DCM_SP_INST/CLK2X
-  Location pin: DCM_X0Y0.CLK2X
+  Location pin: DCM_X1Y0.CLK2X
   Clock network: clk_wizard_instance/CLK2X_BUF
 --------------------------------------------------------------------------------
 
@@ -432,410 +432,329 @@ Timing constraint: TS_clk_wizard_instance_CLK2X_BUF = PERIOD TIMEGRP
 "clk_wizard_instance_CLK2X_BUF" TS_sys_clk / 2 HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 7005 paths analyzed, 1446 endpoints analyzed, 0 failing endpoints
+ 9516 paths analyzed, 1634 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  14.432ns.
+ Minimum period is  15.054ns.
 --------------------------------------------------------------------------------
 
-Paths for end point ilx_instance/flag_sel_clok (SLICE_X14Y20.CE), 50 paths
+Paths for end point ilx_instance/flag_sel_clok (SLICE_X7Y21.CE), 50 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     13.617ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/FPGA_INTCLOCK_14 (FF)
+Slack (setup path):     13.306ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fpga_spi_instance/FPGA_INTCLOCK_7 (FF)
   Destination:          ilx_instance/flag_sel_clok (FF)
   Requirement:          20.833ns
-  Data Path Delay:      6.990ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.226ns (0.836 - 1.062)
+  Data Path Delay:      7.342ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.185ns (0.839 - 1.024)
   Source Clock:         sys_4xclk rising at 20.833ns
   Destination Clock:    sys_2xclk rising at 41.666ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/FPGA_INTCLOCK_14 to ilx_instance/flag_sel_clok
+  Maximum Data Path: fpga_spi_instance/FPGA_INTCLOCK_7 to ilx_instance/flag_sel_clok
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X8Y4.YQ        Tcko                  0.676   fpga_spi_instance/FPGA_INTCLOCK<15>
-                                                       fpga_spi_instance/FPGA_INTCLOCK_14
-    SLICE_X13Y17.G1      net (fanout=2)        1.773   fpga_spi_instance/FPGA_INTCLOCK<14>
-    SLICE_X13Y17.COUT    Topcyg                1.178   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d2
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_lut<7>
+    SLICE_X15Y23.XQ      Tcko                  0.591   fpga_spi_instance/FPGA_INTCLOCK<7>
+                                                       fpga_spi_instance/FPGA_INTCLOCK_7
+    SLICE_X19Y22.G3      net (fanout=2)        1.651   fpga_spi_instance/FPGA_INTCLOCK<7>
+    SLICE_X19Y22.COUT    Topcyg                1.178   U_ila_pro_0/U0/iTRIG_IN<11>
+                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_lut<3>
+                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<3>
+    SLICE_X19Y23.CIN     net (fanout=1)        0.000   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<3>
+    SLICE_X19Y23.COUT    Tbyp                  0.130   U_ila_pro_0/U0/iTRIG_IN<1>
+                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<4>
+                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<5>
+    SLICE_X19Y24.CIN     net (fanout=1)        0.000   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<5>
+    SLICE_X19Y24.COUT    Tbyp                  0.130   ilx_instance/adc_start_instant/d_i_ff3
+                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<6>
                                                        ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<7>
-    SLICE_X16Y21.F1      net (fanout=2)        1.604   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<7>
-    SLICE_X16Y21.X       Tilo                  0.692   ilx_instance/flag_sel_clok_or0001
+    SLICE_X22Y27.F4      net (fanout=2)        0.783   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<7>
+    SLICE_X22Y27.X       Tilo                  0.692   ilx_instance/flag_sel_clok_or0001
                                                        ilx_instance/flag_sel_clok_or0001
-    SLICE_X14Y20.CE      net (fanout=1)        0.756   ilx_instance/flag_sel_clok_or0001
-    SLICE_X14Y20.CLK     Tceck                 0.311   ilx_instance/flag_sel_clok
+    SLICE_X7Y21.CE       net (fanout=1)        1.876   ilx_instance/flag_sel_clok_or0001
+    SLICE_X7Y21.CLK      Tceck                 0.311   ilx_instance/flag_sel_clok
                                                        ilx_instance/flag_sel_clok
     -------------------------------------------------  ---------------------------
-    Total                                      6.990ns (2.857ns logic, 4.133ns route)
-                                                       (40.9% logic, 59.1% route)
+    Total                                      7.342ns (3.032ns logic, 4.310ns route)
+                                                       (41.3% logic, 58.7% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     14.095ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/FPGA_INTCLOCK_0 (FF)
+Slack (setup path):     13.773ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fpga_spi_instance/FPGA_INTCLOCK_8 (FF)
   Destination:          ilx_instance/flag_sel_clok (FF)
   Requirement:          20.833ns
-  Data Path Delay:      6.516ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.222ns (0.836 - 1.058)
+  Data Path Delay:      6.801ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.259ns (0.839 - 1.098)
   Source Clock:         sys_4xclk rising at 20.833ns
   Destination Clock:    sys_2xclk rising at 41.666ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/FPGA_INTCLOCK_0 to ilx_instance/flag_sel_clok
+  Maximum Data Path: fpga_spi_instance/FPGA_INTCLOCK_8 to ilx_instance/flag_sel_clok
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X7Y10.YQ       Tcko                  0.580   fpga_spi_instance/FPGA_INTCLOCK<1>
-                                                       fpga_spi_instance/FPGA_INTCLOCK_0
-    SLICE_X13Y14.F2      net (fanout=2)        0.988   fpga_spi_instance/FPGA_INTCLOCK<0>
-    SLICE_X13Y14.COUT    Topcyf                1.195   U_ila_pro_0/U0/I_NO_D.U_ILA/iARM
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_lut<0>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<0>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<1>
-    SLICE_X13Y15.CIN     net (fanout=1)        0.000   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<1>
-    SLICE_X13Y15.COUT    Tbyp                  0.130   U_ila_pro_0/U0/iTRIG_IN<17>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<2>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<3>
-    SLICE_X13Y16.CIN     net (fanout=1)        0.000   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<3>
-    SLICE_X13Y16.COUT    Tbyp                  0.130   U_ila_pro_0/U0/iTRIG_IN<7>
+    SLICE_X17Y22.YQ      Tcko                  0.580   fpga_spi_instance/FPGA_INTCLOCK<9>
+                                                       fpga_spi_instance/FPGA_INTCLOCK_8
+    SLICE_X19Y23.F2      net (fanout=2)        1.234   fpga_spi_instance/FPGA_INTCLOCK<8>
+    SLICE_X19Y23.COUT    Topcyf                1.195   U_ila_pro_0/U0/iTRIG_IN<1>
+                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_lut<4>
                                                        ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<4>
                                                        ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<5>
-    SLICE_X13Y17.CIN     net (fanout=1)        0.000   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<5>
-    SLICE_X13Y17.COUT    Tbyp                  0.130   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d2
+    SLICE_X19Y24.CIN     net (fanout=1)        0.000   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<5>
+    SLICE_X19Y24.COUT    Tbyp                  0.130   ilx_instance/adc_start_instant/d_i_ff3
                                                        ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<6>
                                                        ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<7>
-    SLICE_X16Y21.F1      net (fanout=2)        1.604   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<7>
-    SLICE_X16Y21.X       Tilo                  0.692   ilx_instance/flag_sel_clok_or0001
+    SLICE_X22Y27.F4      net (fanout=2)        0.783   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<7>
+    SLICE_X22Y27.X       Tilo                  0.692   ilx_instance/flag_sel_clok_or0001
                                                        ilx_instance/flag_sel_clok_or0001
-    SLICE_X14Y20.CE      net (fanout=1)        0.756   ilx_instance/flag_sel_clok_or0001
-    SLICE_X14Y20.CLK     Tceck                 0.311   ilx_instance/flag_sel_clok
+    SLICE_X7Y21.CE       net (fanout=1)        1.876   ilx_instance/flag_sel_clok_or0001
+    SLICE_X7Y21.CLK      Tceck                 0.311   ilx_instance/flag_sel_clok
                                                        ilx_instance/flag_sel_clok
     -------------------------------------------------  ---------------------------
-    Total                                      6.516ns (3.168ns logic, 3.348ns route)
-                                                       (48.6% logic, 51.4% route)
+    Total                                      6.801ns (2.908ns logic, 3.893ns route)
+                                                       (42.8% logic, 57.2% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     14.100ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/FPGA_INTCLOCK_1 (FF)
+Slack (setup path):     13.866ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fpga_spi_instance/FPGA_INTCLOCK_6 (FF)
   Destination:          ilx_instance/flag_sel_clok (FF)
   Requirement:          20.833ns
-  Data Path Delay:      6.511ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.222ns (0.836 - 1.058)
+  Data Path Delay:      6.782ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.185ns (0.839 - 1.024)
   Source Clock:         sys_4xclk rising at 20.833ns
   Destination Clock:    sys_2xclk rising at 41.666ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/FPGA_INTCLOCK_1 to ilx_instance/flag_sel_clok
+  Maximum Data Path: fpga_spi_instance/FPGA_INTCLOCK_6 to ilx_instance/flag_sel_clok
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X7Y10.XQ       Tcko                  0.591   fpga_spi_instance/FPGA_INTCLOCK<1>
-                                                       fpga_spi_instance/FPGA_INTCLOCK_1
-    SLICE_X13Y14.F4      net (fanout=2)        0.972   fpga_spi_instance/FPGA_INTCLOCK<1>
-    SLICE_X13Y14.COUT    Topcyf                1.195   U_ila_pro_0/U0/I_NO_D.U_ILA/iARM
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_lut<0>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<0>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<1>
-    SLICE_X13Y15.CIN     net (fanout=1)        0.000   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<1>
-    SLICE_X13Y15.COUT    Tbyp                  0.130   U_ila_pro_0/U0/iTRIG_IN<17>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<2>
+    SLICE_X15Y23.YQ      Tcko                  0.580   fpga_spi_instance/FPGA_INTCLOCK<7>
+                                                       fpga_spi_instance/FPGA_INTCLOCK_6
+    SLICE_X19Y22.G2      net (fanout=2)        1.102   fpga_spi_instance/FPGA_INTCLOCK<6>
+    SLICE_X19Y22.COUT    Topcyg                1.178   U_ila_pro_0/U0/iTRIG_IN<11>
+                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_lut<3>
                                                        ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<3>
-    SLICE_X13Y16.CIN     net (fanout=1)        0.000   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<3>
-    SLICE_X13Y16.COUT    Tbyp                  0.130   U_ila_pro_0/U0/iTRIG_IN<7>
+    SLICE_X19Y23.CIN     net (fanout=1)        0.000   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<3>
+    SLICE_X19Y23.COUT    Tbyp                  0.130   U_ila_pro_0/U0/iTRIG_IN<1>
                                                        ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<4>
                                                        ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<5>
-    SLICE_X13Y17.CIN     net (fanout=1)        0.000   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<5>
-    SLICE_X13Y17.COUT    Tbyp                  0.130   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d2
+    SLICE_X19Y24.CIN     net (fanout=1)        0.000   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<5>
+    SLICE_X19Y24.COUT    Tbyp                  0.130   ilx_instance/adc_start_instant/d_i_ff3
                                                        ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<6>
                                                        ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<7>
-    SLICE_X16Y21.F1      net (fanout=2)        1.604   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<7>
-    SLICE_X16Y21.X       Tilo                  0.692   ilx_instance/flag_sel_clok_or0001
+    SLICE_X22Y27.F4      net (fanout=2)        0.783   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<7>
+    SLICE_X22Y27.X       Tilo                  0.692   ilx_instance/flag_sel_clok_or0001
                                                        ilx_instance/flag_sel_clok_or0001
-    SLICE_X14Y20.CE      net (fanout=1)        0.756   ilx_instance/flag_sel_clok_or0001
-    SLICE_X14Y20.CLK     Tceck                 0.311   ilx_instance/flag_sel_clok
+    SLICE_X7Y21.CE       net (fanout=1)        1.876   ilx_instance/flag_sel_clok_or0001
+    SLICE_X7Y21.CLK      Tceck                 0.311   ilx_instance/flag_sel_clok
                                                        ilx_instance/flag_sel_clok
     -------------------------------------------------  ---------------------------
-    Total                                      6.511ns (3.179ns logic, 3.332ns route)
-                                                       (48.8% logic, 51.2% route)
+    Total                                      6.782ns (3.021ns logic, 3.761ns route)
+                                                       (44.5% logic, 55.5% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point ilx_instance/integ_done (SLICE_X14Y18.CE), 49 paths
+Paths for end point ad7621_instance/div_instance/q1_7 (SLICE_X13Y6.CE), 25 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     14.937ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/FPGA_INTCLOCK_14 (FF)
-  Destination:          ilx_instance/integ_done (FF)
+Slack (setup path):     13.791ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fpga_spi_instance/FPGA_MAXSATVALUE_12 (FF)
+  Destination:          ad7621_instance/div_instance/q1_7 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      5.659ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.237ns (0.825 - 1.062)
+  Data Path Delay:      6.827ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.215ns (0.892 - 1.107)
   Source Clock:         sys_4xclk rising at 20.833ns
   Destination Clock:    sys_2xclk rising at 41.666ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/FPGA_INTCLOCK_14 to ilx_instance/integ_done
+  Maximum Data Path: fpga_spi_instance/FPGA_MAXSATVALUE_12 to ad7621_instance/div_instance/q1_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X8Y4.YQ        Tcko                  0.676   fpga_spi_instance/FPGA_INTCLOCK<15>
-                                                       fpga_spi_instance/FPGA_INTCLOCK_14
-    SLICE_X13Y17.G1      net (fanout=2)        1.773   fpga_spi_instance/FPGA_INTCLOCK<14>
-    SLICE_X13Y17.COUT    Topcyg                1.178   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d2
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_lut<7>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<7>
-    SLICE_X14Y19.G2      net (fanout=2)        0.599   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<7>
-    SLICE_X14Y19.Y       Tilo                  0.707   ilx_instance/en_intclk
-                                                       ilx_instance/integ_done_not00011
-    SLICE_X14Y18.CE      net (fanout=1)        0.415   ilx_instance/integ_done_not0001
-    SLICE_X14Y18.CLK     Tceck                 0.311   ilx_instance/integ_done
-                                                       ilx_instance/integ_done
+    SLICE_X2Y23.YQ       Tcko                  0.676   fpga_spi_instance/FPGA_MAXSATVALUE<13>
+                                                       fpga_spi_instance/FPGA_MAXSATVALUE_12
+    SLICE_X2Y23.F3       net (fanout=3)        1.232   fpga_spi_instance/FPGA_MAXSATVALUE<12>
+    SLICE_X2Y23.X        Tilo                  0.692   fpga_spi_instance/FPGA_MAXSATVALUE<13>
+                                                       ad7621_instance/div_instance/busy_cmp_eq000037
+    SLICE_X4Y17.G4       net (fanout=1)        0.731   ad7621_instance/div_instance/busy_cmp_eq000037
+    SLICE_X4Y17.Y        Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_CMP_Q
+                                                       ad7621_instance/div_instance/busy_cmp_eq000039
+    SLICE_X4Y17.F3       net (fanout=2)        0.114   ad7621_instance/div_instance/busy_cmp_eq0000
+    SLICE_X4Y17.X        Tilo                  0.692   U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_CMP_Q
+                                                       ad7621_instance/div_instance/q1_not0001
+    SLICE_X13Y6.CE       net (fanout=11)       1.672   ad7621_instance/div_instance/q1_not0001
+    SLICE_X13Y6.CLK      Tceck                 0.311   ad7621_instance/div_instance/q1<7>
+                                                       ad7621_instance/div_instance/q1_7
     -------------------------------------------------  ---------------------------
-    Total                                      5.659ns (2.872ns logic, 2.787ns route)
-                                                       (50.8% logic, 49.2% route)
+    Total                                      6.827ns (3.078ns logic, 3.749ns route)
+                                                       (45.1% logic, 54.9% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     15.415ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/FPGA_INTCLOCK_0 (FF)
-  Destination:          ilx_instance/integ_done (FF)
+Slack (setup path):     14.483ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fpga_spi_instance/FPGA_MAXSATVALUE_9 (FF)
+  Destination:          ad7621_instance/div_instance/q1_7 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      5.185ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.233ns (0.825 - 1.058)
+  Data Path Delay:      6.099ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.251ns (0.892 - 1.143)
   Source Clock:         sys_4xclk rising at 20.833ns
   Destination Clock:    sys_2xclk rising at 41.666ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/FPGA_INTCLOCK_0 to ilx_instance/integ_done
+  Maximum Data Path: fpga_spi_instance/FPGA_MAXSATVALUE_9 to ad7621_instance/div_instance/q1_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X7Y10.YQ       Tcko                  0.580   fpga_spi_instance/FPGA_INTCLOCK<1>
-                                                       fpga_spi_instance/FPGA_INTCLOCK_0
-    SLICE_X13Y14.F2      net (fanout=2)        0.988   fpga_spi_instance/FPGA_INTCLOCK<0>
-    SLICE_X13Y14.COUT    Topcyf                1.195   U_ila_pro_0/U0/I_NO_D.U_ILA/iARM
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_lut<0>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<0>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<1>
-    SLICE_X13Y15.CIN     net (fanout=1)        0.000   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<1>
-    SLICE_X13Y15.COUT    Tbyp                  0.130   U_ila_pro_0/U0/iTRIG_IN<17>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<2>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<3>
-    SLICE_X13Y16.CIN     net (fanout=1)        0.000   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<3>
-    SLICE_X13Y16.COUT    Tbyp                  0.130   U_ila_pro_0/U0/iTRIG_IN<7>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<4>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<5>
-    SLICE_X13Y17.CIN     net (fanout=1)        0.000   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<5>
-    SLICE_X13Y17.COUT    Tbyp                  0.130   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d2
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<6>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<7>
-    SLICE_X14Y19.G2      net (fanout=2)        0.599   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<7>
-    SLICE_X14Y19.Y       Tilo                  0.707   ilx_instance/en_intclk
-                                                       ilx_instance/integ_done_not00011
-    SLICE_X14Y18.CE      net (fanout=1)        0.415   ilx_instance/integ_done_not0001
-    SLICE_X14Y18.CLK     Tceck                 0.311   ilx_instance/integ_done
-                                                       ilx_instance/integ_done
+    SLICE_X2Y27.XQ       Tcko                  0.631   fpga_spi_instance/FPGA_MAXSATVALUE<9>
+                                                       fpga_spi_instance/FPGA_MAXSATVALUE_9
+    SLICE_X3Y21.F2       net (fanout=3)        0.717   fpga_spi_instance/FPGA_MAXSATVALUE<9>
+    SLICE_X3Y21.X        Tilo                  0.643   fpga_spi_instance/FPGA_MAXSATVALUE<7>
+                                                       ad7621_instance/div_instance/busy_cmp_eq000039_SW0
+    SLICE_X4Y17.G3       net (fanout=1)        0.612   N26
+    SLICE_X4Y17.Y        Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_CMP_Q
+                                                       ad7621_instance/div_instance/busy_cmp_eq000039
+    SLICE_X4Y17.F3       net (fanout=2)        0.114   ad7621_instance/div_instance/busy_cmp_eq0000
+    SLICE_X4Y17.X        Tilo                  0.692   U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_CMP_Q
+                                                       ad7621_instance/div_instance/q1_not0001
+    SLICE_X13Y6.CE       net (fanout=11)       1.672   ad7621_instance/div_instance/q1_not0001
+    SLICE_X13Y6.CLK      Tceck                 0.311   ad7621_instance/div_instance/q1<7>
+                                                       ad7621_instance/div_instance/q1_7
     -------------------------------------------------  ---------------------------
-    Total                                      5.185ns (3.183ns logic, 2.002ns route)
-                                                       (61.4% logic, 38.6% route)
+    Total                                      6.099ns (2.984ns logic, 3.115ns route)
+                                                       (48.9% logic, 51.1% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     15.420ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/FPGA_INTCLOCK_1 (FF)
-  Destination:          ilx_instance/integ_done (FF)
+Slack (setup path):     14.489ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fpga_spi_instance/FPGA_MAXSATVALUE_14 (FF)
+  Destination:          ad7621_instance/div_instance/q1_7 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      5.180ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.233ns (0.825 - 1.058)
+  Data Path Delay:      6.129ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.215ns (0.892 - 1.107)
   Source Clock:         sys_4xclk rising at 20.833ns
   Destination Clock:    sys_2xclk rising at 41.666ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/FPGA_INTCLOCK_1 to ilx_instance/integ_done
+  Maximum Data Path: fpga_spi_instance/FPGA_MAXSATVALUE_14 to ad7621_instance/div_instance/q1_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X7Y10.XQ       Tcko                  0.591   fpga_spi_instance/FPGA_INTCLOCK<1>
-                                                       fpga_spi_instance/FPGA_INTCLOCK_1
-    SLICE_X13Y14.F4      net (fanout=2)        0.972   fpga_spi_instance/FPGA_INTCLOCK<1>
-    SLICE_X13Y14.COUT    Topcyf                1.195   U_ila_pro_0/U0/I_NO_D.U_ILA/iARM
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_lut<0>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<0>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<1>
-    SLICE_X13Y15.CIN     net (fanout=1)        0.000   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<1>
-    SLICE_X13Y15.COUT    Tbyp                  0.130   U_ila_pro_0/U0/iTRIG_IN<17>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<2>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<3>
-    SLICE_X13Y16.CIN     net (fanout=1)        0.000   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<3>
-    SLICE_X13Y16.COUT    Tbyp                  0.130   U_ila_pro_0/U0/iTRIG_IN<7>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<4>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<5>
-    SLICE_X13Y17.CIN     net (fanout=1)        0.000   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<5>
-    SLICE_X13Y17.COUT    Tbyp                  0.130   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d2
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<6>
-                                                       ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<7>
-    SLICE_X14Y19.G2      net (fanout=2)        0.599   ilx_instance/Mcompar_integ_done_cmp_ne0000_cy<7>
-    SLICE_X14Y19.Y       Tilo                  0.707   ilx_instance/en_intclk
-                                                       ilx_instance/integ_done_not00011
-    SLICE_X14Y18.CE      net (fanout=1)        0.415   ilx_instance/integ_done_not0001
-    SLICE_X14Y18.CLK     Tceck                 0.311   ilx_instance/integ_done
-                                                       ilx_instance/integ_done
+    SLICE_X2Y22.YQ       Tcko                  0.676   fpga_spi_instance/FPGA_MAXSATVALUE<15>
+                                                       fpga_spi_instance/FPGA_MAXSATVALUE_14
+    SLICE_X2Y23.F1       net (fanout=3)        0.534   fpga_spi_instance/FPGA_MAXSATVALUE<14>
+    SLICE_X2Y23.X        Tilo                  0.692   fpga_spi_instance/FPGA_MAXSATVALUE<13>
+                                                       ad7621_instance/div_instance/busy_cmp_eq000037
+    SLICE_X4Y17.G4       net (fanout=1)        0.731   ad7621_instance/div_instance/busy_cmp_eq000037
+    SLICE_X4Y17.Y        Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_CMP_Q
+                                                       ad7621_instance/div_instance/busy_cmp_eq000039
+    SLICE_X4Y17.F3       net (fanout=2)        0.114   ad7621_instance/div_instance/busy_cmp_eq0000
+    SLICE_X4Y17.X        Tilo                  0.692   U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_CMP_Q
+                                                       ad7621_instance/div_instance/q1_not0001
+    SLICE_X13Y6.CE       net (fanout=11)       1.672   ad7621_instance/div_instance/q1_not0001
+    SLICE_X13Y6.CLK      Tceck                 0.311   ad7621_instance/div_instance/q1<7>
+                                                       ad7621_instance/div_instance/q1_7
     -------------------------------------------------  ---------------------------
-    Total                                      5.180ns (3.194ns logic, 1.986ns route)
-                                                       (61.7% logic, 38.3% route)
+    Total                                      6.129ns (3.078ns logic, 3.051ns route)
+                                                       (50.2% logic, 49.8% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point ad7621_instance/ad7621_fifo_do_15 (SLICE_X17Y9.CIN), 14 paths
+Paths for end point ad7621_instance/div_instance/q1_6 (SLICE_X13Y6.CE), 25 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     15.444ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/FPGA_OFFSETVALUE_1 (FF)
-  Destination:          ad7621_instance/ad7621_fifo_do_15 (FF)
+Slack (setup path):     13.791ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fpga_spi_instance/FPGA_MAXSATVALUE_12 (FF)
+  Destination:          ad7621_instance/div_instance/q1_6 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      5.249ns (Levels of Logic = 8)
-  Clock Path Skew:      -0.140ns (0.918 - 1.058)
+  Data Path Delay:      6.827ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.215ns (0.892 - 1.107)
   Source Clock:         sys_4xclk rising at 20.833ns
   Destination Clock:    sys_2xclk rising at 41.666ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/FPGA_OFFSETVALUE_1 to ad7621_instance/ad7621_fifo_do_15
+  Maximum Data Path: fpga_spi_instance/FPGA_MAXSATVALUE_12 to ad7621_instance/div_instance/q1_6
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X8Y6.XQ        Tcko                  0.631   fpga_spi_instance/FPGA_OFFSETVALUE<1>
-                                                       fpga_spi_instance/FPGA_OFFSETVALUE_1
-    SLICE_X17Y2.G4       net (fanout=2)        1.717   fpga_spi_instance/FPGA_OFFSETVALUE<1>
-    SLICE_X17Y2.COUT     Topcyg                1.178   ad7621_instance/ad7621_fifo_do<0>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_lut<1>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<1>
-    SLICE_X17Y3.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<1>
-    SLICE_X17Y3.COUT     Tbyp                  0.130   ad7621_instance/ad7621_fifo_do<2>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<2>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<3>
-    SLICE_X17Y4.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<3>
-    SLICE_X17Y4.COUT     Tbyp                  0.130   ad7621_instance/ad7621_fifo_do<4>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<4>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<5>
-    SLICE_X17Y5.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<5>
-    SLICE_X17Y5.COUT     Tbyp                  0.130   ad7621_instance/ad7621_fifo_do<6>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<6>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<7>
-    SLICE_X17Y6.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<7>
-    SLICE_X17Y6.COUT     Tbyp                  0.130   ad7621_instance/ad7621_fifo_do<8>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<8>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<9>
-    SLICE_X17Y7.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<9>
-    SLICE_X17Y7.COUT     Tbyp                  0.130   ad7621_instance/ad7621_fifo_do<10>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<10>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<11>
-    SLICE_X17Y8.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<11>
-    SLICE_X17Y8.COUT     Tbyp                  0.130   ad7621_instance/ad7621_fifo_do<12>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<12>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<13>
-    SLICE_X17Y9.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<13>
-    SLICE_X17Y9.CLK      Tcinck                0.943   ad7621_instance/ad7621_fifo_do<14>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<14>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_xor<15>
-                                                       ad7621_instance/ad7621_fifo_do_15
+    SLICE_X2Y23.YQ       Tcko                  0.676   fpga_spi_instance/FPGA_MAXSATVALUE<13>
+                                                       fpga_spi_instance/FPGA_MAXSATVALUE_12
+    SLICE_X2Y23.F3       net (fanout=3)        1.232   fpga_spi_instance/FPGA_MAXSATVALUE<12>
+    SLICE_X2Y23.X        Tilo                  0.692   fpga_spi_instance/FPGA_MAXSATVALUE<13>
+                                                       ad7621_instance/div_instance/busy_cmp_eq000037
+    SLICE_X4Y17.G4       net (fanout=1)        0.731   ad7621_instance/div_instance/busy_cmp_eq000037
+    SLICE_X4Y17.Y        Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_CMP_Q
+                                                       ad7621_instance/div_instance/busy_cmp_eq000039
+    SLICE_X4Y17.F3       net (fanout=2)        0.114   ad7621_instance/div_instance/busy_cmp_eq0000
+    SLICE_X4Y17.X        Tilo                  0.692   U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_CMP_Q
+                                                       ad7621_instance/div_instance/q1_not0001
+    SLICE_X13Y6.CE       net (fanout=11)       1.672   ad7621_instance/div_instance/q1_not0001
+    SLICE_X13Y6.CLK      Tceck                 0.311   ad7621_instance/div_instance/q1<7>
+                                                       ad7621_instance/div_instance/q1_6
     -------------------------------------------------  ---------------------------
-    Total                                      5.249ns (3.532ns logic, 1.717ns route)
-                                                       (67.3% logic, 32.7% route)
+    Total                                      6.827ns (3.078ns logic, 3.749ns route)
+                                                       (45.1% logic, 54.9% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     15.613ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/FPGA_OFFSETVALUE_0 (FF)
-  Destination:          ad7621_instance/ad7621_fifo_do_15 (FF)
+Slack (setup path):     14.483ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fpga_spi_instance/FPGA_MAXSATVALUE_9 (FF)
+  Destination:          ad7621_instance/div_instance/q1_6 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      5.080ns (Levels of Logic = 8)
-  Clock Path Skew:      -0.140ns (0.918 - 1.058)
+  Data Path Delay:      6.099ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.251ns (0.892 - 1.143)
   Source Clock:         sys_4xclk rising at 20.833ns
   Destination Clock:    sys_2xclk rising at 41.666ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/FPGA_OFFSETVALUE_0 to ad7621_instance/ad7621_fifo_do_15
+  Maximum Data Path: fpga_spi_instance/FPGA_MAXSATVALUE_9 to ad7621_instance/div_instance/q1_6
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X8Y6.YQ        Tcko                  0.676   fpga_spi_instance/FPGA_OFFSETVALUE<1>
-                                                       fpga_spi_instance/FPGA_OFFSETVALUE_0
-    SLICE_X17Y2.F3       net (fanout=2)        1.486   fpga_spi_instance/FPGA_OFFSETVALUE<0>
-    SLICE_X17Y2.COUT     Topcyf                1.195   ad7621_instance/ad7621_fifo_do<0>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_lut<0>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<0>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<1>
-    SLICE_X17Y3.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<1>
-    SLICE_X17Y3.COUT     Tbyp                  0.130   ad7621_instance/ad7621_fifo_do<2>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<2>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<3>
-    SLICE_X17Y4.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<3>
-    SLICE_X17Y4.COUT     Tbyp                  0.130   ad7621_instance/ad7621_fifo_do<4>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<4>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<5>
-    SLICE_X17Y5.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<5>
-    SLICE_X17Y5.COUT     Tbyp                  0.130   ad7621_instance/ad7621_fifo_do<6>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<6>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<7>
-    SLICE_X17Y6.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<7>
-    SLICE_X17Y6.COUT     Tbyp                  0.130   ad7621_instance/ad7621_fifo_do<8>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<8>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<9>
-    SLICE_X17Y7.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<9>
-    SLICE_X17Y7.COUT     Tbyp                  0.130   ad7621_instance/ad7621_fifo_do<10>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<10>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<11>
-    SLICE_X17Y8.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<11>
-    SLICE_X17Y8.COUT     Tbyp                  0.130   ad7621_instance/ad7621_fifo_do<12>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<12>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<13>
-    SLICE_X17Y9.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<13>
-    SLICE_X17Y9.CLK      Tcinck                0.943   ad7621_instance/ad7621_fifo_do<14>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<14>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_xor<15>
-                                                       ad7621_instance/ad7621_fifo_do_15
+    SLICE_X2Y27.XQ       Tcko                  0.631   fpga_spi_instance/FPGA_MAXSATVALUE<9>
+                                                       fpga_spi_instance/FPGA_MAXSATVALUE_9
+    SLICE_X3Y21.F2       net (fanout=3)        0.717   fpga_spi_instance/FPGA_MAXSATVALUE<9>
+    SLICE_X3Y21.X        Tilo                  0.643   fpga_spi_instance/FPGA_MAXSATVALUE<7>
+                                                       ad7621_instance/div_instance/busy_cmp_eq000039_SW0
+    SLICE_X4Y17.G3       net (fanout=1)        0.612   N26
+    SLICE_X4Y17.Y        Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_CMP_Q
+                                                       ad7621_instance/div_instance/busy_cmp_eq000039
+    SLICE_X4Y17.F3       net (fanout=2)        0.114   ad7621_instance/div_instance/busy_cmp_eq0000
+    SLICE_X4Y17.X        Tilo                  0.692   U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_CMP_Q
+                                                       ad7621_instance/div_instance/q1_not0001
+    SLICE_X13Y6.CE       net (fanout=11)       1.672   ad7621_instance/div_instance/q1_not0001
+    SLICE_X13Y6.CLK      Tceck                 0.311   ad7621_instance/div_instance/q1<7>
+                                                       ad7621_instance/div_instance/q1_6
     -------------------------------------------------  ---------------------------
-    Total                                      5.080ns (3.594ns logic, 1.486ns route)
-                                                       (70.7% logic, 29.3% route)
+    Total                                      6.099ns (2.984ns logic, 3.115ns route)
+                                                       (48.9% logic, 51.1% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     16.077ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/FPGA_OFFSETVALUE_5 (FF)
-  Destination:          ad7621_instance/ad7621_fifo_do_15 (FF)
+Slack (setup path):     14.489ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fpga_spi_instance/FPGA_MAXSATVALUE_14 (FF)
+  Destination:          ad7621_instance/div_instance/q1_6 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      4.617ns (Levels of Logic = 6)
-  Clock Path Skew:      -0.139ns (0.918 - 1.057)
+  Data Path Delay:      6.129ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.215ns (0.892 - 1.107)
   Source Clock:         sys_4xclk rising at 20.833ns
   Destination Clock:    sys_2xclk rising at 41.666ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/FPGA_OFFSETVALUE_5 to ad7621_instance/ad7621_fifo_do_15
+  Maximum Data Path: fpga_spi_instance/FPGA_MAXSATVALUE_14 to ad7621_instance/div_instance/q1_6
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X10Y4.XQ       Tcko                  0.631   fpga_spi_instance/FPGA_OFFSETVALUE<5>
-                                                       fpga_spi_instance/FPGA_OFFSETVALUE_5
-    SLICE_X17Y4.G4       net (fanout=2)        1.345   fpga_spi_instance/FPGA_OFFSETVALUE<5>
-    SLICE_X17Y4.COUT     Topcyg                1.178   ad7621_instance/ad7621_fifo_do<4>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_lut<5>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<5>
-    SLICE_X17Y5.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<5>
-    SLICE_X17Y5.COUT     Tbyp                  0.130   ad7621_instance/ad7621_fifo_do<6>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<6>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<7>
-    SLICE_X17Y6.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<7>
-    SLICE_X17Y6.COUT     Tbyp                  0.130   ad7621_instance/ad7621_fifo_do<8>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<8>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<9>
-    SLICE_X17Y7.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<9>
-    SLICE_X17Y7.COUT     Tbyp                  0.130   ad7621_instance/ad7621_fifo_do<10>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<10>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<11>
-    SLICE_X17Y8.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<11>
-    SLICE_X17Y8.COUT     Tbyp                  0.130   ad7621_instance/ad7621_fifo_do<12>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<12>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<13>
-    SLICE_X17Y9.CIN      net (fanout=1)        0.000   ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<13>
-    SLICE_X17Y9.CLK      Tcinck                0.943   ad7621_instance/ad7621_fifo_do<14>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_cy<14>
-                                                       ad7621_instance/Msub_ad7621_fifo_do_sub0000_xor<15>
-                                                       ad7621_instance/ad7621_fifo_do_15
+    SLICE_X2Y22.YQ       Tcko                  0.676   fpga_spi_instance/FPGA_MAXSATVALUE<15>
+                                                       fpga_spi_instance/FPGA_MAXSATVALUE_14
+    SLICE_X2Y23.F1       net (fanout=3)        0.534   fpga_spi_instance/FPGA_MAXSATVALUE<14>
+    SLICE_X2Y23.X        Tilo                  0.692   fpga_spi_instance/FPGA_MAXSATVALUE<13>
+                                                       ad7621_instance/div_instance/busy_cmp_eq000037
+    SLICE_X4Y17.G4       net (fanout=1)        0.731   ad7621_instance/div_instance/busy_cmp_eq000037
+    SLICE_X4Y17.Y        Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_CMP_Q
+                                                       ad7621_instance/div_instance/busy_cmp_eq000039
+    SLICE_X4Y17.F3       net (fanout=2)        0.114   ad7621_instance/div_instance/busy_cmp_eq0000
+    SLICE_X4Y17.X        Tilo                  0.692   U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_CMP_Q
+                                                       ad7621_instance/div_instance/q1_not0001
+    SLICE_X13Y6.CE       net (fanout=11)       1.672   ad7621_instance/div_instance/q1_not0001
+    SLICE_X13Y6.CLK      Tceck                 0.311   ad7621_instance/div_instance/q1<7>
+                                                       ad7621_instance/div_instance/q1_6
     -------------------------------------------------  ---------------------------
-    Total                                      4.617ns (3.272ns logic, 1.345ns route)
-                                                       (70.9% logic, 29.1% route)
+    Total                                      6.129ns (3.078ns logic, 3.051ns route)
+                                                       (50.2% logic, 49.8% route)
 
 --------------------------------------------------------------------------------
 
@@ -843,84 +762,84 @@ Hold Paths: TS_clk_wizard_instance_CLK2X_BUF = PERIOD TIMEGRP
         "clk_wizard_instance_CLK2X_BUF" TS_sys_clk / 2 HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[19].I_SRLT_NE_0.DLY9/SRL16E (SLICE_X16Y6.BX), 1 path
+Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[30].I_SRLT_NE_0.DLY9/SRL16E (SLICE_X10Y19.BY), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.639ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               U_ila_pro_0/U0/I_TQ2.G_TW[2].U_TQ (FF)
-  Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[19].I_SRLT_NE_0.DLY9/SRL16E (FF)
+Slack (hold path):      0.773ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               U_ila_pro_0/U0/I_TQ4.G_TW[0].U_TQ (FF)
+  Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[30].I_SRLT_NE_0.DLY9/SRL16E (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.715ns (Levels of Logic = 1)
-  Clock Path Skew:      0.076ns (0.393 - 0.317)
+  Data Path Delay:      0.773ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
   Source Clock:         sys_2xclk rising at 0.000ns
   Destination Clock:    sys_2xclk rising at 0.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: U_ila_pro_0/U0/I_TQ2.G_TW[2].U_TQ to U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[19].I_SRLT_NE_0.DLY9/SRL16E
+  Minimum Data Path: U_ila_pro_0/U0/I_TQ4.G_TW[0].U_TQ to U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[30].I_SRLT_NE_0.DLY9/SRL16E
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X19Y5.XQ       Tcko                  0.473   U_ila_pro_0/U0/iTRIG_IN<19>
-                                                       U_ila_pro_0/U0/I_TQ2.G_TW[2].U_TQ
-    SLICE_X16Y6.BX       net (fanout=2)        0.388   U_ila_pro_0/U0/iTRIG_IN<19>
-    SLICE_X16Y6.CLK      Tdh         (-Th)     0.146   U_ila_pro_0/U0/I_NO_D.U_ILA/iDATA<19>
-                                                       U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[19].I_SRLT_NE_0.DLY9/SRL16E
+    SLICE_X10Y19.XQ      Tcko                  0.505   U_ila_pro_0/U0/iTRIG_IN<30>
+                                                       U_ila_pro_0/U0/I_TQ4.G_TW[0].U_TQ
+    SLICE_X10Y19.BY      net (fanout=2)        0.394   U_ila_pro_0/U0/iTRIG_IN<30>
+    SLICE_X10Y19.CLK     Tdh         (-Th)     0.126   U_ila_pro_0/U0/iTRIG_IN<30>
+                                                       U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[30].I_SRLT_NE_0.DLY9/SRL16E
     -------------------------------------------------  ---------------------------
-    Total                                      0.715ns (0.327ns logic, 0.388ns route)
-                                                       (45.7% logic, 54.3% route)
+    Total                                      0.773ns (0.379ns logic, 0.394ns route)
+                                                       (49.0% logic, 51.0% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[13].I_SRLT_NE_0.DLY9/SRL16E (SLICE_X8Y5.BX), 1 path
+Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[6].I_SRLT_NE_0.DLY9/SRL16E (SLICE_X16Y3.BY), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.667ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               U_ila_pro_0/U0/I_TQ1.G_TW[12].U_TQ (FF)
-  Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[13].I_SRLT_NE_0.DLY9/SRL16E (FF)
+Slack (hold path):      0.875ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               U_ila_pro_0/U0/I_TQ1.G_TW[5].U_TQ (FF)
+  Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[6].I_SRLT_NE_0.DLY9/SRL16E (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.692ns (Levels of Logic = 1)
-  Clock Path Skew:      0.025ns (0.091 - 0.066)
+  Data Path Delay:      0.930ns (Levels of Logic = 1)
+  Clock Path Skew:      0.055ns (0.385 - 0.330)
   Source Clock:         sys_2xclk rising at 0.000ns
   Destination Clock:    sys_2xclk rising at 0.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: U_ila_pro_0/U0/I_TQ1.G_TW[12].U_TQ to U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[13].I_SRLT_NE_0.DLY9/SRL16E
+  Minimum Data Path: U_ila_pro_0/U0/I_TQ1.G_TW[5].U_TQ to U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[6].I_SRLT_NE_0.DLY9/SRL16E
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X9Y7.XQ        Tcko                  0.473   U_ila_pro_0/U0/iTRIG_IN<13>
-                                                       U_ila_pro_0/U0/I_TQ1.G_TW[12].U_TQ
-    SLICE_X8Y5.BX        net (fanout=2)        0.365   U_ila_pro_0/U0/iTRIG_IN<13>
-    SLICE_X8Y5.CLK       Tdh         (-Th)     0.146   U_ila_pro_0/U0/I_NO_D.U_ILA/iDATA<13>
-                                                       U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[13].I_SRLT_NE_0.DLY9/SRL16E
+    SLICE_X19Y7.YQ       Tcko                  0.464   U_ila_pro_0/U0/iTRIG_IN<7>
+                                                       U_ila_pro_0/U0/I_TQ1.G_TW[5].U_TQ
+    SLICE_X16Y3.BY       net (fanout=2)        0.592   U_ila_pro_0/U0/iTRIG_IN<6>
+    SLICE_X16Y3.CLK      Tdh         (-Th)     0.126   U_ila_pro_0/U0/I_NO_D.U_ILA/iDATA<7>
+                                                       U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[6].I_SRLT_NE_0.DLY9/SRL16E
     -------------------------------------------------  ---------------------------
-    Total                                      0.692ns (0.327ns logic, 0.365ns route)
-                                                       (47.3% logic, 52.7% route)
+    Total                                      0.930ns (0.338ns logic, 0.592ns route)
+                                                       (36.3% logic, 63.7% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[12].I_SRLT_NE_0.DLY9/SRL16E (SLICE_X8Y5.BY), 1 path
+Paths for end point fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_9 (SLICE_X17Y3.BX), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.678ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               U_ila_pro_0/U0/I_TQ1.G_TW[11].U_TQ (FF)
-  Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[12].I_SRLT_NE_0.DLY9/SRL16E (FF)
+Slack (hold path):      0.879ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_9 (FF)
+  Destination:          fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_9 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.703ns (Levels of Logic = 1)
-  Clock Path Skew:      0.025ns (0.091 - 0.066)
+  Data Path Delay:      0.917ns (Levels of Logic = 0)
+  Clock Path Skew:      0.038ns (0.385 - 0.347)
   Source Clock:         sys_2xclk rising at 0.000ns
   Destination Clock:    sys_2xclk rising at 0.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: U_ila_pro_0/U0/I_TQ1.G_TW[11].U_TQ to U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[12].I_SRLT_NE_0.DLY9/SRL16E
+  Minimum Data Path: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_9 to fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_9
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X9Y7.YQ        Tcko                  0.464   U_ila_pro_0/U0/iTRIG_IN<13>
-                                                       U_ila_pro_0/U0/I_TQ1.G_TW[11].U_TQ
-    SLICE_X8Y5.BY        net (fanout=2)        0.365   U_ila_pro_0/U0/iTRIG_IN<12>
-    SLICE_X8Y5.CLK       Tdh         (-Th)     0.126   U_ila_pro_0/U0/I_NO_D.U_ILA/iDATA<13>
-                                                       U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[12].I_SRLT_NE_0.DLY9/SRL16E
+    SLICE_X19Y4.YQ       Tcko                  0.464   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count<8>
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_9
+    SLICE_X17Y3.BX       net (fanout=3)        0.364   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count<9>
+    SLICE_X17Y3.CLK      Tckdi       (-Th)    -0.089   fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1<9>
+                                                       fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_9
     -------------------------------------------------  ---------------------------
-    Total                                      0.703ns (0.338ns logic, 0.365ns route)
-                                                       (48.1% logic, 51.9% route)
+    Total                                      0.917ns (0.553ns logic, 0.364ns route)
+                                                       (60.3% logic, 39.7% route)
 
 --------------------------------------------------------------------------------
 
@@ -931,28 +850,28 @@ Slack: 38.462ns (period - (min low pulse limit / (low pulse / period)))
   Period: 41.666ns
   Low pulse: 20.833ns
   Low pulse limit: 1.602ns (Trpw)
-  Physical resource: U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/din_dly1<5>/SR
-  Logical resource: U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[5].U_IREG/SR
-  Location pin: SLICE_X18Y2.SR
-  Clock network: icon_control0<22>
+  Physical resource: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1<7>/SR
+  Logical resource: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_7/SR
+  Location pin: SLICE_X20Y3.SR
+  Clock network: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>
 --------------------------------------------------------------------------------
 Slack: 38.462ns (period - (min high pulse limit / (high pulse / period)))
   Period: 41.666ns
   High pulse: 20.833ns
   High pulse limit: 1.602ns (Trpw)
-  Physical resource: U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/din_dly1<5>/SR
-  Logical resource: U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[5].U_IREG/SR
-  Location pin: SLICE_X18Y2.SR
-  Clock network: icon_control0<22>
+  Physical resource: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1<7>/SR
+  Logical resource: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_7/SR
+  Location pin: SLICE_X20Y3.SR
+  Clock network: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>
 --------------------------------------------------------------------------------
 Slack: 38.462ns (period - (min low pulse limit / (low pulse / period)))
   Period: 41.666ns
   Low pulse: 20.833ns
   Low pulse limit: 1.602ns (Trpw)
-  Physical resource: U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/din_dly1<5>/SR
-  Logical resource: U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[4].U_IREG/SR
-  Location pin: SLICE_X18Y2.SR
-  Clock network: icon_control0<22>
+  Physical resource: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1<7>/SR
+  Logical resource: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_6/SR
+  Location pin: SLICE_X20Y3.SR
+  Clock network: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -960,311 +879,314 @@ Timing constraint: TS_clk_wizard_instance_CLKFX_BUF = PERIOD TIMEGRP
 "clk_wizard_instance_CLKFX_BUF" TS_sys_clk / 4 HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 2284 paths analyzed, 467 endpoints analyzed, 0 failing endpoints
+ 2268 paths analyzed, 460 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   7.304ns.
+ Minimum period is   7.847ns.
 --------------------------------------------------------------------------------
 
-Paths for end point fpga_spi_instance/transmit_data_3 (SLICE_X4Y6.G2), 24 paths
+Paths for end point fpga_spi_instance/transmit_data_2 (SLICE_X4Y26.F1), 14 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     13.529ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/fpga_addr_2 (FF)
-  Destination:          fpga_spi_instance/transmit_data_3 (FF)
+Slack (setup path):     12.986ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fpga_spi_instance/fpga_addr_3 (FF)
+  Destination:          fpga_spi_instance/transmit_data_2 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      7.240ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.064ns (0.277 - 0.341)
+  Data Path Delay:      7.770ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.077ns (0.299 - 0.376)
   Source Clock:         sys_4xclk rising at 0.000ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/fpga_addr_2 to fpga_spi_instance/transmit_data_3
+  Maximum Data Path: fpga_spi_instance/fpga_addr_3 to fpga_spi_instance/transmit_data_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X3Y7.YQ        Tcko                  0.580   fpga_spi_instance/fpga_addr<3>
-                                                       fpga_spi_instance/fpga_addr_2
-    SLICE_X3Y31.G1       net (fanout=68)       2.502   fpga_spi_instance/fpga_addr<2>
-    SLICE_X3Y31.X        Tif5x                 0.924   fpga_spi_instance/transmit_data_mux0000<13>26
-                                                       fpga_spi_instance/transmit_data_mux0000<13>262
-                                                       fpga_spi_instance/transmit_data_mux0000<13>26_f5
-    SLICE_X3Y13.F1       net (fanout=1)        1.085   fpga_spi_instance/transmit_data_mux0000<13>26
-    SLICE_X3Y13.X        Tilo                  0.643   fpga_spi_instance/transmit_data_mux0000<13>38
-                                                       fpga_spi_instance/transmit_data_mux0000<13>38
-    SLICE_X4Y6.G2        net (fanout=1)        0.689   fpga_spi_instance/transmit_data_mux0000<13>38
-    SLICE_X4Y6.CLK       Tgck                  0.817   fpga_spi_instance/transmit_data<4>
-                                                       fpga_spi_instance/transmit_data_mux0000<13>47
-                                                       fpga_spi_instance/transmit_data_3
+    SLICE_X6Y27.XQ       Tcko                  0.631   fpga_spi_instance/fpga_addr<3>
+                                                       fpga_spi_instance/fpga_addr_3
+    SLICE_X7Y24.G4       net (fanout=6)        1.469   fpga_spi_instance/fpga_addr<3>
+    SLICE_X7Y24.Y        Tilo                  0.648   fpga_spi_instance/N25
+                                                       fpga_spi_instance/transmit_data_mux0000<0>211
+    SLICE_X9Y22.G3       net (fanout=2)        0.970   fpga_spi_instance/N52
+    SLICE_X9Y22.Y        Tilo                  0.648   fpga_spi_instance/transmit_data_mux0000<1>16
+                                                       fpga_spi_instance/transmit_data_mux0000<0>21
+    SLICE_X4Y26.G3       net (fanout=15)       1.445   fpga_spi_instance/N19
+    SLICE_X4Y26.Y        Tilo                  0.707   fpga_spi_instance/transmit_data<2>
+                                                       fpga_spi_instance/transmit_data_mux0000<14>4
+    SLICE_X4Y26.F1       net (fanout=1)        0.450   fpga_spi_instance/transmit_data_mux0000<14>4/O
+    SLICE_X4Y26.CLK      Tfck                  0.802   fpga_spi_instance/transmit_data<2>
+                                                       fpga_spi_instance/transmit_data_mux0000<14>47
+                                                       fpga_spi_instance/transmit_data_2
     -------------------------------------------------  ---------------------------
-    Total                                      7.240ns (2.964ns logic, 4.276ns route)
-                                                       (40.9% logic, 59.1% route)
+    Total                                      7.770ns (3.436ns logic, 4.334ns route)
+                                                       (44.2% logic, 55.8% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     13.542ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/fpga_addr_2 (FF)
-  Destination:          fpga_spi_instance/transmit_data_3 (FF)
-  Requirement:          20.833ns
-  Data Path Delay:      7.227ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.064ns (0.277 - 0.341)
-  Source Clock:         sys_4xclk rising at 0.000ns
-  Destination Clock:    sys_4xclk rising at 20.833ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: fpga_spi_instance/fpga_addr_2 to fpga_spi_instance/transmit_data_3
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X3Y7.YQ        Tcko                  0.580   fpga_spi_instance/fpga_addr<3>
-                                                       fpga_spi_instance/fpga_addr_2
-    SLICE_X3Y31.F1       net (fanout=68)       2.489   fpga_spi_instance/fpga_addr<2>
-    SLICE_X3Y31.X        Tif5x                 0.924   fpga_spi_instance/transmit_data_mux0000<13>26
-                                                       fpga_spi_instance/transmit_data_mux0000<13>261
-                                                       fpga_spi_instance/transmit_data_mux0000<13>26_f5
-    SLICE_X3Y13.F1       net (fanout=1)        1.085   fpga_spi_instance/transmit_data_mux0000<13>26
-    SLICE_X3Y13.X        Tilo                  0.643   fpga_spi_instance/transmit_data_mux0000<13>38
-                                                       fpga_spi_instance/transmit_data_mux0000<13>38
-    SLICE_X4Y6.G2        net (fanout=1)        0.689   fpga_spi_instance/transmit_data_mux0000<13>38
-    SLICE_X4Y6.CLK       Tgck                  0.817   fpga_spi_instance/transmit_data<4>
-                                                       fpga_spi_instance/transmit_data_mux0000<13>47
-                                                       fpga_spi_instance/transmit_data_3
-    -------------------------------------------------  ---------------------------
-    Total                                      7.227ns (2.964ns logic, 4.263ns route)
-                                                       (41.0% logic, 59.0% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     14.351ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     13.636ns (requirement - (data path - clock path skew + uncertainty))
   Source:               fpga_spi_instance/fpga_addr_4 (FF)
-  Destination:          fpga_spi_instance/transmit_data_3 (FF)
+  Destination:          fpga_spi_instance/transmit_data_2 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      6.480ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.002ns (0.277 - 0.279)
+  Data Path Delay:      7.108ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.089ns (0.299 - 0.388)
   Source Clock:         sys_4xclk rising at 0.000ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/fpga_addr_4 to fpga_spi_instance/transmit_data_3
+  Maximum Data Path: fpga_spi_instance/fpga_addr_4 to fpga_spi_instance/transmit_data_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X2Y18.YQ       Tcko                  0.676   fpga_spi_instance/fpga_addr<5>
+    SLICE_X6Y29.YQ       Tcko                  0.676   fpga_spi_instance/fpga_addr<5>
                                                        fpga_spi_instance/fpga_addr_4
-    SLICE_X3Y31.G3       net (fanout=81)       1.646   fpga_spi_instance/fpga_addr<4>
-    SLICE_X3Y31.X        Tif5x                 0.924   fpga_spi_instance/transmit_data_mux0000<13>26
-                                                       fpga_spi_instance/transmit_data_mux0000<13>262
-                                                       fpga_spi_instance/transmit_data_mux0000<13>26_f5
-    SLICE_X3Y13.F1       net (fanout=1)        1.085   fpga_spi_instance/transmit_data_mux0000<13>26
-    SLICE_X3Y13.X        Tilo                  0.643   fpga_spi_instance/transmit_data_mux0000<13>38
-                                                       fpga_spi_instance/transmit_data_mux0000<13>38
-    SLICE_X4Y6.G2        net (fanout=1)        0.689   fpga_spi_instance/transmit_data_mux0000<13>38
-    SLICE_X4Y6.CLK       Tgck                  0.817   fpga_spi_instance/transmit_data<4>
-                                                       fpga_spi_instance/transmit_data_mux0000<13>47
-                                                       fpga_spi_instance/transmit_data_3
+    SLICE_X9Y22.G4       net (fanout=25)       2.380   fpga_spi_instance/fpga_addr<4>
+    SLICE_X9Y22.Y        Tilo                  0.648   fpga_spi_instance/transmit_data_mux0000<1>16
+                                                       fpga_spi_instance/transmit_data_mux0000<0>21
+    SLICE_X4Y26.G3       net (fanout=15)       1.445   fpga_spi_instance/N19
+    SLICE_X4Y26.Y        Tilo                  0.707   fpga_spi_instance/transmit_data<2>
+                                                       fpga_spi_instance/transmit_data_mux0000<14>4
+    SLICE_X4Y26.F1       net (fanout=1)        0.450   fpga_spi_instance/transmit_data_mux0000<14>4/O
+    SLICE_X4Y26.CLK      Tfck                  0.802   fpga_spi_instance/transmit_data<2>
+                                                       fpga_spi_instance/transmit_data_mux0000<14>47
+                                                       fpga_spi_instance/transmit_data_2
     -------------------------------------------------  ---------------------------
-    Total                                      6.480ns (3.060ns logic, 3.420ns route)
-                                                       (47.2% logic, 52.8% route)
+    Total                                      7.108ns (2.833ns logic, 4.275ns route)
+                                                       (39.9% logic, 60.1% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point fpga_spi_instance/FPGA_COUNTBASE_9 (SLICE_X2Y25.CE), 8 paths
---------------------------------------------------------------------------------
-Slack (setup path):     13.783ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/receive_data_19 (FF)
-  Destination:          fpga_spi_instance/FPGA_COUNTBASE_9 (FF)
+Slack (setup path):     13.668ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fpga_spi_instance/fpga_addr_7 (FF)
+  Destination:          fpga_spi_instance/transmit_data_2 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      6.978ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.072ns (0.256 - 0.328)
+  Data Path Delay:      7.107ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.058ns (0.299 - 0.357)
   Source Clock:         sys_4xclk rising at 0.000ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/receive_data_19 to fpga_spi_instance/FPGA_COUNTBASE_9
+  Maximum Data Path: fpga_spi_instance/fpga_addr_7 to fpga_spi_instance/transmit_data_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X2Y9.XQ        Tcko                  0.631   fpga_spi_instance/receive_data<19>
-                                                       fpga_spi_instance/receive_data_19
-    SLICE_X4Y9.G3        net (fanout=3)        0.459   fpga_spi_instance/receive_data<19>
-    SLICE_X4Y9.Y         Tilo                  0.707   fpga_spi_instance/FPGA_OFFSETVALUE_not0001
-                                                       fpga_spi_instance/FPGA_COUNTBASE_not000111
-    SLICE_X3Y9.G2        net (fanout=4)        0.499   fpga_spi_instance/N21
-    SLICE_X3Y9.Y         Tilo                  0.648   fpga_spi_instance/FPGA_STRBCOUNT_not0001
-                                                       fpga_spi_instance/FPGA_COUNTBASE_not000121
-    SLICE_X2Y8.G1        net (fanout=2)        0.207   fpga_spi_instance/N49
-    SLICE_X2Y8.Y         Tilo                  0.707   N7
-                                                       fpga_spi_instance/FPGA_COUNTBASE_not00013
-    SLICE_X2Y25.CE       net (fanout=8)        2.809   fpga_spi_instance/FPGA_COUNTBASE_not0001
-    SLICE_X2Y25.CLK      Tceck                 0.311   fpga_spi_instance/FPGA_COUNTBASE<9>
-                                                       fpga_spi_instance/FPGA_COUNTBASE_9
+    SLICE_X6Y24.XQ       Tcko                  0.631   fpga_spi_instance/fpga_addr<7>
+                                                       fpga_spi_instance/fpga_addr_7
+    SLICE_X7Y24.G1       net (fanout=5)        0.806   fpga_spi_instance/fpga_addr<7>
+    SLICE_X7Y24.Y        Tilo                  0.648   fpga_spi_instance/N25
+                                                       fpga_spi_instance/transmit_data_mux0000<0>211
+    SLICE_X9Y22.G3       net (fanout=2)        0.970   fpga_spi_instance/N52
+    SLICE_X9Y22.Y        Tilo                  0.648   fpga_spi_instance/transmit_data_mux0000<1>16
+                                                       fpga_spi_instance/transmit_data_mux0000<0>21
+    SLICE_X4Y26.G3       net (fanout=15)       1.445   fpga_spi_instance/N19
+    SLICE_X4Y26.Y        Tilo                  0.707   fpga_spi_instance/transmit_data<2>
+                                                       fpga_spi_instance/transmit_data_mux0000<14>4
+    SLICE_X4Y26.F1       net (fanout=1)        0.450   fpga_spi_instance/transmit_data_mux0000<14>4/O
+    SLICE_X4Y26.CLK      Tfck                  0.802   fpga_spi_instance/transmit_data<2>
+                                                       fpga_spi_instance/transmit_data_mux0000<14>47
+                                                       fpga_spi_instance/transmit_data_2
     -------------------------------------------------  ---------------------------
-    Total                                      6.978ns (3.004ns logic, 3.974ns route)
-                                                       (43.0% logic, 57.0% route)
+    Total                                      7.107ns (3.436ns logic, 3.671ns route)
+                                                       (48.3% logic, 51.7% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     13.789ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/Rx_Done (FF)
-  Destination:          fpga_spi_instance/FPGA_COUNTBASE_9 (FF)
+
+Paths for end point fpga_spi_instance/transmit_data_12 (SLICE_X8Y18.F4), 14 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     13.083ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fpga_spi_instance/fpga_addr_3 (FF)
+  Destination:          fpga_spi_instance/transmit_data_12 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      6.979ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.065ns (0.256 - 0.321)
+  Data Path Delay:      7.602ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.148ns (0.228 - 0.376)
   Source Clock:         sys_4xclk rising at 0.000ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/Rx_Done to fpga_spi_instance/FPGA_COUNTBASE_9
+  Maximum Data Path: fpga_spi_instance/fpga_addr_3 to fpga_spi_instance/transmit_data_12
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X5Y9.YQ        Tcko                  0.580   fpga_spi_instance/Rx_Done
-                                                       fpga_spi_instance/Rx_Done
-    SLICE_X4Y9.G1        net (fanout=2)        0.511   fpga_spi_instance/Rx_Done
-    SLICE_X4Y9.Y         Tilo                  0.707   fpga_spi_instance/FPGA_OFFSETVALUE_not0001
-                                                       fpga_spi_instance/FPGA_COUNTBASE_not000111
-    SLICE_X3Y9.G2        net (fanout=4)        0.499   fpga_spi_instance/N21
-    SLICE_X3Y9.Y         Tilo                  0.648   fpga_spi_instance/FPGA_STRBCOUNT_not0001
-                                                       fpga_spi_instance/FPGA_COUNTBASE_not000121
-    SLICE_X2Y8.G1        net (fanout=2)        0.207   fpga_spi_instance/N49
-    SLICE_X2Y8.Y         Tilo                  0.707   N7
-                                                       fpga_spi_instance/FPGA_COUNTBASE_not00013
-    SLICE_X2Y25.CE       net (fanout=8)        2.809   fpga_spi_instance/FPGA_COUNTBASE_not0001
-    SLICE_X2Y25.CLK      Tceck                 0.311   fpga_spi_instance/FPGA_COUNTBASE<9>
-                                                       fpga_spi_instance/FPGA_COUNTBASE_9
+    SLICE_X6Y27.XQ       Tcko                  0.631   fpga_spi_instance/fpga_addr<3>
+                                                       fpga_spi_instance/fpga_addr_3
+    SLICE_X7Y24.G4       net (fanout=6)        1.469   fpga_spi_instance/fpga_addr<3>
+    SLICE_X7Y24.Y        Tilo                  0.648   fpga_spi_instance/N25
+                                                       fpga_spi_instance/transmit_data_mux0000<0>211
+    SLICE_X7Y24.F2       net (fanout=2)        0.390   fpga_spi_instance/N52
+    SLICE_X7Y24.X        Tilo                  0.643   fpga_spi_instance/N25
+                                                       fpga_spi_instance/transmit_data_mux0000<0>31
+    SLICE_X8Y18.G2       net (fanout=15)       2.252   fpga_spi_instance/N25
+    SLICE_X8Y18.Y        Tilo                  0.707   fpga_spi_instance/transmit_data<12>
+                                                       fpga_spi_instance/transmit_data_mux0000<4>4
+    SLICE_X8Y18.F4       net (fanout=1)        0.060   fpga_spi_instance/transmit_data_mux0000<4>4/O
+    SLICE_X8Y18.CLK      Tfck                  0.802   fpga_spi_instance/transmit_data<12>
+                                                       fpga_spi_instance/transmit_data_mux0000<4>47
+                                                       fpga_spi_instance/transmit_data_12
     -------------------------------------------------  ---------------------------
-    Total                                      6.979ns (2.953ns logic, 4.026ns route)
-                                                       (42.3% logic, 57.7% route)
+    Total                                      7.602ns (3.431ns logic, 4.171ns route)
+                                                       (45.1% logic, 54.9% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     13.855ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/receive_data_23 (FF)
-  Destination:          fpga_spi_instance/FPGA_COUNTBASE_9 (FF)
+Slack (setup path):     13.513ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fpga_spi_instance/fpga_addr_5 (FF)
+  Destination:          fpga_spi_instance/transmit_data_12 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      6.923ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.055ns (0.256 - 0.311)
+  Data Path Delay:      7.160ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.160ns (0.228 - 0.388)
   Source Clock:         sys_4xclk rising at 0.000ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/receive_data_23 to fpga_spi_instance/FPGA_COUNTBASE_9
+  Maximum Data Path: fpga_spi_instance/fpga_addr_5 to fpga_spi_instance/transmit_data_12
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X5Y11.XQ       Tcko                  0.591   fpga_spi_instance/receive_data<23>
-                                                       fpga_spi_instance/receive_data_23
-    SLICE_X4Y9.G2        net (fanout=2)        0.444   fpga_spi_instance/receive_data<23>
-    SLICE_X4Y9.Y         Tilo                  0.707   fpga_spi_instance/FPGA_OFFSETVALUE_not0001
-                                                       fpga_spi_instance/FPGA_COUNTBASE_not000111
-    SLICE_X3Y9.G2        net (fanout=4)        0.499   fpga_spi_instance/N21
-    SLICE_X3Y9.Y         Tilo                  0.648   fpga_spi_instance/FPGA_STRBCOUNT_not0001
-                                                       fpga_spi_instance/FPGA_COUNTBASE_not000121
-    SLICE_X2Y8.G1        net (fanout=2)        0.207   fpga_spi_instance/N49
-    SLICE_X2Y8.Y         Tilo                  0.707   N7
-                                                       fpga_spi_instance/FPGA_COUNTBASE_not00013
-    SLICE_X2Y25.CE       net (fanout=8)        2.809   fpga_spi_instance/FPGA_COUNTBASE_not0001
-    SLICE_X2Y25.CLK      Tceck                 0.311   fpga_spi_instance/FPGA_COUNTBASE<9>
-                                                       fpga_spi_instance/FPGA_COUNTBASE_9
+    SLICE_X6Y29.XQ       Tcko                  0.631   fpga_spi_instance/fpga_addr<5>
+                                                       fpga_spi_instance/fpga_addr_5
+    SLICE_X7Y24.F4       net (fanout=22)       2.065   fpga_spi_instance/fpga_addr<5>
+    SLICE_X7Y24.X        Tilo                  0.643   fpga_spi_instance/N25
+                                                       fpga_spi_instance/transmit_data_mux0000<0>31
+    SLICE_X8Y18.G2       net (fanout=15)       2.252   fpga_spi_instance/N25
+    SLICE_X8Y18.Y        Tilo                  0.707   fpga_spi_instance/transmit_data<12>
+                                                       fpga_spi_instance/transmit_data_mux0000<4>4
+    SLICE_X8Y18.F4       net (fanout=1)        0.060   fpga_spi_instance/transmit_data_mux0000<4>4/O
+    SLICE_X8Y18.CLK      Tfck                  0.802   fpga_spi_instance/transmit_data<12>
+                                                       fpga_spi_instance/transmit_data_mux0000<4>47
+                                                       fpga_spi_instance/transmit_data_12
     -------------------------------------------------  ---------------------------
-    Total                                      6.923ns (2.964ns logic, 3.959ns route)
-                                                       (42.8% logic, 57.2% route)
+    Total                                      7.160ns (2.783ns logic, 4.377ns route)
+                                                       (38.9% logic, 61.1% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point fpga_spi_instance/FPGA_COUNTBASE_8 (SLICE_X2Y25.CE), 8 paths
---------------------------------------------------------------------------------
-Slack (setup path):     13.783ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/receive_data_19 (FF)
-  Destination:          fpga_spi_instance/FPGA_COUNTBASE_8 (FF)
+Slack (setup path):     13.689ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fpga_spi_instance/fpga_addr_3 (FF)
+  Destination:          fpga_spi_instance/transmit_data_12 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      6.978ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.072ns (0.256 - 0.328)
+  Data Path Delay:      6.996ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.148ns (0.228 - 0.376)
   Source Clock:         sys_4xclk rising at 0.000ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/receive_data_19 to fpga_spi_instance/FPGA_COUNTBASE_8
+  Maximum Data Path: fpga_spi_instance/fpga_addr_3 to fpga_spi_instance/transmit_data_12
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X2Y9.XQ        Tcko                  0.631   fpga_spi_instance/receive_data<19>
-                                                       fpga_spi_instance/receive_data_19
-    SLICE_X4Y9.G3        net (fanout=3)        0.459   fpga_spi_instance/receive_data<19>
-    SLICE_X4Y9.Y         Tilo                  0.707   fpga_spi_instance/FPGA_OFFSETVALUE_not0001
-                                                       fpga_spi_instance/FPGA_COUNTBASE_not000111
-    SLICE_X3Y9.G2        net (fanout=4)        0.499   fpga_spi_instance/N21
-    SLICE_X3Y9.Y         Tilo                  0.648   fpga_spi_instance/FPGA_STRBCOUNT_not0001
-                                                       fpga_spi_instance/FPGA_COUNTBASE_not000121
-    SLICE_X2Y8.G1        net (fanout=2)        0.207   fpga_spi_instance/N49
-    SLICE_X2Y8.Y         Tilo                  0.707   N7
-                                                       fpga_spi_instance/FPGA_COUNTBASE_not00013
-    SLICE_X2Y25.CE       net (fanout=8)        2.809   fpga_spi_instance/FPGA_COUNTBASE_not0001
-    SLICE_X2Y25.CLK      Tceck                 0.311   fpga_spi_instance/FPGA_COUNTBASE<9>
-                                                       fpga_spi_instance/FPGA_COUNTBASE_8
+    SLICE_X6Y27.XQ       Tcko                  0.631   fpga_spi_instance/fpga_addr<3>
+                                                       fpga_spi_instance/fpga_addr_3
+    SLICE_X7Y24.G4       net (fanout=6)        1.469   fpga_spi_instance/fpga_addr<3>
+    SLICE_X7Y24.Y        Tilo                  0.648   fpga_spi_instance/N25
+                                                       fpga_spi_instance/transmit_data_mux0000<0>211
+    SLICE_X9Y22.G3       net (fanout=2)        0.970   fpga_spi_instance/N52
+    SLICE_X9Y22.Y        Tilo                  0.648   fpga_spi_instance/transmit_data_mux0000<1>16
+                                                       fpga_spi_instance/transmit_data_mux0000<0>21
+    SLICE_X8Y18.G3       net (fanout=15)       1.061   fpga_spi_instance/N19
+    SLICE_X8Y18.Y        Tilo                  0.707   fpga_spi_instance/transmit_data<12>
+                                                       fpga_spi_instance/transmit_data_mux0000<4>4
+    SLICE_X8Y18.F4       net (fanout=1)        0.060   fpga_spi_instance/transmit_data_mux0000<4>4/O
+    SLICE_X8Y18.CLK      Tfck                  0.802   fpga_spi_instance/transmit_data<12>
+                                                       fpga_spi_instance/transmit_data_mux0000<4>47
+                                                       fpga_spi_instance/transmit_data_12
     -------------------------------------------------  ---------------------------
-    Total                                      6.978ns (3.004ns logic, 3.974ns route)
-                                                       (43.0% logic, 57.0% route)
+    Total                                      6.996ns (3.436ns logic, 3.560ns route)
+                                                       (49.1% logic, 50.9% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     13.789ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/Rx_Done (FF)
-  Destination:          fpga_spi_instance/FPGA_COUNTBASE_8 (FF)
+
+Paths for end point fpga_spi_instance/transmit_data_16 (SLICE_X11Y22.F4), 14 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     13.181ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fpga_spi_instance/fpga_addr_3 (FF)
+  Destination:          fpga_spi_instance/transmit_data_16 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      6.979ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.065ns (0.256 - 0.321)
+  Data Path Delay:      7.503ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.149ns (0.227 - 0.376)
   Source Clock:         sys_4xclk rising at 0.000ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/Rx_Done to fpga_spi_instance/FPGA_COUNTBASE_8
+  Maximum Data Path: fpga_spi_instance/fpga_addr_3 to fpga_spi_instance/transmit_data_16
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X5Y9.YQ        Tcko                  0.580   fpga_spi_instance/Rx_Done
-                                                       fpga_spi_instance/Rx_Done
-    SLICE_X4Y9.G1        net (fanout=2)        0.511   fpga_spi_instance/Rx_Done
-    SLICE_X4Y9.Y         Tilo                  0.707   fpga_spi_instance/FPGA_OFFSETVALUE_not0001
-                                                       fpga_spi_instance/FPGA_COUNTBASE_not000111
-    SLICE_X3Y9.G2        net (fanout=4)        0.499   fpga_spi_instance/N21
-    SLICE_X3Y9.Y         Tilo                  0.648   fpga_spi_instance/FPGA_STRBCOUNT_not0001
-                                                       fpga_spi_instance/FPGA_COUNTBASE_not000121
-    SLICE_X2Y8.G1        net (fanout=2)        0.207   fpga_spi_instance/N49
-    SLICE_X2Y8.Y         Tilo                  0.707   N7
-                                                       fpga_spi_instance/FPGA_COUNTBASE_not00013
-    SLICE_X2Y25.CE       net (fanout=8)        2.809   fpga_spi_instance/FPGA_COUNTBASE_not0001
-    SLICE_X2Y25.CLK      Tceck                 0.311   fpga_spi_instance/FPGA_COUNTBASE<9>
-                                                       fpga_spi_instance/FPGA_COUNTBASE_8
+    SLICE_X6Y27.XQ       Tcko                  0.631   fpga_spi_instance/fpga_addr<3>
+                                                       fpga_spi_instance/fpga_addr_3
+    SLICE_X7Y24.G4       net (fanout=6)        1.469   fpga_spi_instance/fpga_addr<3>
+    SLICE_X7Y24.Y        Tilo                  0.648   fpga_spi_instance/N25
+                                                       fpga_spi_instance/transmit_data_mux0000<0>211
+    SLICE_X7Y24.F2       net (fanout=2)        0.390   fpga_spi_instance/N52
+    SLICE_X7Y24.X        Tilo                  0.643   fpga_spi_instance/N25
+                                                       fpga_spi_instance/transmit_data_mux0000<0>31
+    SLICE_X11Y22.G3      net (fanout=15)       2.013   fpga_spi_instance/N25
+    SLICE_X11Y22.Y       Tilo                  0.648   fpga_spi_instance/transmit_data<16>
+                                                       fpga_spi_instance/transmit_data_mux0000<0>4
+    SLICE_X11Y22.F4      net (fanout=1)        0.339   fpga_spi_instance/transmit_data_mux0000<0>4/O
+    SLICE_X11Y22.CLK     Tfck                  0.722   fpga_spi_instance/transmit_data<16>
+                                                       fpga_spi_instance/transmit_data_mux0000<0>47
+                                                       fpga_spi_instance/transmit_data_16
     -------------------------------------------------  ---------------------------
-    Total                                      6.979ns (2.953ns logic, 4.026ns route)
-                                                       (42.3% logic, 57.7% route)
+    Total                                      7.503ns (3.292ns logic, 4.211ns route)
+                                                       (43.9% logic, 56.1% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     13.855ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/receive_data_23 (FF)
-  Destination:          fpga_spi_instance/FPGA_COUNTBASE_8 (FF)
+Slack (setup path):     13.611ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fpga_spi_instance/fpga_addr_5 (FF)
+  Destination:          fpga_spi_instance/transmit_data_16 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      6.923ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.055ns (0.256 - 0.311)
+  Data Path Delay:      7.061ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.161ns (0.227 - 0.388)
   Source Clock:         sys_4xclk rising at 0.000ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/receive_data_23 to fpga_spi_instance/FPGA_COUNTBASE_8
+  Maximum Data Path: fpga_spi_instance/fpga_addr_5 to fpga_spi_instance/transmit_data_16
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X5Y11.XQ       Tcko                  0.591   fpga_spi_instance/receive_data<23>
-                                                       fpga_spi_instance/receive_data_23
-    SLICE_X4Y9.G2        net (fanout=2)        0.444   fpga_spi_instance/receive_data<23>
-    SLICE_X4Y9.Y         Tilo                  0.707   fpga_spi_instance/FPGA_OFFSETVALUE_not0001
-                                                       fpga_spi_instance/FPGA_COUNTBASE_not000111
-    SLICE_X3Y9.G2        net (fanout=4)        0.499   fpga_spi_instance/N21
-    SLICE_X3Y9.Y         Tilo                  0.648   fpga_spi_instance/FPGA_STRBCOUNT_not0001
-                                                       fpga_spi_instance/FPGA_COUNTBASE_not000121
-    SLICE_X2Y8.G1        net (fanout=2)        0.207   fpga_spi_instance/N49
-    SLICE_X2Y8.Y         Tilo                  0.707   N7
-                                                       fpga_spi_instance/FPGA_COUNTBASE_not00013
-    SLICE_X2Y25.CE       net (fanout=8)        2.809   fpga_spi_instance/FPGA_COUNTBASE_not0001
-    SLICE_X2Y25.CLK      Tceck                 0.311   fpga_spi_instance/FPGA_COUNTBASE<9>
-                                                       fpga_spi_instance/FPGA_COUNTBASE_8
+    SLICE_X6Y29.XQ       Tcko                  0.631   fpga_spi_instance/fpga_addr<5>
+                                                       fpga_spi_instance/fpga_addr_5
+    SLICE_X7Y24.F4       net (fanout=22)       2.065   fpga_spi_instance/fpga_addr<5>
+    SLICE_X7Y24.X        Tilo                  0.643   fpga_spi_instance/N25
+                                                       fpga_spi_instance/transmit_data_mux0000<0>31
+    SLICE_X11Y22.G3      net (fanout=15)       2.013   fpga_spi_instance/N25
+    SLICE_X11Y22.Y       Tilo                  0.648   fpga_spi_instance/transmit_data<16>
+                                                       fpga_spi_instance/transmit_data_mux0000<0>4
+    SLICE_X11Y22.F4      net (fanout=1)        0.339   fpga_spi_instance/transmit_data_mux0000<0>4/O
+    SLICE_X11Y22.CLK     Tfck                  0.722   fpga_spi_instance/transmit_data<16>
+                                                       fpga_spi_instance/transmit_data_mux0000<0>47
+                                                       fpga_spi_instance/transmit_data_16
     -------------------------------------------------  ---------------------------
-    Total                                      6.923ns (2.964ns logic, 3.959ns route)
-                                                       (42.8% logic, 57.2% route)
+    Total                                      7.061ns (2.644ns logic, 4.417ns route)
+                                                       (37.4% logic, 62.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     13.863ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               fpga_spi_instance/fpga_addr_7 (FF)
+  Destination:          fpga_spi_instance/transmit_data_16 (FF)
+  Requirement:          20.833ns
+  Data Path Delay:      6.840ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.130ns (0.227 - 0.357)
+  Source Clock:         sys_4xclk rising at 0.000ns
+  Destination Clock:    sys_4xclk rising at 20.833ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: fpga_spi_instance/fpga_addr_7 to fpga_spi_instance/transmit_data_16
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y24.XQ       Tcko                  0.631   fpga_spi_instance/fpga_addr<7>
+                                                       fpga_spi_instance/fpga_addr_7
+    SLICE_X7Y24.G1       net (fanout=5)        0.806   fpga_spi_instance/fpga_addr<7>
+    SLICE_X7Y24.Y        Tilo                  0.648   fpga_spi_instance/N25
+                                                       fpga_spi_instance/transmit_data_mux0000<0>211
+    SLICE_X7Y24.F2       net (fanout=2)        0.390   fpga_spi_instance/N52
+    SLICE_X7Y24.X        Tilo                  0.643   fpga_spi_instance/N25
+                                                       fpga_spi_instance/transmit_data_mux0000<0>31
+    SLICE_X11Y22.G3      net (fanout=15)       2.013   fpga_spi_instance/N25
+    SLICE_X11Y22.Y       Tilo                  0.648   fpga_spi_instance/transmit_data<16>
+                                                       fpga_spi_instance/transmit_data_mux0000<0>4
+    SLICE_X11Y22.F4      net (fanout=1)        0.339   fpga_spi_instance/transmit_data_mux0000<0>4/O
+    SLICE_X11Y22.CLK     Tfck                  0.722   fpga_spi_instance/transmit_data<16>
+                                                       fpga_spi_instance/transmit_data_mux0000<0>47
+                                                       fpga_spi_instance/transmit_data_16
+    -------------------------------------------------  ---------------------------
+    Total                                      6.840ns (3.292ns logic, 3.548ns route)
+                                                       (48.1% logic, 51.9% route)
 
 --------------------------------------------------------------------------------
 
@@ -1272,84 +1194,84 @@ Hold Paths: TS_clk_wizard_instance_CLKFX_BUF = PERIOD TIMEGRP
         "clk_wizard_instance_CLKFX_BUF" TS_sys_clk / 4 HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point fpga_spi_instance/receive_data_23 (SLICE_X5Y11.BX), 1 path
+Paths for end point fpga_spi_instance/FPGA_LAMPENABLE_15 (SLICE_X5Y25.BX), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.964ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               fpga_spi_instance/receive_data_22 (FF)
-  Destination:          fpga_spi_instance/receive_data_23 (FF)
+Slack (hold path):      0.923ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               fpga_spi_instance/receive_data_15 (FF)
+  Destination:          fpga_spi_instance/FPGA_LAMPENABLE_15 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.964ns (Levels of Logic = 0)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      0.943ns (Levels of Logic = 0)
+  Clock Path Skew:      0.020ns (0.339 - 0.319)
   Source Clock:         sys_4xclk rising at 20.833ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: fpga_spi_instance/receive_data_22 to fpga_spi_instance/receive_data_23
+  Minimum Data Path: fpga_spi_instance/receive_data_15 to fpga_spi_instance/FPGA_LAMPENABLE_15
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X5Y11.YQ       Tcko                  0.464   fpga_spi_instance/receive_data<23>
-                                                       fpga_spi_instance/receive_data_22
-    SLICE_X5Y11.BX       net (fanout=5)        0.411   fpga_spi_instance/receive_data<22>
-    SLICE_X5Y11.CLK      Tckdi       (-Th)    -0.089   fpga_spi_instance/receive_data<23>
-                                                       fpga_spi_instance/receive_data_23
+    SLICE_X7Y26.XQ       Tcko                  0.473   fpga_spi_instance/receive_data<15>
+                                                       fpga_spi_instance/receive_data_15
+    SLICE_X5Y25.BX       net (fanout=9)        0.381   fpga_spi_instance/receive_data<15>
+    SLICE_X5Y25.CLK      Tckdi       (-Th)    -0.089   fpga_spi_instance/FPGA_LAMPENABLE<15>
+                                                       fpga_spi_instance/FPGA_LAMPENABLE_15
     -------------------------------------------------  ---------------------------
-    Total                                      0.964ns (0.553ns logic, 0.411ns route)
-                                                       (57.4% logic, 42.6% route)
+    Total                                      0.943ns (0.562ns logic, 0.381ns route)
+                                                       (59.6% logic, 40.4% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point fpga_spi_instance/FPGA_MAXSATVALUE_13 (SLICE_X11Y8.BX), 1 path
+Paths for end point fpga_spi_instance/FPGA_INTCLOCK_13 (SLICE_X17Y23.BX), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.992ns (requirement - (clock path skew + uncertainty - data path))
+Slack (hold path):      0.959ns (requirement - (clock path skew + uncertainty - data path))
   Source:               fpga_spi_instance/receive_data_13 (FF)
-  Destination:          fpga_spi_instance/FPGA_MAXSATVALUE_13 (FF)
+  Destination:          fpga_spi_instance/FPGA_INTCLOCK_13 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      1.040ns (Levels of Logic = 0)
-  Clock Path Skew:      0.048ns (0.276 - 0.228)
+  Data Path Delay:      0.970ns (Levels of Logic = 0)
+  Clock Path Skew:      0.011ns (0.065 - 0.054)
   Source Clock:         sys_4xclk rising at 20.833ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: fpga_spi_instance/receive_data_13 to fpga_spi_instance/FPGA_MAXSATVALUE_13
+  Minimum Data Path: fpga_spi_instance/receive_data_13 to fpga_spi_instance/FPGA_INTCLOCK_13
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y9.XQ       Tcko                  0.473   fpga_spi_instance/receive_data<13>
+    SLICE_X16Y22.XQ      Tcko                  0.505   fpga_spi_instance/receive_data<13>
                                                        fpga_spi_instance/receive_data_13
-    SLICE_X11Y8.BX       net (fanout=9)        0.478   fpga_spi_instance/receive_data<13>
-    SLICE_X11Y8.CLK      Tckdi       (-Th)    -0.089   fpga_spi_instance/FPGA_MAXSATVALUE<13>
-                                                       fpga_spi_instance/FPGA_MAXSATVALUE_13
+    SLICE_X17Y23.BX      net (fanout=9)        0.376   fpga_spi_instance/receive_data<13>
+    SLICE_X17Y23.CLK     Tckdi       (-Th)    -0.089   fpga_spi_instance/FPGA_INTCLOCK<13>
+                                                       fpga_spi_instance/FPGA_INTCLOCK_13
     -------------------------------------------------  ---------------------------
-    Total                                      1.040ns (0.562ns logic, 0.478ns route)
-                                                       (54.0% logic, 46.0% route)
+    Total                                      0.970ns (0.594ns logic, 0.376ns route)
+                                                       (61.2% logic, 38.8% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point fpga_spi_instance/FPGA_OFFSETVALUE_13 (SLICE_X10Y8.BX), 1 path
+Paths for end point fpga_spi_instance/FPGA_COUNTBASE_5 (SLICE_X17Y27.BX), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.999ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               fpga_spi_instance/receive_data_13 (FF)
-  Destination:          fpga_spi_instance/FPGA_OFFSETVALUE_13 (FF)
+Slack (hold path):      0.977ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               fpga_spi_instance/receive_data_5 (FF)
+  Destination:          fpga_spi_instance/FPGA_COUNTBASE_5 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      1.047ns (Levels of Logic = 0)
-  Clock Path Skew:      0.048ns (0.276 - 0.228)
+  Data Path Delay:      1.046ns (Levels of Logic = 0)
+  Clock Path Skew:      0.069ns (0.349 - 0.280)
   Source Clock:         sys_4xclk rising at 20.833ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: fpga_spi_instance/receive_data_13 to fpga_spi_instance/FPGA_OFFSETVALUE_13
+  Minimum Data Path: fpga_spi_instance/receive_data_5 to fpga_spi_instance/FPGA_COUNTBASE_5
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y9.XQ       Tcko                  0.473   fpga_spi_instance/receive_data<13>
-                                                       fpga_spi_instance/receive_data_13
-    SLICE_X10Y8.BX       net (fanout=9)        0.436   fpga_spi_instance/receive_data<13>
-    SLICE_X10Y8.CLK      Tckdi       (-Th)    -0.138   fpga_spi_instance/FPGA_OFFSETVALUE<13>
-                                                       fpga_spi_instance/FPGA_OFFSETVALUE_13
+    SLICE_X18Y29.XQ      Tcko                  0.505   fpga_spi_instance/receive_data<5>
+                                                       fpga_spi_instance/receive_data_5
+    SLICE_X17Y27.BX      net (fanout=12)       0.452   fpga_spi_instance/receive_data<5>
+    SLICE_X17Y27.CLK     Tckdi       (-Th)    -0.089   fpga_spi_instance/FPGA_COUNTBASE<5>
+                                                       fpga_spi_instance/FPGA_COUNTBASE_5
     -------------------------------------------------  ---------------------------
-    Total                                      1.047ns (0.611ns logic, 0.436ns route)
-                                                       (58.4% logic, 41.6% route)
+    Total                                      1.046ns (0.594ns logic, 0.452ns route)
+                                                       (56.8% logic, 43.2% route)
 
 --------------------------------------------------------------------------------
 
@@ -1362,7 +1284,7 @@ Slack: 18.819ns (period - (min low pulse limit / (low pulse / period)))
   Low pulse limit: 1.007ns (Twpl)
   Physical resource: fpga_spi_instance/fpga_cs_rise_edge_instance/d_i_ff3/CLK
   Logical resource: fpga_spi_instance/fpga_cs_rise_edge_instance/Mshreg_d_i_ff2/SRL16E/WS
-  Location pin: SLICE_X0Y8.CLK
+  Location pin: SLICE_X2Y25.CLK
   Clock network: sys_4xclk
 --------------------------------------------------------------------------------
 Slack: 18.819ns (period - (min high pulse limit / (high pulse / period)))
@@ -1371,7 +1293,7 @@ Slack: 18.819ns (period - (min high pulse limit / (high pulse / period)))
   High pulse limit: 1.007ns (Twph)
   Physical resource: fpga_spi_instance/fpga_cs_rise_edge_instance/d_i_ff3/CLK
   Logical resource: fpga_spi_instance/fpga_cs_rise_edge_instance/Mshreg_d_i_ff2/SRL16E/WS
-  Location pin: SLICE_X0Y8.CLK
+  Location pin: SLICE_X2Y25.CLK
   Clock network: sys_4xclk
 --------------------------------------------------------------------------------
 Slack: 18.819ns (period - (min low pulse limit / (low pulse / period)))
@@ -1380,7 +1302,7 @@ Slack: 18.819ns (period - (min low pulse limit / (low pulse / period)))
   Low pulse limit: 1.007ns (Twpl)
   Physical resource: fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff3/CLK
   Logical resource: fpga_spi_instance/fpga_clk_rise_edge_instance/Mshreg_d_i_ff2/SRL16E/WS
-  Location pin: SLICE_X0Y10.CLK
+  Location pin: SLICE_X2Y26.CLK
   Clock network: sys_4xclk
 --------------------------------------------------------------------------------
 
@@ -1392,10 +1314,10 @@ Derived Constraints for TS_sys_clk
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_sys_clk                     |     83.333ns|     20.000ns|     29.216ns|            0|            0|            0|         9289|
-| TS_clk_wizard_instance_CLK2X_B|     41.666ns|     14.432ns|          N/A|            0|            0|         7005|            0|
+|TS_sys_clk                     |     83.333ns|     20.000ns|     31.388ns|            0|            0|            0|        11784|
+| TS_clk_wizard_instance_CLK2X_B|     41.666ns|     15.054ns|          N/A|            0|            0|         9516|            0|
 | UF                            |             |             |             |             |             |             |             |
-| TS_clk_wizard_instance_CLKFX_B|     20.833ns|      7.304ns|          N/A|            0|            0|         2284|            0|
+| TS_clk_wizard_instance_CLKFX_B|     20.833ns|      7.847ns|          N/A|            0|            0|         2268|            0|
 | UF                            |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -1411,7 +1333,7 @@ Clock to Setup on destination clock sys_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-sys_clk        |    9.934|         |         |         |
+sys_clk        |   12.438|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -1420,24 +1342,24 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 9304 paths, 0 nets, and 3393 connections
+Constraints cover 11799 paths, 0 nets, and 3646 connections
 
 Design statistics:
    Minimum period:  20.000ns{1}   (Maximum frequency:  50.000MHz)
-   Maximum path delay from/to any node:   1.839ns
+   Maximum path delay from/to any node:   1.550ns
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Wed Sep 14 06:51:02 2022 
+Analysis completed Thu Sep 15 04:56:33 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 387 MB
+Peak Memory Usage: 388 MB
 
 
 

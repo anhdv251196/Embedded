@@ -35,8 +35,8 @@ module ad7621(
     input ad7621_busy,
     input [15:0] ad7621_di,
     output reg ad7621_convst,
-    output reg [15:0] ad7621_fifo_do,
-    output reg ad7621_flag_fifo_do
+    output wire [15:0] ad7621_fifo_do,
+    output wire ad7621_flag_fifo_do
     
     /* ILA interface */
     //output [15:0] cnt_rd_pixel_ila
@@ -62,39 +62,42 @@ module ad7621(
             if (ad7621_start) cnt_rd_pixel <= cnt_rd_pixel + 16'd1;
         end
     end
-    
-    /* Latch data in falling edge of busy signal */
-    reg [31:0] ad7621_do_ff1;
-	 wire [15:0] ad7621_do_ff2;
-	 divider div_instance (
-			.Q(16'd65535),
-			.M(FPGA_MAXSATVALUE),
-			.Quo(ad7621_do_ff2),
-			.start(ad7621_flag_fifo_do)
-	 );
+	 
+	/* Latch data in falling edge of busy signal */ 
+	reg [15:0] r_dat_temp = 16'd0;
+	reg r_dat_valid_temp = 1'b0;
     always @ (posedge sys_clk)
     begin
         if (sys_rst || ad7621_restart)
         begin
-            ad7621_fifo_do <= 16'd0;
-            ad7621_flag_fifo_do <= 1'b0;
-            ad7621_do_ff1 <= 32'd0;
+            r_dat_temp <= 16'd0;
+            r_dat_valid_temp <= 1'b0;
         end
         else begin
             if (flag_falling_edge_busy)
             begin
                 if ( (cnt_rd_pixel >= 16'd34) && (cnt_rd_pixel <= 16'd2081) )
                 begin
-                    ad7621_fifo_do <= ad7621_di - FPGA_OFFSETVALUE;
-                    //ad7621_fifo_do <= ad7621_do_ff1;
-                    ad7621_flag_fifo_do <= 1'b1;
+                    r_dat_temp <= ad7621_di - FPGA_OFFSETVALUE;
+                    r_dat_valid_temp <= 1'b1;
                 end
             end 
             else begin
-                ad7621_flag_fifo_do <= 1'b0;
+                r_dat_valid_temp <= 1'b0;
             end
         end
     end
+	
+	divider #(.WIDTH(10), .FBITS(4)) div_instance 
+	(
+		.clk(sys_clk),
+		.start(r_dat_valid_temp),
+		.x(10'h3FF),
+		.y(FPGA_MAXSATVALUE[15:6]),
+		.w_data_i(r_dat_temp),
+		.r_data_o(ad7621_fifo_do),
+		.r_data_valid(ad7621_flag_fifo_do)
+	);
 	 
 
 		reg ad7621_start_ff1 = 1'b0;

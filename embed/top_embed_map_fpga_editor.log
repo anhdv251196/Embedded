@@ -1,4 +1,4 @@
-#:C29    
+#:C19    
 #Xilinx FPGA Editor Command Log File
 #Editor Version:
 #:V   SPARC M2.1 P.20131013
@@ -7,12 +7,12 @@
 #Host Name:
 #:H   localhost.localdomain
 #Date/Time:
-#:T   Mon Aug 29 07:08:35 2022
+#:T   Wed Sep 14 08:55:15 2022
 #------------------------------
 	#Reading top_embed_map.ncd...
 	#Loading device for application Rf_Device from file '3s50a.nph' in environment /opt/Xilinx/14.7/ISE_DS/ISE/.
 	#   "top_embed" is an NCD, version 3.2, device xc3s50a, package vq100, speed -4
-	#Design creation date: 2022.08.29.01.52.49
+	#Design creation date: 2022.09.14.07.40.26
 	#Building chip graphics...
 	#Loading speed info...
 	#1
@@ -20,77 +20,56 @@ setattr main edit-mode no-logic-changes
 	#2
 unselect -all
 	#3
-unselect -all
+select -k comp 'ad7621_di<9>'
 	#4
-select comp 'fpga_cs'
-	#comp "fpga_cs",  site "P9",  bonded type = IBUF,  pad name = PAD134,  pin name = P9  (RPM grid X3Y22)
-	#5
 unselect -all
+	#5
+select comp 'ad7621_di<9>'
+	#comp "ad7621_di<9>",  site "P59",  bonded type = IBUF,  pad name = PAD62,  pin name = P59  (RPM grid X71Y12)
 	#6
 unselect -all
 	#7
-unselect -all
+select comp 'ad7621_di<9>'
+	#comp "ad7621_di<9>",  site "P59",  bonded type = IBUF,  pad name = PAD62,  pin name = P59  (RPM grid X71Y12)
 	#8
-unselect -all
+post block
+	#<OFF1_SR_ATTR>.
+	#<O1>.
+	#<ODDRIN1>.
+	#<ODDRIN1>.
+	#<ODDRIN1>.
+	#<ODDRIN1>.
+	#<ODDRIN1>.
+	#<ODDRIN1>.
+	#<ODDRIN1>.
 	#9
-unselect -all
+unselect comp 'ad7621_di<9>'
 	#10
-select site 'SLICE_X14Y16'
-	#site "SLICE_X14Y16",  type = SLICEM  (RPM grid X33Y18)
+select -k comp 'ad7621_di<8>'
 	#11
-unselect -all
+unselect comp 'ad7621_di<8>'
 	#12
-select site 'SLICE_X14Y16'
-	#site "SLICE_X14Y16",  type = SLICEM  (RPM grid X33Y18)
+select -k comp 'ad7621_di<7>'
 	#13
 unselect -all
 	#14
 unselect -all
 	#15
-select site 'SLICE_X14Y16'
-	#site "SLICE_X14Y16",  type = SLICEM  (RPM grid X33Y18)
-	#16
-select wire 'CNTRLPIN(-560,2456)'
-	#node = CNTRLPIN(-560,2456)
-	#17
 unselect -all
+	#16
+unselect -all
+	#17
+select comp 'ad7621_di<7>'
+	#comp "ad7621_di<7>",  site "P61",  bonded type = IBUF,  pad name = PAD60,  pin name = P61  (RPM grid X71Y14)
 	#18
 unselect -all
 	#19
-unselect -all
+select comp 'ad7621_di<7>'
+	#comp "ad7621_di<7>",  site "P61",  bonded type = IBUF,  pad name = PAD60,  pin name = P61  (RPM grid X71Y14)
 	#20
-unselect -all
+post block
 	#21
-select site 'SLICE_X14Y16'
-	#site "SLICE_X14Y16",  type = SLICEM  (RPM grid X33Y18)
+post ila
+	#Building all ILA Capture Units ...
 	#22
-select site 'SLICE_X14Y16'
-	#site "SLICE_X14Y16",  type = SLICEM  (RPM grid X33Y18)
-	#23
-select wire 'PREBXBY(-727,2480)'
-	#node = PREBXBY(-727,2480)
-	#24
-unselect -all
-	#25
-select wire 'INPUT(-400,2200)'
-	#node = INPUT(-400,2200)
-	#26
-unselect -all
-	#27
-select wire 'INPUT(-560,2176)'
-	#node = INPUT(-560,2176)
-	#28
-unselect -all
-	#29
-select pin 'SLICE_X14Y16.CIN'
-	#site.pin = SLICE_X14Y16.CIN
-	#30
-unselect -all
-	#31
-select wire 'INPUT(-448,2088)'
-	#node = INPUT(-448,2088)
-	#32
-unselect -all
-	#33
-select site 'SLICE_X14Y16'
-	#site "SLICE_X14Y16",  type = SLICEM  (RPM grid X33Y18)
+unpost ila

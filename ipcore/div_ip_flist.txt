@@ -1,0 +1,13 @@
+# Output products list for <div_ip>
+_xmsgs/pn_parser.xmsgs
+div_ip.asy
+div_ip.gise
+div_ip.ngc
+div_ip.sym
+div_ip.v
+div_ip.veo
+div_ip.xco
+div_ip.xise
+div_ip_flist.txt
+div_ip_readme.txt
+div_ip_xmdf.tcl

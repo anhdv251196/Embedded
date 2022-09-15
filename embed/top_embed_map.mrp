@@ -9,25 +9,25 @@ Target Device  : xc3s50a
 Target Package : vq100
 Target Speed   : -4
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Wed Sep 14 06:50:45 2022
+Mapped Date    : Thu Sep 15 04:56:16 2022
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:   34
 Logic Utilization:
-  Total Number Slice Registers:         841 out of   1,408   59%
-    Number used as Flip Flops:          840
+  Total Number Slice Registers:         889 out of   1,408   63%
+    Number used as Flip Flops:          888
     Number used as Latches:               1
-  Number of 4 input LUTs:               726 out of   1,408   51%
+  Number of 4 input LUTs:               794 out of   1,408   56%
 Logic Distribution:
   Number of occupied Slices:            702 out of     704   99%
     Number of Slices containing only related logic:     702 out of     702 100%
     Number of Slices containing unrelated logic:          0 out of     702   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         896 out of   1,408   63%
-    Number used as logic:               597
-    Number used as a route-thru:        170
+  Total Number of 4 input LUTs:         972 out of   1,408   69%
+    Number used as logic:               665
+    Number used as a route-thru:        178
     Number used as Shift registers:     129
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -38,13 +38,14 @@ Logic Distribution:
   Number of DCMs:                         1 out of       2   50%
   Number of BSCANs:                       1 out of       1  100%
   Number of BSCAN_SPARTAN3As:             1 out of       1  100%
+  Number of MULT18X18SIOs:                1 out of       3   33%
   Number of RAMB16BWEs:                   3 out of       3  100%
 
   Number of RPM macros:           16
-Average Fanout of Non-Clock Nets:                2.99
+Average Fanout of Non-Clock Nets:                2.88
 
 Peak Memory Usage:  624 MB
-Total REAL time to MAP completion:  3 secs 
+Total REAL time to MAP completion:  2 secs 
 Total CPU time to MAP completion:   2 secs 
 
 NOTES:
@@ -231,7 +232,7 @@ Section 4 - Removed Logic Summary
   40 block(s) removed
   48 block(s) optimized away
   24 signal(s) removed
- 284 Block(s) redundant
+ 313 Block(s) redundant
 
 Section 5 - Removed Logic
 -------------------------
@@ -579,30 +580,51 @@ LOCALBUF 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/iSTAT_CNT<2>1/LUT4_L_BUF
 LOCALBUF 		ilx_instance/flag_sel_clok_or0001110/LUT4_D_BUF
 LOCALBUF 		ilx_instance/_and0000111/LUT4_L_BUF
 LOCALBUF 		fpga_spi_instance/Mcount_cnt_shift_data_xor<3>111/LUT2_D_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>51/LUT3_D_BUF
+LOCALBUF 		fpga_spi_instance/Mcount_cnt_spi_xor<2>111/LUT2_D_BUF
 LOCALBUF 		fpga_spi_instance/FPGA_LAMPENABLE_not000111/LUT3_D_BUF
 LOCALBUF 		fpga_spi_instance/Mcount_cnt_shift_data_xor<2>111/LUT2_D_BUF
 LOCALBUF 		fpga_spi_instance/FPGA_INTCLOCK_not000111/LUT3_D_BUF
 LOCALBUF 		fpga_spi_instance/fpga_addr_not000131/LUT4_L_BUF
 LOCALBUF 		fpga_spi_instance/FPGA_COUNTBASE_not000121/LUT4_D_BUF
 LOCALBUF 		fpga_spi_instance/FPGA_COUNTBASE_not000111/LUT4_D_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>141/LUT3_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>141/LUT3_D_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>131/LUT3_D_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<15>145/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>211/LUT3_D_BUF
 LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>151/LUT3_D_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<9>38/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<8>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<7>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<6>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<5>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<4>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<3>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<2>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<1>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<14>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<13>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<12>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<11>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<10>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/Rx_Done_not0001_SW0/LUT3_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>111/LUT3_D_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<9>4/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<8>4/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<8>26/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<7>4/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<7>26/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<6>4/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<6>26/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<5>4/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<5>26/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<4>4/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<4>26/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<3>4/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<3>26/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<2>4/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<2>26/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<1>4/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<1>26/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<14>4/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<14>26/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<13>4/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<13>26/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<12>4/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<12>26/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<11>4/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<11>26/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<10>4/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<10>26/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>4/LUT4_L_BUF
+LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>26/LUT4_L_BUF
+LOCALBUF 		ad7621_instance/div_instance/busy_cmp_eq000039/LUT4_D_BUF
+LOCALBUF 		fpga_spi_instance/Rx_Done_not0001_SW1/LUT4_L_BUF
 LUT1 		Mcompar_pixel_ready_cmp_ge0000_cy<0>_rt
 LUT1 		ilx_instance/Mcount_cnt_make_smp_clk_cy<14>_rt
 LUT1 		ilx_instance/Mcount_cnt_make_smp_clk_cy<13>_rt
@@ -694,6 +716,13 @@ LUT1 		ilx_instance/Mcount_cnt_1khz_cy<4>_rt
 LUT1 		ilx_instance/Mcount_cnt_1khz_cy<3>_rt
 LUT1 		ilx_instance/Mcount_cnt_1khz_cy<2>_rt
 LUT1 		ilx_instance/Mcount_cnt_1khz_cy<1>_rt
+LUT1 		ad7621_instance/div_instance/Mcount_i_cy<7>_rt
+LUT1 		ad7621_instance/div_instance/Mcount_i_cy<6>_rt
+LUT1 		ad7621_instance/div_instance/Mcount_i_cy<5>_rt
+LUT1 		ad7621_instance/div_instance/Mcount_i_cy<4>_rt
+LUT1 		ad7621_instance/div_instance/Mcount_i_cy<3>_rt
+LUT1 		ad7621_instance/div_instance/Mcount_i_cy<2>_rt
+LUT1 		ad7621_instance/div_instance/Mcount_i_cy<1>_rt
 LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<14>_rt
 LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<13>_rt
 LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<12>_rt
@@ -704,6 +733,7 @@ LUT1 		ilx_instance/Mcount_cnt_rog_low_xor<15>_rt
 LUT1 		ilx_instance/Mcount_cnt_delay_rog_to_low_xor<7>_rt
 LUT1 		ilx_instance/Mcount_cnt_intclk_xor<15>_rt
 LUT1 		ilx_instance/Mcount_cnt_1khz_xor<15>_rt
+LUT1 		ad7621_instance/div_instance/Mcount_i_xor<8>_rt
 LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_xor<15>_rt
 INV 		ilx_instance/sys_rst_inv1_INV_0
 INV 		ilx511b_rog1_INV_0
@@ -1084,6 +1114,15 @@ SRVAL_A = 000000000
 SRVAL_B = 000000000
 
 
+MULT18X18SIO "ad7621_instance/div_instance/Mmult_q_mult0000":
+AREG:1
+BREG:0
+B_INPUT:DIRECT
+PREG:0
+PREG_CLKINVERSION:0
+
+
+
 BUFGMUX "clk_wizard_instance/CLK2X_BUFG_INST":
 DISABLE_ATTR:LOW
 
@@ -1292,7 +1331,7 @@ Section 13 - Utilization by Hierarchy
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Module                                                                  | Partition | Slices        | Slice Reg     | LUTs          | LUTRAM        | BRAM      | MULT18X18 | BUFG  | DCM   | Full Hierarchical Name                                                                                                                                                                        |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| top_embed/                                                              |           | 7/801         | 1/841         | 8/886         | 0/129         | 0/3       | 0/0       | 0/3   | 0/1   | top_embed                                                                                                                                                                                     |
+| top_embed/                                                              |           | 7/842         | 1/889         | 8/965         | 0/129         | 0/3       | 0/1       | 0/3   | 0/1   | top_embed                                                                                                                                                                                     |
 | +U_icon_pro                                                             |           | 0/42          | 0/28          | 0/48          | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | top_embed/U_icon_pro                                                                                                                                                                          |
 | ++U0                                                                    |           | 0/42          | 0/28          | 0/48          | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | top_embed/U_icon_pro/U0                                                                                                                                                                       |
 | +++U_ICON                                                               |           | 3/42          | 3/28          | 0/48          | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | top_embed/U_icon_pro/U0/U_ICON                                                                                                                                                                |
@@ -1308,9 +1347,9 @@ Section 13 - Utilization by Hierarchy
 | ++++U_TDO_MUX                                                           |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/U_TDO_MUX                                                                                                                                                      |
 | +++++U_CS_MUX                                                           |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/U_TDO_MUX/U_CS_MUX                                                                                                                                             |
 | ++++++I4.U_MUX16                                                        |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_icon_pro/U0/U_ICON/U_TDO_MUX/U_CS_MUX/I4.U_MUX16                                                                                                                                  |
-| +U_ila_pro_0                                                            |           | 0/364         | 0/355         | 0/327         | 0/122         | 0/1       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0                                                                                                                                                                         |
-| ++U0                                                                    |           | 16/364        | 31/355        | 0/327         | 0/122         | 0/1       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0                                                                                                                                                                      |
-| +++I_NO_D.U_ILA                                                         |           | 1/348         | 0/324         | 1/327         | 0/122         | 0/1       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA                                                                                                                                                         |
+| +U_ila_pro_0                                                            |           | 0/363         | 0/355         | 0/327         | 0/122         | 0/1       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0                                                                                                                                                                         |
+| ++U0                                                                    |           | 16/363        | 31/355        | 0/327         | 0/122         | 0/1       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0                                                                                                                                                                      |
+| +++I_NO_D.U_ILA                                                         |           | 1/347         | 0/324         | 1/327         | 0/122         | 0/1       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA                                                                                                                                                         |
 | ++++I_DQ.U_DQQ                                                          |           | 16/16         | 31/31         | 31/31         | 31/31         | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ                                                                                                                                              |
 | ++++U_CAPSTOR                                                           |           | 0/7           | 0/14          | 0/14          | 0/0           | 0/1       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR                                                                                                                                               |
 | +++++I_CASE1.I_NO_TB.I_RT1.I_RDADDR                                     |           | 0/7           | 0/14          | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.I_RDADDR                                                                                                                |
@@ -1340,7 +1379,7 @@ Section 13 - Utilization by Hierarchy
 | ++++U_RST                                                               |           | 6/18          | 9/25          | 2/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST                                                                                                                                                   |
 | +++++U_ARM_XFER                                                         |           | 7/7           | 9/9           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER                                                                                                                                        |
 | +++++U_HALT_XFER                                                        |           | 5/5           | 7/7           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER                                                                                                                                       |
-| ++++U_STAT                                                              |           | 29/55         | 23/42         | 19/54         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT                                                                                                                                                  |
+| ++++U_STAT                                                              |           | 28/54         | 23/42         | 19/54         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT                                                                                                                                                  |
 | +++++U_DMUX                                                             |           | 0/7           | 0/0           | 0/11          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX                                                                                                                                           |
 | ++++++U_CS_MUX                                                          |           | 0/7           | 0/0           | 0/11          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX                                                                                                                                  |
 | +++++++I3.U_MUX8                                                        |           | 7/7           | 0/0           | 11/11         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8                                                                                                                        |
@@ -1455,7 +1494,8 @@ Section 13 - Utilization by Hierarchy
 | +++++++U_MU                                                             |           | 1/4           | 1/4           | 0/2           | 0/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[4].U_M/U_MU                                                                                                                           |
 | ++++++++I_MUT_GANDX.U_match                                             |           | 0/3           | 0/3           | 0/2           | 0/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[4].U_M/U_MU/I_MUT_GANDX.U_match                                                                                                       |
 | +++++++++I_SRL16.U_GANDX_SRL16                                          |           | 3/3           | 3/3           | 2/2           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[4].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16                                                                                 |
-| +ad7621_instance                                                        |           | 28/29         | 35/37         | 49/50         | 1/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/ad7621_instance                                                                                                                                                                     |
+| +ad7621_instance                                                        |           | 27/88         | 19/86         | 49/155        | 1/2           | 0/0       | 0/1       | 0/0   | 0/0   | top_embed/ad7621_instance                                                                                                                                                                     |
+| ++div_instance                                                          |           | 60/60         | 65/65         | 105/105       | 0/0           | 0/0       | 1/1       | 0/0   | 0/0   | top_embed/ad7621_instance/div_instance                                                                                                                                                        |
 | ++falling_edge_fifo_instant                                             |           | 1/1           | 2/2           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/ad7621_instance/falling_edge_fifo_instant                                                                                                                                           |
 | +clk_wizard_instance                                                    |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 2/2   | 1/1   | top_embed/clk_wizard_instance                                                                                                                                                                 |
 | +fifo_ccd_instance                                                      |           | 0/57          | 0/72          | 0/68          | 0/0           | 0/2       | 0/0       | 0/0   | 0/0   | top_embed/fifo_ccd_instance                                                                                                                                                                   |
@@ -1487,7 +1527,7 @@ Section 13 - Utilization by Hierarchy
 | +fifo_spi_instance                                                      |           | 10/13         | 17/21         | 17/20         | 0/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_spi_instance                                                                                                                                                                   |
 | ++fall_edge_fifo_instant                                                |           | 2/2           | 2/2           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_spi_instance/fall_edge_fifo_instant                                                                                                                                            |
 | ++rise_edge_fifo_clk_instant                                            |           | 1/1           | 2/2           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_spi_instance/rise_edge_fifo_clk_instant                                                                                                                                        |
-| +fpga_spi_instance                                                      |           | 173/176       | 190/194       | 182/185       | 1/3           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fpga_spi_instance                                                                                                                                                                   |
+| +fpga_spi_instance                                                      |           | 156/159       | 189/193       | 156/159       | 1/3           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fpga_spi_instance                                                                                                                                                                   |
 | ++fpga_clk_fall_edge_instance                                           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fpga_spi_instance/fpga_clk_fall_edge_instance                                                                                                                                       |
 | ++fpga_clk_rise_edge_instance                                           |           | 1/1           | 2/2           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fpga_spi_instance/fpga_clk_rise_edge_instance                                                                                                                                       |
 | ++fpga_cs_rise_edge_instance                                            |           | 1/1           | 2/2           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fpga_spi_instance/fpga_cs_rise_edge_instance                                                                                                                                        |

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Sep 14 06:50:48 2022
+// Written by: Map P.20131013 on Thu Sep 15 04:56:18 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -176,25 +176,75 @@ TIMEGRP D_CLK = BEL "pixel_ready" BEL "rise_edge_acqui_src_instant/d_i_ff3"
         "ad7621_instance/cnt_rd_pixel_4" BEL "ad7621_instance/cnt_rd_pixel_3"
         BEL "ad7621_instance/cnt_rd_pixel_2" BEL
         "ad7621_instance/cnt_rd_pixel_1" BEL "ad7621_instance/cnt_rd_pixel_0"
-        BEL "ad7621_instance/falling_edge_fifo_instant/d_i_ff3" BEL
-        "ad7621_instance/ad7621_fifo_do_15" BEL
-        "ad7621_instance/ad7621_fifo_do_14" BEL
-        "ad7621_instance/ad7621_fifo_do_13" BEL
-        "ad7621_instance/ad7621_fifo_do_12" BEL
-        "ad7621_instance/ad7621_fifo_do_11" BEL
-        "ad7621_instance/ad7621_fifo_do_10" BEL
-        "ad7621_instance/ad7621_fifo_do_9" BEL
-        "ad7621_instance/ad7621_fifo_do_8" BEL
-        "ad7621_instance/ad7621_fifo_do_7" BEL
-        "ad7621_instance/ad7621_fifo_do_6" BEL
-        "ad7621_instance/ad7621_fifo_do_5" BEL
-        "ad7621_instance/ad7621_fifo_do_4" BEL
-        "ad7621_instance/ad7621_fifo_do_3" BEL
-        "ad7621_instance/ad7621_fifo_do_2" BEL
-        "ad7621_instance/ad7621_fifo_do_1" BEL
-        "ad7621_instance/ad7621_fifo_do_0" BEL "ad7621_instance/ad7621_convst"
-        BEL "ad7621_instance/ad7621_flag_fifo_do" BEL
-        "fifo_spi_instance/fall_edge_fifo_instant/d_i_ff3" BEL
+        BEL "ad7621_instance/div_instance/i_8" BEL
+        "ad7621_instance/div_instance/i_7" BEL
+        "ad7621_instance/div_instance/i_6" BEL
+        "ad7621_instance/div_instance/i_5" BEL
+        "ad7621_instance/div_instance/i_4" BEL
+        "ad7621_instance/div_instance/i_3" BEL
+        "ad7621_instance/div_instance/i_2" BEL
+        "ad7621_instance/div_instance/i_1" BEL
+        "ad7621_instance/div_instance/i_0" BEL
+        "ad7621_instance/div_instance/Mmult_q_mult0000" BEL
+        "ad7621_instance/falling_edge_fifo_instant/d_i_ff3" BEL
+        "ad7621_instance/div_instance/valid_ff" BEL
+        "ad7621_instance/div_instance/valid" BEL
+        "ad7621_instance/div_instance/busy" BEL
+        "ad7621_instance/div_instance/y1_9" BEL
+        "ad7621_instance/div_instance/y1_8" BEL
+        "ad7621_instance/div_instance/y1_7" BEL
+        "ad7621_instance/div_instance/y1_6" BEL
+        "ad7621_instance/div_instance/y1_5" BEL
+        "ad7621_instance/div_instance/y1_4" BEL
+        "ad7621_instance/div_instance/y1_3" BEL
+        "ad7621_instance/div_instance/y1_2" BEL
+        "ad7621_instance/div_instance/y1_1" BEL
+        "ad7621_instance/div_instance/y1_0" BEL
+        "ad7621_instance/div_instance/ac_10" BEL
+        "ad7621_instance/div_instance/ac_9" BEL
+        "ad7621_instance/div_instance/ac_8" BEL
+        "ad7621_instance/div_instance/ac_7" BEL
+        "ad7621_instance/div_instance/ac_6" BEL
+        "ad7621_instance/div_instance/ac_5" BEL
+        "ad7621_instance/div_instance/ac_4" BEL
+        "ad7621_instance/div_instance/ac_3" BEL
+        "ad7621_instance/div_instance/ac_2" BEL
+        "ad7621_instance/div_instance/ac_1" BEL
+        "ad7621_instance/div_instance/ac_0" BEL
+        "ad7621_instance/div_instance/q_25" BEL
+        "ad7621_instance/div_instance/q_24" BEL
+        "ad7621_instance/div_instance/q_23" BEL
+        "ad7621_instance/div_instance/q_22" BEL
+        "ad7621_instance/div_instance/q_21" BEL
+        "ad7621_instance/div_instance/q_20" BEL
+        "ad7621_instance/div_instance/q_19" BEL
+        "ad7621_instance/div_instance/q_18" BEL
+        "ad7621_instance/div_instance/q_17" BEL
+        "ad7621_instance/div_instance/q_16" BEL
+        "ad7621_instance/div_instance/q_15" BEL
+        "ad7621_instance/div_instance/q_14" BEL
+        "ad7621_instance/div_instance/q_13" BEL
+        "ad7621_instance/div_instance/q_12" BEL
+        "ad7621_instance/div_instance/q_11" BEL
+        "ad7621_instance/div_instance/q_10" BEL
+        "ad7621_instance/div_instance/q_9" BEL
+        "ad7621_instance/div_instance/q_8" BEL
+        "ad7621_instance/div_instance/q_7" BEL
+        "ad7621_instance/div_instance/q_6" BEL
+        "ad7621_instance/div_instance/q_5" BEL
+        "ad7621_instance/div_instance/q_4" BEL
+        "ad7621_instance/div_instance/q1_9" BEL
+        "ad7621_instance/div_instance/q1_8" BEL
+        "ad7621_instance/div_instance/q1_7" BEL
+        "ad7621_instance/div_instance/q1_6" BEL
+        "ad7621_instance/div_instance/q1_5" BEL
+        "ad7621_instance/div_instance/q1_4" BEL
+        "ad7621_instance/div_instance/q1_3" BEL
+        "ad7621_instance/div_instance/q1_2" BEL
+        "ad7621_instance/div_instance/q1_1" BEL
+        "ad7621_instance/div_instance/q1_0" BEL
+        "ad7621_instance/ad7621_convst" BEL "ad7621_instance/r_dat_valid_temp"
+        BEL "fifo_spi_instance/fall_edge_fifo_instant/d_i_ff3" BEL
         "fifo_spi_instance/rise_edge_fifo_clk_instant/d_i_ff3" BEL
         "fifo_spi_instance/flag_fifo_data_ff" BEL
         "fifo_spi_instance/data_tranfer_15" BEL
@@ -976,25 +1026,75 @@ TIMEGRP clk_wizard_instance_CLK2X_BUF = BEL "pixel_ready" BEL
         "ad7621_instance/cnt_rd_pixel_4" BEL "ad7621_instance/cnt_rd_pixel_3"
         BEL "ad7621_instance/cnt_rd_pixel_2" BEL
         "ad7621_instance/cnt_rd_pixel_1" BEL "ad7621_instance/cnt_rd_pixel_0"
-        BEL "ad7621_instance/falling_edge_fifo_instant/d_i_ff3" BEL
-        "ad7621_instance/ad7621_fifo_do_15" BEL
-        "ad7621_instance/ad7621_fifo_do_14" BEL
-        "ad7621_instance/ad7621_fifo_do_13" BEL
-        "ad7621_instance/ad7621_fifo_do_12" BEL
-        "ad7621_instance/ad7621_fifo_do_11" BEL
-        "ad7621_instance/ad7621_fifo_do_10" BEL
-        "ad7621_instance/ad7621_fifo_do_9" BEL
-        "ad7621_instance/ad7621_fifo_do_8" BEL
-        "ad7621_instance/ad7621_fifo_do_7" BEL
-        "ad7621_instance/ad7621_fifo_do_6" BEL
-        "ad7621_instance/ad7621_fifo_do_5" BEL
-        "ad7621_instance/ad7621_fifo_do_4" BEL
-        "ad7621_instance/ad7621_fifo_do_3" BEL
-        "ad7621_instance/ad7621_fifo_do_2" BEL
-        "ad7621_instance/ad7621_fifo_do_1" BEL
-        "ad7621_instance/ad7621_fifo_do_0" BEL "ad7621_instance/ad7621_convst"
-        BEL "ad7621_instance/ad7621_flag_fifo_do" BEL
-        "fifo_spi_instance/fall_edge_fifo_instant/d_i_ff3" BEL
+        BEL "ad7621_instance/div_instance/i_8" BEL
+        "ad7621_instance/div_instance/i_7" BEL
+        "ad7621_instance/div_instance/i_6" BEL
+        "ad7621_instance/div_instance/i_5" BEL
+        "ad7621_instance/div_instance/i_4" BEL
+        "ad7621_instance/div_instance/i_3" BEL
+        "ad7621_instance/div_instance/i_2" BEL
+        "ad7621_instance/div_instance/i_1" BEL
+        "ad7621_instance/div_instance/i_0" BEL
+        "ad7621_instance/div_instance/Mmult_q_mult0000" BEL
+        "ad7621_instance/falling_edge_fifo_instant/d_i_ff3" BEL
+        "ad7621_instance/div_instance/valid_ff" BEL
+        "ad7621_instance/div_instance/valid" BEL
+        "ad7621_instance/div_instance/busy" BEL
+        "ad7621_instance/div_instance/y1_9" BEL
+        "ad7621_instance/div_instance/y1_8" BEL
+        "ad7621_instance/div_instance/y1_7" BEL
+        "ad7621_instance/div_instance/y1_6" BEL
+        "ad7621_instance/div_instance/y1_5" BEL
+        "ad7621_instance/div_instance/y1_4" BEL
+        "ad7621_instance/div_instance/y1_3" BEL
+        "ad7621_instance/div_instance/y1_2" BEL
+        "ad7621_instance/div_instance/y1_1" BEL
+        "ad7621_instance/div_instance/y1_0" BEL
+        "ad7621_instance/div_instance/ac_10" BEL
+        "ad7621_instance/div_instance/ac_9" BEL
+        "ad7621_instance/div_instance/ac_8" BEL
+        "ad7621_instance/div_instance/ac_7" BEL
+        "ad7621_instance/div_instance/ac_6" BEL
+        "ad7621_instance/div_instance/ac_5" BEL
+        "ad7621_instance/div_instance/ac_4" BEL
+        "ad7621_instance/div_instance/ac_3" BEL
+        "ad7621_instance/div_instance/ac_2" BEL
+        "ad7621_instance/div_instance/ac_1" BEL
+        "ad7621_instance/div_instance/ac_0" BEL
+        "ad7621_instance/div_instance/q_25" BEL
+        "ad7621_instance/div_instance/q_24" BEL
+        "ad7621_instance/div_instance/q_23" BEL
+        "ad7621_instance/div_instance/q_22" BEL
+        "ad7621_instance/div_instance/q_21" BEL
+        "ad7621_instance/div_instance/q_20" BEL
+        "ad7621_instance/div_instance/q_19" BEL
+        "ad7621_instance/div_instance/q_18" BEL
+        "ad7621_instance/div_instance/q_17" BEL
+        "ad7621_instance/div_instance/q_16" BEL
+        "ad7621_instance/div_instance/q_15" BEL
+        "ad7621_instance/div_instance/q_14" BEL
+        "ad7621_instance/div_instance/q_13" BEL
+        "ad7621_instance/div_instance/q_12" BEL
+        "ad7621_instance/div_instance/q_11" BEL
+        "ad7621_instance/div_instance/q_10" BEL
+        "ad7621_instance/div_instance/q_9" BEL
+        "ad7621_instance/div_instance/q_8" BEL
+        "ad7621_instance/div_instance/q_7" BEL
+        "ad7621_instance/div_instance/q_6" BEL
+        "ad7621_instance/div_instance/q_5" BEL
+        "ad7621_instance/div_instance/q_4" BEL
+        "ad7621_instance/div_instance/q1_9" BEL
+        "ad7621_instance/div_instance/q1_8" BEL
+        "ad7621_instance/div_instance/q1_7" BEL
+        "ad7621_instance/div_instance/q1_6" BEL
+        "ad7621_instance/div_instance/q1_5" BEL
+        "ad7621_instance/div_instance/q1_4" BEL
+        "ad7621_instance/div_instance/q1_3" BEL
+        "ad7621_instance/div_instance/q1_2" BEL
+        "ad7621_instance/div_instance/q1_1" BEL
+        "ad7621_instance/div_instance/q1_0" BEL
+        "ad7621_instance/ad7621_convst" BEL "ad7621_instance/r_dat_valid_temp"
+        BEL "fifo_spi_instance/fall_edge_fifo_instant/d_i_ff3" BEL
         "fifo_spi_instance/rise_edge_fifo_clk_instant/d_i_ff3" BEL
         "fifo_spi_instance/flag_fifo_data_ff" BEL
         "fifo_spi_instance/data_tranfer_15" BEL
@@ -1854,11 +1954,10 @@ TIMEGRP clk_wizard_instance_CLKFX_BUF = BEL "fpga_spi_instance/cnt_spi_4" BEL
         "fpga_spi_instance/transmit_data_3" BEL
         "fpga_spi_instance/transmit_data_2" BEL
         "fpga_spi_instance/transmit_data_1" BEL "fpga_spi_instance/Rx_Done"
-        BEL "fpga_spi_instance/fpga_addr_5_1" BEL
-        "fpga_spi_instance/fpga_addr_4_1" BEL
+        BEL "fpga_spi_instance/fpga_addr_4_1" BEL
         "fpga_spi_instance/fpga_addr_2_1" BEL
+        "fpga_spi_instance/fpga_addr_5_1" BEL
         "fpga_spi_instance/fpga_addr_5_2" BEL
-        "fpga_spi_instance/fpga_addr_4_2" BEL
         "fpga_spi_instance/fpga_clk_rise_edge_instance/Mshreg_d_i_ff2/SRL16E"
         BEL "fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff2" BEL
         "fpga_spi_instance/fpga_cs_rise_edge_instance/Mshreg_d_i_ff2/SRL16E"
