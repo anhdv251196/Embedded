@@ -41,7 +41,8 @@ module ilx511b(
     output flag_adc_restart,
 	 
 	 /**/
-	 output reg flag_sel_clok = 1'b0
+	 output reg flag_sel_clok = 1'b0,
+	 output flag_en_single_strobe
     
     /*ILA interface*/
 //    output ilx511b_rog_ila,
@@ -94,11 +95,11 @@ module ilx511b(
         else begin
             if (flag_end_rog_low1) en_intclk <= 1'b1;
             if (en_intclk) begin
+				if (cnt_intclk == FPGA_INTCLOCK) integ_done <= 1'b1;
                 if (cnt_1khz == `TIME_MAKE_1KHZ)
                 begin
                     cnt_1khz <= 15'd0;
                     cnt_intclk <= cnt_intclk + 15'd1;
-                    if (cnt_intclk == FPGA_INTCLOCK) integ_done <= 1'b1;
                 end
                 else begin
                     cnt_1khz <= cnt_1khz + 15'd1;
@@ -151,7 +152,7 @@ module ilx511b(
 				cnt_delay_rog_to_low <= 8'd0;
 			end
 		end
-	end
+	end 
     
     /* Make ROG pulse to low */
     always @ (posedge sys_clk)
@@ -194,6 +195,9 @@ module ilx511b(
             end
         end
     end
+	 
+	 /* Enable single strobe after start of integration time */
+	 assign flag_en_single_strobe = flag_end_rog_low1;
     
     /* Control ROG signal that indicate integration time */
     always @ (posedge sys_clk)
@@ -292,7 +296,7 @@ module ilx511b(
 		begin
 			flag_sel_clok <= 1'b0;
 		end else begin
-			if (rising_edge_fifo_rest || ((cnt_intclk == FPGA_INTCLOCK)&&(cnt_1khz == `TIME_MAKE_1KHZ - 149))) flag_sel_clok <= 1'b1;
+			if (rising_edge_fifo_rest || ((cnt_intclk == FPGA_INTCLOCK-1)&&(cnt_1khz == `TIME_MAKE_1KHZ - 149))) flag_sel_clok <= 1'b1;
 			if ((cnt_smp == `SAMPLE_CLOCK) || flag_start_clok_from_end_rog_low1) flag_sel_clok <= 1'b0;
 		end
 	 end

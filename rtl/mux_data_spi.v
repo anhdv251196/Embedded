@@ -58,7 +58,7 @@ module mux_data_spi(
 	  );
     
     //assign m0_scl_o = (fifo_cs == 1'b0) ? fifo_miso : (fpga_cs == 1'b0) ? fpga_miso : (adt_cs == 1'b0) ? m0_scl_i :1'b0;
-	 assign m0_scl_o = ((fifo_cs == 1'b0) && (fpga_cs == 1'b0)) ? fifo_miso : (fpga_cs == 1'b0) ? fpga_miso : 1'b0;
+	 assign m0_scl_o = (fifo_cs == 1'b0) ? fifo_miso : (fpga_cs == 1'b0) ? fpga_miso : 1'b0;
 //	 wire [2:0] spi_mux;
 //	 assign spi_mux = {fifo_cs, fpga_cs, adt_cs};
 //	 always @ (*)

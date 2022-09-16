@@ -98,7 +98,6 @@ module ad7621(
 		.r_data_o(ad7621_fifo_do),
 		.r_data_valid(ad7621_flag_fifo_do)
 	);
-	 
 
 		reg ad7621_start_ff1 = 1'b0;
 		reg ad7621_start_ff2 = 1'b0; 

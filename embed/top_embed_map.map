@@ -9,7 +9,7 @@ Target Device  : xc3s50a
 Target Package : vq100
 Target Speed   : -4
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Thu Sep 15 04:56:16 2022
+Mapped Date    : Fri Sep 16 07:43:16 2022
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:54 - 'xc3s50a' is a WebPack part.
@@ -137,19 +137,19 @@ Design Summary:
 Number of errors:      0
 Number of warnings:   34
 Logic Utilization:
-  Total Number Slice Registers:         889 out of   1,408   63%
-    Number used as Flip Flops:          888
+  Total Number Slice Registers:         788 out of   1,408   55%
+    Number used as Flip Flops:          787
     Number used as Latches:               1
-  Number of 4 input LUTs:               794 out of   1,408   56%
+  Number of 4 input LUTs:               713 out of   1,408   50%
 Logic Distribution:
   Number of occupied Slices:            702 out of     704   99%
     Number of Slices containing only related logic:     702 out of     702 100%
     Number of Slices containing unrelated logic:          0 out of     702   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         972 out of   1,408   69%
-    Number used as logic:               665
-    Number used as a route-thru:        178
-    Number used as Shift registers:     129
+  Total Number of 4 input LUTs:         922 out of   1,408   65%
+    Number used as logic:               615
+    Number used as a route-thru:        209
+    Number used as Shift registers:      98
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
@@ -162,10 +162,10 @@ Logic Distribution:
   Number of MULT18X18SIOs:                1 out of       3   33%
   Number of RAMB16BWEs:                   3 out of       3  100%
 
-  Number of RPM macros:           16
-Average Fanout of Non-Clock Nets:                2.88
+  Number of RPM macros:           12
+Average Fanout of Non-Clock Nets:                2.92
 
-Peak Memory Usage:  624 MB
+Peak Memory Usage:  623 MB
 Total REAL time to MAP completion:  2 secs 
 Total CPU time to MAP completion:   2 secs 
 

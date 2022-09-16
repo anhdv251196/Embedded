@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 promgen -w -p mcs -c FF -o /home/ise/Machine_VB/embed/embed//filenap -x xcf01s -u 00000000 /home/ise/Machine_VB/embed/embed/top_embed.bit 
 
-PROM /home/ise/Machine_VB/embed/embed/filenap.prm map: Thu Sep 15 04:56:58 2022
+PROM /home/ise/Machine_VB/embed/embed/filenap.prm map: Fri Sep 16 04:06:30 2022
 
 Calculating PROM checksum with fill value ff
 
@@ -11,7 +11,7 @@ Format        Mcs86 (32-bit)
 Size          128K
 PROM start    0000:0000
 PROM end      0001:ffff
-PROM checksum 0140ab86
+PROM checksum 013f3a3e
 
         Addr1        Addr2                     Date File(s)
-    0000:0000    0000:d5ad     Sep 15 04:56:42 2022 /home/ise/Machine_VB/embed/embed/top_embed.bit
+    0000:0000    0000:d5ad     Sep 16 04:06:09 2022 /home/ise/Machine_VB/embed/embed/top_embed.bit

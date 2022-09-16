@@ -1,13 +1,9 @@
 Release 14.7 - par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu Sep 15 04:56:29 2022
+Fri Sep 16 07:43:27 2022
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 1 loadless signals in this design. This design will cause Bitgen to issue DRC
-   warnings.
-
-   mux_spi_instance/scl_iobuf_0/O
 
 

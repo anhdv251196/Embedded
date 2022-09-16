@@ -96,13 +96,23 @@ module top_embed(
 	 //.adt7301_miso(adt7301_miso)
 	 );
 	 
+	 wire [15:0] FPGA_COUNTBASE;
+	 wire [15:0] FPGA_STRBCOUNT;
 	 wire [15:0] FPGA_INTCLOCK;
+	 wire [15:0] FPGA_SSLOWDELAY;
+	 wire [15:0] FPGA_SSHIGHDELAY;
+	 wire [15:0] FPGA_LAMPENABLE;
 	 wire [15:0] FPGA_OFFSETVALUE;
 	 wire [15:0] FPGA_MAXSATVALUE;
 	 fpga_spi fpga_spi_instance (
 	 .sys_clk(sys_4xclk),
 	 .sys_rst(xreset),
+	 .FPGA_COUNTBASE(FPGA_COUNTBASE),
+	 .FPGA_STRBCOUNT(FPGA_STRBCOUNT),
 	 .FPGA_INTCLOCK(FPGA_INTCLOCK),
+	 .FPGA_SSLOWDELAY(FPGA_SSLOWDELAY),
+	 .FPGA_SSHIGHDELAY(FPGA_SSHIGHDELAY),
+	 .FPGA_LAMPENABLE(FPGA_LAMPENABLE),
 	 .FPGA_OFFSETVALUE(FPGA_OFFSETVALUE),
 	 .FPGA_MAXSATVALUE(FPGA_MAXSATVALUE),
 	 .fpga_clk(spi_clk),
@@ -116,6 +126,7 @@ module top_embed(
 	 wire ilx511b_clk_ff;
 	 wire ilx511b_rog_ff;
 	 wire flag_sel_clok;
+	 wire flag_en_single_strobe;
 	 ilx511b ilx_instance (
 	 .sys_clk(sys_2xclk),
 	 .sys_rst(xreset),
@@ -125,7 +136,23 @@ module top_embed(
 	 .ilx511b_rog(ilx511b_rog_ff),
 	 .flag_adc_start(flag_adc_start),
 	 .flag_adc_restart(flag_adc_restart),
-	 .flag_sel_clok(flag_sel_clok)
+	 .flag_sel_clok(flag_sel_clok),
+	 .flag_en_single_strobe(flag_en_single_strobe)
+	 );
+	 
+	 /* Make strobe */
+	 make_strobe mk_strobe_instance
+	 (
+	 .sys_clk(sys_4xclk),
+	 .sys_rst(sys_rst),
+	 .flag_en_single_strobe(flag_en_single_strobe),
+	 .FPGA_COUNTBASE(FPGA_COUNTBASE),
+	 .FPGA_STRBCOUNT(FPGA_STRBCOUNT),
+	 .FPGA_SSLOWDELAY(FPGA_SSLOWDELAY),
+	 .FPGA_SSHIGHDELAY(FPGA_SSHIGHDELAY),
+	 .FPGA_LAMPENABLE(FPGA_LAMPENABLE),
+	 .single_strobe(single_strobe),
+	 .cont_strobe()
 	 );
 	 
 	 
@@ -207,7 +234,5 @@ module top_embed(
 	 .fifo_mosi(fifo_mosi),
 	 .fifo_miso(fifo_miso)
 	 );
-	 
-	 assign single_strobe = 1'b1;
 
 endmodule
