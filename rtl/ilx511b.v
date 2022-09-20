@@ -132,7 +132,7 @@ module ilx511b(
 			if (flag_end_rog_low1) en_rog_from_end_rog_low1 <= 1'b1;
 			if (en_delay_rog_to_low)
 			begin
-				if (cnt_delay_rog_to_low == 8'd149)
+				if (cnt_delay_rog_to_low == 8'd299)
 				begin
 					cnt_delay_rog_to_low <= 8'd0;
 					flag_start_ctr_rog <= 1'b1;
@@ -141,7 +141,7 @@ module ilx511b(
 				end
 			end else if (en_rog_from_end_rog_low1)
 			begin
-				if (cnt_delay_rog_to_low == 8'd149)
+				if (cnt_delay_rog_to_low == 8'd299)
 				begin
 					cnt_delay_rog_to_low <= 8'd0;
 					flag_start_clok_from_end_rog_low1 <= 1'b1;
@@ -170,7 +170,7 @@ module ilx511b(
             if (integ_done) flag_start_rog_low2 <= 1'b1;
             if (flag_start_rog_low1)
             begin
-                if (cnt_rog_low == 16'd149)
+                if (cnt_rog_low == 16'd299)
                 begin
                     cnt_rog_low <= 16'd0;
                     flag_end_rog_low1 <= 1'b1;
@@ -181,7 +181,7 @@ module ilx511b(
             end
             else if (flag_start_rog_low2)
             begin
-                if (cnt_rog_low == 16'd149)
+                if (cnt_rog_low == 16'd299)
                 begin
                     cnt_rog_low <= 16'd0;
                     flag_end_rog_low2 <= 1'b1;

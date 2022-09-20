@@ -21,10 +21,6 @@
 </msg>
 
 <msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sys_clk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sys_clk</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">clk_wizard_instance/DCM_SP_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
-<arg fmt="%s" index="7">CLK2X</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clk_wizard_instance_CLK2X_BUF = PERIOD &quot;clk_wizard_instance_CLK2X_BUF&quot; TS_sys_clk / 2 HIGH 50%&gt;</arg>
-</msg>
-
-<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sys_clk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sys_clk</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">clk_wizard_instance/DCM_SP_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
 <arg fmt="%s" index="7">CLKFX</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clk_wizard_instance_CLKFX_BUF = PERIOD &quot;clk_wizard_instance_CLKFX_BUF&quot; TS_sys_clk / 4 HIGH 50%&gt;</arg>
 </msg>
 

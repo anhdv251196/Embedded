@@ -129,7 +129,7 @@ module top_embed(
 	 wire flag_sel_clok;
 	 wire flag_en_single_strobe;
 	 ilx511b ilx_instance (
-	 .sys_clk(sys_2xclk),
+	 .sys_clk(sys_4xclk),
 	 .sys_rst(xreset),
 	 .FPGA_INTCLOCK(FPGA_INTCLOCK),
 	 .aqui_src(fifo_rset | trigger),
@@ -157,13 +157,12 @@ module top_embed(
 	 );
 	 
 	 
-	 wire sel_ccd_clk;
+	 /* Make 2.5Mhz for CCD clock */
 	 wire clk_2_5Mhz;
 	 make_22500pulse make_pulse_instance (
-	 .sys_clk(sys_2xclk),
+	 .sys_clk(sys_4xclk),
 	 .sys_rst(xreset),
 	 .locked(LOCKED_OUT),
-	 .sel_ccd_clk(sel_ccd_clk),
 	 .clk_2_5Mhz(clk_2_5Mhz)
 	 );
 	 
@@ -174,7 +173,7 @@ module top_embed(
 	 wire [15:0] ad7621_fifo_do;
 	 wire ad7621_flag_fifo_do;
 	 ad7621 ad7621_instance (
-	 .sys_clk(sys_2xclk),
+	 .sys_clk(sys_4xclk),
 	 .sys_rst(xreset),
 	 .FPGA_OFFSETVALUE(FPGA_OFFSETVALUE),
 	 .FPGA_MAXSATVALUE(FPGA_MAXSATVALUE),
@@ -190,7 +189,7 @@ module top_embed(
 	 /* Detect falling edge of fifo cs */ 
     wire rise_edge_acqui_src;
     detect_rising_edge rise_edge_acqui_src_instant 
-    (.sys_clk(sys_2xclk),
+    (.sys_clk(sys_4xclk),
      .d_i(fifo_rset | trigger),
      .d_o(rise_edge_acqui_src)
     );
@@ -202,7 +201,7 @@ module top_embed(
 	 wire [10:0] data_count;
 	 wire [10:0] cnt_ff;
 	 fifo_ccd fifo_ccd_instance (
-	 .clk(sys_2xclk), // input clk
+	 .clk(sys_4xclk), // input clk
 	 .rst(xreset | rise_edge_acqui_src), // input rst
 	 .din(ad7621_fifo_do), // input [15 : 0] din
 	 .wr_en(ad7621_flag_fifo_do & ~fifo_full), // input wr_en
@@ -213,7 +212,7 @@ module top_embed(
 	 .data_count(data_count)
 	 );
 	 
-	 always @ (posedge sys_2xclk)
+	 always @ (posedge sys_4xclk)
 	 begin
 		if (data_count >= 1)
 		begin
@@ -225,7 +224,7 @@ module top_embed(
 //	 assign pixel_ready = (data_count >= 1);
 	 
 	 fifo_spi fifo_spi_instance (
-	 .sys_clk(sys_2xclk),
+	 .sys_clk(sys_4xclk),
 	 .sys_rst(xreset),
 	 .fifo_data(fifo_dout),
 	 .flag_fifo_data(flag_rd_fifo | ~fifo_empty),

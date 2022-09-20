@@ -1,0 +1,3 @@
+verilog work "../rtl/make_22500pulse.v"
+verilog work "clk_wizard_4x.v"
+verilog work "make_clk.v"
