@@ -27,6 +27,7 @@ module top_embed(
 	input trigger,
 	output reg pixel_ready = 1'b0,
 	output single_strobe,
+	output cont_strobe,
 	
 	input spi_clk,
 	input spi_mosi,
@@ -152,7 +153,7 @@ module top_embed(
 	 .FPGA_SSHIGHDELAY(FPGA_SSHIGHDELAY),
 	 .FPGA_LAMPENABLE(FPGA_LAMPENABLE),
 	 .single_strobe(single_strobe),
-	 .cont_strobe()
+	 .cont_strobe(cont_strobe)
 	 );
 	 
 	 

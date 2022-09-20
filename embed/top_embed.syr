@@ -185,7 +185,7 @@ Analyzing hierarchy for module <detect_rising_edge> in library <work>.
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <top_embed>.
-WARNING:Xst:2211 - "../ipcore/fifo_ccd.v" line 203: Instantiating black box module <fifo_ccd>.
+WARNING:Xst:2211 - "../ipcore/fifo_ccd.v" line 204: Instantiating black box module <fifo_ccd>.
 Module <top_embed> is correct for synthesis.
  
 Analyzing module <clock_wizard> in library <work>.
@@ -262,21 +262,30 @@ INFO:Xst:2679 - Register <FPGA_VERION> in unit <fpga_spi> has a constant value o
 
 Synthesizing Unit <make_strobe>.
     Related source file is "../rtl/make_strobe.v".
-WARNING:Xst:1305 - Output <cont_strobe> is never assigned. Tied to value 0.
-WARNING:Xst:647 - Input <FPGA_COUNTBASE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <FPGA_LAMPENABLE<15:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <FPGA_STRBCOUNT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <cont_strobe>.
     Found 1-bit register for signal <single_strobe>.
+    Found 17x15-bit multiplier for signal <$mult0000> created at line 99.
+    Found 33-bit subtractor for signal <$sub0000> created at line 99.
     Found 6-bit up counter for signal <cnt_mk_2MHz>.
     Found 16-bit up counter for signal <cnt_mk_strobe>.
+    Found 33-bit comparator equal for signal <cont_strobe$cmp_eq0000> created at line 99.
+    Found 16-bit comparator not equal for signal <flag_change_params$cmp_ne0000> created at line 88.
+    Found 16-bit comparator not equal for signal <flag_change_params$cmp_ne0001> created at line 88.
     Found 1-bit register for signal <flag_end_single_strobe>.
-    Found 16-bit comparator equal for signal <flag_end_single_strobe$cmp_eq0000> created at line 57.
+    Found 16-bit comparator equal for signal <flag_end_single_strobe$cmp_eq0000> created at line 56.
     Found 1-bit register for signal <flag_start_single_strobe>.
-    Found 16-bit comparator equal for signal <single_strobe$cmp_eq0000> created at line 56.
+    Found 16-bit adder carry out for signal <mult0000$addsub0001> created at line 99.
+    Found 16-bit register for signal <prev_countbase>.
+    Found 16-bit register for signal <prev_strbcount>.
+    Found 28-bit up counter for signal <r_cnt_cont_strobe>.
+    Found 16-bit comparator equal for signal <single_strobe$cmp_eq0000> created at line 55.
     Summary:
-	inferred   2 Counter(s).
-	inferred   3 D-type flip-flop(s).
-	inferred   2 Comparator(s).
+	inferred   3 Counter(s).
+	inferred  36 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   5 Comparator(s).
 Unit <make_strobe> synthesized.
 
 
@@ -455,7 +464,7 @@ WARNING:Xst:653 - Signal <sys_rst> is used but never assigned. This sourceless s
 WARNING:Xst:646 - Signal <sel_ccd_clk> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <cnt_ff> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found 1-bit register for signal <pixel_ready>.
-    Found 11-bit comparator greatequal for signal <pixel_ready$cmp_ge0000> created at line 217.
+    Found 11-bit comparator greatequal for signal <pixel_ready$cmp_ge0000> created at line 218.
     Summary:
 	inferred   1 D-type flip-flop(s).
 	inferred   1 Comparator(s).
@@ -468,39 +477,44 @@ WARNING:Xst:524 - All outputs of the instance <falling_edge_fifo_instant> of the
 HDL Synthesis Report
 
 Macro Statistics
-# Multipliers                                          : 1
+# Multipliers                                          : 2
  16x10-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 3
+ 17x15-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 5
  11-bit subtractor                                     : 1
+ 16-bit adder carry out                                : 1
  16-bit subtractor                                     : 1
  18-bit subtractor                                     : 1
-# Counters                                             : 15
+ 33-bit subtractor                                     : 1
+# Counters                                             : 16
  16-bit up counter                                     : 8
  18-bit up counter                                     : 1
+ 28-bit up counter                                     : 1
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
  6-bit up counter                                      : 2
  8-bit up counter                                      : 1
  9-bit up counter                                      : 1
-# Registers                                            : 80
- 1-bit register                                        : 62
+# Registers                                            : 83
+ 1-bit register                                        : 63
  10-bit register                                       : 3
  11-bit register                                       : 1
- 16-bit register                                       : 10
+ 16-bit register                                       : 12
  17-bit register                                       : 1
  24-bit register                                       : 1
  26-bit register                                       : 1
  8-bit register                                        : 1
-# Comparators                                          : 13
+# Comparators                                          : 16
  11-bit comparator greatequal                          : 2
  16-bit comparator equal                               : 2
  16-bit comparator greatequal                          : 1
  16-bit comparator greater                             : 1
  16-bit comparator less                                : 1
  16-bit comparator lessequal                           : 1
- 16-bit comparator not equal                           : 1
+ 16-bit comparator not equal                           : 3
  18-bit comparator equal                               : 1
  26-bit comparator greater                             : 1
+ 33-bit comparator equal                               : 1
  5-bit comparator greatequal                           : 1
  5-bit comparator lessequal                            : 1
 # Multiplexers                                         : 1
@@ -529,32 +543,37 @@ Unit <ad7621> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Multipliers                                          : 1
+# Multipliers                                          : 2
  16x10-bit registered multiplier                       : 1
-# Adders/Subtractors                                   : 3
+ 17x15-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 5
  10-bit subtractor                                     : 1
+ 16-bit adder carry out                                : 1
  16-bit subtractor                                     : 1
  18-bit subtractor                                     : 1
-# Counters                                             : 15
+ 33-bit subtractor                                     : 1
+# Counters                                             : 16
  16-bit up counter                                     : 8
  18-bit up counter                                     : 1
+ 28-bit up counter                                     : 1
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
  6-bit up counter                                      : 2
  8-bit up counter                                      : 1
  9-bit up counter                                      : 1
-# Registers                                            : 310
- Flip-Flops                                            : 310
-# Comparators                                          : 13
+# Registers                                            : 343
+ Flip-Flops                                            : 343
+# Comparators                                          : 16
  11-bit comparator greatequal                          : 2
  16-bit comparator equal                               : 2
  16-bit comparator greatequal                          : 1
  16-bit comparator greater                             : 1
  16-bit comparator less                                : 1
  16-bit comparator lessequal                           : 1
- 16-bit comparator not equal                           : 1
+ 16-bit comparator not equal                           : 3
  18-bit comparator equal                               : 1
  26-bit comparator greater                             : 1
+ 33-bit comparator equal                               : 1
  5-bit comparator greatequal                           : 1
  5-bit comparator lessequal                            : 1
 # Multiplexers                                         : 1
@@ -616,7 +635,7 @@ Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <rise_edge_acqui_src_instant/d_i_ff1> in Unit <top_embed> is equivalent to the following FF/Latch, which will be removed : <ilx_instance/rising_edge_fifo_instant/d_i_ff1> 
 INFO:Xst:2261 - The FF/Latch <rise_edge_acqui_src_instant/d_i_ff2> in Unit <top_embed> is equivalent to the following FF/Latch, which will be removed : <ilx_instance/rising_edge_fifo_instant/d_i_ff2> 
 INFO:Xst:2261 - The FF/Latch <rise_edge_acqui_src_instant/d_i_ff3> in Unit <top_embed> is equivalent to the following FF/Latch, which will be removed : <ilx_instance/rising_edge_fifo_instant/d_i_ff3> 
-Found area constraint ratio of 100 (+ 5) on block top_embed, actual ratio is 63.
+Found area constraint ratio of 100 (+ 5) on block top_embed, actual ratio is 75.
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <fifo_ccd_instance> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <fifo_ccd_instance> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <fifo_ccd_instance> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
@@ -640,8 +659,8 @@ Unit <top_embed> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 448
- Flip-Flops                                            : 448
+# Registers                                            : 509
+ Flip-Flops                                            : 509
 # Shift Registers                                      : 7
  2-bit shift register                                  : 6
  3-bit shift register                                  : 1
@@ -670,38 +689,34 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 38
+# IOs                              : 39
 
 Cell Usage :
-# BELS                             : 1184
+# BELS                             : 1482
 #      GND                         : 2
-#      INV                         : 37
-#      LUT1                        : 161
+#      INV                         : 72
+#      LUT1                        : 204
 #      LUT2                        : 96
-#      LUT2_D                      : 1
 #      LUT2_L                      : 1
-#      LUT3                        : 61
-#      LUT3_D                      : 5
-#      LUT4                        : 256
-#      LUT4_D                      : 4
-#      LUT4_L                      : 32
-#      MUXCY                       : 290
-#      MUXF5                       : 11
+#      LUT3                        : 69
+#      LUT4                        : 324
+#      MUXCY                       : 398
+#      MUXF5                       : 12
 #      MUXF6                       : 2
 #      MUXF7                       : 1
 #      VCC                         : 2
-#      XORCY                       : 222
-# FlipFlops/Latches                : 527
-#      FD                          : 21
+#      XORCY                       : 299
+# FlipFlops/Latches                : 588
+#      FD                          : 53
 #      FDC                         : 1
 #      FDCE                        : 53
 #      FDE                         : 116
 #      FDP                         : 10
 #      FDPE                        : 4
-#      FDR                         : 64
-#      FDRE                        : 230
+#      FDR                         : 92
+#      FDRE                        : 229
 #      FDS                         : 1
-#      FDSE                        : 27
+#      FDSE                        : 29
 # RAMS                             : 2
 #      RAMB16BWE                   : 2
 # Shift Registers                  : 7
@@ -709,15 +724,15 @@ Cell Usage :
 #      SRL16E                      : 1
 # Clock Buffers                    : 2
 #      BUFG                        : 2
-# IO Buffers                       : 38
+# IO Buffers                       : 39
 #      IBUF                        : 26
 #      IBUFG                       : 1
 #      IOBUF                       : 1
-#      OBUF                        : 10
+#      OBUF                        : 11
 # DCMs                             : 1
 #      DCM_SP                      : 1
-# MULTs                            : 1
-#      MULT18X18SIO                : 1
+# MULTs                            : 2
+#      MULT18X18SIO                : 2
 =========================================================================
 
 Device utilization summary:
@@ -725,15 +740,15 @@ Device utilization summary:
 
 Selected Device : 3s50avq100-4 
 
- Number of Slices:                      435  out of    704    61%  
- Number of Slice Flip Flops:            527  out of   1408    37%  
- Number of 4 input LUTs:                661  out of   1408    46%  
-    Number used as logic:               654
+ Number of Slices:                      514  out of    704    73%  
+ Number of Slice Flip Flops:            588  out of   1408    41%  
+ Number of 4 input LUTs:                773  out of   1408    54%  
+    Number used as logic:               766
     Number used as Shift registers:       7
- Number of IOs:                          38
- Number of bonded IOBs:                  38  out of     68    55%  
+ Number of IOs:                          39
+ Number of bonded IOBs:                  39  out of     68    57%  
  Number of BRAMs:                         2  out of      3    66%  
- Number of MULT18X18SIOs:                 1  out of      3    33%  
+ Number of MULT18X18SIOs:                 2  out of      3    66%  
  Number of GCLKs:                         2  out of     24     8%  
  Number of DCMs:                          1  out of      2    50%  
 
@@ -759,7 +774,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)                | Load  |
 -----------------------------------+--------------------------------------+-------+
 sys_clk                            | clk_wizard_instance/DCM_SP_INST:CLK2X| 320   |
-sys_clk                            | clk_wizard_instance/DCM_SP_INST:CLKFX| 217   |
+sys_clk                            | clk_wizard_instance/DCM_SP_INST:CLKFX| 278   |
 -----------------------------------+--------------------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -779,10 +794,10 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 32.672ns (Maximum Frequency: 30.607MHz)
+   Minimum period: 72.656ns (Maximum Frequency: 13.764MHz)
    Minimum input arrival time before clock: 6.234ns
    Maximum output required time after clock: 6.742ns
-   Maximum combinational path delay: 7.102ns
+   Maximum combinational path delay: 7.056ns
 
 Timing Detail:
 --------------
@@ -790,46 +805,63 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sys_clk'
-  Clock period: 32.672ns (frequency: 30.607MHz)
-  Total number of paths / destination ports: 11191 / 1192
+  Clock period: 72.656ns (frequency: 13.764MHz)
+  Total number of paths / destination ports: 1355353 / 1283
 -------------------------------------------------------------------------
-Delay:               8.168ns (Levels of Logic = 22)
-  Source:            fpga_spi_instance/FPGA_INTCLOCK_0 (FF)
-  Destination:       ilx_instance/flag_sel_clok (FF)
+Delay:               18.164ns (Levels of Logic = 39)
+  Source:            fpga_spi_instance/FPGA_STRBCOUNT_1 (FF)
+  Destination:       mk_strobe_instance/r_cnt_cont_strobe_27 (FF)
   Source Clock:      sys_clk rising 4.0X
-  Destination Clock: sys_clk rising 2.0X
+  Destination Clock: sys_clk rising 4.0X
 
-  Data Path: fpga_spi_instance/FPGA_INTCLOCK_0 to ilx_instance/flag_sel_clok
+  Data Path: fpga_spi_instance/FPGA_STRBCOUNT_1 to mk_strobe_instance/r_cnt_cont_strobe_27
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             3   0.591   0.674  fpga_spi_instance/FPGA_INTCLOCK_0 (fpga_spi_instance/FPGA_INTCLOCK_0)
-     LUT1:I0->O            1   0.648   0.000  ilx_instance/Msub__sub0000_cy<0>_rt (ilx_instance/Msub__sub0000_cy<0>_rt)
-     MUXCY:S->O            1   0.632   0.000  ilx_instance/Msub__sub0000_cy<0> (ilx_instance/Msub__sub0000_cy<0>)
-     MUXCY:CI->O           1   0.065   0.000  ilx_instance/Msub__sub0000_cy<1> (ilx_instance/Msub__sub0000_cy<1>)
-     MUXCY:CI->O           1   0.065   0.000  ilx_instance/Msub__sub0000_cy<2> (ilx_instance/Msub__sub0000_cy<2>)
-     MUXCY:CI->O           1   0.065   0.000  ilx_instance/Msub__sub0000_cy<3> (ilx_instance/Msub__sub0000_cy<3>)
-     MUXCY:CI->O           1   0.065   0.000  ilx_instance/Msub__sub0000_cy<4> (ilx_instance/Msub__sub0000_cy<4>)
-     MUXCY:CI->O           1   0.065   0.000  ilx_instance/Msub__sub0000_cy<5> (ilx_instance/Msub__sub0000_cy<5>)
-     MUXCY:CI->O           1   0.065   0.000  ilx_instance/Msub__sub0000_cy<6> (ilx_instance/Msub__sub0000_cy<6>)
-     MUXCY:CI->O           1   0.065   0.000  ilx_instance/Msub__sub0000_cy<7> (ilx_instance/Msub__sub0000_cy<7>)
-     MUXCY:CI->O           1   0.065   0.000  ilx_instance/Msub__sub0000_cy<8> (ilx_instance/Msub__sub0000_cy<8>)
-     MUXCY:CI->O           1   0.065   0.000  ilx_instance/Msub__sub0000_cy<9> (ilx_instance/Msub__sub0000_cy<9>)
-     MUXCY:CI->O           1   0.065   0.000  ilx_instance/Msub__sub0000_cy<10> (ilx_instance/Msub__sub0000_cy<10>)
-     MUXCY:CI->O           1   0.065   0.000  ilx_instance/Msub__sub0000_cy<11> (ilx_instance/Msub__sub0000_cy<11>)
-     MUXCY:CI->O           1   0.065   0.000  ilx_instance/Msub__sub0000_cy<12> (ilx_instance/Msub__sub0000_cy<12>)
-     MUXCY:CI->O           1   0.065   0.000  ilx_instance/Msub__sub0000_cy<13> (ilx_instance/Msub__sub0000_cy<13>)
-     MUXCY:CI->O           1   0.065   0.000  ilx_instance/Msub__sub0000_cy<14> (ilx_instance/Msub__sub0000_cy<14>)
-     MUXCY:CI->O           1   0.065   0.000  ilx_instance/Msub__sub0000_cy<15> (ilx_instance/Msub__sub0000_cy<15>)
-     MUXCY:CI->O           0   0.065   0.000  ilx_instance/Msub__sub0000_cy<16> (ilx_instance/Msub__sub0000_cy<16>)
-     XORCY:CI->O           1   0.844   0.452  ilx_instance/Msub__sub0000_xor<17> (ilx_instance/_sub0000<17>)
-     LUT3:I2->O            1   0.648   0.000  ilx_instance/Mcompar_flag_sel_clok_cmp_eq0000_lut<8> (ilx_instance/Mcompar_flag_sel_clok_cmp_eq0000_lut<8>)
-     MUXCY:S->O            1   0.836   0.423  ilx_instance/Mcompar_flag_sel_clok_cmp_eq0000_cy<8> (ilx_instance/Mcompar_flag_sel_clok_cmp_eq0000_cy<8>)
-     LUT4:I3->O            1   0.648   0.420  ilx_instance/flag_sel_clok_or0001 (ilx_instance/flag_sel_clok_or0001)
-     FDRE:CE                   0.312          ilx_instance/flag_sel_clok
+     FDRE:C->Q             4   0.591   0.730  fpga_spi_instance/FPGA_STRBCOUNT_1 (fpga_spi_instance/FPGA_STRBCOUNT_1)
+     LUT1:I0->O            1   0.648   0.000  mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>_rt (mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>_rt)
+     MUXCY:S->O            1   0.632   0.000  mk_strobe_instance/Madd_mult0000_addsub0001_cy<1> (mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Madd_mult0000_addsub0001_cy<2> (mk_strobe_instance/Madd_mult0000_addsub0001_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Madd_mult0000_addsub0001_cy<3> (mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Madd_mult0000_addsub0001_cy<4> (mk_strobe_instance/Madd_mult0000_addsub0001_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Madd_mult0000_addsub0001_cy<5> (mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Madd_mult0000_addsub0001_cy<6> (mk_strobe_instance/Madd_mult0000_addsub0001_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Madd_mult0000_addsub0001_cy<7> (mk_strobe_instance/Madd_mult0000_addsub0001_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Madd_mult0000_addsub0001_cy<8> (mk_strobe_instance/Madd_mult0000_addsub0001_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Madd_mult0000_addsub0001_cy<9> (mk_strobe_instance/Madd_mult0000_addsub0001_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Madd_mult0000_addsub0001_cy<10> (mk_strobe_instance/Madd_mult0000_addsub0001_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Madd_mult0000_addsub0001_cy<11> (mk_strobe_instance/Madd_mult0000_addsub0001_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Madd_mult0000_addsub0001_cy<12> (mk_strobe_instance/Madd_mult0000_addsub0001_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Madd_mult0000_addsub0001_cy<13> (mk_strobe_instance/Madd_mult0000_addsub0001_cy<13>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Madd_mult0000_addsub0001_cy<14> (mk_strobe_instance/Madd_mult0000_addsub0001_cy<14>)
+     XORCY:CI->O           1   0.844   0.420  mk_strobe_instance/Madd_mult0000_addsub0001_xor<15> (mk_strobe_instance/mult0000_addsub0001<15>)
+     MULT18X18SIO:A15->P15    1   4.834   0.420  mk_strobe_instance/Mmult__mult0000 (mk_strobe_instance/_mult0000<15>)
+     INV:I->O              1   0.648   0.000  mk_strobe_instance/Msub__sub0000_lut<15>_INV_0 (mk_strobe_instance/Msub__sub0000_lut<15>)
+     MUXCY:S->O            1   0.632   0.000  mk_strobe_instance/Msub__sub0000_cy<15> (mk_strobe_instance/Msub__sub0000_cy<15>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Msub__sub0000_cy<16> (mk_strobe_instance/Msub__sub0000_cy<16>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Msub__sub0000_cy<17> (mk_strobe_instance/Msub__sub0000_cy<17>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Msub__sub0000_cy<18> (mk_strobe_instance/Msub__sub0000_cy<18>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Msub__sub0000_cy<19> (mk_strobe_instance/Msub__sub0000_cy<19>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Msub__sub0000_cy<20> (mk_strobe_instance/Msub__sub0000_cy<20>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Msub__sub0000_cy<21> (mk_strobe_instance/Msub__sub0000_cy<21>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Msub__sub0000_cy<22> (mk_strobe_instance/Msub__sub0000_cy<22>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Msub__sub0000_cy<23> (mk_strobe_instance/Msub__sub0000_cy<23>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Msub__sub0000_cy<24> (mk_strobe_instance/Msub__sub0000_cy<24>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Msub__sub0000_cy<25> (mk_strobe_instance/Msub__sub0000_cy<25>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Msub__sub0000_cy<26> (mk_strobe_instance/Msub__sub0000_cy<26>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Msub__sub0000_cy<27> (mk_strobe_instance/Msub__sub0000_cy<27>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Msub__sub0000_cy<28> (mk_strobe_instance/Msub__sub0000_cy<28>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Msub__sub0000_cy<29> (mk_strobe_instance/Msub__sub0000_cy<29>)
+     MUXCY:CI->O           1   0.065   0.000  mk_strobe_instance/Msub__sub0000_cy<30> (mk_strobe_instance/Msub__sub0000_cy<30>)
+     XORCY:CI->O           1   0.844   0.452  mk_strobe_instance/Msub__sub0000_xor<31> (mk_strobe_instance/_sub0000<31>)
+     LUT3:I2->O            1   0.648   0.000  mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_lut<15> (mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_lut<15>)
+     MUXCY:S->O            1   0.632   0.000  mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15> (mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>)
+     MUXCY:CI->O           2   0.141   0.450  mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16> (mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>)
+     LUT4:I3->O           28   0.648   1.261  mk_strobe_instance/r_cnt_cont_strobe_or00001 (mk_strobe_instance/r_cnt_cont_strobe_or0000)
+     FDR:R                     0.869          mk_strobe_instance/r_cnt_cont_strobe_0
     ----------------------------------------
-    Total                      8.168ns (6.199ns logic, 1.969ns route)
-                                       (75.9% logic, 24.1% route)
+    Total                     18.164ns (14.431ns logic, 3.733ns route)
+                                       (79.4% logic, 20.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sys_clk'
@@ -854,7 +886,7 @@ Offset:              6.234ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sys_clk'
-  Total number of paths / destination ports: 9 / 6
+  Total number of paths / destination ports: 10 / 7
 -------------------------------------------------------------------------
 Offset:              6.742ns (Levels of Logic = 2)
   Source:            ilx_instance/flag_sel_clok (FF)
@@ -876,7 +908,7 @@ Offset:              6.742ns (Levels of Logic = 2)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 8 / 5
 -------------------------------------------------------------------------
-Delay:               7.102ns (Levels of Logic = 3)
+Delay:               7.056ns (Levels of Logic = 3)
   Source:            fpga_cs (PAD)
   Destination:       spi_miso (PAD)
 
@@ -884,25 +916,25 @@ Delay:               7.102ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             5   0.849   0.665  fpga_cs_IBUF (fpga_cs_IBUF)
+     IBUF:I->O             4   0.849   0.619  fpga_cs_IBUF (fpga_cs_IBUF)
      LUT4:I2->O            1   0.648   0.420  mux_spi_instance/m0_scl_o1 (mux_spi_instance/m0_scl_o)
      IOBUF:I->IO               4.520          mux_spi_instance/scl_iobuf_0 (spi_miso)
     ----------------------------------------
-    Total                      7.102ns (6.017ns logic, 1.085ns route)
-                                       (84.7% logic, 15.3% route)
+    Total                      7.056ns (6.017ns logic, 1.039ns route)
+                                       (85.3% logic, 14.7% route)
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.36 secs
+Total CPU time to Xst completion: 7.35 secs
  
 --> 
 
 
-Total memory usage is 535872 kilobytes
+Total memory usage is 538832 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   45 (   0 filtered)
+Number of warnings :   42 (   0 filtered)
 Number of infos    :   15 (   0 filtered)
 

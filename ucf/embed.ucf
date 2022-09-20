@@ -13,6 +13,7 @@ NET "fifo_rset" LOC = P16 | IOSTANDARD = "LVCMOS33";
 NET "trigger" LOC = P6 | IOSTANDARD = "LVCMOS33";
 NET "pixel_ready" LOC = P15 | IOSTANDARD = "LVCMOS33";
 NET "single_strobe" LOC = P4 | IOSTANDARD = "LVCMOS33";
+NET "cont_strobe" LOC = P5 | IOSTANDARD = "LVCMOS33";
 
 NET "spi_clk" LOC = P10 | IOSTANDARD = "LVCMOS33";
 NET "spi_mosi" LOC = P12 | IOSTANDARD = "LVCMOS33";

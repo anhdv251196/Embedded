@@ -9,7 +9,7 @@ Target Device  : xc3s50a
 Target Package : vq100
 Target Speed   : -4
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Fri Sep 16 07:43:16 2022
+Mapped Date    : Mon Sep 19 09:26:41 2022
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:54 - 'xc3s50a' is a WebPack part.
@@ -137,35 +137,35 @@ Design Summary:
 Number of errors:      0
 Number of warnings:   34
 Logic Utilization:
-  Total Number Slice Registers:         788 out of   1,408   55%
-    Number used as Flip Flops:          787
+  Total Number Slice Registers:         849 out of   1,408   60%
+    Number used as Flip Flops:          848
     Number used as Latches:               1
-  Number of 4 input LUTs:               713 out of   1,408   50%
+  Number of 4 input LUTs:               779 out of   1,408   55%
 Logic Distribution:
   Number of occupied Slices:            702 out of     704   99%
     Number of Slices containing only related logic:     702 out of     702 100%
     Number of Slices containing unrelated logic:          0 out of     702   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         922 out of   1,408   65%
-    Number used as logic:               615
-    Number used as a route-thru:        209
+  Total Number of 4 input LUTs:       1,031 out of   1,408   73%
+    Number used as logic:               681
+    Number used as a route-thru:        252
     Number used as Shift registers:      98
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 38 out of      68   55%
+  Number of bonded IOBs:                 39 out of      68   57%
   Number of BUFGMUXs:                     3 out of      24   12%
   Number of DCMs:                         1 out of       2   50%
   Number of BSCANs:                       1 out of       1  100%
   Number of BSCAN_SPARTAN3As:             1 out of       1  100%
-  Number of MULT18X18SIOs:                1 out of       3   33%
+  Number of MULT18X18SIOs:                2 out of       3   66%
   Number of RAMB16BWEs:                   3 out of       3  100%
 
   Number of RPM macros:           12
-Average Fanout of Non-Clock Nets:                2.92
+Average Fanout of Non-Clock Nets:                2.79
 
-Peak Memory Usage:  623 MB
+Peak Memory Usage:  625 MB
 Total REAL time to MAP completion:  2 secs 
 Total CPU time to MAP completion:   2 secs 
 

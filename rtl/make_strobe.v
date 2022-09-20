@@ -33,7 +33,7 @@ module make_strobe(
 	 input [15:0] FPGA_LAMPENABLE,
 	 
 	 /**/
-	 output reg single_strobe = 1'b0,
+	 output reg single_strobe = 1'b1,
 	 output reg cont_strobe = 1'b0
     );
 	 
@@ -45,18 +45,17 @@ module make_strobe(
 	 begin
 		if (sys_rst | (FPGA_LAMPENABLE[0] == 1'b0) | flag_end_single_strobe)
 		begin
-			single_strobe <= 1'b0;
-			single_strobe <= 1'b0;
+			single_strobe <= 1'b1;
 			cnt_mk_2MHz <= 6'd0;
 			cnt_mk_strobe <= 16'd0;
 			flag_start_single_strobe <= 1'b0;
 			flag_end_single_strobe <= 1'b0;
 		end
 		else begin
-			if (cnt_mk_strobe == FPGA_SSHIGHDELAY) single_strobe <= 1'b1;
+			if (cnt_mk_strobe == FPGA_SSHIGHDELAY) single_strobe <= 1'b0;
 			if (cnt_mk_strobe == FPGA_SSLOWDELAY) 
 			begin
-				single_strobe <= 1'b0;
+				single_strobe <= 1'b1;
 				flag_end_single_strobe <= 1'b1;
 			end
 			if (flag_en_single_strobe) flag_start_single_strobe <= 1'b1;
@@ -72,6 +71,37 @@ module make_strobe(
 			end else begin
 				cnt_mk_2MHz <= 6'd0;
 				cnt_mk_strobe <= 16'd0;
+			end
+		end
+	 end
+	 
+	 reg [15:0] prev_countbase = 16'd0;
+	 reg [15:0] prev_strbcount = 16'd0;
+	 wire flag_change_params;
+	 /* Make */
+	 always @ (posedge sys_clk)
+	 begin
+		prev_countbase <= FPGA_COUNTBASE;
+		prev_strbcount <= FPGA_STRBCOUNT;
+	 end
+	 
+	 assign flag_change_params = (prev_countbase != FPGA_COUNTBASE) | (prev_strbcount != FPGA_STRBCOUNT);
+	 
+	 /* Make contionous strobe signal */
+	 reg [27:0] r_cnt_cont_strobe = 28'd0;
+	 always @ (posedge sys_clk)
+	 begin
+		if (sys_rst | (FPGA_LAMPENABLE[0] == 1'b0) | flag_change_params)
+		begin
+			r_cnt_cont_strobe <= 28'd0;
+			cont_strobe <= 1'b1;
+		end else begin
+			if ( r_cnt_cont_strobe == ( (FPGA_COUNTBASE[15:1] * (FPGA_STRBCOUNT + 1)) - 1) )
+			begin
+				r_cnt_cont_strobe <= 28'd0;
+				cont_strobe <= ~cont_strobe;
+			end else begin
+				r_cnt_cont_strobe <= r_cnt_cont_strobe + 28'd1;
 			end
 		end
 	 end

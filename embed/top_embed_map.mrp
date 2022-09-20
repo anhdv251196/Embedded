@@ -9,42 +9,42 @@ Target Device  : xc3s50a
 Target Package : vq100
 Target Speed   : -4
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Fri Sep 16 07:43:16 2022
+Mapped Date    : Mon Sep 19 09:26:41 2022
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:   34
 Logic Utilization:
-  Total Number Slice Registers:         788 out of   1,408   55%
-    Number used as Flip Flops:          787
+  Total Number Slice Registers:         849 out of   1,408   60%
+    Number used as Flip Flops:          848
     Number used as Latches:               1
-  Number of 4 input LUTs:               713 out of   1,408   50%
+  Number of 4 input LUTs:               779 out of   1,408   55%
 Logic Distribution:
   Number of occupied Slices:            702 out of     704   99%
     Number of Slices containing only related logic:     702 out of     702 100%
     Number of Slices containing unrelated logic:          0 out of     702   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         922 out of   1,408   65%
-    Number used as logic:               615
-    Number used as a route-thru:        209
+  Total Number of 4 input LUTs:       1,031 out of   1,408   73%
+    Number used as logic:               681
+    Number used as a route-thru:        252
     Number used as Shift registers:      98
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 38 out of      68   55%
+  Number of bonded IOBs:                 39 out of      68   57%
   Number of BUFGMUXs:                     3 out of      24   12%
   Number of DCMs:                         1 out of       2   50%
   Number of BSCANs:                       1 out of       1  100%
   Number of BSCAN_SPARTAN3As:             1 out of       1  100%
-  Number of MULT18X18SIOs:                1 out of       3   33%
+  Number of MULT18X18SIOs:                2 out of       3   66%
   Number of RAMB16BWEs:                   3 out of       3  100%
 
   Number of RPM macros:           12
-Average Fanout of Non-Clock Nets:                2.92
+Average Fanout of Non-Clock Nets:                2.79
 
-Peak Memory Usage:  623 MB
+Peak Memory Usage:  625 MB
 Total REAL time to MAP completion:  2 secs 
 Total CPU time to MAP completion:   2 secs 
 
@@ -236,7 +236,7 @@ Section 4 - Removed Logic Summary
   46 block(s) removed
   31 block(s) optimized away
   30 signal(s) removed
- 328 Block(s) redundant
+ 330 Block(s) redundant
 
 Section 5 - Removed Logic
 -------------------------
@@ -562,48 +562,6 @@ LOCALBUF
 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O7/LUT4_L_BUF
 LOCALBUF
 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O8/LUT3_L_BUF
-LOCALBUF 		fpga_spi_instance/Mcount_cnt_spi_xor<2>111/LUT2_D_BUF
-LOCALBUF 		fpga_spi_instance/FPGA_MAXSATVALUE_not000121/LUT4_D_BUF
-LOCALBUF 		fpga_spi_instance/FPGA_COUNTBASE_not000161/LUT4_D_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>141/LUT3_D_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>131/LUT3_D_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<15>108/LUT4_L_BUF
-LOCALBUF 		mk_strobe_instance/Mcount_cnt_mk_2MHz_xor<5>111/LUT3_D_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>211/LUT3_D_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>111/LUT3_D_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>21/LUT4_D_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<9>38/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<8>4/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<8>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<7>4/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<7>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<6>4/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<6>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<5>4/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<5>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<4>4/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<4>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<3>4/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<3>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<2>4/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<2>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<1>4/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<1>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<14>4/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<14>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<13>4/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<13>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<12>4/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<12>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<11>4/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<11>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<10>4/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<10>15/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>4/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<0>15/LUT4_L_BUF
-LOCALBUF 		ad7621_instance/div_instance/busy_cmp_eq000039/LUT4_D_BUF
-LOCALBUF 		fpga_spi_instance/transmit_data_mux0000<15>145/LUT4_L_BUF
-LOCALBUF 		fpga_spi_instance/Rx_Done_not0001_SW0/LUT4_L_BUF
 LUT1 		Mcompar_pixel_ready_cmp_ge0000_cy<0>_rt
 LUT1 		mk_strobe_instance/Mcount_cnt_mk_strobe_cy<14>_rt
 LUT1 		mk_strobe_instance/Mcount_cnt_mk_strobe_cy<13>_rt
@@ -619,6 +577,48 @@ LUT1 		mk_strobe_instance/Mcount_cnt_mk_strobe_cy<4>_rt
 LUT1 		mk_strobe_instance/Mcount_cnt_mk_strobe_cy<3>_rt
 LUT1 		mk_strobe_instance/Mcount_cnt_mk_strobe_cy<2>_rt
 LUT1 		mk_strobe_instance/Mcount_cnt_mk_strobe_cy<1>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<26>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<25>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<24>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<23>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<22>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<21>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<20>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<19>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<18>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<17>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<16>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<15>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<14>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<13>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<12>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<11>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<10>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<9>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<8>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<7>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<6>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<5>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<4>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<3>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<2>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_cy<1>_rt
+LUT1 		mk_strobe_instance/Madd_mult0000_addsub0001_cy<15>_rt
+LUT1 		mk_strobe_instance/Madd_mult0000_addsub0001_cy<14>_rt
+LUT1 		mk_strobe_instance/Madd_mult0000_addsub0001_cy<13>_rt
+LUT1 		mk_strobe_instance/Madd_mult0000_addsub0001_cy<12>_rt
+LUT1 		mk_strobe_instance/Madd_mult0000_addsub0001_cy<11>_rt
+LUT1 		mk_strobe_instance/Madd_mult0000_addsub0001_cy<10>_rt
+LUT1 		mk_strobe_instance/Madd_mult0000_addsub0001_cy<9>_rt
+LUT1 		mk_strobe_instance/Madd_mult0000_addsub0001_cy<8>_rt
+LUT1 		mk_strobe_instance/Madd_mult0000_addsub0001_cy<7>_rt
+LUT1 		mk_strobe_instance/Madd_mult0000_addsub0001_cy<6>_rt
+LUT1 		mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>_rt
+LUT1 		mk_strobe_instance/Madd_mult0000_addsub0001_cy<4>_rt
+LUT1 		mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>_rt
+LUT1 		mk_strobe_instance/Madd_mult0000_addsub0001_cy<2>_rt
+LUT1 		mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>_rt
+LUT1 		mk_strobe_instance/Msub__sub0000_cy<0>_rt
 LUT1 		ilx_instance/Mcount_cnt_make_smp_clk_cy<14>_rt
 LUT1 		ilx_instance/Mcount_cnt_make_smp_clk_cy<13>_rt
 LUT1 		ilx_instance/Mcount_cnt_make_smp_clk_cy<12>_rt
@@ -736,6 +736,7 @@ LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<2>_rt
 LUT1 		ad7621_instance/Mcount_cnt_rd_pixel_cy<1>_rt
 LUT1 		ad7621_instance/Mcompar_r_dat_temp_cmp_lt0000_cy<0>_rt
 LUT1 		mk_strobe_instance/Mcount_cnt_mk_strobe_xor<15>_rt
+LUT1 		mk_strobe_instance/Mcount_r_cnt_cont_strobe_xor<27>_rt
 LUT1 		ilx_instance/Mcount_cnt_make_smp_clk_xor<15>_rt
 LUT1 		ilx_instance/Mcount_cnt_smp_xor<15>_rt
 LUT1 		ilx_instance/Mcount_cnt_rog_low_xor<15>_rt
@@ -750,6 +751,7 @@ INV 		ilx511b_rog1_INV_0
 INV 		make_pulse_instance/clk_2_5Mhz_not00011_INV_0
 INV 		make_pulse_instance/Mcount_cnt_make_2_5Mhz_xor<0>11_INV_0
 INV 		ilx_instance/ilx511b_clk_not00031_INV_0
+INV 		mk_strobe_instance/cont_strobe_not00011_INV_0
 INV 		mk_strobe_instance/Mcount_cnt_mk_2MHz_xor<0>11_INV_0
 INV 		fpga_spi_instance/Mcount_cnt_spi_xor<0>11_INV_0
 INV 		pixel_ready_not00011_INV_0
@@ -960,6 +962,7 @@ Section 6 - IOB Properties
 | adt7301_clk                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | adt7301_cs                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | adt_cs                             | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| cont_strobe                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | e2_cs                              | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
 | eeprom_clk                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | eeprom_cs                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
@@ -1324,6 +1327,15 @@ SRVAL_A = 000000000
 SRVAL_B = 000000000
 
 
+MULT18X18SIO "mk_strobe_instance/Mmult__mult0000":
+AREG:0
+BREG:0
+B_INPUT:DIRECT
+PREG:0
+PREG_CLKINVERSION:0
+
+
+
 
 Section 12 - Control Set Information
 ------------------------------------
@@ -1334,7 +1346,7 @@ Section 13 - Utilization by Hierarchy
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Module                                                                  | Partition | Slices        | Slice Reg     | LUTs          | LUTRAM        | BRAM      | MULT18X18 | BUFG  | DCM   | Full Hierarchical Name                                                                                                                                                                        |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| top_embed/                                                              |           | 7/759         | 1/788         | 8/913         | 0/98          | 0/3       | 0/1       | 0/3   | 0/1   | top_embed                                                                                                                                                                                     |
+| top_embed/                                                              |           | 7/822         | 1/849         | 8/1024        | 0/98          | 0/3       | 0/2       | 0/3   | 0/1   | top_embed                                                                                                                                                                                     |
 | +U_icon_pro                                                             |           | 0/40          | 0/28          | 0/43          | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | top_embed/U_icon_pro                                                                                                                                                                          |
 | ++U0                                                                    |           | 0/40          | 0/28          | 0/43          | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | top_embed/U_icon_pro/U0                                                                                                                                                                       |
 | +++U_ICON                                                               |           | 3/40          | 3/28          | 0/43          | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | top_embed/U_icon_pro/U0/U_ICON                                                                                                                                                                |
@@ -1458,14 +1470,14 @@ Section 13 - Utilization by Hierarchy
 | +fifo_spi_instance                                                      |           | 10/13         | 17/21         | 17/20         | 0/2           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_spi_instance                                                                                                                                                                   |
 | ++fall_edge_fifo_instant                                                |           | 2/2           | 2/2           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_spi_instance/fall_edge_fifo_instant                                                                                                                                            |
 | ++rise_edge_fifo_clk_instant                                            |           | 1/1           | 2/2           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fifo_spi_instance/rise_edge_fifo_clk_instant                                                                                                                                        |
-| +fpga_spi_instance                                                      |           | 157/159       | 185/189       | 152/154       | 1/3           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fpga_spi_instance                                                                                                                                                                   |
+| +fpga_spi_instance                                                      |           | 158/160       | 185/189       | 152/154       | 1/3           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fpga_spi_instance                                                                                                                                                                   |
 | ++fpga_clk_rise_edge_instance                                           |           | 1/1           | 2/2           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fpga_spi_instance/fpga_clk_rise_edge_instance                                                                                                                                       |
 | ++fpga_cs_rise_edge_instance                                            |           | 1/1           | 2/2           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/fpga_spi_instance/fpga_cs_rise_edge_instance                                                                                                                                        |
-| +ilx_instance                                                           |           | 116/120       | 120/123       | 192/194       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/ilx_instance                                                                                                                                                                        |
+| +ilx_instance                                                           |           | 112/116       | 120/123       | 192/194       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/ilx_instance                                                                                                                                                                        |
 | ++adc_start_instant                                                     |           | 3/3           | 3/3           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/ilx_instance/adc_start_instant                                                                                                                                                      |
 | ++rising_edge_fifo_instant                                              |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/ilx_instance/rising_edge_fifo_instant                                                                                                                                               |
 | +make_pulse_instance                                                    |           | 6/6           | 7/7           | 8/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/make_pulse_instance                                                                                                                                                                 |
-| +mk_strobe_instance                                                     |           | 23/23         | 25/25         | 43/43         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/mk_strobe_instance                                                                                                                                                                  |
+| +mk_strobe_instance                                                     |           | 89/89         | 86/86         | 154/154       | 0/0           | 0/0       | 1/1       | 0/0   | 0/0   | top_embed/mk_strobe_instance                                                                                                                                                                  |
 | +mux_spi_instance                                                       |           | 2/2           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/mux_spi_instance                                                                                                                                                                    |
 | +rise_edge_acqui_src_instant                                            |           | 2/2           | 3/3           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top_embed/rise_edge_acqui_src_instant                                                                                                                                                         |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
