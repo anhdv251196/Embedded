@@ -2,10 +2,10 @@
 # Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 SOFTWARE_VERSION P.20131013
-DATE             9/19/2022 -  9:28
+DATE             9/22/2022 -  2:41
 SOURCE          /home/ise/Machine_VB/embed/embed/filenap.mcs
 DEVICE          XCF01S
 DATA_WIDTH      8
 FILL_DATA       0xFF
-SIGNATURE       0x01409E0D
+SIGNATURE       0x0140BAAD
 START_ADDRESS   0x00000000 END_ADDRESS 0x0000D5AD DIRECTION_UP   "/home/ise/Machine_VB/embed/embed/top_embed.bit" 3s50avq100

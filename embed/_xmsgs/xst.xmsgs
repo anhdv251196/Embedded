@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">../ipcore/fifo_ccd.v</arg>&quot; line <arg fmt="%d" index="2">203</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fifo_ccd</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">../ipcore/fifo_ccd.v</arg>&quot; line <arg fmt="%d" index="2">203</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fifo_ccd</arg>&gt;.
 </msg>
 
 <msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">FPGA_VERION</arg>&gt; in unit &lt;<arg fmt="%s" index="2">fpga_spi</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000000000000001</arg> during circuit operation. The register is replaced by logic.
@@ -20,7 +20,13 @@
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">m0_scl_i</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">falling_edge_fifo_rest</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">flag_start_ctr_rog2</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2117" delta="old" >HDL ADVISOR - Mux Selector &lt;<arg fmt="%s" index="1">current_state</arg>&gt; of Case statement line <arg fmt="%s" index="2">123</arg> was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+	- add an &apos;<arg fmt="%s" index="3">INIT</arg>&apos; attribute on signal &lt;<arg fmt="%s" index="4">current_state</arg>&gt; (optimization is then done without any risk)
+	- use the attribute &apos;<arg fmt="%s" index="5">signal_encoding</arg> <arg fmt="%s" index="6">user</arg>&apos; to avoid onehot optimization
+	- use the attribute &apos;<arg fmt="%s" index="7">safe_implementation</arg> <arg fmt="%s" index="8">yes</arg>&apos; to force XST to perform a safe (but less efficient) optimization
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">FPGA_MAXSATVALUE&lt;5:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -38,14 +44,10 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">sys_rst</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">sys_2xclk</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">sys_2xclk</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">cnt_ff</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="524" delta="old" >All outputs of the instance &lt;<arg fmt="%s" index="1">falling_edge_fifo_instant</arg>&gt; of the block &lt;<arg fmt="%s" index="2">detect_falling_edge</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">ilx511b</arg>&gt;.
-This instance will be removed from the design along with all underlying logic
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fpga_addr_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_spi_instance</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fpga_addr_1&gt; </arg>
@@ -93,16 +95,16 @@ This instance will be removed from the design along with all underlying logic
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">rise_edge_acqui_src_instant/d_i_ff1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top_embed</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ilx_instance/rising_edge_fifo_instant/d_i_ff1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top_embed</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fifo_spi_instance/rise_edge_fifo_clk_instant/d_i_ff1&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top_embed</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fifo_spi_instance/rise_edge_fifo_clk_instant/d_i_ff1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top_embed</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fifo_spi_instance/rise_edge_fifo_clk_instant/d_i_ff2&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top_embed</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fifo_spi_instance/rise_edge_fifo_clk_instant/d_i_ff2&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">rise_edge_acqui_src_instant/d_i_ff2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top_embed</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ilx_instance/rising_edge_fifo_instant/d_i_ff2&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top_embed</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fifo_spi_instance/rise_edge_fifo_clk_instant/d_i_ff3&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top_embed</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fifo_spi_instance/rise_edge_fifo_clk_instant/d_i_ff3&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">rise_edge_acqui_src_instant/d_i_ff3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top_embed</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ilx_instance/rising_edge_fifo_instant/d_i_ff3&gt; </arg>

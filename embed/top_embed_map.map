@@ -9,7 +9,7 @@ Target Device  : xc3s50a
 Target Package : vq100
 Target Speed   : -4
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Tue Sep 20 07:36:22 2022
+Mapped Date    : Thu Sep 22 02:40:00 2022
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:54 - 'xc3s50a' is a WebPack part.
@@ -137,18 +137,18 @@ Design Summary:
 Number of errors:      0
 Number of warnings:   34
 Logic Utilization:
-  Total Number Slice Registers:         847 out of   1,408   60%
-    Number used as Flip Flops:          846
+  Total Number Slice Registers:         860 out of   1,408   61%
+    Number used as Flip Flops:          859
     Number used as Latches:               1
-  Number of 4 input LUTs:               780 out of   1,408   55%
+  Number of 4 input LUTs:               827 out of   1,408   58%
 Logic Distribution:
   Number of occupied Slices:            702 out of     704   99%
     Number of Slices containing only related logic:     702 out of     702 100%
     Number of Slices containing unrelated logic:          0 out of     702   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       1,032 out of   1,408   73%
-    Number used as logic:               683
-    Number used as a route-thru:        252
+  Total Number of 4 input LUTs:       1,078 out of   1,408   76%
+    Number used as logic:               730
+    Number used as a route-thru:        251
     Number used as Shift registers:      97
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -163,7 +163,7 @@ Logic Distribution:
   Number of RAMB16BWEs:                   3 out of       3  100%
 
   Number of RPM macros:           12
-Average Fanout of Non-Clock Nets:                2.79
+Average Fanout of Non-Clock Nets:                2.83
 
 Peak Memory Usage:  625 MB
 Total REAL time to MAP completion:  3 secs 

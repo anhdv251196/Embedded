@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: top_embed.prj
@@ -157,7 +157,15 @@ Analyzing hierarchy for module <mux_data_spi> in library <work>.
 Analyzing hierarchy for module <fpga_spi> in library <work> with parameters.
 	version = "00000000000000000000000000000001"
 
-Analyzing hierarchy for module <ilx511b> in library <work>.
+Analyzing hierarchy for module <ilx511b> in library <work> with parameters.
+	IDLE = "000"
+	INTEGRATION = "100"
+	LATCH_DATA = "101"
+	READ_SPECTRUM = "111"
+	RESET_CCD = "010"
+	WAIT_CLK_TO_ROG1 = "001"
+	WAIT_ROG_TO_CLK1 = "011"
+	WAIT_ROG_TO_CLK2 = "110"
 
 Analyzing hierarchy for module <make_strobe> in library <work>.
 
@@ -227,6 +235,14 @@ Analyzing module <detect_falling_edge> in library <work>.
 Module <detect_falling_edge> is correct for synthesis.
  
 Analyzing module <ilx511b> in library <work>.
+	IDLE = 3'b000
+	INTEGRATION = 3'b100
+	LATCH_DATA = 3'b101
+	READ_SPECTRUM = 3'b111
+	RESET_CCD = 3'b010
+	WAIT_CLK_TO_ROG1 = 3'b001
+	WAIT_ROG_TO_CLK1 = 3'b011
+	WAIT_ROG_TO_CLK2 = 3'b110
 Module <ilx511b> is correct for synthesis.
  
 Analyzing module <make_strobe> in library <work>.
@@ -386,36 +402,43 @@ Unit <fpga_spi> synthesized.
 
 Synthesizing Unit <ilx511b>.
     Related source file is "../rtl/ilx511b.v".
-WARNING:Xst:646 - Signal <falling_edge_fifo_rest> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <flag_start_ctr_rog2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <current_state> of Case statement line 123 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <current_state> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <current_state>.
     Found 1-bit register for signal <flag_sel_clok>.
     Found 1-bit register for signal <ilx511b_clk>.
     Found 1-bit register for signal <ilx511b_rog>.
-    Found 18-bit subtractor for signal <$sub0000> created at line 299.
+    Found 18-bit subtractor for signal <$sub0000> created at line 158.
     Found 16-bit up counter for signal <cnt_1khz>.
-    Found 16-bit up counter for signal <cnt_clk_delay_after_rise_rog>.
-    Found 8-bit up counter for signal <cnt_delay_rog_to_low>.
+    Found 10-bit up counter for signal <cnt_delay_clok_high_to_rog_low>.
+    Found 10-bit up counter for signal <cnt_delay_rog_high_to_clok_low>.
     Found 16-bit up counter for signal <cnt_intclk>.
+    Found 10-bit up counter for signal <cnt_keep_rog_low1>.
+    Found 10-bit up counter for signal <cnt_keep_rog_low2>.
     Found 16-bit up counter for signal <cnt_make_smp_clk>.
-    Found 16-bit up counter for signal <cnt_rog_low>.
     Found 16-bit up counter for signal <cnt_smp>.
-    Found 1-bit register for signal <en_delay_clk>.
-    Found 1-bit register for signal <en_delay_rog_to_low>.
-    Found 1-bit register for signal <en_intclk>.
-    Found 1-bit register for signal <en_rog_from_end_rog_low1>.
+    Found 7-bit register for signal <current_state>.
+    Found 1-bit register for signal <en_delay_clok_high_to_rog_low>.
+    Found 1-bit register for signal <en_delay_rog_high_to_clok_low>.
+    Found 1-bit register for signal <en_integration>.
+    Found 1-bit register for signal <en_keep_rog_to_low1>.
+    Found 1-bit register for signal <en_keep_rog_to_low2>.
+    Found 1-bit register for signal <en_latch_data>.
+    Found 1-bit register for signal <flag_en_frame>.
     Found 1-bit register for signal <flag_en_smp_data>.
-    Found 1-bit register for signal <flag_end_rog_low1>.
-    Found 1-bit register for signal <flag_end_rog_low2>.
-    Found 18-bit comparator equal for signal <flag_sel_clok$cmp_eq0000> created at line 299.
+    Found 18-bit comparator equal for signal <flag_sel_clok$cmp_eq0002> created at line 158.
     Found 1-bit register for signal <flag_smp_data>.
-    Found 1-bit register for signal <flag_start_clok_from_end_rog_low1>.
-    Found 1-bit register for signal <flag_start_ctr_rog>.
-    Found 1-bit register for signal <flag_start_rog_low1>.
-    Found 1-bit register for signal <flag_start_rog_low2>.
+    Found 1-bit register for signal <flag_start_ctr_rog1>.
     Found 1-bit register for signal <integ_done>.
-    Found 16-bit comparator not equal for signal <integ_done$cmp_ne0000> created at line 98.
+    Found 16-bit comparator not equal for signal <integ_done$cmp_ne0000> created at line 283.
+    Found 7-bit register for signal <next_state>.
+    Found 1-bit register for signal <start_integration>.
     Summary:
-	inferred   7 Counter(s).
-	inferred  16 D-type flip-flop(s).
+	inferred   8 Counter(s).
+	inferred  29 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
 	inferred   2 Comparator(s).
 Unit <ilx511b> synthesized.
@@ -467,8 +490,6 @@ WARNING:Xst:1780 - Signal <cnt_ff> is never used or assigned. This unconnected s
 	inferred   1 Comparator(s).
 Unit <top_embed> synthesized.
 
-WARNING:Xst:524 - All outputs of the instance <falling_edge_fifo_instant> of the block <detect_falling_edge> are unconnected in block <ilx511b>.
-   This instance will be removed from the design along with all underlying logic
 
 =========================================================================
 HDL Synthesis Report
@@ -483,22 +504,23 @@ Macro Statistics
  16-bit subtractor                                     : 1
  18-bit subtractor                                     : 1
  33-bit subtractor                                     : 1
-# Counters                                             : 15
- 16-bit up counter                                     : 8
+# Counters                                             : 16
+ 10-bit up counter                                     : 4
+ 16-bit up counter                                     : 6
  28-bit up counter                                     : 1
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
  6-bit up counter                                      : 2
- 8-bit up counter                                      : 1
  9-bit up counter                                      : 1
-# Registers                                            : 82
- 1-bit register                                        : 62
+# Registers                                            : 83
+ 1-bit register                                        : 61
  10-bit register                                       : 3
  11-bit register                                       : 1
  16-bit register                                       : 12
  17-bit register                                       : 1
  24-bit register                                       : 1
  26-bit register                                       : 1
+ 7-bit register                                        : 2
  8-bit register                                        : 1
 # Comparators                                          : 16
  11-bit comparator greatequal                          : 2
@@ -548,16 +570,16 @@ Macro Statistics
  16-bit subtractor                                     : 1
  18-bit subtractor                                     : 1
  33-bit subtractor                                     : 1
-# Counters                                             : 15
- 16-bit up counter                                     : 8
+# Counters                                             : 16
+ 10-bit up counter                                     : 4
+ 16-bit up counter                                     : 6
  28-bit up counter                                     : 1
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
  6-bit up counter                                      : 2
- 8-bit up counter                                      : 1
  9-bit up counter                                      : 1
-# Registers                                            : 342
- Flip-Flops                                            : 342
+# Registers                                            : 355
+ Flip-Flops                                            : 355
 # Comparators                                          : 16
  11-bit comparator greatequal                          : 2
  16-bit comparator equal                               : 2
@@ -610,7 +632,7 @@ INFO:Xst:2261 - The FF/Latch <fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_
 INFO:Xst:2261 - The FF/Latch <rise_edge_acqui_src_instant/d_i_ff2> in Unit <top_embed> is equivalent to the following FF/Latch, which will be removed : <ilx_instance/rising_edge_fifo_instant/d_i_ff2> 
 INFO:Xst:2261 - The FF/Latch <fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff3> in Unit <top_embed> is equivalent to the following FF/Latch, which will be removed : <fifo_spi_instance/rise_edge_fifo_clk_instant/d_i_ff3> 
 INFO:Xst:2261 - The FF/Latch <rise_edge_acqui_src_instant/d_i_ff3> in Unit <top_embed> is equivalent to the following FF/Latch, which will be removed : <ilx_instance/rising_edge_fifo_instant/d_i_ff3> 
-Found area constraint ratio of 100 (+ 5) on block top_embed, actual ratio is 75.
+Found area constraint ratio of 100 (+ 5) on block top_embed, actual ratio is 79.
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <fifo_ccd_instance> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <fifo_ccd_instance> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <fifo_ccd_instance> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
@@ -633,8 +655,8 @@ Unit <top_embed> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 508
- Flip-Flops                                            : 508
+# Registers                                            : 521
+ Flip-Flops                                            : 521
 # Shift Registers                                      : 6
  2-bit shift register                                  : 5
  3-bit shift register                                  : 1
@@ -666,31 +688,32 @@ Design Statistics
 # IOs                              : 39
 
 Cell Usage :
-# BELS                             : 1482
+# BELS                             : 1532
 #      GND                         : 2
-#      INV                         : 72
-#      LUT1                        : 204
-#      LUT2                        : 97
+#      INV                         : 71
+#      LUT1                        : 203
+#      LUT2                        : 106
 #      LUT2_L                      : 1
-#      LUT3                        : 68
-#      LUT4                        : 325
-#      MUXCY                       : 398
-#      MUXF5                       : 11
+#      LUT3                        : 66
+#      LUT4                        : 363
+#      MUXCY                       : 397
+#      MUXF5                       : 19
 #      MUXF6                       : 2
 #      MUXF7                       : 1
 #      VCC                         : 2
 #      XORCY                       : 299
-# FlipFlops/Latches                : 586
-#      FD                          : 51
+# FlipFlops/Latches                : 599
+#      FD                          : 52
 #      FDC                         : 1
 #      FDCE                        : 53
 #      FDE                         : 116
 #      FDP                         : 10
 #      FDPE                        : 4
-#      FDR                         : 92
-#      FDRE                        : 229
-#      FDS                         : 1
-#      FDSE                        : 29
+#      FDR                         : 127
+#      FDRE                        : 205
+#      FDRS                        : 1
+#      FDS                         : 2
+#      FDSE                        : 28
 # RAMS                             : 2
 #      RAMB16BWE                   : 2
 # Shift Registers                  : 6
@@ -714,10 +737,10 @@ Device utilization summary:
 
 Selected Device : 3s50avq100-4 
 
- Number of Slices:                      527  out of    704    74%  
- Number of Slice Flip Flops:            586  out of   1408    41%  
- Number of 4 input LUTs:                773  out of   1408    54%  
-    Number used as logic:               767
+ Number of Slices:                      548  out of    704    77%  
+ Number of Slice Flip Flops:            599  out of   1408    42%  
+ Number of 4 input LUTs:                816  out of   1408    57%  
+    Number used as logic:               810
     Number used as Shift registers:       6
  Number of IOs:                          39
  Number of bonded IOBs:                  39  out of     68    57%  
@@ -747,7 +770,7 @@ Clock Information:
 -----------------------------------+--------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                | Load  |
 -----------------------------------+--------------------------------------+-------+
-sys_clk                            | clk_wizard_instance/DCM_SP_INST:CLKFX| 595   |
+sys_clk                            | clk_wizard_instance/DCM_SP_INST:CLKFX| 608   |
 -----------------------------------+--------------------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -768,8 +791,8 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: 72.656ns (Maximum Frequency: 13.764MHz)
-   Minimum input arrival time before clock: 6.234ns
-   Maximum output required time after clock: 6.742ns
+   Minimum input arrival time before clock: 5.523ns
+   Maximum output required time after clock: 6.909ns
    Maximum combinational path delay: 7.102ns
 
 Timing Detail:
@@ -779,7 +802,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sys_clk'
   Clock period: 72.656ns (frequency: 13.764MHz)
-  Total number of paths / destination ports: 1355455 / 1281
+  Total number of paths / destination ports: 1355347 / 1286
 -------------------------------------------------------------------------
 Delay:               18.164ns (Levels of Logic = 39)
   Source:            fpga_spi_instance/FPGA_STRBCOUNT_1 (FF)
@@ -838,30 +861,30 @@ Delay:               18.164ns (Levels of Logic = 39)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sys_clk'
-  Total number of paths / destination ports: 626 / 354
+  Total number of paths / destination ports: 584 / 319
 -------------------------------------------------------------------------
-Offset:              6.234ns (Levels of Logic = 3)
-  Source:            xreset (PAD)
-  Destination:       ilx_instance/cnt_rog_low_15 (FF)
+Offset:              5.523ns (Levels of Logic = 3)
+  Source:            fpga_cs (PAD)
+  Destination:       fpga_spi_instance/Mshreg_receive_data_18 (FF)
   Destination Clock: sys_clk rising 4.0X
 
-  Data Path: xreset to ilx_instance/cnt_rog_low_15
+  Data Path: fpga_cs to fpga_spi_instance/Mshreg_receive_data_18
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           147   0.849   1.379  xreset_IBUF (xreset_IBUF)
-     LUT3:I1->O            6   0.643   0.812  ilx_instance/flag_start_rog_low1_or00001 (ilx_instance/flag_start_rog_low1_or0000)
-     LUT4:I0->O           16   0.648   1.034  ilx_instance/cnt_rog_low_or0000 (ilx_instance/cnt_rog_low_or0000)
-     FDR:R                     0.869          ilx_instance/cnt_rog_low_0
+     IBUF:I->O             5   0.849   0.776  fpga_cs_IBUF (fpga_cs_IBUF)
+     LUT3:I0->O            6   0.648   0.812  fpga_spi_instance/Rx_Done_not000111 (fpga_spi_instance/cnt_spi_and0000)
+     LUT4:I0->O           23   0.648   1.202  fpga_spi_instance/receive_data_not00011 (fpga_spi_instance/receive_data_not0001)
+     SRL16E:CE                 0.588          fpga_spi_instance/Mshreg_receive_data_18
     ----------------------------------------
-    Total                      6.234ns (3.009ns logic, 3.225ns route)
-                                       (48.3% logic, 51.7% route)
+    Total                      5.523ns (2.733ns logic, 2.790ns route)
+                                       (49.5% logic, 50.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sys_clk'
   Total number of paths / destination ports: 10 / 7
 -------------------------------------------------------------------------
-Offset:              6.742ns (Levels of Logic = 2)
+Offset:              6.909ns (Levels of Logic = 2)
   Source:            ilx_instance/flag_sel_clok (FF)
   Destination:       ilx511b_clk (PAD)
   Source Clock:      sys_clk rising 4.0X
@@ -870,12 +893,12 @@ Offset:              6.742ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             1   0.591   0.563  ilx_instance/flag_sel_clok (ilx_instance/flag_sel_clok)
+     FDRS:C->Q             4   0.591   0.730  ilx_instance/flag_sel_clok (ilx_instance/flag_sel_clok)
      LUT3:I0->O            1   0.648   0.420  ilx511b_clk1 (ilx511b_clk_OBUF)
      OBUF:I->O                 4.520          ilx511b_clk_OBUF (ilx511b_clk)
     ----------------------------------------
-    Total                      6.742ns (5.759ns logic, 0.983ns route)
-                                       (85.4% logic, 14.6% route)
+    Total                      6.909ns (5.759ns logic, 1.150ns route)
+                                       (83.4% logic, 16.6% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -899,15 +922,15 @@ Delay:               7.102ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.09 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.77 secs
  
 --> 
 
 
-Total memory usage is 539140 kilobytes
+Total memory usage is 539544 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   22 (   0 filtered)
-Number of infos    :   18 (   0 filtered)
+Number of warnings :   21 (   0 filtered)
+Number of infos    :   19 (   0 filtered)
 
