@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Sep 22 02:40:03 2022
+// Written by: Map P.20131013 on Wed Sep 28 07:32:39 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -75,100 +75,12 @@ PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i"
         PINNAME CLKB;
 TIMEGRP D_CLK = BEL "pixel_ready" BEL "make_pulse_instance/clk_2_5Mhz" BEL
-        "rise_edge_acqui_src_instant/d_i_ff3" BEL
-        "rise_edge_acqui_src_instant/d_i_ff2" BEL
         "make_pulse_instance/cnt_make_2_5Mhz_0" BEL
         "make_pulse_instance/cnt_make_2_5Mhz_1" BEL
         "make_pulse_instance/cnt_make_2_5Mhz_2" BEL
         "make_pulse_instance/cnt_make_2_5Mhz_3" BEL
         "make_pulse_instance/cnt_make_2_5Mhz_4" BEL
         "make_pulse_instance/cnt_make_2_5Mhz_5" BEL
-        "mk_strobe_instance/cnt_mk_strobe_15" BEL
-        "mk_strobe_instance/cnt_mk_strobe_14" BEL
-        "mk_strobe_instance/cnt_mk_strobe_13" BEL
-        "mk_strobe_instance/cnt_mk_strobe_12" BEL
-        "mk_strobe_instance/cnt_mk_strobe_11" BEL
-        "mk_strobe_instance/cnt_mk_strobe_10" BEL
-        "mk_strobe_instance/cnt_mk_strobe_9" BEL
-        "mk_strobe_instance/cnt_mk_strobe_8" BEL
-        "mk_strobe_instance/cnt_mk_strobe_7" BEL
-        "mk_strobe_instance/cnt_mk_strobe_6" BEL
-        "mk_strobe_instance/cnt_mk_strobe_5" BEL
-        "mk_strobe_instance/cnt_mk_strobe_4" BEL
-        "mk_strobe_instance/cnt_mk_strobe_3" BEL
-        "mk_strobe_instance/cnt_mk_strobe_2" BEL
-        "mk_strobe_instance/cnt_mk_strobe_1" BEL
-        "mk_strobe_instance/cnt_mk_strobe_0" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_27" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_26" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_25" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_24" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_23" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_22" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_21" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_20" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_19" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_18" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_17" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_16" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_15" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_14" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_13" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_12" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_11" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_10" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_9" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_8" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_7" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_6" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_5" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_4" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_3" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_2" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_1" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_0" BEL
-        "mk_strobe_instance/cnt_mk_2MHz_5" BEL
-        "mk_strobe_instance/cnt_mk_2MHz_4" BEL
-        "mk_strobe_instance/cnt_mk_2MHz_3" BEL
-        "mk_strobe_instance/cnt_mk_2MHz_2" BEL
-        "mk_strobe_instance/cnt_mk_2MHz_1" BEL
-        "mk_strobe_instance/cnt_mk_2MHz_0" BEL
-        "mk_strobe_instance/cont_strobe" BEL
-        "mk_strobe_instance/flag_end_single_strobe" BEL
-        "mk_strobe_instance/single_strobe" BEL
-        "mk_strobe_instance/prev_strbcount_15" BEL
-        "mk_strobe_instance/prev_strbcount_14" BEL
-        "mk_strobe_instance/prev_strbcount_13" BEL
-        "mk_strobe_instance/prev_strbcount_12" BEL
-        "mk_strobe_instance/prev_strbcount_11" BEL
-        "mk_strobe_instance/prev_strbcount_10" BEL
-        "mk_strobe_instance/prev_strbcount_9" BEL
-        "mk_strobe_instance/prev_strbcount_8" BEL
-        "mk_strobe_instance/prev_strbcount_7" BEL
-        "mk_strobe_instance/prev_strbcount_6" BEL
-        "mk_strobe_instance/prev_strbcount_5" BEL
-        "mk_strobe_instance/prev_strbcount_4" BEL
-        "mk_strobe_instance/prev_strbcount_3" BEL
-        "mk_strobe_instance/prev_strbcount_2" BEL
-        "mk_strobe_instance/prev_strbcount_1" BEL
-        "mk_strobe_instance/prev_strbcount_0" BEL
-        "mk_strobe_instance/prev_countbase_15" BEL
-        "mk_strobe_instance/prev_countbase_14" BEL
-        "mk_strobe_instance/prev_countbase_13" BEL
-        "mk_strobe_instance/prev_countbase_12" BEL
-        "mk_strobe_instance/prev_countbase_11" BEL
-        "mk_strobe_instance/prev_countbase_10" BEL
-        "mk_strobe_instance/prev_countbase_9" BEL
-        "mk_strobe_instance/prev_countbase_8" BEL
-        "mk_strobe_instance/prev_countbase_7" BEL
-        "mk_strobe_instance/prev_countbase_6" BEL
-        "mk_strobe_instance/prev_countbase_5" BEL
-        "mk_strobe_instance/prev_countbase_4" BEL
-        "mk_strobe_instance/prev_countbase_3" BEL
-        "mk_strobe_instance/prev_countbase_2" BEL
-        "mk_strobe_instance/prev_countbase_1" BEL
-        "mk_strobe_instance/prev_countbase_0" BEL
-        "mk_strobe_instance/flag_start_single_strobe" BEL
         "fpga_spi_instance/cnt_spi_4" BEL "fpga_spi_instance/cnt_spi_3" BEL
         "fpga_spi_instance/cnt_spi_2" BEL "fpga_spi_instance/cnt_spi_1" BEL
         "fpga_spi_instance/cnt_spi_0" BEL "fpga_spi_instance/cnt_shift_data_4"
@@ -178,22 +90,6 @@ TIMEGRP D_CLK = BEL "pixel_ready" BEL "make_pulse_instance/clk_2_5Mhz" BEL
         "fpga_spi_instance/cnt_shift_data_0" BEL
         "fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff3" BEL
         "fpga_spi_instance/fpga_cs_rise_edge_instance/d_i_ff3" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_15" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_14" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_13" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_12" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_11" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_10" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_9" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_8" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_7" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_6" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_5" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_4" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_3" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_2" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_1" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_0" BEL
         "fpga_spi_instance/FPGA_OFFSETVALUE_15" BEL
         "fpga_spi_instance/FPGA_OFFSETVALUE_14" BEL
         "fpga_spi_instance/FPGA_OFFSETVALUE_13" BEL
@@ -210,38 +106,6 @@ TIMEGRP D_CLK = BEL "pixel_ready" BEL "make_pulse_instance/clk_2_5Mhz" BEL
         "fpga_spi_instance/FPGA_OFFSETVALUE_2" BEL
         "fpga_spi_instance/FPGA_OFFSETVALUE_1" BEL
         "fpga_spi_instance/FPGA_OFFSETVALUE_0" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_15" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_14" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_13" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_12" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_11" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_10" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_9" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_8" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_7" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_6" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_5" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_4" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_3" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_2" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_1" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_0" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_15" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_14" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_13" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_12" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_11" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_10" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_9" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_8" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_7" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_6" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_5" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_4" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_3" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_2" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_1" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_0" BEL
         "fpga_spi_instance/FPGA_LAMPENABLE_15" BEL
         "fpga_spi_instance/FPGA_LAMPENABLE_14" BEL
         "fpga_spi_instance/FPGA_LAMPENABLE_13" BEL
@@ -258,6 +122,102 @@ TIMEGRP D_CLK = BEL "pixel_ready" BEL "make_pulse_instance/clk_2_5Mhz" BEL
         "fpga_spi_instance/FPGA_LAMPENABLE_2" BEL
         "fpga_spi_instance/FPGA_LAMPENABLE_1" BEL
         "fpga_spi_instance/FPGA_LAMPENABLE_0" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_15" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_14" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_13" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_12" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_11" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_10" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_9" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_8" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_7" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_6" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_5" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_4" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_3" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_2" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_1" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_0" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_15" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_14" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_13" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_12" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_11" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_10" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_9" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_8" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_7" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_6" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_5" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_4" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_3" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_2" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_1" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_0" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_15" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_14" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_13" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_12" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_11" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_10" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_9" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_8" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_7" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_6" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_5" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_4" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_3" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_2" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_1" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_0" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_15" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_14" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_13" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_12" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_11" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_10" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_9" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_8" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_7" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_6" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_5" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_4" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_3" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_2" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_1" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_0" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_15" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_14" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_13" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_12" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_11" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_10" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_9" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_8" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_7" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_6" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_5" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_4" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_3" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_2" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_1" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_0" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_15" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_14" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_13" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_12" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_11" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_10" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_9" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_8" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_7" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_6" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_5" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_4" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_3" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_2" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_1" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_0" BEL
         "fpga_spi_instance/FPGA_STRBCOUNT_15" BEL
         "fpga_spi_instance/FPGA_STRBCOUNT_14" BEL
         "fpga_spi_instance/FPGA_STRBCOUNT_13" BEL
@@ -289,28 +249,14 @@ TIMEGRP D_CLK = BEL "pixel_ready" BEL "make_pulse_instance/clk_2_5Mhz" BEL
         "fpga_spi_instance/FPGA_COUNTBASE_3" BEL
         "fpga_spi_instance/FPGA_COUNTBASE_2" BEL
         "fpga_spi_instance/FPGA_COUNTBASE_1" BEL
-        "fpga_spi_instance/FPGA_COUNTBASE_0" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_15" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_14" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_13" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_12" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_11" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_10" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_9" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_8" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_7" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_6" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_5" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_4" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_3" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_2" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_1" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_0" BEL "fpga_spi_instance/wr_or_rd"
+        "fpga_spi_instance/FPGA_COUNTBASE_0" BEL "fpga_spi_instance/wr_or_rd"
         BEL "fpga_spi_instance/fpga_addr_7" BEL
         "fpga_spi_instance/fpga_addr_6" BEL "fpga_spi_instance/fpga_addr_5"
         BEL "fpga_spi_instance/fpga_addr_4" BEL
         "fpga_spi_instance/fpga_addr_3" BEL "fpga_spi_instance/fpga_addr_2"
         BEL "fpga_spi_instance/fpga_miso" BEL
+        "fpga_spi_instance/FPGA_VERION_1" BEL
+        "fpga_spi_instance/FPGA_VERION_0" BEL
         "fpga_spi_instance/transmit_data_16" BEL
         "fpga_spi_instance/transmit_data_15" BEL
         "fpga_spi_instance/transmit_data_14" BEL
@@ -355,17 +301,22 @@ TIMEGRP D_CLK = BEL "pixel_ready" BEL "make_pulse_instance/clk_2_5Mhz" BEL
         "ilx_instance/cnt_intclk_6" BEL "ilx_instance/cnt_intclk_5" BEL
         "ilx_instance/cnt_intclk_4" BEL "ilx_instance/cnt_intclk_3" BEL
         "ilx_instance/cnt_intclk_2" BEL "ilx_instance/cnt_intclk_1" BEL
-        "ilx_instance/cnt_intclk_0" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_9" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_8" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_7" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_6" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_5" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_4" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_3" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_2" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_1" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_0" BEL
+        "ilx_instance/cnt_intclk_0" BEL "ilx_instance/cnt_trigger_delay_15"
+        BEL "ilx_instance/cnt_trigger_delay_14" BEL
+        "ilx_instance/cnt_trigger_delay_13" BEL
+        "ilx_instance/cnt_trigger_delay_12" BEL
+        "ilx_instance/cnt_trigger_delay_11" BEL
+        "ilx_instance/cnt_trigger_delay_10" BEL
+        "ilx_instance/cnt_trigger_delay_9" BEL
+        "ilx_instance/cnt_trigger_delay_8" BEL
+        "ilx_instance/cnt_trigger_delay_7" BEL
+        "ilx_instance/cnt_trigger_delay_6" BEL
+        "ilx_instance/cnt_trigger_delay_5" BEL
+        "ilx_instance/cnt_trigger_delay_4" BEL
+        "ilx_instance/cnt_trigger_delay_3" BEL
+        "ilx_instance/cnt_trigger_delay_2" BEL
+        "ilx_instance/cnt_trigger_delay_1" BEL
+        "ilx_instance/cnt_trigger_delay_0" BEL
         "ilx_instance/cnt_keep_rog_low2_9" BEL
         "ilx_instance/cnt_keep_rog_low2_8" BEL
         "ilx_instance/cnt_keep_rog_low2_7" BEL
@@ -376,6 +327,16 @@ TIMEGRP D_CLK = BEL "pixel_ready" BEL "make_pulse_instance/clk_2_5Mhz" BEL
         "ilx_instance/cnt_keep_rog_low2_2" BEL
         "ilx_instance/cnt_keep_rog_low2_1" BEL
         "ilx_instance/cnt_keep_rog_low2_0" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_9" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_8" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_7" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_6" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_5" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_4" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_3" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_2" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_1" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_0" BEL
         "ilx_instance/cnt_keep_rog_low1_9" BEL
         "ilx_instance/cnt_keep_rog_low1_8" BEL
         "ilx_instance/cnt_keep_rog_low1_7" BEL
@@ -385,23 +346,26 @@ TIMEGRP D_CLK = BEL "pixel_ready" BEL "make_pulse_instance/clk_2_5Mhz" BEL
         "ilx_instance/cnt_keep_rog_low1_3" BEL
         "ilx_instance/cnt_keep_rog_low1_2" BEL
         "ilx_instance/cnt_keep_rog_low1_1" BEL
-        "ilx_instance/cnt_keep_rog_low1_0" BEL "ilx_instance/cnt_1khz_15" BEL
-        "ilx_instance/cnt_1khz_14" BEL "ilx_instance/cnt_1khz_13" BEL
-        "ilx_instance/cnt_1khz_12" BEL "ilx_instance/cnt_1khz_11" BEL
-        "ilx_instance/cnt_1khz_10" BEL "ilx_instance/cnt_1khz_9" BEL
-        "ilx_instance/cnt_1khz_8" BEL "ilx_instance/cnt_1khz_7" BEL
-        "ilx_instance/cnt_1khz_6" BEL "ilx_instance/cnt_1khz_5" BEL
-        "ilx_instance/cnt_1khz_4" BEL "ilx_instance/cnt_1khz_3" BEL
-        "ilx_instance/cnt_1khz_2" BEL "ilx_instance/cnt_1khz_1" BEL
-        "ilx_instance/cnt_1khz_0" BEL "ilx_instance/cnt_smp_15" BEL
-        "ilx_instance/cnt_smp_14" BEL "ilx_instance/cnt_smp_13" BEL
-        "ilx_instance/cnt_smp_12" BEL "ilx_instance/cnt_smp_11" BEL
-        "ilx_instance/cnt_smp_10" BEL "ilx_instance/cnt_smp_9" BEL
-        "ilx_instance/cnt_smp_8" BEL "ilx_instance/cnt_smp_7" BEL
-        "ilx_instance/cnt_smp_6" BEL "ilx_instance/cnt_smp_5" BEL
-        "ilx_instance/cnt_smp_4" BEL "ilx_instance/cnt_smp_3" BEL
-        "ilx_instance/cnt_smp_2" BEL "ilx_instance/cnt_smp_1" BEL
-        "ilx_instance/cnt_smp_0" BEL "ilx_instance/cnt_make_smp_clk_15" BEL
+        "ilx_instance/cnt_keep_rog_low1_0" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_9" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_8" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_7" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_6" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_5" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_4" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_3" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_2" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_1" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_0" BEL
+        "ilx_instance/cnt_1khz_15" BEL "ilx_instance/cnt_1khz_14" BEL
+        "ilx_instance/cnt_1khz_13" BEL "ilx_instance/cnt_1khz_12" BEL
+        "ilx_instance/cnt_1khz_11" BEL "ilx_instance/cnt_1khz_10" BEL
+        "ilx_instance/cnt_1khz_9" BEL "ilx_instance/cnt_1khz_8" BEL
+        "ilx_instance/cnt_1khz_7" BEL "ilx_instance/cnt_1khz_6" BEL
+        "ilx_instance/cnt_1khz_5" BEL "ilx_instance/cnt_1khz_4" BEL
+        "ilx_instance/cnt_1khz_3" BEL "ilx_instance/cnt_1khz_2" BEL
+        "ilx_instance/cnt_1khz_1" BEL "ilx_instance/cnt_1khz_0" BEL
+        "ilx_instance/cnt_make_smp_clk_15" BEL
         "ilx_instance/cnt_make_smp_clk_14" BEL
         "ilx_instance/cnt_make_smp_clk_13" BEL
         "ilx_instance/cnt_make_smp_clk_12" BEL
@@ -416,29 +380,35 @@ TIMEGRP D_CLK = BEL "pixel_ready" BEL "make_pulse_instance/clk_2_5Mhz" BEL
         "ilx_instance/cnt_make_smp_clk_3" BEL
         "ilx_instance/cnt_make_smp_clk_2" BEL
         "ilx_instance/cnt_make_smp_clk_1" BEL
-        "ilx_instance/cnt_make_smp_clk_0" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_9" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_8" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_7" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_6" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_5" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_4" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_3" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_2" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_1" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_0" BEL
+        "ilx_instance/cnt_make_smp_clk_0" BEL "ilx_instance/cnt_smp_15" BEL
+        "ilx_instance/cnt_smp_14" BEL "ilx_instance/cnt_smp_13" BEL
+        "ilx_instance/cnt_smp_12" BEL "ilx_instance/cnt_smp_11" BEL
+        "ilx_instance/cnt_smp_10" BEL "ilx_instance/cnt_smp_9" BEL
+        "ilx_instance/cnt_smp_8" BEL "ilx_instance/cnt_smp_7" BEL
+        "ilx_instance/cnt_smp_6" BEL "ilx_instance/cnt_smp_5" BEL
+        "ilx_instance/cnt_smp_4" BEL "ilx_instance/cnt_smp_3" BEL
+        "ilx_instance/cnt_smp_2" BEL "ilx_instance/cnt_smp_1" BEL
+        "ilx_instance/cnt_smp_0" BEL "ilx_instance/cnt_make_2MHz_9" BEL
+        "ilx_instance/cnt_make_2MHz_8" BEL "ilx_instance/cnt_make_2MHz_7" BEL
+        "ilx_instance/cnt_make_2MHz_6" BEL "ilx_instance/cnt_make_2MHz_5" BEL
+        "ilx_instance/cnt_make_2MHz_4" BEL "ilx_instance/cnt_make_2MHz_3" BEL
+        "ilx_instance/cnt_make_2MHz_2" BEL "ilx_instance/cnt_make_2MHz_1" BEL
+        "ilx_instance/cnt_make_2MHz_0" BEL
+        "ilx_instance/rising_edge_fifo_instant/d_i_ff2" BEL
+        "ilx_instance/rising_edge_fifo_instant/d_i_ff3" BEL
         "ilx_instance/adc_start_instant/d_i_ff2" BEL
         "ilx_instance/adc_start_instant/d_i_ff3" BEL
         "ilx_instance/flag_start_ctr_rog1" BEL "ilx_instance/en_latch_data"
         BEL "ilx_instance/en_integration" BEL "ilx_instance/integ_done" BEL
         "ilx_instance/flag_en_smp_data" BEL "ilx_instance/ilx511b_clk" BEL
-        "ilx_instance/ilx511b_rog" BEL "ilx_instance/flag_en_frame" BEL
-        "ilx_instance/flag_smp_data" BEL "ilx_instance/start_integration" BEL
+        "ilx_instance/flag_end_trigger_delay" BEL "ilx_instance/ilx511b_rog"
+        BEL "ilx_instance/en_trigger_delay" BEL
+        "ilx_instance/start_integration" BEL "ilx_instance/flag_en_frame" BEL
         "ilx_instance/en_keep_rog_to_low2" BEL
         "ilx_instance/en_keep_rog_to_low1" BEL
         "ilx_instance/en_delay_rog_high_to_clok_low" BEL
         "ilx_instance/en_delay_clok_high_to_rog_low" BEL
-        "ilx_instance/next_state_0" BEL "ad7621_instance/cnt_rd_pixel_15" BEL
+        "ad7621_instance/cnt_rd_pixel_15" BEL
         "ad7621_instance/cnt_rd_pixel_14" BEL
         "ad7621_instance/cnt_rd_pixel_13" BEL
         "ad7621_instance/cnt_rd_pixel_12" BEL
@@ -536,15 +506,17 @@ TIMEGRP D_CLK = BEL "pixel_ready" BEL "make_pulse_instance/clk_2_5Mhz" BEL
         "fifo_spi_instance/data_tranfer_2" BEL
         "fifo_spi_instance/data_tranfer_1" BEL
         "fifo_spi_instance/data_tranfer_0" BEL
-        "rise_edge_acqui_src_instant/d_i_ff1" BEL
+        "ilx_instance/rising_edge_fifo_instant/d_i_ff1" BEL
         "ilx_instance/adc_start_instant/d_i_ff1" BEL
-        "ilx_instance/current_state_6" BEL "ilx_instance/current_state_5" BEL
-        "ilx_instance/current_state_4" BEL "ilx_instance/current_state_3" BEL
-        "ilx_instance/current_state_2" BEL "ilx_instance/current_state_1" BEL
-        "ilx_instance/current_state_0" BEL "ilx_instance/next_state_6" BEL
-        "ilx_instance/next_state_5" BEL "ilx_instance/next_state_4" BEL
-        "ilx_instance/next_state_3" BEL "ilx_instance/next_state_2" BEL
-        "ilx_instance/next_state_1" BEL "ilx_instance/flag_sel_clok" BEL
+        "ilx_instance/current_state_7" BEL "ilx_instance/current_state_6" BEL
+        "ilx_instance/current_state_5" BEL "ilx_instance/current_state_4" BEL
+        "ilx_instance/current_state_3" BEL "ilx_instance/current_state_2" BEL
+        "ilx_instance/current_state_1" BEL "ilx_instance/current_state_0" BEL
+        "ilx_instance/next_state_7" BEL "ilx_instance/next_state_6" BEL
+        "ilx_instance/next_state_5" BEL "ilx_instance/next_state_3" BEL
+        "ilx_instance/next_state_0" BEL "ilx_instance/flag_smp_data" BEL
+        "ilx_instance/flag_sel_clok" BEL "ilx_instance/next_state_4" BEL
+        "ilx_instance/next_state_2" BEL "ilx_instance/next_state_1" BEL
         "fpga_spi_instance/Mshreg_receive_data_18" BEL
         "fpga_spi_instance/receive_data_18" BEL
         "fpga_spi_instance/fpga_clk_rise_edge_instance/Mshreg_d_i_ff2/SRL16E"
@@ -700,301 +672,6 @@ TIMEGRP D_CLK = BEL "pixel_ready" BEL "make_pulse_instance/clk_2_5Mhz" BEL
         "fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1"
         BEL
         "fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0"
-        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_WCNT_HCMP_Q" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_WCNT_LCMP_Q" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_SCNT_CMP_Q" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_INTCAP_F.U_CAPWE0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_INTCAP_F.U_CAPWE1"
-        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_TRIG0" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_TRIG1" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS0/I_NOLUT6.I_SRL_T2.I_YES_RPM.I_YES_OREG.OUT_REG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS1/I_NOLUT6.I_SRL_T2.I_YES_RPM.I_YES_OREG.OUT_REG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CDONE/I_NOLUT6.I_SRL_T2.I_YES_RPM.I_YES_OREG.OUT_REG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[8].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[7].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[6].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[5].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[4].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[3].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[2].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[1].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[0].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[8].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[7].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[6].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[5].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[4].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[3].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[2].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[1].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[0].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[8].U_CAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[8].U_iCAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[7].U_CAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[7].U_iCAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[6].U_CAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[6].U_iCAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[5].U_CAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[5].U_iCAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[4].U_CAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[4].U_iCAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[3].U_CAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[3].U_iCAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[2].U_CAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[2].U_iCAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[1].U_CAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[1].U_iCAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[0].U_CAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[0].U_iCAP_ADDR"
-        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL2" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL3" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_CR" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[8].U_NSQ" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[7].U_NSQ" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[6].U_NSQ" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[5].U_NSQ" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[4].U_NSQ" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[3].U_NSQ" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[2].U_NSQ" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[1].U_NSQ" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[0].U_NSQ" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_STATE1" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_STATE0" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_ARM" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TRIGGER" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_FULL" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_ECR" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_RISING" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_GEN_DELAY[1].U_FD" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_RFDRE" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_DOUT" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_DOUT1" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_DOUT0" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[1].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[2].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[3].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[4].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[5].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[6].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[7].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[8].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[9].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[10].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[11].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[12].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[13].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[14].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[15].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/FINAL_FDR"
-        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_POR" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[0].U_RST" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[1].U_RST" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[2].U_RST" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[3].U_RST" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[4].U_RST" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[5].U_RST" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[6].U_RST" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[7].U_RST" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_GEN_DELAY[2].U_FD"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_GEN_DELAY[1].U_FD"
-        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_RFDRE" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT1" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT0" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[4].U_FD" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[3].U_FD" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[2].U_FD" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[1].U_FD" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_RFDRE" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT1" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT0" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[0].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[1].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[2].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[3].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[4].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[5].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[6].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[7].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[8].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[9].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[10].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[11].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[12].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[13].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[14].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[15].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[0].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[1].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[2].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[3].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[4].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[5].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[6].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[7].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[8].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[9].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[10].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[11].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[12].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[13].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[14].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[15].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[3].I_YES_RPM.I_OREG.U_OREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[0].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[1].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[2].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[3].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[4].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[5].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[6].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[7].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[8].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[9].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[10].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[11].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[12].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[13].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[14].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[15].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[0].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[1].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[2].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[3].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[4].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[5].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[6].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[7].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[8].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[9].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[10].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[11].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[12].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[13].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[14].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[15].I_SRLT_NE_0.DLY9/SRL16E"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_OREG.I_YES_OREG.U_OREG"
         BEL
@@ -1009,22 +686,218 @@ TIMEGRP D_CLK = BEL "pixel_ready" BEL "make_pulse_instance/clk_2_5Mhz" BEL
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_1_TO_4.U_TRIGQ"
         BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/F_NO_TCMC.U_FDR" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[15].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[14].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[13].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[12].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[11].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[10].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[9].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[8].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[7].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[6].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[5].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[4].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[3].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[2].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[1].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[0].U_TQ" PIN
+        "U_ila_pro_0/U0/I_TQ0.G_TW[0].U_TQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[4].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[3].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[2].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[1].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[0].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[4].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[3].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[2].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[1].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[0].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TWMOD4_NE0.I_NO_RPM.I_OREG.U_OREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[4].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[3].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[2].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[1].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[0].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[4].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[3].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[2].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[1].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[0].U_IREG"
+        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT0" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT1" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_RFDRE" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[1].U_FD" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[2].U_FD" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[3].U_FD" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[4].U_FD" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT0" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT1" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_RFDRE" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_GEN_DELAY[1].U_FD"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_GEN_DELAY[2].U_FD"
+        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[7].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[6].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[5].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[4].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[3].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[2].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[1].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[0].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_POR" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/FINAL_FDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[15].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[14].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[13].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[12].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[11].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[10].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[9].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[8].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[7].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[6].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[5].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[4].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[3].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[2].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[1].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_SRL.U_FDR0"
+        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_DOUT0" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_DOUT1" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_DOUT" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_RFDRE" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_GEN_DELAY[1].U_FD" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_RISING" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_ECR" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_FULL" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TRIGGER" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_ARM" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_STATE0" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_STATE1" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[0].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[1].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[2].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[3].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[4].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[5].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[6].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[7].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[8].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_CR" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL3" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL2" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[0].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[0].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[1].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[1].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[2].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[2].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[3].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[3].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[4].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[4].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[5].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[5].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[6].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[6].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[7].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[7].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[8].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[8].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[0].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[1].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[2].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[3].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[4].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[5].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[6].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[7].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[8].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[0].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[1].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[2].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[3].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[4].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[5].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[6].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[7].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[8].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CDONE/I_NOLUT6.I_SRL_T2.I_NO_RPM.I_YES_OREG.OUT_REG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS1/I_NOLUT6.I_SRL_T2.I_NO_RPM.I_YES_OREG.OUT_REG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS0/I_NOLUT6.I_SRL_T2.I_NO_RPM.I_YES_OREG.OUT_REG"
+        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_TRIG1" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_TRIG0" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_INTCAP_F.U_CAPWE1"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_INTCAP_F.U_CAPWE0"
+        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_SCNT_CMP_Q" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_WCNT_LCMP_Q" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_WCNT_HCMP_Q" PIN
         "fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x9.ram_pins<22>"
         PIN
         "fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x9.ram_pins<23>"
@@ -1044,100 +917,12 @@ TIMEGRP D_CLK = BEL "pixel_ready" BEL "make_pulse_instance/clk_2_5Mhz" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s32_if.ram_rt1_s1_s32_i_pins<24>";
 TIMEGRP clk_wizard_instance_CLKFX_BUF = BEL "pixel_ready" BEL
         "make_pulse_instance/clk_2_5Mhz" BEL
-        "rise_edge_acqui_src_instant/d_i_ff3" BEL
-        "rise_edge_acqui_src_instant/d_i_ff2" BEL
         "make_pulse_instance/cnt_make_2_5Mhz_0" BEL
         "make_pulse_instance/cnt_make_2_5Mhz_1" BEL
         "make_pulse_instance/cnt_make_2_5Mhz_2" BEL
         "make_pulse_instance/cnt_make_2_5Mhz_3" BEL
         "make_pulse_instance/cnt_make_2_5Mhz_4" BEL
         "make_pulse_instance/cnt_make_2_5Mhz_5" BEL
-        "mk_strobe_instance/cnt_mk_strobe_15" BEL
-        "mk_strobe_instance/cnt_mk_strobe_14" BEL
-        "mk_strobe_instance/cnt_mk_strobe_13" BEL
-        "mk_strobe_instance/cnt_mk_strobe_12" BEL
-        "mk_strobe_instance/cnt_mk_strobe_11" BEL
-        "mk_strobe_instance/cnt_mk_strobe_10" BEL
-        "mk_strobe_instance/cnt_mk_strobe_9" BEL
-        "mk_strobe_instance/cnt_mk_strobe_8" BEL
-        "mk_strobe_instance/cnt_mk_strobe_7" BEL
-        "mk_strobe_instance/cnt_mk_strobe_6" BEL
-        "mk_strobe_instance/cnt_mk_strobe_5" BEL
-        "mk_strobe_instance/cnt_mk_strobe_4" BEL
-        "mk_strobe_instance/cnt_mk_strobe_3" BEL
-        "mk_strobe_instance/cnt_mk_strobe_2" BEL
-        "mk_strobe_instance/cnt_mk_strobe_1" BEL
-        "mk_strobe_instance/cnt_mk_strobe_0" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_27" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_26" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_25" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_24" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_23" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_22" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_21" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_20" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_19" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_18" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_17" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_16" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_15" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_14" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_13" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_12" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_11" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_10" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_9" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_8" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_7" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_6" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_5" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_4" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_3" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_2" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_1" BEL
-        "mk_strobe_instance/r_cnt_cont_strobe_0" BEL
-        "mk_strobe_instance/cnt_mk_2MHz_5" BEL
-        "mk_strobe_instance/cnt_mk_2MHz_4" BEL
-        "mk_strobe_instance/cnt_mk_2MHz_3" BEL
-        "mk_strobe_instance/cnt_mk_2MHz_2" BEL
-        "mk_strobe_instance/cnt_mk_2MHz_1" BEL
-        "mk_strobe_instance/cnt_mk_2MHz_0" BEL
-        "mk_strobe_instance/cont_strobe" BEL
-        "mk_strobe_instance/flag_end_single_strobe" BEL
-        "mk_strobe_instance/single_strobe" BEL
-        "mk_strobe_instance/prev_strbcount_15" BEL
-        "mk_strobe_instance/prev_strbcount_14" BEL
-        "mk_strobe_instance/prev_strbcount_13" BEL
-        "mk_strobe_instance/prev_strbcount_12" BEL
-        "mk_strobe_instance/prev_strbcount_11" BEL
-        "mk_strobe_instance/prev_strbcount_10" BEL
-        "mk_strobe_instance/prev_strbcount_9" BEL
-        "mk_strobe_instance/prev_strbcount_8" BEL
-        "mk_strobe_instance/prev_strbcount_7" BEL
-        "mk_strobe_instance/prev_strbcount_6" BEL
-        "mk_strobe_instance/prev_strbcount_5" BEL
-        "mk_strobe_instance/prev_strbcount_4" BEL
-        "mk_strobe_instance/prev_strbcount_3" BEL
-        "mk_strobe_instance/prev_strbcount_2" BEL
-        "mk_strobe_instance/prev_strbcount_1" BEL
-        "mk_strobe_instance/prev_strbcount_0" BEL
-        "mk_strobe_instance/prev_countbase_15" BEL
-        "mk_strobe_instance/prev_countbase_14" BEL
-        "mk_strobe_instance/prev_countbase_13" BEL
-        "mk_strobe_instance/prev_countbase_12" BEL
-        "mk_strobe_instance/prev_countbase_11" BEL
-        "mk_strobe_instance/prev_countbase_10" BEL
-        "mk_strobe_instance/prev_countbase_9" BEL
-        "mk_strobe_instance/prev_countbase_8" BEL
-        "mk_strobe_instance/prev_countbase_7" BEL
-        "mk_strobe_instance/prev_countbase_6" BEL
-        "mk_strobe_instance/prev_countbase_5" BEL
-        "mk_strobe_instance/prev_countbase_4" BEL
-        "mk_strobe_instance/prev_countbase_3" BEL
-        "mk_strobe_instance/prev_countbase_2" BEL
-        "mk_strobe_instance/prev_countbase_1" BEL
-        "mk_strobe_instance/prev_countbase_0" BEL
-        "mk_strobe_instance/flag_start_single_strobe" BEL
         "fpga_spi_instance/cnt_spi_4" BEL "fpga_spi_instance/cnt_spi_3" BEL
         "fpga_spi_instance/cnt_spi_2" BEL "fpga_spi_instance/cnt_spi_1" BEL
         "fpga_spi_instance/cnt_spi_0" BEL "fpga_spi_instance/cnt_shift_data_4"
@@ -1147,22 +932,6 @@ TIMEGRP clk_wizard_instance_CLKFX_BUF = BEL "pixel_ready" BEL
         "fpga_spi_instance/cnt_shift_data_0" BEL
         "fpga_spi_instance/fpga_clk_rise_edge_instance/d_i_ff3" BEL
         "fpga_spi_instance/fpga_cs_rise_edge_instance/d_i_ff3" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_15" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_14" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_13" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_12" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_11" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_10" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_9" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_8" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_7" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_6" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_5" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_4" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_3" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_2" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_1" BEL
-        "fpga_spi_instance/FPGA_MAXSATVALUE_0" BEL
         "fpga_spi_instance/FPGA_OFFSETVALUE_15" BEL
         "fpga_spi_instance/FPGA_OFFSETVALUE_14" BEL
         "fpga_spi_instance/FPGA_OFFSETVALUE_13" BEL
@@ -1179,38 +948,6 @@ TIMEGRP clk_wizard_instance_CLKFX_BUF = BEL "pixel_ready" BEL
         "fpga_spi_instance/FPGA_OFFSETVALUE_2" BEL
         "fpga_spi_instance/FPGA_OFFSETVALUE_1" BEL
         "fpga_spi_instance/FPGA_OFFSETVALUE_0" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_15" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_14" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_13" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_12" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_11" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_10" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_9" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_8" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_7" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_6" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_5" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_4" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_3" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_2" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_1" BEL
-        "fpga_spi_instance/FPGA_SSHIGHDELAY_0" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_15" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_14" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_13" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_12" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_11" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_10" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_9" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_8" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_7" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_6" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_5" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_4" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_3" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_2" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_1" BEL
-        "fpga_spi_instance/FPGA_SSLOWDELAY_0" BEL
         "fpga_spi_instance/FPGA_LAMPENABLE_15" BEL
         "fpga_spi_instance/FPGA_LAMPENABLE_14" BEL
         "fpga_spi_instance/FPGA_LAMPENABLE_13" BEL
@@ -1227,6 +964,102 @@ TIMEGRP clk_wizard_instance_CLKFX_BUF = BEL "pixel_ready" BEL
         "fpga_spi_instance/FPGA_LAMPENABLE_2" BEL
         "fpga_spi_instance/FPGA_LAMPENABLE_1" BEL
         "fpga_spi_instance/FPGA_LAMPENABLE_0" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_15" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_14" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_13" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_12" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_11" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_10" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_9" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_8" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_7" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_6" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_5" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_4" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_3" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_2" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_1" BEL
+        "fpga_spi_instance/FPGA_MAXSATVALUE_0" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_15" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_14" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_13" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_12" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_11" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_10" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_9" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_8" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_7" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_6" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_5" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_4" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_3" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_2" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_1" BEL
+        "fpga_spi_instance/FPGA_SSLOWDELAY_0" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_15" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_14" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_13" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_12" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_11" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_10" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_9" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_8" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_7" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_6" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_5" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_4" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_3" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_2" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_1" BEL
+        "fpga_spi_instance/FPGA_TRIGGERMODE_0" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_15" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_14" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_13" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_12" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_11" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_10" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_9" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_8" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_7" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_6" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_5" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_4" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_3" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_2" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_1" BEL
+        "fpga_spi_instance/FPGA_SSHIGHDELAY_0" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_15" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_14" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_13" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_12" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_11" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_10" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_9" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_8" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_7" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_6" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_5" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_4" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_3" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_2" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_1" BEL
+        "fpga_spi_instance/FPGA_TRIGGERDELAY_0" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_15" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_14" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_13" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_12" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_11" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_10" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_9" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_8" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_7" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_6" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_5" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_4" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_3" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_2" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_1" BEL
+        "fpga_spi_instance/FPGA_INTCLOCK_0" BEL
         "fpga_spi_instance/FPGA_STRBCOUNT_15" BEL
         "fpga_spi_instance/FPGA_STRBCOUNT_14" BEL
         "fpga_spi_instance/FPGA_STRBCOUNT_13" BEL
@@ -1258,28 +1091,14 @@ TIMEGRP clk_wizard_instance_CLKFX_BUF = BEL "pixel_ready" BEL
         "fpga_spi_instance/FPGA_COUNTBASE_3" BEL
         "fpga_spi_instance/FPGA_COUNTBASE_2" BEL
         "fpga_spi_instance/FPGA_COUNTBASE_1" BEL
-        "fpga_spi_instance/FPGA_COUNTBASE_0" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_15" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_14" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_13" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_12" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_11" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_10" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_9" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_8" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_7" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_6" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_5" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_4" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_3" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_2" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_1" BEL
-        "fpga_spi_instance/FPGA_INTCLOCK_0" BEL "fpga_spi_instance/wr_or_rd"
+        "fpga_spi_instance/FPGA_COUNTBASE_0" BEL "fpga_spi_instance/wr_or_rd"
         BEL "fpga_spi_instance/fpga_addr_7" BEL
         "fpga_spi_instance/fpga_addr_6" BEL "fpga_spi_instance/fpga_addr_5"
         BEL "fpga_spi_instance/fpga_addr_4" BEL
         "fpga_spi_instance/fpga_addr_3" BEL "fpga_spi_instance/fpga_addr_2"
         BEL "fpga_spi_instance/fpga_miso" BEL
+        "fpga_spi_instance/FPGA_VERION_1" BEL
+        "fpga_spi_instance/FPGA_VERION_0" BEL
         "fpga_spi_instance/transmit_data_16" BEL
         "fpga_spi_instance/transmit_data_15" BEL
         "fpga_spi_instance/transmit_data_14" BEL
@@ -1324,17 +1143,22 @@ TIMEGRP clk_wizard_instance_CLKFX_BUF = BEL "pixel_ready" BEL
         "ilx_instance/cnt_intclk_6" BEL "ilx_instance/cnt_intclk_5" BEL
         "ilx_instance/cnt_intclk_4" BEL "ilx_instance/cnt_intclk_3" BEL
         "ilx_instance/cnt_intclk_2" BEL "ilx_instance/cnt_intclk_1" BEL
-        "ilx_instance/cnt_intclk_0" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_9" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_8" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_7" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_6" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_5" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_4" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_3" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_2" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_1" BEL
-        "ilx_instance/cnt_delay_clok_high_to_rog_low_0" BEL
+        "ilx_instance/cnt_intclk_0" BEL "ilx_instance/cnt_trigger_delay_15"
+        BEL "ilx_instance/cnt_trigger_delay_14" BEL
+        "ilx_instance/cnt_trigger_delay_13" BEL
+        "ilx_instance/cnt_trigger_delay_12" BEL
+        "ilx_instance/cnt_trigger_delay_11" BEL
+        "ilx_instance/cnt_trigger_delay_10" BEL
+        "ilx_instance/cnt_trigger_delay_9" BEL
+        "ilx_instance/cnt_trigger_delay_8" BEL
+        "ilx_instance/cnt_trigger_delay_7" BEL
+        "ilx_instance/cnt_trigger_delay_6" BEL
+        "ilx_instance/cnt_trigger_delay_5" BEL
+        "ilx_instance/cnt_trigger_delay_4" BEL
+        "ilx_instance/cnt_trigger_delay_3" BEL
+        "ilx_instance/cnt_trigger_delay_2" BEL
+        "ilx_instance/cnt_trigger_delay_1" BEL
+        "ilx_instance/cnt_trigger_delay_0" BEL
         "ilx_instance/cnt_keep_rog_low2_9" BEL
         "ilx_instance/cnt_keep_rog_low2_8" BEL
         "ilx_instance/cnt_keep_rog_low2_7" BEL
@@ -1345,6 +1169,16 @@ TIMEGRP clk_wizard_instance_CLKFX_BUF = BEL "pixel_ready" BEL
         "ilx_instance/cnt_keep_rog_low2_2" BEL
         "ilx_instance/cnt_keep_rog_low2_1" BEL
         "ilx_instance/cnt_keep_rog_low2_0" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_9" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_8" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_7" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_6" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_5" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_4" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_3" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_2" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_1" BEL
+        "ilx_instance/cnt_delay_clok_high_to_rog_low_0" BEL
         "ilx_instance/cnt_keep_rog_low1_9" BEL
         "ilx_instance/cnt_keep_rog_low1_8" BEL
         "ilx_instance/cnt_keep_rog_low1_7" BEL
@@ -1354,23 +1188,26 @@ TIMEGRP clk_wizard_instance_CLKFX_BUF = BEL "pixel_ready" BEL
         "ilx_instance/cnt_keep_rog_low1_3" BEL
         "ilx_instance/cnt_keep_rog_low1_2" BEL
         "ilx_instance/cnt_keep_rog_low1_1" BEL
-        "ilx_instance/cnt_keep_rog_low1_0" BEL "ilx_instance/cnt_1khz_15" BEL
-        "ilx_instance/cnt_1khz_14" BEL "ilx_instance/cnt_1khz_13" BEL
-        "ilx_instance/cnt_1khz_12" BEL "ilx_instance/cnt_1khz_11" BEL
-        "ilx_instance/cnt_1khz_10" BEL "ilx_instance/cnt_1khz_9" BEL
-        "ilx_instance/cnt_1khz_8" BEL "ilx_instance/cnt_1khz_7" BEL
-        "ilx_instance/cnt_1khz_6" BEL "ilx_instance/cnt_1khz_5" BEL
-        "ilx_instance/cnt_1khz_4" BEL "ilx_instance/cnt_1khz_3" BEL
-        "ilx_instance/cnt_1khz_2" BEL "ilx_instance/cnt_1khz_1" BEL
-        "ilx_instance/cnt_1khz_0" BEL "ilx_instance/cnt_smp_15" BEL
-        "ilx_instance/cnt_smp_14" BEL "ilx_instance/cnt_smp_13" BEL
-        "ilx_instance/cnt_smp_12" BEL "ilx_instance/cnt_smp_11" BEL
-        "ilx_instance/cnt_smp_10" BEL "ilx_instance/cnt_smp_9" BEL
-        "ilx_instance/cnt_smp_8" BEL "ilx_instance/cnt_smp_7" BEL
-        "ilx_instance/cnt_smp_6" BEL "ilx_instance/cnt_smp_5" BEL
-        "ilx_instance/cnt_smp_4" BEL "ilx_instance/cnt_smp_3" BEL
-        "ilx_instance/cnt_smp_2" BEL "ilx_instance/cnt_smp_1" BEL
-        "ilx_instance/cnt_smp_0" BEL "ilx_instance/cnt_make_smp_clk_15" BEL
+        "ilx_instance/cnt_keep_rog_low1_0" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_9" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_8" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_7" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_6" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_5" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_4" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_3" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_2" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_1" BEL
+        "ilx_instance/cnt_delay_rog_high_to_clok_low_0" BEL
+        "ilx_instance/cnt_1khz_15" BEL "ilx_instance/cnt_1khz_14" BEL
+        "ilx_instance/cnt_1khz_13" BEL "ilx_instance/cnt_1khz_12" BEL
+        "ilx_instance/cnt_1khz_11" BEL "ilx_instance/cnt_1khz_10" BEL
+        "ilx_instance/cnt_1khz_9" BEL "ilx_instance/cnt_1khz_8" BEL
+        "ilx_instance/cnt_1khz_7" BEL "ilx_instance/cnt_1khz_6" BEL
+        "ilx_instance/cnt_1khz_5" BEL "ilx_instance/cnt_1khz_4" BEL
+        "ilx_instance/cnt_1khz_3" BEL "ilx_instance/cnt_1khz_2" BEL
+        "ilx_instance/cnt_1khz_1" BEL "ilx_instance/cnt_1khz_0" BEL
+        "ilx_instance/cnt_make_smp_clk_15" BEL
         "ilx_instance/cnt_make_smp_clk_14" BEL
         "ilx_instance/cnt_make_smp_clk_13" BEL
         "ilx_instance/cnt_make_smp_clk_12" BEL
@@ -1385,29 +1222,35 @@ TIMEGRP clk_wizard_instance_CLKFX_BUF = BEL "pixel_ready" BEL
         "ilx_instance/cnt_make_smp_clk_3" BEL
         "ilx_instance/cnt_make_smp_clk_2" BEL
         "ilx_instance/cnt_make_smp_clk_1" BEL
-        "ilx_instance/cnt_make_smp_clk_0" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_9" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_8" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_7" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_6" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_5" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_4" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_3" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_2" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_1" BEL
-        "ilx_instance/cnt_delay_rog_high_to_clok_low_0" BEL
+        "ilx_instance/cnt_make_smp_clk_0" BEL "ilx_instance/cnt_smp_15" BEL
+        "ilx_instance/cnt_smp_14" BEL "ilx_instance/cnt_smp_13" BEL
+        "ilx_instance/cnt_smp_12" BEL "ilx_instance/cnt_smp_11" BEL
+        "ilx_instance/cnt_smp_10" BEL "ilx_instance/cnt_smp_9" BEL
+        "ilx_instance/cnt_smp_8" BEL "ilx_instance/cnt_smp_7" BEL
+        "ilx_instance/cnt_smp_6" BEL "ilx_instance/cnt_smp_5" BEL
+        "ilx_instance/cnt_smp_4" BEL "ilx_instance/cnt_smp_3" BEL
+        "ilx_instance/cnt_smp_2" BEL "ilx_instance/cnt_smp_1" BEL
+        "ilx_instance/cnt_smp_0" BEL "ilx_instance/cnt_make_2MHz_9" BEL
+        "ilx_instance/cnt_make_2MHz_8" BEL "ilx_instance/cnt_make_2MHz_7" BEL
+        "ilx_instance/cnt_make_2MHz_6" BEL "ilx_instance/cnt_make_2MHz_5" BEL
+        "ilx_instance/cnt_make_2MHz_4" BEL "ilx_instance/cnt_make_2MHz_3" BEL
+        "ilx_instance/cnt_make_2MHz_2" BEL "ilx_instance/cnt_make_2MHz_1" BEL
+        "ilx_instance/cnt_make_2MHz_0" BEL
+        "ilx_instance/rising_edge_fifo_instant/d_i_ff2" BEL
+        "ilx_instance/rising_edge_fifo_instant/d_i_ff3" BEL
         "ilx_instance/adc_start_instant/d_i_ff2" BEL
         "ilx_instance/adc_start_instant/d_i_ff3" BEL
         "ilx_instance/flag_start_ctr_rog1" BEL "ilx_instance/en_latch_data"
         BEL "ilx_instance/en_integration" BEL "ilx_instance/integ_done" BEL
         "ilx_instance/flag_en_smp_data" BEL "ilx_instance/ilx511b_clk" BEL
-        "ilx_instance/ilx511b_rog" BEL "ilx_instance/flag_en_frame" BEL
-        "ilx_instance/flag_smp_data" BEL "ilx_instance/start_integration" BEL
+        "ilx_instance/flag_end_trigger_delay" BEL "ilx_instance/ilx511b_rog"
+        BEL "ilx_instance/en_trigger_delay" BEL
+        "ilx_instance/start_integration" BEL "ilx_instance/flag_en_frame" BEL
         "ilx_instance/en_keep_rog_to_low2" BEL
         "ilx_instance/en_keep_rog_to_low1" BEL
         "ilx_instance/en_delay_rog_high_to_clok_low" BEL
         "ilx_instance/en_delay_clok_high_to_rog_low" BEL
-        "ilx_instance/next_state_0" BEL "ad7621_instance/cnt_rd_pixel_15" BEL
+        "ad7621_instance/cnt_rd_pixel_15" BEL
         "ad7621_instance/cnt_rd_pixel_14" BEL
         "ad7621_instance/cnt_rd_pixel_13" BEL
         "ad7621_instance/cnt_rd_pixel_12" BEL
@@ -1505,15 +1348,17 @@ TIMEGRP clk_wizard_instance_CLKFX_BUF = BEL "pixel_ready" BEL
         "fifo_spi_instance/data_tranfer_2" BEL
         "fifo_spi_instance/data_tranfer_1" BEL
         "fifo_spi_instance/data_tranfer_0" BEL
-        "rise_edge_acqui_src_instant/d_i_ff1" BEL
+        "ilx_instance/rising_edge_fifo_instant/d_i_ff1" BEL
         "ilx_instance/adc_start_instant/d_i_ff1" BEL
-        "ilx_instance/current_state_6" BEL "ilx_instance/current_state_5" BEL
-        "ilx_instance/current_state_4" BEL "ilx_instance/current_state_3" BEL
-        "ilx_instance/current_state_2" BEL "ilx_instance/current_state_1" BEL
-        "ilx_instance/current_state_0" BEL "ilx_instance/next_state_6" BEL
-        "ilx_instance/next_state_5" BEL "ilx_instance/next_state_4" BEL
-        "ilx_instance/next_state_3" BEL "ilx_instance/next_state_2" BEL
-        "ilx_instance/next_state_1" BEL "ilx_instance/flag_sel_clok" BEL
+        "ilx_instance/current_state_7" BEL "ilx_instance/current_state_6" BEL
+        "ilx_instance/current_state_5" BEL "ilx_instance/current_state_4" BEL
+        "ilx_instance/current_state_3" BEL "ilx_instance/current_state_2" BEL
+        "ilx_instance/current_state_1" BEL "ilx_instance/current_state_0" BEL
+        "ilx_instance/next_state_7" BEL "ilx_instance/next_state_6" BEL
+        "ilx_instance/next_state_5" BEL "ilx_instance/next_state_3" BEL
+        "ilx_instance/next_state_0" BEL "ilx_instance/flag_smp_data" BEL
+        "ilx_instance/flag_sel_clok" BEL "ilx_instance/next_state_4" BEL
+        "ilx_instance/next_state_2" BEL "ilx_instance/next_state_1" BEL
         "fpga_spi_instance/Mshreg_receive_data_18" BEL
         "fpga_spi_instance/receive_data_18" BEL
         "fpga_spi_instance/fpga_clk_rise_edge_instance/Mshreg_d_i_ff2/SRL16E"
@@ -1669,301 +1514,6 @@ TIMEGRP clk_wizard_instance_CLKFX_BUF = BEL "pixel_ready" BEL
         "fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1"
         BEL
         "fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0"
-        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_WCNT_HCMP_Q" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_WCNT_LCMP_Q" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_SCNT_CMP_Q" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_INTCAP_F.U_CAPWE0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_INTCAP_F.U_CAPWE1"
-        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_TRIG0" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_TRIG1" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS0/I_NOLUT6.I_SRL_T2.I_YES_RPM.I_YES_OREG.OUT_REG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS1/I_NOLUT6.I_SRL_T2.I_YES_RPM.I_YES_OREG.OUT_REG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CDONE/I_NOLUT6.I_SRL_T2.I_YES_RPM.I_YES_OREG.OUT_REG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[8].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[7].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[6].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[5].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[4].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[3].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[2].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[1].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[0].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[8].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[7].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[6].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[5].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[4].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[3].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[2].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[1].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[0].U_FDRE"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[8].U_CAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[8].U_iCAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[7].U_CAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[7].U_iCAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[6].U_CAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[6].U_iCAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[5].U_CAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[5].U_iCAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[4].U_CAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[4].U_iCAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[3].U_CAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[3].U_iCAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[2].U_CAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[2].U_iCAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[1].U_CAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[1].U_iCAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[0].U_CAP_ADDR"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[0].U_iCAP_ADDR"
-        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL2" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL3" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_CR" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[8].U_NSQ" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[7].U_NSQ" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[6].U_NSQ" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[5].U_NSQ" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[4].U_NSQ" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[3].U_NSQ" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[2].U_NSQ" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[1].U_NSQ" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[0].U_NSQ" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_STATE1" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_STATE0" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_ARM" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TRIGGER" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_FULL" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_ECR" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_RISING" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_GEN_DELAY[1].U_FD" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_RFDRE" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_DOUT" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_DOUT1" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_DOUT0" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[1].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[2].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[3].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[4].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[5].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[6].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[7].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[8].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[9].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[10].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[11].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[12].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[13].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[14].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[15].U_SRL.U_FDR0"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/FINAL_FDR"
-        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_POR" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[0].U_RST" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[1].U_RST" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[2].U_RST" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[3].U_RST" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[4].U_RST" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[5].U_RST" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[6].U_RST" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[7].U_RST" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_GEN_DELAY[2].U_FD"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_GEN_DELAY[1].U_FD"
-        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_RFDRE" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT1" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT0" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[4].U_FD" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[3].U_FD" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[2].U_FD" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[1].U_FD" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_RFDRE" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT1" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT0" BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[0].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[1].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[2].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[3].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[4].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[5].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[6].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[7].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[8].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[9].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[10].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[11].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[12].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[13].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[14].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[15].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[0].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[1].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[2].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[3].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[4].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[5].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[6].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[7].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[8].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[9].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[10].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[11].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[12].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[13].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[14].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[15].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[3].I_YES_RPM.I_OREG.U_OREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[0].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[1].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[2].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[3].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[4].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[5].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[6].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[7].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[8].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[9].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[10].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[11].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[12].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[13].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[14].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[15].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[0].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[1].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[2].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[3].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[4].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[5].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[6].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[7].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[8].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[9].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[10].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[11].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[12].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[13].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[14].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[15].I_SRLT_NE_0.DLY9/SRL16E"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_OREG.I_YES_OREG.U_OREG"
         BEL
@@ -1978,22 +1528,218 @@ TIMEGRP clk_wizard_instance_CLKFX_BUF = BEL "pixel_ready" BEL
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_1_TO_4.U_TRIGQ"
         BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/F_NO_TCMC.U_FDR" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[15].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[14].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[13].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[12].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[11].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[10].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[9].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[8].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[7].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[6].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[5].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[4].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[3].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[2].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[1].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[0].U_TQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[4].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[3].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[2].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[1].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[0].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[4].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[3].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[2].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[1].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[0].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TWMOD4_NE0.I_NO_RPM.I_OREG.U_OREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[4].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[3].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[2].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[1].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[0].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[4].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[3].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[2].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[1].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[0].U_IREG"
+        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT0" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT1" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_RFDRE" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[1].U_FD" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[2].U_FD" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[3].U_FD" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[4].U_FD" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT0" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT1" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_RFDRE" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_GEN_DELAY[1].U_FD"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_GEN_DELAY[2].U_FD"
+        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[7].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[6].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[5].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[4].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[3].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[2].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[1].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[0].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_POR" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/FINAL_FDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[15].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[14].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[13].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[12].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[11].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[10].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[9].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[8].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[7].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[6].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[5].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[4].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[3].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[2].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[1].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_SRL.U_FDR0"
+        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_DOUT0" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_DOUT1" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_DOUT" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_RFDRE" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_GEN_DELAY[1].U_FD" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_RISING" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_ECR" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_FULL" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TRIGGER" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_ARM" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_STATE0" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_STATE1" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[0].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[1].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[2].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[3].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[4].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[5].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[6].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[7].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[8].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_CR" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL3" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL2" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[0].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[0].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[1].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[1].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[2].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[2].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[3].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[3].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[4].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[4].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[5].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[5].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[6].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[6].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[7].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[7].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[8].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[8].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[0].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[1].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[2].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[3].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[4].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[5].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[6].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[7].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[8].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[0].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[1].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[2].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[3].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[4].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[5].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[6].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[7].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[8].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CDONE/I_NOLUT6.I_SRL_T2.I_NO_RPM.I_YES_OREG.OUT_REG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS1/I_NOLUT6.I_SRL_T2.I_NO_RPM.I_YES_OREG.OUT_REG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS0/I_NOLUT6.I_SRL_T2.I_NO_RPM.I_YES_OREG.OUT_REG"
+        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_TRIG1" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_TRIG0" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_INTCAP_F.U_CAPWE1"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_INTCAP_F.U_CAPWE0"
+        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_SCNT_CMP_Q" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_WCNT_LCMP_Q" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_WCNT_HCMP_Q" BEL
         "clk_wizard_instance/CLKFX_BUFG_INST.GCLKMUX" BEL
         "clk_wizard_instance/CLKFX_BUFG_INST" PIN
         "fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x9.ram_pins<22>"

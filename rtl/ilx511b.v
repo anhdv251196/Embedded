@@ -28,6 +28,15 @@ module ilx511b(
     
     /* FPGA interfaces */
     input [15:0] FPGA_INTCLOCK,
+    /*
+    00: Normal mode
+    01: Software Trigger
+    02: External Hardware Level Trigger
+    03: External Synchronzation
+    04: External Hardware Edge
+    */
+    input [15:0] FPGA_TRIGGERMODE,
+    input [15:0] FPGA_TRIGGERDELAY,
     
     /* Pheripheral interfaces */
     input aqui_src,
@@ -64,26 +73,26 @@ module ilx511b(
      .d_i(aqui_src),
      .d_o(rising_edge_fifo_rest)
      );
-     
-     assign flag_adc_restart = rising_edge_fifo_rest;
+
     
-    localparam [2:0] IDLE = 0,             /* Idle stage */
-                     WAIT_CLK_TO_ROG1 = 1,
-                     RESET_CCD = 2,        /*  */
-                     WAIT_ROG_TO_CLK1 = 3,
-                     INTEGRATION = 4,      /*  */
-                     LATCH_DATA = 3'd5,
-                     WAIT_ROG_TO_CLK2 = 3'd6,
-                     READ_SPECTRUM = 3'd7;
+    localparam [3:0] IDLE = 4'd0,             /* Idle stage */
+                     WAIT_CLK_TO_ROG1 = 4'd1,
+                     TRIGGER_DELAY = 4'd2,
+                     RESET_CCD = 4'd3,        /*  */
+                     WAIT_ROG_TO_CLK1 = 4'd4,
+                     INTEGRATION = 4'd5,      /*  */
+                     LATCH_DATA = 4'd6,
+                     WAIT_ROG_TO_CLK2 = 4'd7,
+                     READ_SPECTRUM = 4'd8;
                      
-    reg [2:0] current_state = 3'b000;
-    reg [2:0] next_state = 3'b000;
+    reg [3:0] current_state = 4'b0000;
+    reg [3:0] next_state = 4'b000;
     
     always @ (posedge sys_clk)
     begin
         if (sys_rst)
         begin
-            current_state <= 3'b000;
+            current_state <= 4'b0000;
         end else begin
             current_state <= next_state;
         end
@@ -106,6 +115,8 @@ module ilx511b(
     reg [15:0] cnt_make_smp_clk = 16'd0;
     reg [15:0] cnt_1khz = 15'd0;                     /* counter that make 1ms integration time unit */
     reg [15:0] cnt_intclk = 15'd0;                   /* counter that count integration time */
+    reg en_trigger_delay = 1'b0;
+    reg flag_end_trigger_delay = 1'b0;
     always @ (posedge sys_clk)
     begin
         if (sys_rst)
@@ -119,6 +130,7 @@ module ilx511b(
             start_integration  <= 1'b0;
             flag_smp_data <= 1'b0;
             flag_en_frame <= 1'b0;
+            en_trigger_delay <= 1'b0;
         end else begin
             case (current_state)
             IDLE:
@@ -127,7 +139,17 @@ module ilx511b(
                 flag_en_frame <= 1'b0;
                 if (rising_edge_fifo_rest) 
                 begin
+                    next_state <= TRIGGER_DELAY;
+                    en_trigger_delay <= 1'b1;
+                end
+            end
+            
+            TRIGGER_DELAY:
+            begin
+                if (flag_end_trigger_delay)
+                begin
                     next_state <= WAIT_CLK_TO_ROG1;
+                    en_trigger_delay <= 1'b0;
                     en_delay_clok_high_to_rog_low <= 1'b1;
                 end
             end
@@ -147,9 +169,15 @@ module ilx511b(
             begin
                 if (en_integration) 
                 begin
-                    next_state <= INTEGRATION;
+                    if (FPGA_TRIGGERMODE == 16'd3)
+                    begin
+                        next_state <= READ_SPECTRUM;
+                        flag_smp_data <= 1'b1;
+                    end else begin
+                        next_state <= INTEGRATION;
+                        start_integration  <= 1'b1;
+                    end
                     en_keep_rog_to_low1 <= 1'b0;
-                    start_integration  <= 1'b1;
                 end
             end
             
@@ -209,6 +237,31 @@ module ilx511b(
         end else begin
             if (flag_start_ctr_rog1 | integ_done) ilx511b_rog <= 1'b0;
             if (en_integration | en_latch_data) ilx511b_rog <= 1'b1;
+        end
+    end
+    
+    /**/
+    reg [15:0] cnt_trigger_delay = 16'd0;
+    reg [9:0] cnt_make_2MHz = 10'd0;
+    always @ (posedge sys_clk)
+    begin
+        if (sys_rst | flag_end_trigger_delay)
+        begin
+            cnt_trigger_delay <= 16'd0;
+            flag_end_trigger_delay <= 1'b0;
+            cnt_make_2MHz <= 10'd0;
+        end else begin
+            if (en_trigger_delay)
+            begin
+                if (cnt_trigger_delay == FPGA_TRIGGERDELAY) flag_end_trigger_delay <= 1'b1;
+                if (cnt_make_2MHz == 10'd23)
+                begin
+                    cnt_make_2MHz <= 10'd0;
+                    cnt_trigger_delay <= cnt_trigger_delay + 16'd1;
+                end else begin
+                    cnt_make_2MHz <= cnt_make_2MHz + 10'd1;
+                end
+            end
         end
     end
     
@@ -376,6 +429,7 @@ module ilx511b(
      .d_o(flag_adc_start)
      );
      
+     assign flag_adc_restart = flag_start_ctr_rog1;
      assign flag_en_single_strobe = en_latch_data;
     
 endmodule

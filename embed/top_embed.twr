@@ -39,12 +39,12 @@ Timing constraint: PATH "TS_D2_TO_T2_ila_pro_0_path" TIG;
  0 timing errors detected. (0 setup errors, 0 hold errors)
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TDO (SLICE_X7Y31.F1), 1 path
+Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TDO (SLICE_X20Y30.F2), 1 path
 --------------------------------------------------------------------------------
-Delay (setup path):     9.732ns (data path - clock path skew + uncertainty)
+Delay (setup path):     7.317ns (data path - clock path skew + uncertainty)
   Source:               U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
   Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TDO (FF)
-  Data Path Delay:      9.732ns (Levels of Logic = 4)
+  Data Path Delay:      7.317ns (Levels of Logic = 4)
   Clock Path Skew:      0.000ns
   Source Clock:         icon_control0<13> falling
   Destination Clock:    icon_control0<0> rising
@@ -54,35 +54,35 @@ Delay (setup path):     9.732ns (data path - clock path skew + uncertainty)
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y16.YQ      Tcklo                 0.705   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X15Y15.YQ      Tcklo                 0.705   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
-    SLICE_X23Y2.G2       net (fanout=1)        1.813   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
-    SLICE_X23Y2.Y        Tilo                  0.648   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
+    SLICE_X16Y15.F1      net (fanout=1)        1.157   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X16Y15.X       Tilo                  0.692   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat1
-    SLICE_X6Y27.G2       net (fanout=2)        3.138   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat
-    SLICE_X6Y27.X        Tif5x                 0.987   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/ACT_dstat
+    SLICE_X20Y17.G2      net (fanout=2)        0.717   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat
+    SLICE_X20Y17.X       Tif5x                 0.987   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/ACT_dstat
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_91_F
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_91
-    SLICE_X7Y26.G3       net (fanout=1)        0.075   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_91
-    SLICE_X7Y26.X        Tif5x                 0.924   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/TDO_mux_in<0>1
+    SLICE_X21Y25.G1      net (fanout=1)        0.752   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_91
+    SLICE_X21Y25.X       Tif5x                 0.924   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/TDO_mux_in<0>1
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_4
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_2_f5
-    SLICE_X7Y31.F1       net (fanout=1)        0.720   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/TDO_mux_in<0>1
-    SLICE_X7Y31.CLK      Tfck                  0.722   U_ila_pro_0/U0/I_NO_D.U_ILA/iSTAT_DOUT
+    SLICE_X20Y30.F2      net (fanout=1)        0.581   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/TDO_mux_in<0>1
+    SLICE_X20Y30.CLK     Tfck                  0.802   U_ila_pro_0/U0/I_NO_D.U_ILA/iSTAT_DOUT
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O56
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TDO
     -------------------------------------------------  ---------------------------
-    Total                                      9.732ns (3.986ns logic, 5.746ns route)
-                                                       (41.0% logic, 59.0% route)
+    Total                                      7.317ns (4.110ns logic, 3.207ns route)
+                                                       (56.2% logic, 43.8% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDPE (SLICE_X22Y13.BY), 1 path
+Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDPE (SLICE_X13Y14.BY), 1 path
 --------------------------------------------------------------------------------
-Delay (setup path):     4.747ns (data path - clock path skew + uncertainty)
+Delay (setup path):     3.717ns (data path - clock path skew + uncertainty)
   Source:               U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
   Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDPE (FF)
-  Data Path Delay:      4.747ns (Levels of Logic = 1)
+  Data Path Delay:      3.717ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         icon_control0<13> falling
   Destination Clock:    icon_control0<0> rising
@@ -92,26 +92,26 @@ Delay (setup path):     4.747ns (data path - clock path skew + uncertainty)
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y16.YQ      Tcklo                 0.705   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X15Y15.YQ      Tcklo                 0.705   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
-    SLICE_X23Y2.G2       net (fanout=1)        1.813   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
-    SLICE_X23Y2.Y        Tilo                  0.648   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
+    SLICE_X16Y15.F1      net (fanout=1)        1.157   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X16Y15.X       Tilo                  0.692   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat1
-    SLICE_X22Y13.BY      net (fanout=2)        1.195   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat
-    SLICE_X22Y13.CLK     Tdick                 0.386   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D1
+    SLICE_X13Y14.BY      net (fanout=2)        0.849   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat
+    SLICE_X13Y14.CLK     Tdick                 0.314   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D1
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDPE
     -------------------------------------------------  ---------------------------
-    Total                                      4.747ns (1.739ns logic, 3.008ns route)
-                                                       (36.6% logic, 63.4% route)
+    Total                                      3.717ns (1.711ns logic, 2.006ns route)
+                                                       (46.0% logic, 54.0% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDCE (SLICE_X23Y2.G2), 1 path
+Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDCE (SLICE_X16Y15.F1), 1 path
 --------------------------------------------------------------------------------
-Delay (setup path):     3.245ns (data path - clock path skew + uncertainty)
+Delay (setup path):     2.664ns (data path - clock path skew + uncertainty)
   Source:               U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
   Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDCE (FF)
-  Data Path Delay:      3.245ns (Levels of Logic = 1)
+  Data Path Delay:      2.664ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         icon_control0<13> falling
   Destination Clock:    icon_control0<0> rising
@@ -121,27 +121,27 @@ Delay (setup path):     3.245ns (data path - clock path skew + uncertainty)
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y16.YQ      Tcklo                 0.705   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X15Y15.YQ      Tcklo                 0.705   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
-    SLICE_X23Y2.G2       net (fanout=1)        1.813   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
-    SLICE_X23Y2.CLK      Tgck                  0.727   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
+    SLICE_X16Y15.F1      net (fanout=1)        1.157   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X16Y15.CLK     Tfck                  0.802   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat1
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDCE
     -------------------------------------------------  ---------------------------
-    Total                                      3.245ns (1.432ns logic, 1.813ns route)
-                                                       (44.1% logic, 55.9% route)
+    Total                                      2.664ns (1.507ns logic, 1.157ns route)
+                                                       (56.6% logic, 43.4% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: PATH "TS_D2_TO_T2_ila_pro_0_path" TIG;
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDCE (SLICE_X23Y2.G2), 1 path
+Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDCE (SLICE_X16Y15.F1), 1 path
 --------------------------------------------------------------------------------
-Delay (hold path):      2.484ns (datapath - clock path skew - uncertainty)
+Delay (hold path):      1.995ns (datapath - clock path skew - uncertainty)
   Source:               U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
   Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDCE (FF)
-  Data Path Delay:      2.484ns (Levels of Logic = 1)
+  Data Path Delay:      1.995ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         icon_control0<13> falling
   Destination Clock:    icon_control0<0> rising
@@ -151,24 +151,24 @@ Delay (hold path):      2.484ns (datapath - clock path skew - uncertainty)
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y16.YQ      Tcklo                 0.564   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X15Y15.YQ      Tcklo                 0.564   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
-    SLICE_X23Y2.G2       net (fanout=1)        1.450   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
-    SLICE_X23Y2.CLK      Tckg        (-Th)    -0.470   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
+    SLICE_X16Y15.F1      net (fanout=1)        0.926   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X16Y15.CLK     Tckf        (-Th)    -0.505   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat1
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDCE
     -------------------------------------------------  ---------------------------
-    Total                                      2.484ns (1.034ns logic, 1.450ns route)
-                                                       (41.6% logic, 58.4% route)
+    Total                                      1.995ns (1.069ns logic, 0.926ns route)
+                                                       (53.6% logic, 46.4% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDPE (SLICE_X22Y13.BY), 1 path
+Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDPE (SLICE_X13Y14.BY), 1 path
 --------------------------------------------------------------------------------
-Delay (hold path):      3.661ns (datapath - clock path skew - uncertainty)
+Delay (hold path):      2.863ns (datapath - clock path skew - uncertainty)
   Source:               U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
   Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDPE (FF)
-  Data Path Delay:      3.661ns (Levels of Logic = 1)
+  Data Path Delay:      2.863ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         icon_control0<13> falling
   Destination Clock:    icon_control0<0> rising
@@ -178,26 +178,26 @@ Delay (hold path):      3.661ns (datapath - clock path skew - uncertainty)
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y16.YQ      Tcklo                 0.564   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X15Y15.YQ      Tcklo                 0.564   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
-    SLICE_X23Y2.G2       net (fanout=1)        1.450   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
-    SLICE_X23Y2.Y        Tilo                  0.518   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
+    SLICE_X16Y15.F1      net (fanout=1)        0.926   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X16Y15.X       Tilo                  0.554   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat1
-    SLICE_X22Y13.BY      net (fanout=2)        0.956   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat
-    SLICE_X22Y13.CLK     Tckdi       (-Th)    -0.173   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D1
+    SLICE_X13Y14.BY      net (fanout=2)        0.679   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat
+    SLICE_X13Y14.CLK     Tckdi       (-Th)    -0.140   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D1
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDPE
     -------------------------------------------------  ---------------------------
-    Total                                      3.661ns (1.255ns logic, 2.406ns route)
-                                                       (34.3% logic, 65.7% route)
+    Total                                      2.863ns (1.258ns logic, 1.605ns route)
+                                                       (43.9% logic, 56.1% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TDO (SLICE_X7Y31.F1), 1 path
+Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TDO (SLICE_X20Y30.F2), 1 path
 --------------------------------------------------------------------------------
-Delay (hold path):      7.673ns (datapath - clock path skew - uncertainty)
+Delay (hold path):      5.718ns (datapath - clock path skew - uncertainty)
   Source:               U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
   Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TDO (FF)
-  Data Path Delay:      7.673ns (Levels of Logic = 4)
+  Data Path Delay:      5.718ns (Levels of Logic = 4)
   Clock Path Skew:      0.000ns
   Source Clock:         icon_control0<13> falling
   Destination Clock:    icon_control0<0> rising
@@ -207,26 +207,26 @@ Delay (hold path):      7.673ns (datapath - clock path skew - uncertainty)
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y16.YQ      Tcklo                 0.564   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X15Y15.YQ      Tcklo                 0.564   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
-    SLICE_X23Y2.G2       net (fanout=1)        1.450   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
-    SLICE_X23Y2.Y        Tilo                  0.518   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
+    SLICE_X16Y15.F1      net (fanout=1)        0.926   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL
+    SLICE_X16Y15.X       Tilo                  0.554   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_D0
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat1
-    SLICE_X6Y27.G2       net (fanout=2)        2.510   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat
-    SLICE_X6Y27.X        Tif5x                 0.790   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/ACT_dstat
+    SLICE_X20Y17.G2      net (fanout=2)        0.573   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat
+    SLICE_X20Y17.X       Tif5x                 0.790   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/ACT_dstat
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_91_F
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_91
-    SLICE_X7Y26.G3       net (fanout=1)        0.060   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_91
-    SLICE_X7Y26.X        Tif5x                 0.739   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/TDO_mux_in<0>1
+    SLICE_X21Y25.G1      net (fanout=1)        0.602   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_91
+    SLICE_X21Y25.X       Tif5x                 0.739   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/TDO_mux_in<0>1
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_4
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DMUX/U_CS_MUX/I3.U_MUX8/Mmux_O_2_f5
-    SLICE_X7Y31.F1       net (fanout=1)        0.576   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/TDO_mux_in<0>1
-    SLICE_X7Y31.CLK      Tckf        (-Th)    -0.466   U_ila_pro_0/U0/I_NO_D.U_ILA/iSTAT_DOUT
+    SLICE_X20Y30.F2      net (fanout=1)        0.465   U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/TDO_mux_in<0>1
+    SLICE_X20Y30.CLK     Tckf        (-Th)    -0.505   U_ila_pro_0/U0/I_NO_D.U_ILA/iSTAT_DOUT
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O56
                                                        U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TDO
     -------------------------------------------------  ---------------------------
-    Total                                      7.673ns (3.077ns logic, 4.596ns route)
-                                                       (40.1% logic, 59.9% route)
+    Total                                      5.718ns (3.152ns logic, 2.566ns route)
+                                                       (55.1% logic, 44.9% route)
 
 --------------------------------------------------------------------------------
 
@@ -251,78 +251,78 @@ Timing constraint: PATH "TS_J4_TO_D2_ila_pro_0_path" TIG;
  0 timing errors detected. (0 setup errors, 0 hold errors)
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (SLICE_X13Y16.CLK), 11 paths
+Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (SLICE_X15Y15.CLK), 11 paths
 --------------------------------------------------------------------------------
-Delay (setup path):     6.390ns (data path)
-  Source:               U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET (FF)
+Delay (setup path):     4.973ns (data path)
+  Source:               U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[8].I_NE0.U_TARGET (FF)
   Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
-  Data Path Delay:      6.390ns (Levels of Logic = 2)
+  Data Path Delay:      4.973ns (Levels of Logic = 2)
   Source Clock:         icon_control0<0> rising
 
-  Maximum Data Path: U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET to U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
+  Maximum Data Path: U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[8].I_NE0.U_TARGET to U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X16Y28.YQ      Tcko                  0.676   U_icon_pro/U0/U_ICON/iCORE_ID<1>
-                                                       U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET
-    SLICE_X16Y29.G2      net (fanout=5)        1.512   U_icon_pro/U0/U_ICON/iCORE_ID<0>
-    SLICE_X16Y29.Y       Tilo                  0.707   U_icon_pro/U0/U_ICON/iCORE_ID_SEL<15>
-                                                       U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[0].U_LUT
-    SLICE_X12Y22.G2      net (fanout=10)       1.816   U_icon_pro/U0/U_ICON/iCORE_ID_SEL<0>
-    SLICE_X12Y22.Y       Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/din_latched
+    SLICE_X22Y26.YQ      Tcko                  0.676   U_icon_pro/U0/U_ICON/U_CMD/iTARGET<9>
+                                                       U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[8].I_NE0.U_TARGET
+    SLICE_X21Y22.F1      net (fanout=10)       1.134   U_icon_pro/U0/U_ICON/U_CMD/iTARGET<8>
+    SLICE_X21Y22.X       Tilo                  0.643   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/iCAPTURE
+                                                       U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[9].U_LUT
+    SLICE_X20Y23.G3      net (fanout=1)        0.044   U_icon_pro/U0/U_ICON/iCOMMAND_SEL<9>
+    SLICE_X20Y23.Y       Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/din_latched
                                                        U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE
-    SLICE_X13Y16.CLK     net (fanout=4)        0.972   icon_control0<13>
+    SLICE_X15Y15.CLK     net (fanout=4)        1.769   icon_control0<13>
     -------------------------------------------------  ---------------------------
-    Total                                      6.390ns (2.090ns logic, 4.300ns route)
-                                                       (32.7% logic, 67.3% route)
+    Total                                      4.973ns (2.026ns logic, 2.947ns route)
+                                                       (40.7% logic, 59.3% route)
 
 --------------------------------------------------------------------------------
-Delay (setup path):     6.110ns (data path)
-  Source:               U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[13].I_NE0.U_TARGET (FF)
-  Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
-  Data Path Delay:      6.110ns (Levels of Logic = 2)
-  Source Clock:         icon_control0<0> rising
-
-  Maximum Data Path: U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[13].I_NE0.U_TARGET to U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X16Y28.XQ      Tcko                  0.631   U_icon_pro/U0/U_ICON/iCORE_ID<1>
-                                                       U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[13].I_NE0.U_TARGET
-    SLICE_X16Y29.G4      net (fanout=5)        1.277   U_icon_pro/U0/U_ICON/iCORE_ID<1>
-    SLICE_X16Y29.Y       Tilo                  0.707   U_icon_pro/U0/U_ICON/iCORE_ID_SEL<15>
-                                                       U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[0].U_LUT
-    SLICE_X12Y22.G2      net (fanout=10)       1.816   U_icon_pro/U0/U_ICON/iCORE_ID_SEL<0>
-    SLICE_X12Y22.Y       Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/din_latched
-                                                       U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE
-    SLICE_X13Y16.CLK     net (fanout=4)        0.972   icon_control0<13>
-    -------------------------------------------------  ---------------------------
-    Total                                      6.110ns (2.045ns logic, 4.065ns route)
-                                                       (33.5% logic, 66.5% route)
-
---------------------------------------------------------------------------------
-Delay (setup path):     5.694ns (data path)
+Delay (setup path):     4.927ns (data path)
   Source:               U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[14].I_NE0.U_TARGET (FF)
   Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
-  Data Path Delay:      5.694ns (Levels of Logic = 2)
+  Data Path Delay:      4.927ns (Levels of Logic = 2)
   Source Clock:         icon_control0<0> rising
 
   Maximum Data Path: U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[14].I_NE0.U_TARGET to U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X17Y29.YQ      Tcko                  0.580   U_icon_pro/U0/U_ICON/iCORE_ID<3>
+    SLICE_X22Y23.YQ      Tcko                  0.676   U_icon_pro/U0/U_ICON/iCORE_ID<3>
                                                        U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[14].I_NE0.U_TARGET
-    SLICE_X16Y29.G3      net (fanout=5)        0.912   U_icon_pro/U0/U_ICON/iCORE_ID<2>
-    SLICE_X16Y29.Y       Tilo                  0.707   U_icon_pro/U0/U_ICON/iCORE_ID_SEL<15>
+    SLICE_X23Y23.G1      net (fanout=5)        0.600   U_icon_pro/U0/U_ICON/iCORE_ID<2>
+    SLICE_X23Y23.Y       Tilo                  0.648   ad7621_instance/div_instance/valid
                                                        U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[0].U_LUT
-    SLICE_X12Y22.G2      net (fanout=10)       1.816   U_icon_pro/U0/U_ICON/iCORE_ID_SEL<0>
-    SLICE_X12Y22.Y       Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/din_latched
+    SLICE_X20Y23.G4      net (fanout=10)       0.527   U_icon_pro/U0/U_ICON/iCORE_ID_SEL<0>
+    SLICE_X20Y23.Y       Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/din_latched
                                                        U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE
-    SLICE_X13Y16.CLK     net (fanout=4)        0.972   icon_control0<13>
+    SLICE_X15Y15.CLK     net (fanout=4)        1.769   icon_control0<13>
     -------------------------------------------------  ---------------------------
-    Total                                      5.694ns (1.994ns logic, 3.700ns route)
-                                                       (35.0% logic, 65.0% route)
+    Total                                      4.927ns (2.031ns logic, 2.896ns route)
+                                                       (41.2% logic, 58.8% route)
+
+--------------------------------------------------------------------------------
+Delay (setup path):     4.917ns (data path)
+  Source:               U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET (FF)
+  Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC (LATCH)
+  Data Path Delay:      4.917ns (Levels of Logic = 2)
+  Source Clock:         icon_control0<0> rising
+
+  Maximum Data Path: U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET to U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X22Y25.YQ      Tcko                  0.676   U_icon_pro/U0/U_ICON/iCORE_ID<1>
+                                                       U_icon_pro/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET
+    SLICE_X23Y23.G2      net (fanout=5)        0.590   U_icon_pro/U0/U_ICON/iCORE_ID<0>
+    SLICE_X23Y23.Y       Tilo                  0.648   ad7621_instance/div_instance/valid
+                                                       U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[0].U_LUT
+    SLICE_X20Y23.G4      net (fanout=10)       0.527   U_icon_pro/U0/U_ICON/iCORE_ID_SEL<0>
+    SLICE_X20Y23.Y       Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/din_latched
+                                                       U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE
+    SLICE_X15Y15.CLK     net (fanout=4)        1.769   icon_control0<13>
+    -------------------------------------------------  ---------------------------
+    Total                                      4.917ns (2.031ns logic, 2.886ns route)
+                                                       (41.3% logic, 58.7% route)
 
 --------------------------------------------------------------------------------
 
@@ -333,16 +333,16 @@ For more information, see From:To (Multicycle) Analysis in the Timing Closure Us
 
  1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   1.853ns.
+ Maximum delay is   1.437ns.
 --------------------------------------------------------------------------------
 
-Paths for end point U_icon_pro/U0/U_ICON/U_iDATA_CMD (SLICE_X20Y30.BY), 1 path
+Paths for end point U_icon_pro/U0/U_ICON/U_iDATA_CMD (SLICE_X23Y28.BY), 1 path
 --------------------------------------------------------------------------------
-Slack (setup paths):    13.147ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup paths):    13.563ns (requirement - (data path - clock path skew + uncertainty))
   Source:               U_icon_pro/U0/U_ICON/U_iDATA_CMD (FF)
   Destination:          U_icon_pro/U0/U_ICON/U_iDATA_CMD (FF)
   Requirement:          15.000ns
-  Data Path Delay:      1.853ns (Levels of Logic = 0)
+  Data Path Delay:      1.437ns (Levels of Logic = 0)
   Clock Path Skew:      0.000ns
   Source Clock:         U_icon_pro/U0/iUPDATE_OUT rising
   Destination Clock:    U_icon_pro/U0/iUPDATE_OUT rising
@@ -352,26 +352,26 @@ Slack (setup paths):    13.147ns (requirement - (data path - clock path skew + u
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X20Y30.YQ      Tcko                  0.676   U_icon_pro/U0/U_ICON/iDATA_CMD
+    SLICE_X23Y28.YQ      Tcko                  0.580   U_icon_pro/U0/U_ICON/iDATA_CMD
                                                        U_icon_pro/U0/U_ICON/U_iDATA_CMD
-    SLICE_X20Y30.BY      net (fanout=7)        0.791   U_icon_pro/U0/U_ICON/iDATA_CMD
-    SLICE_X20Y30.CLK     Tdick                 0.386   U_icon_pro/U0/U_ICON/iDATA_CMD
+    SLICE_X23Y28.BY      net (fanout=7)        0.543   U_icon_pro/U0/U_ICON/iDATA_CMD
+    SLICE_X23Y28.CLK     Tdick                 0.314   U_icon_pro/U0/U_ICON/iDATA_CMD
                                                        U_icon_pro/U0/U_ICON/U_iDATA_CMD
     -------------------------------------------------  ---------------------------
-    Total                                      1.853ns (1.062ns logic, 0.791ns route)
-                                                       (57.3% logic, 42.7% route)
+    Total                                      1.437ns (0.894ns logic, 0.543ns route)
+                                                       (62.2% logic, 37.8% route)
 
 --------------------------------------------------------------------------------
 Hold Paths: TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" TO TIMEGRP "U_CLK" 15 ns;
 --------------------------------------------------------------------------------
 
-Paths for end point U_icon_pro/U0/U_ICON/U_iDATA_CMD (SLICE_X20Y30.BY), 1 path
+Paths for end point U_icon_pro/U0/U_ICON/U_iDATA_CMD (SLICE_X23Y28.BY), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      1.347ns (requirement - (clock path skew + uncertainty - data path))
+Slack (hold path):      1.039ns (requirement - (clock path skew + uncertainty - data path))
   Source:               U_icon_pro/U0/U_ICON/U_iDATA_CMD (FF)
   Destination:          U_icon_pro/U0/U_ICON/U_iDATA_CMD (FF)
   Requirement:          0.000ns
-  Data Path Delay:      1.347ns (Levels of Logic = 0)
+  Data Path Delay:      1.039ns (Levels of Logic = 0)
   Positive Clock Path Skew: 0.000ns
   Source Clock:         U_icon_pro/U0/iUPDATE_OUT rising
   Destination Clock:    U_icon_pro/U0/iUPDATE_OUT rising
@@ -381,14 +381,14 @@ Slack (hold path):      1.347ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X20Y30.YQ      Tcko                  0.541   U_icon_pro/U0/U_ICON/iDATA_CMD
+    SLICE_X23Y28.YQ      Tcko                  0.464   U_icon_pro/U0/U_ICON/iDATA_CMD
                                                        U_icon_pro/U0/U_ICON/U_iDATA_CMD
-    SLICE_X20Y30.BY      net (fanout=7)        0.633   U_icon_pro/U0/U_ICON/iDATA_CMD
-    SLICE_X20Y30.CLK     Tckdi       (-Th)    -0.173   U_icon_pro/U0/U_ICON/iDATA_CMD
+    SLICE_X23Y28.BY      net (fanout=7)        0.435   U_icon_pro/U0/U_ICON/iDATA_CMD
+    SLICE_X23Y28.CLK     Tckdi       (-Th)    -0.140   U_icon_pro/U0/U_ICON/iDATA_CMD
                                                        U_icon_pro/U0/U_ICON/U_iDATA_CMD
     -------------------------------------------------  ---------------------------
-    Total                                      1.347ns (0.714ns logic, 0.633ns route)
-                                                       (53.0% logic, 47.0% route)
+    Total                                      1.039ns (0.604ns logic, 0.435ns route)
+                                                       (58.1% logic, 41.9% route)
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -432,889 +432,391 @@ Timing constraint: TS_clk_wizard_instance_CLKFX_BUF = PERIOD TIMEGRP
 "clk_wizard_instance_CLKFX_BUF" TS_sys_clk / 4 HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 1356307 paths analyzed, 2317 endpoints analyzed, 0 failing endpoints
+ 12839 paths analyzed, 2222 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  19.834ns.
+ Minimum period is  12.468ns.
 --------------------------------------------------------------------------------
 
-Paths for end point mk_strobe_instance/r_cnt_cont_strobe_16 (SLICE_X23Y18.SR), 46335 paths
+Paths for end point ad7621_instance/div_instance/q_21 (SLICE_X18Y1.F4), 41 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     0.999ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/FPGA_STRBCOUNT_0 (FF)
-  Destination:          mk_strobe_instance/r_cnt_cont_strobe_16 (FF)
+Slack (setup path):     8.365ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ad7621_instance/div_instance/ac_5 (FF)
+  Destination:          ad7621_instance/div_instance/q_21 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      19.739ns (Levels of Logic = 18)
-  Clock Path Skew:      -0.095ns (0.460 - 0.555)
+  Data Path Delay:      12.376ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.092ns (0.499 - 0.591)
   Source Clock:         sys_4xclk rising at 0.000ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/FPGA_STRBCOUNT_0 to mk_strobe_instance/r_cnt_cont_strobe_16
+  Maximum Data Path: ad7621_instance/div_instance/ac_5 to ad7621_instance/div_instance/q_21
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y2.YQ       Tcko                  0.676   fpga_spi_instance/FPGA_STRBCOUNT<1>
-                                                       fpga_spi_instance/FPGA_STRBCOUNT_0
-    SLICE_X15Y2.F1       net (fanout=4)        0.535   fpga_spi_instance/FPGA_STRBCOUNT<0>
-    SLICE_X15Y2.COUT     Topcyf                1.195   mk_strobe_instance/mult0000_addsub0001<0>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_lut<0>_INV_0
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<0>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>
-    SLICE_X15Y3.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>
-    SLICE_X15Y3.COUT     Tbyp                  0.130   mk_strobe_instance/mult0000_addsub0001<2>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<2>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>
-    SLICE_X15Y4.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>
-    SLICE_X15Y4.COUT     Tbyp                  0.130   mk_strobe_instance/mult0000_addsub0001<4>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<4>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>
-    SLICE_X15Y5.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>
-    SLICE_X15Y5.Y        Tciny                 0.864   mk_strobe_instance/mult0000_addsub0001<6>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<6>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_xor<7>
-    MULT18X18_X0Y1.A7    net (fanout=1)        1.171   mk_strobe_instance/mult0000_addsub0001<7>
-    MULT18X18_X0Y1.P10   Tmult                 4.602   mk_strobe_instance/Mmult__mult0000
-                                                       mk_strobe_instance/Mmult__mult0000
-    SLICE_X19Y7.F2       net (fanout=1)        1.280   mk_strobe_instance/_mult0000<10>
-    SLICE_X19Y7.COUT     Topcyf                1.195   mk_strobe_instance/_sub0000<10>
-                                                       mk_strobe_instance/Msub__sub0000_lut<10>_INV_0
-                                                       mk_strobe_instance/Msub__sub0000_cy<10>
-                                                       mk_strobe_instance/Msub__sub0000_cy<11>
-    SLICE_X19Y8.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<11>
-    SLICE_X19Y8.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<12>
-                                                       mk_strobe_instance/Msub__sub0000_cy<12>
-                                                       mk_strobe_instance/Msub__sub0000_cy<13>
-    SLICE_X19Y9.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<13>
-    SLICE_X19Y9.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<14>
-                                                       mk_strobe_instance/Msub__sub0000_cy<14>
-                                                       mk_strobe_instance/Msub__sub0000_cy<15>
-    SLICE_X19Y10.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<15>
-    SLICE_X19Y10.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<16>
-                                                       mk_strobe_instance/Msub__sub0000_cy<16>
-                                                       mk_strobe_instance/Msub__sub0000_cy<17>
-    SLICE_X19Y11.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<17>
-    SLICE_X19Y11.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<18>
-                                                       mk_strobe_instance/Msub__sub0000_cy<18>
-                                                       mk_strobe_instance/Msub__sub0000_cy<19>
-    SLICE_X19Y12.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<19>
-    SLICE_X19Y12.COUT    Tbyp                  0.130   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/iTRIGGER
-                                                       mk_strobe_instance/Msub__sub0000_cy<20>
-                                                       mk_strobe_instance/Msub__sub0000_cy<21>
-    SLICE_X19Y13.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<21>
-    SLICE_X19Y13.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<22>
-                                                       mk_strobe_instance/Msub__sub0000_cy<22>
-                                                       mk_strobe_instance/Msub__sub0000_cy<23>
-    SLICE_X19Y14.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<23>
-    SLICE_X19Y14.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<24>
-                                                       mk_strobe_instance/Msub__sub0000_cy<24>
-                                                       mk_strobe_instance/Msub__sub0000_cy<25>
-    SLICE_X19Y15.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<25>
-    SLICE_X19Y15.Y       Tciny                 0.864   mk_strobe_instance/_sub0000<26>
-                                                       mk_strobe_instance/Msub__sub0000_cy<26>
-                                                       mk_strobe_instance/Msub__sub0000_xor<27>
-    SLICE_X21Y19.G1      net (fanout=1)        1.112   mk_strobe_instance/_sub0000<27>
-    SLICE_X21Y19.COUT    Topcyg                1.178   ilx_instance/adc_start_instant/d_i_ff3
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_lut<13>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<13>
-    SLICE_X21Y20.CIN     net (fanout=1)        0.000   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<13>
-    SLICE_X21Y20.COUT    Tbyp                  0.130   U_ila_pro_0/U0/I_NO_D.U_ILA/iCAP_WR_ADDR<3>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<14>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>
-    SLICE_X21Y21.CIN     net (fanout=1)        0.000   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>
-    SLICE_X21Y21.XB      Tcinxb                0.296   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-    SLICE_X22Y19.G4      net (fanout=2)        0.744   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-    SLICE_X22Y19.Y       Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/iTRIGGER_SEQ_OUT
-                                                       mk_strobe_instance/r_cnt_cont_strobe_or00001
-    SLICE_X23Y18.SR      net (fanout=14)       1.153   mk_strobe_instance/r_cnt_cont_strobe_or0000
-    SLICE_X23Y18.CLK     Tsrck                 0.867   mk_strobe_instance/r_cnt_cont_strobe<16>
-                                                       mk_strobe_instance/r_cnt_cont_strobe_16
+    SLICE_X10Y7.XQ       Tcko                  0.631   ad7621_instance/div_instance/ac<5>
+                                                       ad7621_instance/div_instance/ac_5
+    SLICE_X11Y7.G2       net (fanout=3)        1.524   ad7621_instance/div_instance/ac<5>
+    SLICE_X11Y7.COUT     Topcyg                1.178   ad7621_instance/div_instance/y1<5>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_lut<5>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<5>
+    SLICE_X11Y8.CIN      net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<5>
+    SLICE_X11Y8.COUT     Tbyp                  0.130   ad7621_instance/div_instance/y1<7>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<6>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<7>
+    SLICE_X11Y9.CIN      net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<7>
+    SLICE_X11Y9.COUT     Tbyp                  0.130   ad7621_instance/div_instance/y1<9>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<8>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<9>
+    SLICE_X11Y10.CIN     net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<9>
+    SLICE_X11Y10.XB      Tcinxb                0.296   ad7621_instance/div_instance/q1_next<0>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<10>
+    MULT18X18_X0Y1.B0    net (fanout=12)       0.895   ad7621_instance/div_instance/q1_next<0>
+    MULT18X18_X0Y1.P21   Tmult                 4.873   ad7621_instance/div_instance/Mmult_q_mult0000
+                                                       ad7621_instance/div_instance/Mmult_q_mult0000
+    SLICE_X18Y1.F4       net (fanout=1)        1.917   ad7621_instance/div_instance/q_mult0000<21>
+    SLICE_X18Y1.CLK      Tfck                  0.802   ad7621_instance/div_instance/q<21>
+                                                       ad7621_instance/div_instance/q_mux0000<21>1
+                                                       ad7621_instance/div_instance/q_21
     -------------------------------------------------  ---------------------------
-    Total                                     19.739ns (13.744ns logic, 5.995ns route)
-                                                       (69.6% logic, 30.4% route)
+    Total                                     12.376ns (8.040ns logic, 4.336ns route)
+                                                       (65.0% logic, 35.0% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     1.003ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/FPGA_STRBCOUNT_0 (FF)
-  Destination:          mk_strobe_instance/r_cnt_cont_strobe_16 (FF)
+Slack (setup path):     8.701ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ad7621_instance/div_instance/ac_5 (FF)
+  Destination:          ad7621_instance/div_instance/q_21 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      19.735ns (Levels of Logic = 20)
-  Clock Path Skew:      -0.095ns (0.460 - 0.555)
+  Data Path Delay:      12.040ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.092ns (0.499 - 0.591)
   Source Clock:         sys_4xclk rising at 0.000ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/FPGA_STRBCOUNT_0 to mk_strobe_instance/r_cnt_cont_strobe_16
+  Maximum Data Path: ad7621_instance/div_instance/ac_5 to ad7621_instance/div_instance/q_21
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y2.YQ       Tcko                  0.676   fpga_spi_instance/FPGA_STRBCOUNT<1>
-                                                       fpga_spi_instance/FPGA_STRBCOUNT_0
-    SLICE_X15Y2.F1       net (fanout=4)        0.535   fpga_spi_instance/FPGA_STRBCOUNT<0>
-    SLICE_X15Y2.COUT     Topcyf                1.195   mk_strobe_instance/mult0000_addsub0001<0>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_lut<0>_INV_0
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<0>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>
-    SLICE_X15Y3.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>
-    SLICE_X15Y3.COUT     Tbyp                  0.130   mk_strobe_instance/mult0000_addsub0001<2>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<2>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>
-    SLICE_X15Y4.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>
-    SLICE_X15Y4.COUT     Tbyp                  0.130   mk_strobe_instance/mult0000_addsub0001<4>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<4>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>
-    SLICE_X15Y5.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>
-    SLICE_X15Y5.Y        Tciny                 0.864   mk_strobe_instance/mult0000_addsub0001<6>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<6>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_xor<7>
-    MULT18X18_X0Y1.A7    net (fanout=1)        1.171   mk_strobe_instance/mult0000_addsub0001<7>
-    MULT18X18_X0Y1.P7    Tmult                 4.344   mk_strobe_instance/Mmult__mult0000
-                                                       mk_strobe_instance/Mmult__mult0000
-    SLICE_X19Y5.G3       net (fanout=1)        1.291   mk_strobe_instance/_mult0000<7>
-    SLICE_X19Y5.COUT     Topcyg                1.178   mk_strobe_instance/_sub0000<6>
-                                                       mk_strobe_instance/Msub__sub0000_lut<7>_INV_0
-                                                       mk_strobe_instance/Msub__sub0000_cy<7>
-    SLICE_X19Y6.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<7>
-    SLICE_X19Y6.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<8>
-                                                       mk_strobe_instance/Msub__sub0000_cy<8>
-                                                       mk_strobe_instance/Msub__sub0000_cy<9>
-    SLICE_X19Y7.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<9>
-    SLICE_X19Y7.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<10>
-                                                       mk_strobe_instance/Msub__sub0000_cy<10>
-                                                       mk_strobe_instance/Msub__sub0000_cy<11>
-    SLICE_X19Y8.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<11>
-    SLICE_X19Y8.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<12>
-                                                       mk_strobe_instance/Msub__sub0000_cy<12>
-                                                       mk_strobe_instance/Msub__sub0000_cy<13>
-    SLICE_X19Y9.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<13>
-    SLICE_X19Y9.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<14>
-                                                       mk_strobe_instance/Msub__sub0000_cy<14>
-                                                       mk_strobe_instance/Msub__sub0000_cy<15>
-    SLICE_X19Y10.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<15>
-    SLICE_X19Y10.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<16>
-                                                       mk_strobe_instance/Msub__sub0000_cy<16>
-                                                       mk_strobe_instance/Msub__sub0000_cy<17>
-    SLICE_X19Y11.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<17>
-    SLICE_X19Y11.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<18>
-                                                       mk_strobe_instance/Msub__sub0000_cy<18>
-                                                       mk_strobe_instance/Msub__sub0000_cy<19>
-    SLICE_X19Y12.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<19>
-    SLICE_X19Y12.COUT    Tbyp                  0.130   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/iTRIGGER
-                                                       mk_strobe_instance/Msub__sub0000_cy<20>
-                                                       mk_strobe_instance/Msub__sub0000_cy<21>
-    SLICE_X19Y13.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<21>
-    SLICE_X19Y13.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<22>
-                                                       mk_strobe_instance/Msub__sub0000_cy<22>
-                                                       mk_strobe_instance/Msub__sub0000_cy<23>
-    SLICE_X19Y14.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<23>
-    SLICE_X19Y14.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<24>
-                                                       mk_strobe_instance/Msub__sub0000_cy<24>
-                                                       mk_strobe_instance/Msub__sub0000_cy<25>
-    SLICE_X19Y15.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<25>
-    SLICE_X19Y15.Y       Tciny                 0.864   mk_strobe_instance/_sub0000<26>
-                                                       mk_strobe_instance/Msub__sub0000_cy<26>
-                                                       mk_strobe_instance/Msub__sub0000_xor<27>
-    SLICE_X21Y19.G1      net (fanout=1)        1.112   mk_strobe_instance/_sub0000<27>
-    SLICE_X21Y19.COUT    Topcyg                1.178   ilx_instance/adc_start_instant/d_i_ff3
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_lut<13>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<13>
-    SLICE_X21Y20.CIN     net (fanout=1)        0.000   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<13>
-    SLICE_X21Y20.COUT    Tbyp                  0.130   U_ila_pro_0/U0/I_NO_D.U_ILA/iCAP_WR_ADDR<3>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<14>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>
-    SLICE_X21Y21.CIN     net (fanout=1)        0.000   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>
-    SLICE_X21Y21.XB      Tcinxb                0.296   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-    SLICE_X22Y19.G4      net (fanout=2)        0.744   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-    SLICE_X22Y19.Y       Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/iTRIGGER_SEQ_OUT
-                                                       mk_strobe_instance/r_cnt_cont_strobe_or00001
-    SLICE_X23Y18.SR      net (fanout=14)       1.153   mk_strobe_instance/r_cnt_cont_strobe_or0000
-    SLICE_X23Y18.CLK     Tsrck                 0.867   mk_strobe_instance/r_cnt_cont_strobe<16>
-                                                       mk_strobe_instance/r_cnt_cont_strobe_16
+    SLICE_X10Y7.XQ       Tcko                  0.631   ad7621_instance/div_instance/ac<5>
+                                                       ad7621_instance/div_instance/ac_5
+    SLICE_X11Y7.G2       net (fanout=3)        1.524   ad7621_instance/div_instance/ac<5>
+    SLICE_X11Y7.COUT     Topcyg                0.842   ad7621_instance/div_instance/y1<5>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<5>
+    SLICE_X11Y8.CIN      net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<5>
+    SLICE_X11Y8.COUT     Tbyp                  0.130   ad7621_instance/div_instance/y1<7>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<6>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<7>
+    SLICE_X11Y9.CIN      net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<7>
+    SLICE_X11Y9.COUT     Tbyp                  0.130   ad7621_instance/div_instance/y1<9>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<8>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<9>
+    SLICE_X11Y10.CIN     net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<9>
+    SLICE_X11Y10.XB      Tcinxb                0.296   ad7621_instance/div_instance/q1_next<0>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<10>
+    MULT18X18_X0Y1.B0    net (fanout=12)       0.895   ad7621_instance/div_instance/q1_next<0>
+    MULT18X18_X0Y1.P21   Tmult                 4.873   ad7621_instance/div_instance/Mmult_q_mult0000
+                                                       ad7621_instance/div_instance/Mmult_q_mult0000
+    SLICE_X18Y1.F4       net (fanout=1)        1.917   ad7621_instance/div_instance/q_mult0000<21>
+    SLICE_X18Y1.CLK      Tfck                  0.802   ad7621_instance/div_instance/q<21>
+                                                       ad7621_instance/div_instance/q_mux0000<21>1
+                                                       ad7621_instance/div_instance/q_21
     -------------------------------------------------  ---------------------------
-    Total                                     19.735ns (13.729ns logic, 6.006ns route)
-                                                       (69.6% logic, 30.4% route)
+    Total                                     12.040ns (7.704ns logic, 4.336ns route)
+                                                       (64.0% logic, 36.0% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     1.133ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/FPGA_STRBCOUNT_1 (FF)
-  Destination:          mk_strobe_instance/r_cnt_cont_strobe_16 (FF)
+Slack (setup path):     8.831ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ad7621_instance/div_instance/y1_6 (FF)
+  Destination:          ad7621_instance/div_instance/q_21 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      19.605ns (Levels of Logic = 18)
-  Clock Path Skew:      -0.095ns (0.460 - 0.555)
+  Data Path Delay:      11.929ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.073ns (0.499 - 0.572)
   Source Clock:         sys_4xclk rising at 0.000ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/FPGA_STRBCOUNT_1 to mk_strobe_instance/r_cnt_cont_strobe_16
+  Maximum Data Path: ad7621_instance/div_instance/y1_6 to ad7621_instance/div_instance/q_21
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y2.XQ       Tcko                  0.631   fpga_spi_instance/FPGA_STRBCOUNT<1>
-                                                       fpga_spi_instance/FPGA_STRBCOUNT_1
-    SLICE_X15Y2.G2       net (fanout=4)        0.463   fpga_spi_instance/FPGA_STRBCOUNT<1>
-    SLICE_X15Y2.COUT     Topcyg                1.178   mk_strobe_instance/mult0000_addsub0001<0>
-                                                       fpga_spi_instance/FPGA_STRBCOUNT<1>_rt
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>
-    SLICE_X15Y3.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>
-    SLICE_X15Y3.COUT     Tbyp                  0.130   mk_strobe_instance/mult0000_addsub0001<2>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<2>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>
-    SLICE_X15Y4.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>
-    SLICE_X15Y4.COUT     Tbyp                  0.130   mk_strobe_instance/mult0000_addsub0001<4>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<4>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>
-    SLICE_X15Y5.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>
-    SLICE_X15Y5.Y        Tciny                 0.864   mk_strobe_instance/mult0000_addsub0001<6>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<6>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_xor<7>
-    MULT18X18_X0Y1.A7    net (fanout=1)        1.171   mk_strobe_instance/mult0000_addsub0001<7>
-    MULT18X18_X0Y1.P10   Tmult                 4.602   mk_strobe_instance/Mmult__mult0000
-                                                       mk_strobe_instance/Mmult__mult0000
-    SLICE_X19Y7.F2       net (fanout=1)        1.280   mk_strobe_instance/_mult0000<10>
-    SLICE_X19Y7.COUT     Topcyf                1.195   mk_strobe_instance/_sub0000<10>
-                                                       mk_strobe_instance/Msub__sub0000_lut<10>_INV_0
-                                                       mk_strobe_instance/Msub__sub0000_cy<10>
-                                                       mk_strobe_instance/Msub__sub0000_cy<11>
-    SLICE_X19Y8.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<11>
-    SLICE_X19Y8.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<12>
-                                                       mk_strobe_instance/Msub__sub0000_cy<12>
-                                                       mk_strobe_instance/Msub__sub0000_cy<13>
-    SLICE_X19Y9.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<13>
-    SLICE_X19Y9.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<14>
-                                                       mk_strobe_instance/Msub__sub0000_cy<14>
-                                                       mk_strobe_instance/Msub__sub0000_cy<15>
-    SLICE_X19Y10.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<15>
-    SLICE_X19Y10.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<16>
-                                                       mk_strobe_instance/Msub__sub0000_cy<16>
-                                                       mk_strobe_instance/Msub__sub0000_cy<17>
-    SLICE_X19Y11.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<17>
-    SLICE_X19Y11.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<18>
-                                                       mk_strobe_instance/Msub__sub0000_cy<18>
-                                                       mk_strobe_instance/Msub__sub0000_cy<19>
-    SLICE_X19Y12.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<19>
-    SLICE_X19Y12.COUT    Tbyp                  0.130   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/iTRIGGER
-                                                       mk_strobe_instance/Msub__sub0000_cy<20>
-                                                       mk_strobe_instance/Msub__sub0000_cy<21>
-    SLICE_X19Y13.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<21>
-    SLICE_X19Y13.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<22>
-                                                       mk_strobe_instance/Msub__sub0000_cy<22>
-                                                       mk_strobe_instance/Msub__sub0000_cy<23>
-    SLICE_X19Y14.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<23>
-    SLICE_X19Y14.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<24>
-                                                       mk_strobe_instance/Msub__sub0000_cy<24>
-                                                       mk_strobe_instance/Msub__sub0000_cy<25>
-    SLICE_X19Y15.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<25>
-    SLICE_X19Y15.Y       Tciny                 0.864   mk_strobe_instance/_sub0000<26>
-                                                       mk_strobe_instance/Msub__sub0000_cy<26>
-                                                       mk_strobe_instance/Msub__sub0000_xor<27>
-    SLICE_X21Y19.G1      net (fanout=1)        1.112   mk_strobe_instance/_sub0000<27>
-    SLICE_X21Y19.COUT    Topcyg                1.178   ilx_instance/adc_start_instant/d_i_ff3
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_lut<13>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<13>
-    SLICE_X21Y20.CIN     net (fanout=1)        0.000   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<13>
-    SLICE_X21Y20.COUT    Tbyp                  0.130   U_ila_pro_0/U0/I_NO_D.U_ILA/iCAP_WR_ADDR<3>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<14>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>
-    SLICE_X21Y21.CIN     net (fanout=1)        0.000   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>
-    SLICE_X21Y21.XB      Tcinxb                0.296   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-    SLICE_X22Y19.G4      net (fanout=2)        0.744   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-    SLICE_X22Y19.Y       Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/iTRIGGER_SEQ_OUT
-                                                       mk_strobe_instance/r_cnt_cont_strobe_or00001
-    SLICE_X23Y18.SR      net (fanout=14)       1.153   mk_strobe_instance/r_cnt_cont_strobe_or0000
-    SLICE_X23Y18.CLK     Tsrck                 0.867   mk_strobe_instance/r_cnt_cont_strobe<16>
-                                                       mk_strobe_instance/r_cnt_cont_strobe_16
+    SLICE_X11Y8.YQ       Tcko                  0.580   ad7621_instance/div_instance/y1<7>
+                                                       ad7621_instance/div_instance/y1_6
+    SLICE_X11Y8.F2       net (fanout=2)        1.241   ad7621_instance/div_instance/y1<6>
+    SLICE_X11Y8.COUT     Topcyf                1.195   ad7621_instance/div_instance/y1<7>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_lut<6>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<6>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<7>
+    SLICE_X11Y9.CIN      net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<7>
+    SLICE_X11Y9.COUT     Tbyp                  0.130   ad7621_instance/div_instance/y1<9>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<8>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<9>
+    SLICE_X11Y10.CIN     net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<9>
+    SLICE_X11Y10.XB      Tcinxb                0.296   ad7621_instance/div_instance/q1_next<0>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<10>
+    MULT18X18_X0Y1.B0    net (fanout=12)       0.895   ad7621_instance/div_instance/q1_next<0>
+    MULT18X18_X0Y1.P21   Tmult                 4.873   ad7621_instance/div_instance/Mmult_q_mult0000
+                                                       ad7621_instance/div_instance/Mmult_q_mult0000
+    SLICE_X18Y1.F4       net (fanout=1)        1.917   ad7621_instance/div_instance/q_mult0000<21>
+    SLICE_X18Y1.CLK      Tfck                  0.802   ad7621_instance/div_instance/q<21>
+                                                       ad7621_instance/div_instance/q_mux0000<21>1
+                                                       ad7621_instance/div_instance/q_21
     -------------------------------------------------  ---------------------------
-    Total                                     19.605ns (13.682ns logic, 5.923ns route)
-                                                       (69.8% logic, 30.2% route)
+    Total                                     11.929ns (7.876ns logic, 4.053ns route)
+                                                       (66.0% logic, 34.0% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point mk_strobe_instance/r_cnt_cont_strobe_17 (SLICE_X23Y18.SR), 46335 paths
+Paths for end point ad7621_instance/div_instance/q_22 (SLICE_X17Y0.G2), 41 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     0.999ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/FPGA_STRBCOUNT_0 (FF)
-  Destination:          mk_strobe_instance/r_cnt_cont_strobe_17 (FF)
+Slack (setup path):     8.975ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ad7621_instance/div_instance/ac_5 (FF)
+  Destination:          ad7621_instance/div_instance/q_22 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      19.739ns (Levels of Logic = 18)
-  Clock Path Skew:      -0.095ns (0.460 - 0.555)
+  Data Path Delay:      11.762ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.096ns (0.495 - 0.591)
   Source Clock:         sys_4xclk rising at 0.000ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/FPGA_STRBCOUNT_0 to mk_strobe_instance/r_cnt_cont_strobe_17
+  Maximum Data Path: ad7621_instance/div_instance/ac_5 to ad7621_instance/div_instance/q_22
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y2.YQ       Tcko                  0.676   fpga_spi_instance/FPGA_STRBCOUNT<1>
-                                                       fpga_spi_instance/FPGA_STRBCOUNT_0
-    SLICE_X15Y2.F1       net (fanout=4)        0.535   fpga_spi_instance/FPGA_STRBCOUNT<0>
-    SLICE_X15Y2.COUT     Topcyf                1.195   mk_strobe_instance/mult0000_addsub0001<0>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_lut<0>_INV_0
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<0>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>
-    SLICE_X15Y3.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>
-    SLICE_X15Y3.COUT     Tbyp                  0.130   mk_strobe_instance/mult0000_addsub0001<2>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<2>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>
-    SLICE_X15Y4.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>
-    SLICE_X15Y4.COUT     Tbyp                  0.130   mk_strobe_instance/mult0000_addsub0001<4>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<4>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>
-    SLICE_X15Y5.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>
-    SLICE_X15Y5.Y        Tciny                 0.864   mk_strobe_instance/mult0000_addsub0001<6>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<6>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_xor<7>
-    MULT18X18_X0Y1.A7    net (fanout=1)        1.171   mk_strobe_instance/mult0000_addsub0001<7>
-    MULT18X18_X0Y1.P10   Tmult                 4.602   mk_strobe_instance/Mmult__mult0000
-                                                       mk_strobe_instance/Mmult__mult0000
-    SLICE_X19Y7.F2       net (fanout=1)        1.280   mk_strobe_instance/_mult0000<10>
-    SLICE_X19Y7.COUT     Topcyf                1.195   mk_strobe_instance/_sub0000<10>
-                                                       mk_strobe_instance/Msub__sub0000_lut<10>_INV_0
-                                                       mk_strobe_instance/Msub__sub0000_cy<10>
-                                                       mk_strobe_instance/Msub__sub0000_cy<11>
-    SLICE_X19Y8.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<11>
-    SLICE_X19Y8.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<12>
-                                                       mk_strobe_instance/Msub__sub0000_cy<12>
-                                                       mk_strobe_instance/Msub__sub0000_cy<13>
-    SLICE_X19Y9.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<13>
-    SLICE_X19Y9.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<14>
-                                                       mk_strobe_instance/Msub__sub0000_cy<14>
-                                                       mk_strobe_instance/Msub__sub0000_cy<15>
-    SLICE_X19Y10.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<15>
-    SLICE_X19Y10.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<16>
-                                                       mk_strobe_instance/Msub__sub0000_cy<16>
-                                                       mk_strobe_instance/Msub__sub0000_cy<17>
-    SLICE_X19Y11.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<17>
-    SLICE_X19Y11.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<18>
-                                                       mk_strobe_instance/Msub__sub0000_cy<18>
-                                                       mk_strobe_instance/Msub__sub0000_cy<19>
-    SLICE_X19Y12.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<19>
-    SLICE_X19Y12.COUT    Tbyp                  0.130   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/iTRIGGER
-                                                       mk_strobe_instance/Msub__sub0000_cy<20>
-                                                       mk_strobe_instance/Msub__sub0000_cy<21>
-    SLICE_X19Y13.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<21>
-    SLICE_X19Y13.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<22>
-                                                       mk_strobe_instance/Msub__sub0000_cy<22>
-                                                       mk_strobe_instance/Msub__sub0000_cy<23>
-    SLICE_X19Y14.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<23>
-    SLICE_X19Y14.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<24>
-                                                       mk_strobe_instance/Msub__sub0000_cy<24>
-                                                       mk_strobe_instance/Msub__sub0000_cy<25>
-    SLICE_X19Y15.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<25>
-    SLICE_X19Y15.Y       Tciny                 0.864   mk_strobe_instance/_sub0000<26>
-                                                       mk_strobe_instance/Msub__sub0000_cy<26>
-                                                       mk_strobe_instance/Msub__sub0000_xor<27>
-    SLICE_X21Y19.G1      net (fanout=1)        1.112   mk_strobe_instance/_sub0000<27>
-    SLICE_X21Y19.COUT    Topcyg                1.178   ilx_instance/adc_start_instant/d_i_ff3
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_lut<13>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<13>
-    SLICE_X21Y20.CIN     net (fanout=1)        0.000   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<13>
-    SLICE_X21Y20.COUT    Tbyp                  0.130   U_ila_pro_0/U0/I_NO_D.U_ILA/iCAP_WR_ADDR<3>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<14>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>
-    SLICE_X21Y21.CIN     net (fanout=1)        0.000   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>
-    SLICE_X21Y21.XB      Tcinxb                0.296   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-    SLICE_X22Y19.G4      net (fanout=2)        0.744   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-    SLICE_X22Y19.Y       Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/iTRIGGER_SEQ_OUT
-                                                       mk_strobe_instance/r_cnt_cont_strobe_or00001
-    SLICE_X23Y18.SR      net (fanout=14)       1.153   mk_strobe_instance/r_cnt_cont_strobe_or0000
-    SLICE_X23Y18.CLK     Tsrck                 0.867   mk_strobe_instance/r_cnt_cont_strobe<16>
-                                                       mk_strobe_instance/r_cnt_cont_strobe_17
+    SLICE_X10Y7.XQ       Tcko                  0.631   ad7621_instance/div_instance/ac<5>
+                                                       ad7621_instance/div_instance/ac_5
+    SLICE_X11Y7.G2       net (fanout=3)        1.524   ad7621_instance/div_instance/ac<5>
+    SLICE_X11Y7.COUT     Topcyg                1.178   ad7621_instance/div_instance/y1<5>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_lut<5>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<5>
+    SLICE_X11Y8.CIN      net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<5>
+    SLICE_X11Y8.COUT     Tbyp                  0.130   ad7621_instance/div_instance/y1<7>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<6>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<7>
+    SLICE_X11Y9.CIN      net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<7>
+    SLICE_X11Y9.COUT     Tbyp                  0.130   ad7621_instance/div_instance/y1<9>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<8>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<9>
+    SLICE_X11Y10.CIN     net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<9>
+    SLICE_X11Y10.XB      Tcinxb                0.296   ad7621_instance/div_instance/q1_next<0>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<10>
+    MULT18X18_X0Y1.B0    net (fanout=12)       0.895   ad7621_instance/div_instance/q1_next<0>
+    MULT18X18_X0Y1.P22   Tmult                 4.873   ad7621_instance/div_instance/Mmult_q_mult0000
+                                                       ad7621_instance/div_instance/Mmult_q_mult0000
+    SLICE_X17Y0.G2       net (fanout=1)        1.378   ad7621_instance/div_instance/q_mult0000<22>
+    SLICE_X17Y0.CLK      Tgck                  0.727   ad7621_instance/div_instance/q<23>
+                                                       ad7621_instance/div_instance/q_mux0000<22>1
+                                                       ad7621_instance/div_instance/q_22
     -------------------------------------------------  ---------------------------
-    Total                                     19.739ns (13.744ns logic, 5.995ns route)
-                                                       (69.6% logic, 30.4% route)
+    Total                                     11.762ns (7.965ns logic, 3.797ns route)
+                                                       (67.7% logic, 32.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     1.003ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/FPGA_STRBCOUNT_0 (FF)
-  Destination:          mk_strobe_instance/r_cnt_cont_strobe_17 (FF)
+Slack (setup path):     9.311ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ad7621_instance/div_instance/ac_5 (FF)
+  Destination:          ad7621_instance/div_instance/q_22 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      19.735ns (Levels of Logic = 20)
-  Clock Path Skew:      -0.095ns (0.460 - 0.555)
+  Data Path Delay:      11.426ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.096ns (0.495 - 0.591)
   Source Clock:         sys_4xclk rising at 0.000ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/FPGA_STRBCOUNT_0 to mk_strobe_instance/r_cnt_cont_strobe_17
+  Maximum Data Path: ad7621_instance/div_instance/ac_5 to ad7621_instance/div_instance/q_22
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y2.YQ       Tcko                  0.676   fpga_spi_instance/FPGA_STRBCOUNT<1>
-                                                       fpga_spi_instance/FPGA_STRBCOUNT_0
-    SLICE_X15Y2.F1       net (fanout=4)        0.535   fpga_spi_instance/FPGA_STRBCOUNT<0>
-    SLICE_X15Y2.COUT     Topcyf                1.195   mk_strobe_instance/mult0000_addsub0001<0>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_lut<0>_INV_0
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<0>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>
-    SLICE_X15Y3.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>
-    SLICE_X15Y3.COUT     Tbyp                  0.130   mk_strobe_instance/mult0000_addsub0001<2>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<2>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>
-    SLICE_X15Y4.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>
-    SLICE_X15Y4.COUT     Tbyp                  0.130   mk_strobe_instance/mult0000_addsub0001<4>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<4>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>
-    SLICE_X15Y5.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>
-    SLICE_X15Y5.Y        Tciny                 0.864   mk_strobe_instance/mult0000_addsub0001<6>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<6>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_xor<7>
-    MULT18X18_X0Y1.A7    net (fanout=1)        1.171   mk_strobe_instance/mult0000_addsub0001<7>
-    MULT18X18_X0Y1.P7    Tmult                 4.344   mk_strobe_instance/Mmult__mult0000
-                                                       mk_strobe_instance/Mmult__mult0000
-    SLICE_X19Y5.G3       net (fanout=1)        1.291   mk_strobe_instance/_mult0000<7>
-    SLICE_X19Y5.COUT     Topcyg                1.178   mk_strobe_instance/_sub0000<6>
-                                                       mk_strobe_instance/Msub__sub0000_lut<7>_INV_0
-                                                       mk_strobe_instance/Msub__sub0000_cy<7>
-    SLICE_X19Y6.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<7>
-    SLICE_X19Y6.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<8>
-                                                       mk_strobe_instance/Msub__sub0000_cy<8>
-                                                       mk_strobe_instance/Msub__sub0000_cy<9>
-    SLICE_X19Y7.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<9>
-    SLICE_X19Y7.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<10>
-                                                       mk_strobe_instance/Msub__sub0000_cy<10>
-                                                       mk_strobe_instance/Msub__sub0000_cy<11>
-    SLICE_X19Y8.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<11>
-    SLICE_X19Y8.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<12>
-                                                       mk_strobe_instance/Msub__sub0000_cy<12>
-                                                       mk_strobe_instance/Msub__sub0000_cy<13>
-    SLICE_X19Y9.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<13>
-    SLICE_X19Y9.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<14>
-                                                       mk_strobe_instance/Msub__sub0000_cy<14>
-                                                       mk_strobe_instance/Msub__sub0000_cy<15>
-    SLICE_X19Y10.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<15>
-    SLICE_X19Y10.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<16>
-                                                       mk_strobe_instance/Msub__sub0000_cy<16>
-                                                       mk_strobe_instance/Msub__sub0000_cy<17>
-    SLICE_X19Y11.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<17>
-    SLICE_X19Y11.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<18>
-                                                       mk_strobe_instance/Msub__sub0000_cy<18>
-                                                       mk_strobe_instance/Msub__sub0000_cy<19>
-    SLICE_X19Y12.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<19>
-    SLICE_X19Y12.COUT    Tbyp                  0.130   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/iTRIGGER
-                                                       mk_strobe_instance/Msub__sub0000_cy<20>
-                                                       mk_strobe_instance/Msub__sub0000_cy<21>
-    SLICE_X19Y13.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<21>
-    SLICE_X19Y13.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<22>
-                                                       mk_strobe_instance/Msub__sub0000_cy<22>
-                                                       mk_strobe_instance/Msub__sub0000_cy<23>
-    SLICE_X19Y14.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<23>
-    SLICE_X19Y14.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<24>
-                                                       mk_strobe_instance/Msub__sub0000_cy<24>
-                                                       mk_strobe_instance/Msub__sub0000_cy<25>
-    SLICE_X19Y15.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<25>
-    SLICE_X19Y15.Y       Tciny                 0.864   mk_strobe_instance/_sub0000<26>
-                                                       mk_strobe_instance/Msub__sub0000_cy<26>
-                                                       mk_strobe_instance/Msub__sub0000_xor<27>
-    SLICE_X21Y19.G1      net (fanout=1)        1.112   mk_strobe_instance/_sub0000<27>
-    SLICE_X21Y19.COUT    Topcyg                1.178   ilx_instance/adc_start_instant/d_i_ff3
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_lut<13>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<13>
-    SLICE_X21Y20.CIN     net (fanout=1)        0.000   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<13>
-    SLICE_X21Y20.COUT    Tbyp                  0.130   U_ila_pro_0/U0/I_NO_D.U_ILA/iCAP_WR_ADDR<3>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<14>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>
-    SLICE_X21Y21.CIN     net (fanout=1)        0.000   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>
-    SLICE_X21Y21.XB      Tcinxb                0.296   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-    SLICE_X22Y19.G4      net (fanout=2)        0.744   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-    SLICE_X22Y19.Y       Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/iTRIGGER_SEQ_OUT
-                                                       mk_strobe_instance/r_cnt_cont_strobe_or00001
-    SLICE_X23Y18.SR      net (fanout=14)       1.153   mk_strobe_instance/r_cnt_cont_strobe_or0000
-    SLICE_X23Y18.CLK     Tsrck                 0.867   mk_strobe_instance/r_cnt_cont_strobe<16>
-                                                       mk_strobe_instance/r_cnt_cont_strobe_17
+    SLICE_X10Y7.XQ       Tcko                  0.631   ad7621_instance/div_instance/ac<5>
+                                                       ad7621_instance/div_instance/ac_5
+    SLICE_X11Y7.G2       net (fanout=3)        1.524   ad7621_instance/div_instance/ac<5>
+    SLICE_X11Y7.COUT     Topcyg                0.842   ad7621_instance/div_instance/y1<5>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<5>
+    SLICE_X11Y8.CIN      net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<5>
+    SLICE_X11Y8.COUT     Tbyp                  0.130   ad7621_instance/div_instance/y1<7>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<6>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<7>
+    SLICE_X11Y9.CIN      net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<7>
+    SLICE_X11Y9.COUT     Tbyp                  0.130   ad7621_instance/div_instance/y1<9>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<8>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<9>
+    SLICE_X11Y10.CIN     net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<9>
+    SLICE_X11Y10.XB      Tcinxb                0.296   ad7621_instance/div_instance/q1_next<0>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<10>
+    MULT18X18_X0Y1.B0    net (fanout=12)       0.895   ad7621_instance/div_instance/q1_next<0>
+    MULT18X18_X0Y1.P22   Tmult                 4.873   ad7621_instance/div_instance/Mmult_q_mult0000
+                                                       ad7621_instance/div_instance/Mmult_q_mult0000
+    SLICE_X17Y0.G2       net (fanout=1)        1.378   ad7621_instance/div_instance/q_mult0000<22>
+    SLICE_X17Y0.CLK      Tgck                  0.727   ad7621_instance/div_instance/q<23>
+                                                       ad7621_instance/div_instance/q_mux0000<22>1
+                                                       ad7621_instance/div_instance/q_22
     -------------------------------------------------  ---------------------------
-    Total                                     19.735ns (13.729ns logic, 6.006ns route)
-                                                       (69.6% logic, 30.4% route)
+    Total                                     11.426ns (7.629ns logic, 3.797ns route)
+                                                       (66.8% logic, 33.2% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     1.133ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/FPGA_STRBCOUNT_1 (FF)
-  Destination:          mk_strobe_instance/r_cnt_cont_strobe_17 (FF)
+Slack (setup path):     9.441ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ad7621_instance/div_instance/y1_6 (FF)
+  Destination:          ad7621_instance/div_instance/q_22 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      19.605ns (Levels of Logic = 18)
-  Clock Path Skew:      -0.095ns (0.460 - 0.555)
+  Data Path Delay:      11.315ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.077ns (0.495 - 0.572)
   Source Clock:         sys_4xclk rising at 0.000ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/FPGA_STRBCOUNT_1 to mk_strobe_instance/r_cnt_cont_strobe_17
+  Maximum Data Path: ad7621_instance/div_instance/y1_6 to ad7621_instance/div_instance/q_22
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y2.XQ       Tcko                  0.631   fpga_spi_instance/FPGA_STRBCOUNT<1>
-                                                       fpga_spi_instance/FPGA_STRBCOUNT_1
-    SLICE_X15Y2.G2       net (fanout=4)        0.463   fpga_spi_instance/FPGA_STRBCOUNT<1>
-    SLICE_X15Y2.COUT     Topcyg                1.178   mk_strobe_instance/mult0000_addsub0001<0>
-                                                       fpga_spi_instance/FPGA_STRBCOUNT<1>_rt
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>
-    SLICE_X15Y3.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>
-    SLICE_X15Y3.COUT     Tbyp                  0.130   mk_strobe_instance/mult0000_addsub0001<2>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<2>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>
-    SLICE_X15Y4.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>
-    SLICE_X15Y4.COUT     Tbyp                  0.130   mk_strobe_instance/mult0000_addsub0001<4>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<4>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>
-    SLICE_X15Y5.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>
-    SLICE_X15Y5.Y        Tciny                 0.864   mk_strobe_instance/mult0000_addsub0001<6>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<6>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_xor<7>
-    MULT18X18_X0Y1.A7    net (fanout=1)        1.171   mk_strobe_instance/mult0000_addsub0001<7>
-    MULT18X18_X0Y1.P10   Tmult                 4.602   mk_strobe_instance/Mmult__mult0000
-                                                       mk_strobe_instance/Mmult__mult0000
-    SLICE_X19Y7.F2       net (fanout=1)        1.280   mk_strobe_instance/_mult0000<10>
-    SLICE_X19Y7.COUT     Topcyf                1.195   mk_strobe_instance/_sub0000<10>
-                                                       mk_strobe_instance/Msub__sub0000_lut<10>_INV_0
-                                                       mk_strobe_instance/Msub__sub0000_cy<10>
-                                                       mk_strobe_instance/Msub__sub0000_cy<11>
-    SLICE_X19Y8.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<11>
-    SLICE_X19Y8.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<12>
-                                                       mk_strobe_instance/Msub__sub0000_cy<12>
-                                                       mk_strobe_instance/Msub__sub0000_cy<13>
-    SLICE_X19Y9.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<13>
-    SLICE_X19Y9.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<14>
-                                                       mk_strobe_instance/Msub__sub0000_cy<14>
-                                                       mk_strobe_instance/Msub__sub0000_cy<15>
-    SLICE_X19Y10.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<15>
-    SLICE_X19Y10.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<16>
-                                                       mk_strobe_instance/Msub__sub0000_cy<16>
-                                                       mk_strobe_instance/Msub__sub0000_cy<17>
-    SLICE_X19Y11.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<17>
-    SLICE_X19Y11.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<18>
-                                                       mk_strobe_instance/Msub__sub0000_cy<18>
-                                                       mk_strobe_instance/Msub__sub0000_cy<19>
-    SLICE_X19Y12.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<19>
-    SLICE_X19Y12.COUT    Tbyp                  0.130   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/iTRIGGER
-                                                       mk_strobe_instance/Msub__sub0000_cy<20>
-                                                       mk_strobe_instance/Msub__sub0000_cy<21>
-    SLICE_X19Y13.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<21>
-    SLICE_X19Y13.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<22>
-                                                       mk_strobe_instance/Msub__sub0000_cy<22>
-                                                       mk_strobe_instance/Msub__sub0000_cy<23>
-    SLICE_X19Y14.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<23>
-    SLICE_X19Y14.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<24>
-                                                       mk_strobe_instance/Msub__sub0000_cy<24>
-                                                       mk_strobe_instance/Msub__sub0000_cy<25>
-    SLICE_X19Y15.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<25>
-    SLICE_X19Y15.Y       Tciny                 0.864   mk_strobe_instance/_sub0000<26>
-                                                       mk_strobe_instance/Msub__sub0000_cy<26>
-                                                       mk_strobe_instance/Msub__sub0000_xor<27>
-    SLICE_X21Y19.G1      net (fanout=1)        1.112   mk_strobe_instance/_sub0000<27>
-    SLICE_X21Y19.COUT    Topcyg                1.178   ilx_instance/adc_start_instant/d_i_ff3
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_lut<13>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<13>
-    SLICE_X21Y20.CIN     net (fanout=1)        0.000   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<13>
-    SLICE_X21Y20.COUT    Tbyp                  0.130   U_ila_pro_0/U0/I_NO_D.U_ILA/iCAP_WR_ADDR<3>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<14>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>
-    SLICE_X21Y21.CIN     net (fanout=1)        0.000   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>
-    SLICE_X21Y21.XB      Tcinxb                0.296   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-    SLICE_X22Y19.G4      net (fanout=2)        0.744   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-    SLICE_X22Y19.Y       Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/iTRIGGER_SEQ_OUT
-                                                       mk_strobe_instance/r_cnt_cont_strobe_or00001
-    SLICE_X23Y18.SR      net (fanout=14)       1.153   mk_strobe_instance/r_cnt_cont_strobe_or0000
-    SLICE_X23Y18.CLK     Tsrck                 0.867   mk_strobe_instance/r_cnt_cont_strobe<16>
-                                                       mk_strobe_instance/r_cnt_cont_strobe_17
+    SLICE_X11Y8.YQ       Tcko                  0.580   ad7621_instance/div_instance/y1<7>
+                                                       ad7621_instance/div_instance/y1_6
+    SLICE_X11Y8.F2       net (fanout=2)        1.241   ad7621_instance/div_instance/y1<6>
+    SLICE_X11Y8.COUT     Topcyf                1.195   ad7621_instance/div_instance/y1<7>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_lut<6>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<6>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<7>
+    SLICE_X11Y9.CIN      net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<7>
+    SLICE_X11Y9.COUT     Tbyp                  0.130   ad7621_instance/div_instance/y1<9>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<8>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<9>
+    SLICE_X11Y10.CIN     net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<9>
+    SLICE_X11Y10.XB      Tcinxb                0.296   ad7621_instance/div_instance/q1_next<0>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<10>
+    MULT18X18_X0Y1.B0    net (fanout=12)       0.895   ad7621_instance/div_instance/q1_next<0>
+    MULT18X18_X0Y1.P22   Tmult                 4.873   ad7621_instance/div_instance/Mmult_q_mult0000
+                                                       ad7621_instance/div_instance/Mmult_q_mult0000
+    SLICE_X17Y0.G2       net (fanout=1)        1.378   ad7621_instance/div_instance/q_mult0000<22>
+    SLICE_X17Y0.CLK      Tgck                  0.727   ad7621_instance/div_instance/q<23>
+                                                       ad7621_instance/div_instance/q_mux0000<22>1
+                                                       ad7621_instance/div_instance/q_22
     -------------------------------------------------  ---------------------------
-    Total                                     19.605ns (13.682ns logic, 5.923ns route)
-                                                       (69.8% logic, 30.2% route)
+    Total                                     11.315ns (7.801ns logic, 3.514ns route)
+                                                       (68.9% logic, 31.1% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point mk_strobe_instance/r_cnt_cont_strobe_18 (SLICE_X23Y19.SR), 46335 paths
+Paths for end point ad7621_instance/div_instance/q_20 (SLICE_X18Y1.G3), 41 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     0.999ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/FPGA_STRBCOUNT_0 (FF)
-  Destination:          mk_strobe_instance/r_cnt_cont_strobe_18 (FF)
+Slack (setup path):     8.983ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ad7621_instance/div_instance/ac_5 (FF)
+  Destination:          ad7621_instance/div_instance/q_20 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      19.739ns (Levels of Logic = 18)
-  Clock Path Skew:      -0.095ns (0.460 - 0.555)
+  Data Path Delay:      11.758ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.092ns (0.499 - 0.591)
   Source Clock:         sys_4xclk rising at 0.000ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/FPGA_STRBCOUNT_0 to mk_strobe_instance/r_cnt_cont_strobe_18
+  Maximum Data Path: ad7621_instance/div_instance/ac_5 to ad7621_instance/div_instance/q_20
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y2.YQ       Tcko                  0.676   fpga_spi_instance/FPGA_STRBCOUNT<1>
-                                                       fpga_spi_instance/FPGA_STRBCOUNT_0
-    SLICE_X15Y2.F1       net (fanout=4)        0.535   fpga_spi_instance/FPGA_STRBCOUNT<0>
-    SLICE_X15Y2.COUT     Topcyf                1.195   mk_strobe_instance/mult0000_addsub0001<0>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_lut<0>_INV_0
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<0>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>
-    SLICE_X15Y3.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>
-    SLICE_X15Y3.COUT     Tbyp                  0.130   mk_strobe_instance/mult0000_addsub0001<2>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<2>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>
-    SLICE_X15Y4.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>
-    SLICE_X15Y4.COUT     Tbyp                  0.130   mk_strobe_instance/mult0000_addsub0001<4>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<4>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>
-    SLICE_X15Y5.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>
-    SLICE_X15Y5.Y        Tciny                 0.864   mk_strobe_instance/mult0000_addsub0001<6>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<6>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_xor<7>
-    MULT18X18_X0Y1.A7    net (fanout=1)        1.171   mk_strobe_instance/mult0000_addsub0001<7>
-    MULT18X18_X0Y1.P10   Tmult                 4.602   mk_strobe_instance/Mmult__mult0000
-                                                       mk_strobe_instance/Mmult__mult0000
-    SLICE_X19Y7.F2       net (fanout=1)        1.280   mk_strobe_instance/_mult0000<10>
-    SLICE_X19Y7.COUT     Topcyf                1.195   mk_strobe_instance/_sub0000<10>
-                                                       mk_strobe_instance/Msub__sub0000_lut<10>_INV_0
-                                                       mk_strobe_instance/Msub__sub0000_cy<10>
-                                                       mk_strobe_instance/Msub__sub0000_cy<11>
-    SLICE_X19Y8.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<11>
-    SLICE_X19Y8.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<12>
-                                                       mk_strobe_instance/Msub__sub0000_cy<12>
-                                                       mk_strobe_instance/Msub__sub0000_cy<13>
-    SLICE_X19Y9.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<13>
-    SLICE_X19Y9.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<14>
-                                                       mk_strobe_instance/Msub__sub0000_cy<14>
-                                                       mk_strobe_instance/Msub__sub0000_cy<15>
-    SLICE_X19Y10.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<15>
-    SLICE_X19Y10.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<16>
-                                                       mk_strobe_instance/Msub__sub0000_cy<16>
-                                                       mk_strobe_instance/Msub__sub0000_cy<17>
-    SLICE_X19Y11.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<17>
-    SLICE_X19Y11.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<18>
-                                                       mk_strobe_instance/Msub__sub0000_cy<18>
-                                                       mk_strobe_instance/Msub__sub0000_cy<19>
-    SLICE_X19Y12.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<19>
-    SLICE_X19Y12.COUT    Tbyp                  0.130   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/iTRIGGER
-                                                       mk_strobe_instance/Msub__sub0000_cy<20>
-                                                       mk_strobe_instance/Msub__sub0000_cy<21>
-    SLICE_X19Y13.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<21>
-    SLICE_X19Y13.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<22>
-                                                       mk_strobe_instance/Msub__sub0000_cy<22>
-                                                       mk_strobe_instance/Msub__sub0000_cy<23>
-    SLICE_X19Y14.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<23>
-    SLICE_X19Y14.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<24>
-                                                       mk_strobe_instance/Msub__sub0000_cy<24>
-                                                       mk_strobe_instance/Msub__sub0000_cy<25>
-    SLICE_X19Y15.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<25>
-    SLICE_X19Y15.Y       Tciny                 0.864   mk_strobe_instance/_sub0000<26>
-                                                       mk_strobe_instance/Msub__sub0000_cy<26>
-                                                       mk_strobe_instance/Msub__sub0000_xor<27>
-    SLICE_X21Y19.G1      net (fanout=1)        1.112   mk_strobe_instance/_sub0000<27>
-    SLICE_X21Y19.COUT    Topcyg                1.178   ilx_instance/adc_start_instant/d_i_ff3
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_lut<13>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<13>
-    SLICE_X21Y20.CIN     net (fanout=1)        0.000   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<13>
-    SLICE_X21Y20.COUT    Tbyp                  0.130   U_ila_pro_0/U0/I_NO_D.U_ILA/iCAP_WR_ADDR<3>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<14>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>
-    SLICE_X21Y21.CIN     net (fanout=1)        0.000   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>
-    SLICE_X21Y21.XB      Tcinxb                0.296   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-    SLICE_X22Y19.G4      net (fanout=2)        0.744   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-    SLICE_X22Y19.Y       Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/iTRIGGER_SEQ_OUT
-                                                       mk_strobe_instance/r_cnt_cont_strobe_or00001
-    SLICE_X23Y19.SR      net (fanout=14)       1.153   mk_strobe_instance/r_cnt_cont_strobe_or0000
-    SLICE_X23Y19.CLK     Tsrck                 0.867   mk_strobe_instance/r_cnt_cont_strobe<18>
-                                                       mk_strobe_instance/r_cnt_cont_strobe_18
+    SLICE_X10Y7.XQ       Tcko                  0.631   ad7621_instance/div_instance/ac<5>
+                                                       ad7621_instance/div_instance/ac_5
+    SLICE_X11Y7.G2       net (fanout=3)        1.524   ad7621_instance/div_instance/ac<5>
+    SLICE_X11Y7.COUT     Topcyg                1.178   ad7621_instance/div_instance/y1<5>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_lut<5>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<5>
+    SLICE_X11Y8.CIN      net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<5>
+    SLICE_X11Y8.COUT     Tbyp                  0.130   ad7621_instance/div_instance/y1<7>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<6>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<7>
+    SLICE_X11Y9.CIN      net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<7>
+    SLICE_X11Y9.COUT     Tbyp                  0.130   ad7621_instance/div_instance/y1<9>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<8>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<9>
+    SLICE_X11Y10.CIN     net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<9>
+    SLICE_X11Y10.XB      Tcinxb                0.296   ad7621_instance/div_instance/q1_next<0>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<10>
+    MULT18X18_X0Y1.B0    net (fanout=12)       0.895   ad7621_instance/div_instance/q1_next<0>
+    MULT18X18_X0Y1.P20   Tmult                 4.873   ad7621_instance/div_instance/Mmult_q_mult0000
+                                                       ad7621_instance/div_instance/Mmult_q_mult0000
+    SLICE_X18Y1.G3       net (fanout=1)        1.284   ad7621_instance/div_instance/q_mult0000<20>
+    SLICE_X18Y1.CLK      Tgck                  0.817   ad7621_instance/div_instance/q<21>
+                                                       ad7621_instance/div_instance/q_mux0000<20>1
+                                                       ad7621_instance/div_instance/q_20
     -------------------------------------------------  ---------------------------
-    Total                                     19.739ns (13.744ns logic, 5.995ns route)
-                                                       (69.6% logic, 30.4% route)
+    Total                                     11.758ns (8.055ns logic, 3.703ns route)
+                                                       (68.5% logic, 31.5% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     1.003ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/FPGA_STRBCOUNT_0 (FF)
-  Destination:          mk_strobe_instance/r_cnt_cont_strobe_18 (FF)
+Slack (setup path):     9.319ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ad7621_instance/div_instance/ac_5 (FF)
+  Destination:          ad7621_instance/div_instance/q_20 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      19.735ns (Levels of Logic = 20)
-  Clock Path Skew:      -0.095ns (0.460 - 0.555)
+  Data Path Delay:      11.422ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.092ns (0.499 - 0.591)
   Source Clock:         sys_4xclk rising at 0.000ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/FPGA_STRBCOUNT_0 to mk_strobe_instance/r_cnt_cont_strobe_18
+  Maximum Data Path: ad7621_instance/div_instance/ac_5 to ad7621_instance/div_instance/q_20
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y2.YQ       Tcko                  0.676   fpga_spi_instance/FPGA_STRBCOUNT<1>
-                                                       fpga_spi_instance/FPGA_STRBCOUNT_0
-    SLICE_X15Y2.F1       net (fanout=4)        0.535   fpga_spi_instance/FPGA_STRBCOUNT<0>
-    SLICE_X15Y2.COUT     Topcyf                1.195   mk_strobe_instance/mult0000_addsub0001<0>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_lut<0>_INV_0
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<0>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>
-    SLICE_X15Y3.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>
-    SLICE_X15Y3.COUT     Tbyp                  0.130   mk_strobe_instance/mult0000_addsub0001<2>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<2>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>
-    SLICE_X15Y4.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>
-    SLICE_X15Y4.COUT     Tbyp                  0.130   mk_strobe_instance/mult0000_addsub0001<4>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<4>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>
-    SLICE_X15Y5.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>
-    SLICE_X15Y5.Y        Tciny                 0.864   mk_strobe_instance/mult0000_addsub0001<6>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<6>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_xor<7>
-    MULT18X18_X0Y1.A7    net (fanout=1)        1.171   mk_strobe_instance/mult0000_addsub0001<7>
-    MULT18X18_X0Y1.P7    Tmult                 4.344   mk_strobe_instance/Mmult__mult0000
-                                                       mk_strobe_instance/Mmult__mult0000
-    SLICE_X19Y5.G3       net (fanout=1)        1.291   mk_strobe_instance/_mult0000<7>
-    SLICE_X19Y5.COUT     Topcyg                1.178   mk_strobe_instance/_sub0000<6>
-                                                       mk_strobe_instance/Msub__sub0000_lut<7>_INV_0
-                                                       mk_strobe_instance/Msub__sub0000_cy<7>
-    SLICE_X19Y6.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<7>
-    SLICE_X19Y6.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<8>
-                                                       mk_strobe_instance/Msub__sub0000_cy<8>
-                                                       mk_strobe_instance/Msub__sub0000_cy<9>
-    SLICE_X19Y7.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<9>
-    SLICE_X19Y7.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<10>
-                                                       mk_strobe_instance/Msub__sub0000_cy<10>
-                                                       mk_strobe_instance/Msub__sub0000_cy<11>
-    SLICE_X19Y8.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<11>
-    SLICE_X19Y8.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<12>
-                                                       mk_strobe_instance/Msub__sub0000_cy<12>
-                                                       mk_strobe_instance/Msub__sub0000_cy<13>
-    SLICE_X19Y9.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<13>
-    SLICE_X19Y9.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<14>
-                                                       mk_strobe_instance/Msub__sub0000_cy<14>
-                                                       mk_strobe_instance/Msub__sub0000_cy<15>
-    SLICE_X19Y10.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<15>
-    SLICE_X19Y10.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<16>
-                                                       mk_strobe_instance/Msub__sub0000_cy<16>
-                                                       mk_strobe_instance/Msub__sub0000_cy<17>
-    SLICE_X19Y11.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<17>
-    SLICE_X19Y11.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<18>
-                                                       mk_strobe_instance/Msub__sub0000_cy<18>
-                                                       mk_strobe_instance/Msub__sub0000_cy<19>
-    SLICE_X19Y12.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<19>
-    SLICE_X19Y12.COUT    Tbyp                  0.130   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/iTRIGGER
-                                                       mk_strobe_instance/Msub__sub0000_cy<20>
-                                                       mk_strobe_instance/Msub__sub0000_cy<21>
-    SLICE_X19Y13.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<21>
-    SLICE_X19Y13.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<22>
-                                                       mk_strobe_instance/Msub__sub0000_cy<22>
-                                                       mk_strobe_instance/Msub__sub0000_cy<23>
-    SLICE_X19Y14.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<23>
-    SLICE_X19Y14.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<24>
-                                                       mk_strobe_instance/Msub__sub0000_cy<24>
-                                                       mk_strobe_instance/Msub__sub0000_cy<25>
-    SLICE_X19Y15.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<25>
-    SLICE_X19Y15.Y       Tciny                 0.864   mk_strobe_instance/_sub0000<26>
-                                                       mk_strobe_instance/Msub__sub0000_cy<26>
-                                                       mk_strobe_instance/Msub__sub0000_xor<27>
-    SLICE_X21Y19.G1      net (fanout=1)        1.112   mk_strobe_instance/_sub0000<27>
-    SLICE_X21Y19.COUT    Topcyg                1.178   ilx_instance/adc_start_instant/d_i_ff3
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_lut<13>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<13>
-    SLICE_X21Y20.CIN     net (fanout=1)        0.000   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<13>
-    SLICE_X21Y20.COUT    Tbyp                  0.130   U_ila_pro_0/U0/I_NO_D.U_ILA/iCAP_WR_ADDR<3>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<14>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>
-    SLICE_X21Y21.CIN     net (fanout=1)        0.000   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>
-    SLICE_X21Y21.XB      Tcinxb                0.296   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-    SLICE_X22Y19.G4      net (fanout=2)        0.744   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-    SLICE_X22Y19.Y       Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/iTRIGGER_SEQ_OUT
-                                                       mk_strobe_instance/r_cnt_cont_strobe_or00001
-    SLICE_X23Y19.SR      net (fanout=14)       1.153   mk_strobe_instance/r_cnt_cont_strobe_or0000
-    SLICE_X23Y19.CLK     Tsrck                 0.867   mk_strobe_instance/r_cnt_cont_strobe<18>
-                                                       mk_strobe_instance/r_cnt_cont_strobe_18
+    SLICE_X10Y7.XQ       Tcko                  0.631   ad7621_instance/div_instance/ac<5>
+                                                       ad7621_instance/div_instance/ac_5
+    SLICE_X11Y7.G2       net (fanout=3)        1.524   ad7621_instance/div_instance/ac<5>
+    SLICE_X11Y7.COUT     Topcyg                0.842   ad7621_instance/div_instance/y1<5>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<5>
+    SLICE_X11Y8.CIN      net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<5>
+    SLICE_X11Y8.COUT     Tbyp                  0.130   ad7621_instance/div_instance/y1<7>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<6>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<7>
+    SLICE_X11Y9.CIN      net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<7>
+    SLICE_X11Y9.COUT     Tbyp                  0.130   ad7621_instance/div_instance/y1<9>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<8>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<9>
+    SLICE_X11Y10.CIN     net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<9>
+    SLICE_X11Y10.XB      Tcinxb                0.296   ad7621_instance/div_instance/q1_next<0>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<10>
+    MULT18X18_X0Y1.B0    net (fanout=12)       0.895   ad7621_instance/div_instance/q1_next<0>
+    MULT18X18_X0Y1.P20   Tmult                 4.873   ad7621_instance/div_instance/Mmult_q_mult0000
+                                                       ad7621_instance/div_instance/Mmult_q_mult0000
+    SLICE_X18Y1.G3       net (fanout=1)        1.284   ad7621_instance/div_instance/q_mult0000<20>
+    SLICE_X18Y1.CLK      Tgck                  0.817   ad7621_instance/div_instance/q<21>
+                                                       ad7621_instance/div_instance/q_mux0000<20>1
+                                                       ad7621_instance/div_instance/q_20
     -------------------------------------------------  ---------------------------
-    Total                                     19.735ns (13.729ns logic, 6.006ns route)
-                                                       (69.6% logic, 30.4% route)
+    Total                                     11.422ns (7.719ns logic, 3.703ns route)
+                                                       (67.6% logic, 32.4% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     1.133ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               fpga_spi_instance/FPGA_STRBCOUNT_1 (FF)
-  Destination:          mk_strobe_instance/r_cnt_cont_strobe_18 (FF)
+Slack (setup path):     9.449ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ad7621_instance/div_instance/y1_6 (FF)
+  Destination:          ad7621_instance/div_instance/q_20 (FF)
   Requirement:          20.833ns
-  Data Path Delay:      19.605ns (Levels of Logic = 18)
-  Clock Path Skew:      -0.095ns (0.460 - 0.555)
+  Data Path Delay:      11.311ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.073ns (0.499 - 0.572)
   Source Clock:         sys_4xclk rising at 0.000ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: fpga_spi_instance/FPGA_STRBCOUNT_1 to mk_strobe_instance/r_cnt_cont_strobe_18
+  Maximum Data Path: ad7621_instance/div_instance/y1_6 to ad7621_instance/div_instance/q_20
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y2.XQ       Tcko                  0.631   fpga_spi_instance/FPGA_STRBCOUNT<1>
-                                                       fpga_spi_instance/FPGA_STRBCOUNT_1
-    SLICE_X15Y2.G2       net (fanout=4)        0.463   fpga_spi_instance/FPGA_STRBCOUNT<1>
-    SLICE_X15Y2.COUT     Topcyg                1.178   mk_strobe_instance/mult0000_addsub0001<0>
-                                                       fpga_spi_instance/FPGA_STRBCOUNT<1>_rt
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>
-    SLICE_X15Y3.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<1>
-    SLICE_X15Y3.COUT     Tbyp                  0.130   mk_strobe_instance/mult0000_addsub0001<2>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<2>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>
-    SLICE_X15Y4.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<3>
-    SLICE_X15Y4.COUT     Tbyp                  0.130   mk_strobe_instance/mult0000_addsub0001<4>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<4>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>
-    SLICE_X15Y5.CIN      net (fanout=1)        0.000   mk_strobe_instance/Madd_mult0000_addsub0001_cy<5>
-    SLICE_X15Y5.Y        Tciny                 0.864   mk_strobe_instance/mult0000_addsub0001<6>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_cy<6>
-                                                       mk_strobe_instance/Madd_mult0000_addsub0001_xor<7>
-    MULT18X18_X0Y1.A7    net (fanout=1)        1.171   mk_strobe_instance/mult0000_addsub0001<7>
-    MULT18X18_X0Y1.P10   Tmult                 4.602   mk_strobe_instance/Mmult__mult0000
-                                                       mk_strobe_instance/Mmult__mult0000
-    SLICE_X19Y7.F2       net (fanout=1)        1.280   mk_strobe_instance/_mult0000<10>
-    SLICE_X19Y7.COUT     Topcyf                1.195   mk_strobe_instance/_sub0000<10>
-                                                       mk_strobe_instance/Msub__sub0000_lut<10>_INV_0
-                                                       mk_strobe_instance/Msub__sub0000_cy<10>
-                                                       mk_strobe_instance/Msub__sub0000_cy<11>
-    SLICE_X19Y8.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<11>
-    SLICE_X19Y8.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<12>
-                                                       mk_strobe_instance/Msub__sub0000_cy<12>
-                                                       mk_strobe_instance/Msub__sub0000_cy<13>
-    SLICE_X19Y9.CIN      net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<13>
-    SLICE_X19Y9.COUT     Tbyp                  0.130   mk_strobe_instance/_sub0000<14>
-                                                       mk_strobe_instance/Msub__sub0000_cy<14>
-                                                       mk_strobe_instance/Msub__sub0000_cy<15>
-    SLICE_X19Y10.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<15>
-    SLICE_X19Y10.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<16>
-                                                       mk_strobe_instance/Msub__sub0000_cy<16>
-                                                       mk_strobe_instance/Msub__sub0000_cy<17>
-    SLICE_X19Y11.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<17>
-    SLICE_X19Y11.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<18>
-                                                       mk_strobe_instance/Msub__sub0000_cy<18>
-                                                       mk_strobe_instance/Msub__sub0000_cy<19>
-    SLICE_X19Y12.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<19>
-    SLICE_X19Y12.COUT    Tbyp                  0.130   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/iTRIGGER
-                                                       mk_strobe_instance/Msub__sub0000_cy<20>
-                                                       mk_strobe_instance/Msub__sub0000_cy<21>
-    SLICE_X19Y13.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<21>
-    SLICE_X19Y13.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<22>
-                                                       mk_strobe_instance/Msub__sub0000_cy<22>
-                                                       mk_strobe_instance/Msub__sub0000_cy<23>
-    SLICE_X19Y14.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<23>
-    SLICE_X19Y14.COUT    Tbyp                  0.130   mk_strobe_instance/_sub0000<24>
-                                                       mk_strobe_instance/Msub__sub0000_cy<24>
-                                                       mk_strobe_instance/Msub__sub0000_cy<25>
-    SLICE_X19Y15.CIN     net (fanout=1)        0.000   mk_strobe_instance/Msub__sub0000_cy<25>
-    SLICE_X19Y15.Y       Tciny                 0.864   mk_strobe_instance/_sub0000<26>
-                                                       mk_strobe_instance/Msub__sub0000_cy<26>
-                                                       mk_strobe_instance/Msub__sub0000_xor<27>
-    SLICE_X21Y19.G1      net (fanout=1)        1.112   mk_strobe_instance/_sub0000<27>
-    SLICE_X21Y19.COUT    Topcyg                1.178   ilx_instance/adc_start_instant/d_i_ff3
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_lut<13>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<13>
-    SLICE_X21Y20.CIN     net (fanout=1)        0.000   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<13>
-    SLICE_X21Y20.COUT    Tbyp                  0.130   U_ila_pro_0/U0/I_NO_D.U_ILA/iCAP_WR_ADDR<3>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<14>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>
-    SLICE_X21Y21.CIN     net (fanout=1)        0.000   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<15>
-    SLICE_X21Y21.XB      Tcinxb                0.296   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-                                                       mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-    SLICE_X22Y19.G4      net (fanout=2)        0.744   mk_strobe_instance/Mcompar_cont_strobe_cmp_eq0000_cy<16>
-    SLICE_X22Y19.Y       Tilo                  0.707   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/iTRIGGER_SEQ_OUT
-                                                       mk_strobe_instance/r_cnt_cont_strobe_or00001
-    SLICE_X23Y19.SR      net (fanout=14)       1.153   mk_strobe_instance/r_cnt_cont_strobe_or0000
-    SLICE_X23Y19.CLK     Tsrck                 0.867   mk_strobe_instance/r_cnt_cont_strobe<18>
-                                                       mk_strobe_instance/r_cnt_cont_strobe_18
+    SLICE_X11Y8.YQ       Tcko                  0.580   ad7621_instance/div_instance/y1<7>
+                                                       ad7621_instance/div_instance/y1_6
+    SLICE_X11Y8.F2       net (fanout=2)        1.241   ad7621_instance/div_instance/y1<6>
+    SLICE_X11Y8.COUT     Topcyf                1.195   ad7621_instance/div_instance/y1<7>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_lut<6>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<6>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<7>
+    SLICE_X11Y9.CIN      net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<7>
+    SLICE_X11Y9.COUT     Tbyp                  0.130   ad7621_instance/div_instance/y1<9>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<8>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<9>
+    SLICE_X11Y10.CIN     net (fanout=1)        0.000   ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<9>
+    SLICE_X11Y10.XB      Tcinxb                0.296   ad7621_instance/div_instance/q1_next<0>
+                                                       ad7621_instance/div_instance/Mcompar_ac_next_cmp_ge0000_cy<10>
+    MULT18X18_X0Y1.B0    net (fanout=12)       0.895   ad7621_instance/div_instance/q1_next<0>
+    MULT18X18_X0Y1.P20   Tmult                 4.873   ad7621_instance/div_instance/Mmult_q_mult0000
+                                                       ad7621_instance/div_instance/Mmult_q_mult0000
+    SLICE_X18Y1.G3       net (fanout=1)        1.284   ad7621_instance/div_instance/q_mult0000<20>
+    SLICE_X18Y1.CLK      Tgck                  0.817   ad7621_instance/div_instance/q<21>
+                                                       ad7621_instance/div_instance/q_mux0000<20>1
+                                                       ad7621_instance/div_instance/q_20
     -------------------------------------------------  ---------------------------
-    Total                                     19.605ns (13.682ns logic, 5.923ns route)
+    Total                                     11.311ns (7.891ns logic, 3.420ns route)
                                                        (69.8% logic, 30.2% route)
 
 --------------------------------------------------------------------------------
@@ -1323,84 +825,84 @@ Hold Paths: TS_clk_wizard_instance_CLKFX_BUF = PERIOD TIMEGRP
         "clk_wizard_instance_CLKFX_BUF" TS_sys_clk / 4 HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[3].I_SRLT_NE_0.DLY9/SRL16E (SLICE_X18Y18.BX), 1 path
+Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[4].I_SRLT_NE_0.DLY9/SRL16E (SLICE_X12Y6.BY), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.686ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               U_ila_pro_0/U0/I_TQ0.G_TW[3].U_TQ (FF)
-  Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[3].I_SRLT_NE_0.DLY9/SRL16E (FF)
+Slack (hold path):      0.773ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               U_ila_pro_0/U0/I_TQ0.G_TW[4].U_TQ (FF)
+  Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[4].I_SRLT_NE_0.DLY9/SRL16E (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.730ns (Levels of Logic = 1)
-  Clock Path Skew:      0.044ns (0.289 - 0.245)
+  Data Path Delay:      0.773ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
   Source Clock:         sys_4xclk rising at 20.833ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: U_ila_pro_0/U0/I_TQ0.G_TW[3].U_TQ to U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[3].I_SRLT_NE_0.DLY9/SRL16E
+  Minimum Data Path: U_ila_pro_0/U0/I_TQ0.G_TW[4].U_TQ to U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[4].I_SRLT_NE_0.DLY9/SRL16E
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X21Y18.XQ      Tcko                  0.473   U_ila_pro_0/U0/iTRIG_IN<3>
-                                                       U_ila_pro_0/U0/I_TQ0.G_TW[3].U_TQ
-    SLICE_X18Y18.BX      net (fanout=2)        0.403   U_ila_pro_0/U0/iTRIG_IN<3>
-    SLICE_X18Y18.CLK     Tdh         (-Th)     0.146   U_ila_pro_0/U0/I_NO_D.U_ILA/iDATA<3>
-                                                       U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[3].I_SRLT_NE_0.DLY9/SRL16E
+    SLICE_X12Y6.XQ       Tcko                  0.505   U_ila_pro_0/U0/iTRIG_IN<4>
+                                                       U_ila_pro_0/U0/I_TQ0.G_TW[4].U_TQ
+    SLICE_X12Y6.BY       net (fanout=2)        0.394   U_ila_pro_0/U0/iTRIG_IN<4>
+    SLICE_X12Y6.CLK      Tdh         (-Th)     0.126   U_ila_pro_0/U0/iTRIG_IN<4>
+                                                       U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[4].I_SRLT_NE_0.DLY9/SRL16E
     -------------------------------------------------  ---------------------------
-    Total                                      0.730ns (0.327ns logic, 0.403ns route)
-                                                       (44.8% logic, 55.2% route)
+    Total                                      0.773ns (0.379ns logic, 0.394ns route)
+                                                       (49.0% logic, 51.0% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[2].I_SRLT_NE_0.DLY9/SRL16E (SLICE_X18Y18.BY), 1 path
+Paths for end point fpga_spi_instance/FPGA_SSLOWDELAY_0 (SLICE_X6Y23.BY), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.689ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               U_ila_pro_0/U0/I_TQ0.G_TW[2].U_TQ (FF)
-  Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[2].I_SRLT_NE_0.DLY9/SRL16E (FF)
+Slack (hold path):      0.915ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               fpga_spi_instance/receive_data_0 (FF)
+  Destination:          fpga_spi_instance/FPGA_SSLOWDELAY_0 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.733ns (Levels of Logic = 1)
-  Clock Path Skew:      0.044ns (0.289 - 0.245)
+  Data Path Delay:      1.041ns (Levels of Logic = 0)
+  Clock Path Skew:      0.126ns (0.364 - 0.238)
   Source Clock:         sys_4xclk rising at 20.833ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: U_ila_pro_0/U0/I_TQ0.G_TW[2].U_TQ to U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[2].I_SRLT_NE_0.DLY9/SRL16E
+  Minimum Data Path: fpga_spi_instance/receive_data_0 to fpga_spi_instance/FPGA_SSLOWDELAY_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X21Y18.YQ      Tcko                  0.464   U_ila_pro_0/U0/iTRIG_IN<3>
-                                                       U_ila_pro_0/U0/I_TQ0.G_TW[2].U_TQ
-    SLICE_X18Y18.BY      net (fanout=2)        0.395   U_ila_pro_0/U0/iTRIG_IN<2>
-    SLICE_X18Y18.CLK     Tdh         (-Th)     0.126   U_ila_pro_0/U0/I_NO_D.U_ILA/iDATA<3>
-                                                       U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[2].I_SRLT_NE_0.DLY9/SRL16E
+    SLICE_X9Y20.YQ       Tcko                  0.464   fpga_spi_instance/receive_data<1>
+                                                       fpga_spi_instance/receive_data_0
+    SLICE_X6Y23.BY       net (fanout=12)       0.404   fpga_spi_instance/receive_data<0>
+    SLICE_X6Y23.CLK      Tckdi       (-Th)    -0.173   fpga_spi_instance/FPGA_SSLOWDELAY<1>
+                                                       fpga_spi_instance/FPGA_SSLOWDELAY_0
     -------------------------------------------------  ---------------------------
-    Total                                      0.733ns (0.338ns logic, 0.395ns route)
-                                                       (46.1% logic, 53.9% route)
+    Total                                      1.041ns (0.637ns logic, 0.404ns route)
+                                                       (61.2% logic, 38.8% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[12].I_SRLT_NE_0.DLY9/SRL16E (SLICE_X10Y9.BY), 1 path
+Paths for end point U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[1].U_TREG (SLICE_X13Y11.BX), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.714ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               U_ila_pro_0/U0/I_TQ0.G_TW[12].U_TQ (FF)
-  Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[12].I_SRLT_NE_0.DLY9/SRL16E (FF)
+Slack (hold path):      0.928ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[1].U_IREG (FF)
+  Destination:          U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[1].U_TREG (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.752ns (Levels of Logic = 1)
-  Clock Path Skew:      0.038ns (0.098 - 0.060)
+  Data Path Delay:      0.938ns (Levels of Logic = 0)
+  Clock Path Skew:      0.010ns (0.067 - 0.057)
   Source Clock:         sys_4xclk rising at 20.833ns
   Destination Clock:    sys_4xclk rising at 20.833ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: U_ila_pro_0/U0/I_TQ0.G_TW[12].U_TQ to U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[12].I_SRLT_NE_0.DLY9/SRL16E
+  Minimum Data Path: U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[1].U_IREG to U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[1].U_TREG
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X10Y10.YQ      Tcko                  0.541   U_ila_pro_0/U0/iTRIG_IN<13>
-                                                       U_ila_pro_0/U0/I_TQ0.G_TW[12].U_TQ
-    SLICE_X10Y9.BY       net (fanout=2)        0.337   U_ila_pro_0/U0/iTRIG_IN<12>
-    SLICE_X10Y9.CLK      Tdh         (-Th)     0.126   U_ila_pro_0/U0/I_NO_D.U_ILA/iDATA<13>
-                                                       U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[12].I_SRLT_NE_0.DLY9/SRL16E
+    SLICE_X13Y10.XQ      Tcko                  0.473   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/din_dly1<1>
+                                                       U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[1].U_IREG
+    SLICE_X13Y11.BX      net (fanout=2)        0.376   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/din_dly1<1>
+    SLICE_X13Y11.CLK     Tckdi       (-Th)    -0.089   U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/din_dly2<1>
+                                                       U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[1].U_TREG
     -------------------------------------------------  ---------------------------
-    Total                                      0.752ns (0.415ns logic, 0.337ns route)
-                                                       (55.2% logic, 44.8% route)
+    Total                                      0.938ns (0.562ns logic, 0.376ns route)
+                                                       (59.9% logic, 40.1% route)
 
 --------------------------------------------------------------------------------
 
@@ -1413,7 +915,7 @@ Slack: 17.629ns (period - (min low pulse limit / (low pulse / period)))
   Low pulse limit: 1.602ns (Trpw)
   Physical resource: data_count<0>/SR
   Logical resource: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/count_0/SR
-  Location pin: SLICE_X2Y0.SR
+  Location pin: SLICE_X4Y0.SR
   Clock network: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>
 --------------------------------------------------------------------------------
 Slack: 17.629ns (period - (min high pulse limit / (high pulse / period)))
@@ -1422,7 +924,7 @@ Slack: 17.629ns (period - (min high pulse limit / (high pulse / period)))
   High pulse limit: 1.602ns (Trpw)
   Physical resource: data_count<0>/SR
   Logical resource: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/count_0/SR
-  Location pin: SLICE_X2Y0.SR
+  Location pin: SLICE_X4Y0.SR
   Clock network: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>
 --------------------------------------------------------------------------------
 Slack: 17.629ns (period - (min low pulse limit / (low pulse / period)))
@@ -1431,7 +933,7 @@ Slack: 17.629ns (period - (min low pulse limit / (low pulse / period)))
   Low pulse limit: 1.602ns (Trpw)
   Physical resource: data_count<0>/SR
   Logical resource: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/count_1/SR
-  Location pin: SLICE_X2Y0.SR
+  Location pin: SLICE_X4Y0.SR
   Clock network: fifo_ccd_instance/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>
 --------------------------------------------------------------------------------
 
@@ -1443,8 +945,8 @@ Derived Constraints for TS_sys_clk
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_sys_clk                     |     83.333ns|     20.000ns|     79.336ns|            0|            0|            0|      1356307|
-| TS_clk_wizard_instance_CLKFX_B|     20.833ns|     19.834ns|          N/A|            0|            0|      1356307|            0|
+|TS_sys_clk                     |     83.333ns|     20.000ns|     49.872ns|            0|            0|            0|        12839|
+| TS_clk_wizard_instance_CLKFX_B|     20.833ns|     12.468ns|          N/A|            0|            0|        12839|            0|
 | UF                            |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -1460,7 +962,7 @@ Clock to Setup on destination clock sys_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-sys_clk        |   19.834|         |         |         |
+sys_clk        |   12.468|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -1469,24 +971,24 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 1356322 paths, 0 nets, and 4109 connections
+Constraints cover 12854 paths, 0 nets, and 3884 connections
 
 Design statistics:
    Minimum period:  20.000ns{1}   (Maximum frequency:  50.000MHz)
-   Maximum path delay from/to any node:   1.853ns
+   Maximum path delay from/to any node:   1.437ns
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Thu Sep 22 02:40:20 2022 
+Analysis completed Wed Sep 28 07:32:54 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 391 MB
+Peak Memory Usage: 388 MB
 
 
 

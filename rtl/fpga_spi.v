@@ -30,7 +30,9 @@ module fpga_spi(
     output reg [15:0] FPGA_COUNTBASE   = 16'h0001,         /*A base freq counter for the Continous strobe function. - 0x08*/
     output reg [15:0] FPGA_STRBCOUNT   = 16'h0001,         /*0x0C*/
     output reg [15:0] FPGA_INTCLOCK    = 16'h0006,         /*The detecter integration time in ms [1:65.535]. 0x18*/
-    output reg [15:0] FPGA_SSLOWDELAY  = 16'h0005,         /*The time delay that the SingleStrobe signal goes low after the start of an integration time - 0x38*/
+    output reg [15:0] FPGA_TRIGGERDELAY    = 16'h0006,
+	output reg [15:0] FPGA_TRIGGERMODE    = 16'h0006,
+	output reg [15:0] FPGA_SSLOWDELAY  = 16'h0005,         /*The time delay that the SingleStrobe signal goes low after the start of an integration time - 0x38*/
     output reg [15:0] FPGA_SSHIGHDELAY = 16'h0001,         /*The time delay that the SingleStrobe signal goes high after the start of an integration time - 0x3C*/
     output reg [15:0] FPGA_LAMPENABLE  = 16'h0000,         /*Global enable for both the ContinousStrobe and SingleStrobe functions - 0x40*/
     output reg [15:0] FPGA_OFFSETVALUE = 16'h0000,         /*Consistent dectector baseline, We can get this value from detector's optical blank pixel - 0x5C*/
@@ -40,9 +42,11 @@ module fpga_spi(
     input fpga_clk,         /* fpga spi clk*/
     input fpga_cs,          /* fpga spi cs*/
     input fpga_mosi,        /* fpga spi mosi*/
-    output reg fpga_miso    /* fpga spi miso*/
+    output reg fpga_miso,    /* fpga spi miso*/
     
     /* Data interface */
+	 input flag_rise_fifo_rset,
+	 input trigger
 //    output [23:0] receive_data_ila,
 //    output [4:0] cnt_spi_ila,
 //    output wr_or_rd_ila,
@@ -54,7 +58,7 @@ module fpga_spi(
 //    output fpga_cs_rise
     );
     
-    localparam version = 1;
+    localparam version = 2022;
     
     reg [4:0] cnt_spi = 5'd0;
     reg wr_or_rd = 1'b0;
@@ -93,6 +97,17 @@ module fpga_spi(
      .d_i(fpga_cs),
      .d_o(fpga_cs_rise_edge)
      );
+	  
+	 reg [15:0] FPGA_TRIGGERSTATUS = 16'd0;
+	 always @ (posedge sys_clk)
+	 begin
+		if (sys_rst | flag_rise_fifo_rset)
+		begin
+			FPGA_TRIGGERSTATUS <= 16'd0;
+		end else begin
+			if (trigger) FPGA_TRIGGERSTATUS <= 16'd1;
+		end
+	 end
     
     reg [23:0] receive_data;
     /* Sample data on rising edge of clock */
@@ -121,10 +136,13 @@ module fpga_spi(
         if (cnt_spi == 5'd8)
         begin
             case (fpga_addr)
+					 8'h01: transmit_data <= {FPGA_TRIGGERSTATUS, 1'b0};
                 8'h04: transmit_data <= {FPGA_VERION, 1'b0};
                 8'h08: transmit_data <= {FPGA_COUNTBASE, 1'b0};
                 8'h0C: transmit_data <= {FPGA_STRBCOUNT, 1'b0};
                 8'h18: transmit_data <= {FPGA_INTCLOCK, 1'b0};
+				8'h28: transmit_data <= {FPGA_TRIGGERDELAY, 1'b0};
+				8'h2C: transmit_data <= {FPGA_TRIGGERMODE, 1'b0};
                 8'h38: transmit_data <= {FPGA_SSLOWDELAY, 1'b0};
                 8'h3C: transmit_data <= {FPGA_SSHIGHDELAY, 1'b0};
                 8'h40: transmit_data <= {FPGA_LAMPENABLE, 1'b0};
@@ -171,6 +189,8 @@ module fpga_spi(
             FPGA_COUNTBASE <= 16'd48000;
             FPGA_STRBCOUNT <= 16'd4800;
             FPGA_INTCLOCK <= 16'd6;
+			FPGA_TRIGGERDELAY <= 16'd0;
+			FPGA_TRIGGERMODE <= 16'd0;
             FPGA_SSLOWDELAY <= 16'h0005;
             FPGA_SSHIGHDELAY <= 16'h0001;
             FPGA_LAMPENABLE <= 16'h0000;
@@ -183,6 +203,8 @@ module fpga_spi(
                     8'h08: FPGA_COUNTBASE <= receive_data[15:0];
                     8'h0C: FPGA_STRBCOUNT <= receive_data[15:0];
                     8'h18: FPGA_INTCLOCK <= receive_data[15:0];
+					8'h28: FPGA_TRIGGERDELAY <= receive_data[15:0];
+					8'h2C: FPGA_TRIGGERMODE <= receive_data[15:0];
                     8'h38: FPGA_SSLOWDELAY <= receive_data[15:0];
                     8'h3C: FPGA_SSHIGHDELAY <= receive_data[15:0];
                     8'h40: FPGA_LAMPENABLE <= receive_data[15:0];

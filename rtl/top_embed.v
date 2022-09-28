@@ -97,9 +97,19 @@ module top_embed(
 	 //.adt7301_miso(adt7301_miso)
 	 );
 	 
+	 /* Detect falling edge of fifo cs */ 
+    wire rise_edge_acqui_src;
+    detect_rising_edge rise_edge_acqui_src_instant 
+    (.sys_clk(sys_4xclk),
+     .d_i(fifo_rset),
+     .d_o(rise_edge_acqui_src)
+    );
+	 
 	 wire [15:0] FPGA_COUNTBASE;
 	 wire [15:0] FPGA_STRBCOUNT;
 	 wire [15:0] FPGA_INTCLOCK;
+	 wire [15:0] FPGA_TRIGGERDELAY;
+	 wire [15:0] FPGA_TRIGGERMODE;
 	 wire [15:0] FPGA_SSLOWDELAY;
 	 wire [15:0] FPGA_SSHIGHDELAY;
 	 wire [15:0] FPGA_LAMPENABLE;
@@ -111,6 +121,8 @@ module top_embed(
 	 .FPGA_COUNTBASE(FPGA_COUNTBASE),
 	 .FPGA_STRBCOUNT(FPGA_STRBCOUNT),
 	 .FPGA_INTCLOCK(FPGA_INTCLOCK),
+	 .FPGA_TRIGGERDELAY(FPGA_TRIGGERDELAY),
+	 .FPGA_TRIGGERMODE(FPGA_TRIGGERMODE),
 	 .FPGA_SSLOWDELAY(FPGA_SSLOWDELAY),
 	 .FPGA_SSHIGHDELAY(FPGA_SSHIGHDELAY),
 	 .FPGA_LAMPENABLE(FPGA_LAMPENABLE),
@@ -119,7 +131,9 @@ module top_embed(
 	 .fpga_clk(spi_clk),
 	 .fpga_cs(fpga_cs),
 	 .fpga_mosi(fpga_mosi),
-	 .fpga_miso(fpga_miso)
+	 .fpga_miso(fpga_miso),
+	 .flag_rise_fifo_rset(rise_edge_acqui_src),
+	 .trigger(trigger)
 	 );
 	 
 	 wire flag_adc_start;
@@ -132,6 +146,8 @@ module top_embed(
 	 .sys_clk(sys_4xclk),
 	 .sys_rst(xreset),
 	 .FPGA_INTCLOCK(FPGA_INTCLOCK),
+	 .FPGA_TRIGGERMODE(FPGA_TRIGGERMODE),
+	 .FPGA_TRIGGERDELAY(FPGA_TRIGGERDELAY),
 	 .aqui_src(fifo_rset | trigger),
 	 .ilx511b_clk(ilx511b_clk_ff),
 	 .ilx511b_rog(ilx511b_rog_ff),
@@ -142,20 +158,22 @@ module top_embed(
 	 );
 	 
 	 /* Make strobe */
-	 make_strobe mk_strobe_instance
-	 (
-	 .sys_clk(sys_4xclk),
-	 .sys_rst(sys_rst),
-	 .flag_en_single_strobe(flag_en_single_strobe),
-	 .FPGA_COUNTBASE(FPGA_COUNTBASE),
-	 .FPGA_STRBCOUNT(FPGA_STRBCOUNT),
-	 .FPGA_SSLOWDELAY(FPGA_SSLOWDELAY),
-	 .FPGA_SSHIGHDELAY(FPGA_SSHIGHDELAY),
-	 .FPGA_LAMPENABLE(FPGA_LAMPENABLE),
-	 .single_strobe(single_strobe),
-	 .cont_strobe(cont_strobe)
-	 );
+//	 make_strobe mk_strobe_instance
+//	 (
+//	 .sys_clk(sys_4xclk),
+//	 .sys_rst(sys_rst),
+//	 .flag_en_single_strobe(flag_en_single_strobe),
+//	 .FPGA_COUNTBASE(FPGA_COUNTBASE),
+//	 .FPGA_STRBCOUNT(FPGA_STRBCOUNT),
+//	 .FPGA_SSLOWDELAY(FPGA_SSLOWDELAY),
+//	 .FPGA_SSHIGHDELAY(FPGA_SSHIGHDELAY),
+//	 .FPGA_LAMPENABLE(FPGA_LAMPENABLE),
+//	 .single_strobe(single_strobe),
+//	 .cont_strobe(cont_strobe)
+//	 );
 	 
+	 assign single_strobe = 1'b1;
+	 assign cont_strobe = 1'b1;
 	 
 	 /* Make 2.5Mhz for CCD clock */
 	 wire clk_2_5Mhz;
@@ -186,14 +204,6 @@ module top_embed(
 	 .ad7621_flag_fifo_do(ad7621_flag_fifo_do)
 	 );
 	 
-	 /* Detect falling edge of fifo cs */ 
-    wire rise_edge_acqui_src;
-    detect_rising_edge rise_edge_acqui_src_instant 
-    (.sys_clk(sys_4xclk),
-     .d_i(fifo_rset | trigger),
-     .d_o(rise_edge_acqui_src)
-    );
-	 
 	 wire fifo_empty;
 	 wire fifo_full;
 	 wire [15:0] fifo_dout;
@@ -202,7 +212,7 @@ module top_embed(
 	 wire [10:0] cnt_ff;
 	 fifo_ccd fifo_ccd_instance (
 	 .clk(sys_4xclk), // input clk
-	 .rst(xreset | rise_edge_acqui_src), // input rst
+	 .rst(xreset | flag_adc_restart), // input rst
 	 .din(ad7621_fifo_do), // input [15 : 0] din
 	 .wr_en(ad7621_flag_fifo_do & ~fifo_full), // input wr_en
 	 .rd_en(flag_rd_fifo & ~fifo_empty), // input rd_en
